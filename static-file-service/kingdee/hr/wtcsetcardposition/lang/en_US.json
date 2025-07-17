@@ -1,9 +1,0 @@
-{
-  "noData": "No Data",
-  "workTime": "Work Time",
-  "startTimeCard": "Start Time Card",
-  "endTimeCard": "End Time Card ",
-  "isopenvalid": "Start Verification Card",
-  "message": "The end period of the previous working period and the start period of the next working period corresponding to this rest period are open, so they cannot be opened.",
-  "message1": "Activate the verification card to view the employee's on-the-job status, but it does not participate in the actual attendance calculation. For example, for a three segment shift with two card times, employees need to punch a verification card in between to indicate that they are at their office location."
-}

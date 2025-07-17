@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="share" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
-  <SpriteList>
-    <Sprite Path="icon_share.png" LocationX="2" LocationY="0" />
-    <Sprite Path="icon_comment.png" LocationX="38" LocationY="0" />
-    <Sprite Path="icon_praise.png" LocationX="78" LocationY="0" />
-    <Sprite Path="icon_praised.png" LocationX="120" LocationY="0" />
-  </SpriteList>
-</SpriteFile>

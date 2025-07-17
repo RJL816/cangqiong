@@ -1,6 +1,0 @@
-{
-    "workRole": "Workbench Role",
-    "workRoleTips": "The system will record the latest selected workbench role and push relevant work dashboard and knowledge information",
-    "workRoleChoose": "Select Role",
-    "workRoleChooseTips": "Please select your role:"
-}

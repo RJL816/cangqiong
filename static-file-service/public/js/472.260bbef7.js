@@ -1,1 +1,0 @@
-"use strict";(self["webpackJsonp_bos-platform"]=self["webpackJsonp_bos-platform"]||[]).push([[472],{460472:function(e,t,n){n(606200),Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var o,l=(o=n(795520))&&o.__esModule?o:{default:o};t.default=function(e){var t=e.type;return l.default.createElement("div",null,"Unknown Component: ",t)}}}]);

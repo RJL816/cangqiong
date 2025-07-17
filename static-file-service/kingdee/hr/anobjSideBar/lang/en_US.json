@@ -1,6 +1,0 @@
-{
-    "dataFilter": "Data filtering ",
-    "trans": "Column and column transpose",
-    "warnMessage": "Column and column transpose generated a field that has been referenced by the report and cannot be deleted",
-    "groupAssign": "Group assign"
-}

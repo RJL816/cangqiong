@@ -1,4 +1,0 @@
-<div class="validate_code">
-	<input class="vCode" hidden value=""/>
-	<img id="verifycode" src="=">
-</div>

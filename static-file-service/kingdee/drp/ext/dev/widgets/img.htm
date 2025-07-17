@@ -1,9 +1,0 @@
-<div>
-	{{if control._customData.plat === 'mobile'}}
-	<div required="${control.required}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}" id="${control.id}"  viewid="${control.viewid}" width="${control.width}" height="${control.height}" class="${control.class}" style="${(control.style||'') + control._customData.style}">
-		<img src="${control._customData.src}"/>
-	</div>
-	{{else}}
-	<img required="${control.required}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}" id="${control.id}"  viewid="${control.viewid}" src="${control._customData.src}" width="${control.width}" height="${control.height}" class="${control.class}" style="${(control.style||'') + control._customData.style}"/>
-	{{/if}}
-</div>

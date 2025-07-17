@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[934],{69666:function(e,t,i){i.r(t);var n=i(85893);t.default=function(){return(0,n.jsx)("div",{children:(0,n.jsx)("div",{style:{minHeight:500,width:"100%",padding:50},children:(0,n.jsx)("button",{id:"register",type:"button",children:"register"})})})}}}]);

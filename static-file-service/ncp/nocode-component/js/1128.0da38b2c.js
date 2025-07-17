@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknocode_component=self.webpackChunknocode_component||[]).push([[1128,8832],{45984:function(n,e,o){o.r(e),o.d(e,{hooks:function(){return s},mobile:function(){return u},web:function(){return c}});var c=o(47906),u=o(13764),t=o(60792),r=o(68944),s=(o(85712),{useKDRefBill:t.c,useOnDrop:r.c})}}]);

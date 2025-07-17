@@ -1,7 +1,0 @@
-﻿@charset "utf-8";
-
-.ulnonestyle{list-style-type:none;line-height:30px;padding-left:30px;padding-top:22px}
-.loading{background:url(../images/loading.gif) no-repeat 0px 6px;padding-left:30px}
-.success{background:url(../images/success.png) no-repeat 0px 6px;padding-left:30px}
-.nostart{padding-left:30px}
-

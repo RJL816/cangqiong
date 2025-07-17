@@ -1,8 +1,0 @@
-{	
-	"yes":"是",
-	"no":"否",
-	"loading": "加載中...",
-    "loadMore": "加載更多...",
-    "noResults": "無可用的參數",
-    "noResultsForTerm": "沒有包含<b>%s</b>的參數"
-}

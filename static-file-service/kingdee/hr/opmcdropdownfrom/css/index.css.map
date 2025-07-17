@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/web/kingdee/hr/opmctips/components/OpmcTips.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,cAAc;EACd,0BAA0B;EAC1B,mBAAmB;CACpB","file":"opmctips/css/index.css","sourcesContent":[".kd-tips-p {\n  padding: 2px;\n  margin: 5px 0;\n  background-color: #f3f3f3;\n  border-radius: 2px;\n}\n"],"sourceRoot":""}

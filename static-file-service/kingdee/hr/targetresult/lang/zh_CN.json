@@ -1,8 +1,0 @@
-{	
-	"yes":"是",
-	"no":"否",
-	"loading": "加载中...",
-    "loadMore": "加载更多...",
-    "noResults": "无可用的参数",
-    "noResultsForTerm": "没有包含<b>%s</b>的参数"
-}

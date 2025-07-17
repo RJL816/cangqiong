@@ -1,7 +1,0 @@
-{
-    "addRelationTips": "Add dependencies",
-    "delRelationTips": "Click to delete the last dependent entity",
-    "addBtn": "Add entity dependency configuration",
-    "iconTips": "Dependent",
-    "IFTips": "Click Configure/View Entity Dependency Condition"
-}

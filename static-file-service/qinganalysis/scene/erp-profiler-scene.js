@@ -1,3 +1,0 @@
-(function(){"undefined"==typeof com&&(com={});"undefined"==typeof com.kingdee&&(com.kingdee={});"undefined"==typeof com.kingdee.bos&&(com.kingdee.bos={});"undefined"==typeof com.kingdee.bos.qing&&(com.kingdee.bos.qing={});"undefined"==typeof com.kingdee.bos.qing.scene&&(com.kingdee.bos.qing.scene={});var b=com.kingdee.bos.qing.scene;var c=com.kingdee.bos.qing.profiler.ProfilerScene;b.ErpProfilerScene=function(){c.call(this);var a=this.getUrlParam("path");this.protectedGetRemoteUrl=function(){return(a?
-a:"/ierp")+"/qingshared/profile.do"};this.protectedImportMoreCode=function(d){d.loadJs("env.js")};this.protectedCustomInitEnv=function(){}}})();
-//qingVersionTag: 20250324
