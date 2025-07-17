@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Group-Name: bj44.cosmic
+Project-Name: bj44-prj01-base-common
+Bundle-Version: 1.0.0
+Build-Num: 20250715233349206
+Build-Date: 2025-07-15 23:33:49
+Build-Jdk: 17.0.9
+Built-By: Kingdee Cosmic Developer Tools
+Build-Tool: Gradle 7.6.3
+Git-Commit-Hash: 
+Git-Branch: 
+Cloud-Name: 
+App-Name: 
+Jar-Id: 
+Build-Image: 
+
