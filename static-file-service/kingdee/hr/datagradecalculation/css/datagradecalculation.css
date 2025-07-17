@@ -1,0 +1,159 @@
+.conditions,.results {
+    width: 100%;
+    padding: 0 24px 20px 24px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 72px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: auto;
+    flex-grow: 1;
+}
+.headCondition, .footerResult {
+    width: 100%;
+    padding-left: 24px;
+    font-size: 14px;
+
+}
+.itemHead {
+    line-height: 16px;
+    color: #666;
+}
+.conditions > .conditionItem, .results > .resultItem {
+    width: 230px;
+    margin-right: 72px;
+    padding-top: 20px;
+}
+.conditions > .conditionItem > input {
+    width: 100%;
+    height: 26px;
+}
+.calculateBtn, .closeBtn{
+    text-align: center;
+    line-height: 28px;
+    min-height: 28px;
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 2px;
+    margin-right: 12px;
+    color: #fff;
+}
+
+/* .calculateBtn:hover , .closeBtn:hover {
+    border: solid 1px #1890FF;
+} */
+.dataWrap {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnPart {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+.headWrap {
+    font-size: 12px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 8px;
+
+
+    /* justify-content: space-around; */
+}
+.headWrap, .footerWrap {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+.footerWrap {
+    padding-top:20px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* height: 100%; */
+    flex-grow: 1;
+    flex-shrink: 0;
+    position: relative;
+}
+.partOne {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.partTwo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 14px;
+    color: #666;
+    transform: translate(-50%, 0);
+}
+.results > .resultItem > input {
+    width: 100%;
+}
+
+.breakLine, .closeLine {
+    width: 100%;
+    border-bottom: 0.5px solid lightgray;
+}
+input {
+    border:0;
+    /* border-bottom:1px solid #c0c0c0; */
+    outline:0;
+    height: 26px;
+}
+.closeLine {
+    position: absolute;
+    bottom: 50px;
+}
+.baseSearch {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    cursor: pointer;
+}
+.calendarIcon{
+    position: absolute;
+    cursor: pointer;
+    bottom: 6px;
+    right: 0;
+}
+.calendarIcon:hover{
+    color: #1890ff;
+}
+.customDatepicker {
+    width: 260px;
+    height: 294px;
+    z-index: 9999;
+    position: absolute;
+    border: 1px solid;
+    /* position: fixed; */
+}
+.i_customDatepicker {
+    position: absolute;
+    border: 1px solid;
+    width: 260px;
+    height: 294px;
+    z-index: 9999;
+ 
+
+}
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type="number"]{
+    -moz-appearance: textfield; 
+  }

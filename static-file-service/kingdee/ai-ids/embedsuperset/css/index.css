@@ -1,0 +1,12 @@
+.ids-embed-superset {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.ids-embed-superset iframe{
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  overflow-y: hidden !important;
+}
+  

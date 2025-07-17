@@ -1,0 +1,5 @@
+.CodeMirror {
+    width: 100% !important;
+}
+
+.CodeMirror pre.CodeMirror-placeholder { color: #999 !important; }

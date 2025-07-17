@@ -1,0 +1,16 @@
+<div>
+	<div class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+		<div class="block">
+			<div class="block-content" id="${control.id}"  viewid="${control.viewid}">
+				{{if control.isContainChart}}
+				<div class="control-icon">
+					<div id="change-view" class="pull-right">
+						<a id="a_list"><i class="iconfont">&#xe768;</i></a>
+						<a id="a_chart" class="active"> <i class="iconfont">&#xe767;</i></a>
+					</div>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>

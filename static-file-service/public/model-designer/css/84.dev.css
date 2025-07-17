@@ -1,0 +1,536 @@
+.kdesigner-left-view-wrap {
+  position: relative;
+  color: #212121;
+  padding: 12px 0;
+  width: 280px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+  height: 28px;
+  max-height: 28px;
+  padding-right: 8px;
+  padding-left: 12px;
+  margin-top: 1px;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-input-prefix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-icon:nth-child(1) {
+  margin-left: 8px;
+  color: #999;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 8px;
+  padding-left: 7px !important;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  border-radius: 4px;
+  line-height: 28px;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input {
+  padding-left: 0 !important;
+  margin-top: -1px;
+  height: 28px;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input::-webkit-input-placeholder {
+  color: #ccc !important;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input::placeholder,
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input::-webkit-input-placeholder,
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input:-moz-placeholder,
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input::-moz-placeholder,
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-input input:-ms-input-placeholder {
+  color: #ccc !important;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-prefix-icon {
+  cursor: pointer;
+  color: #999999;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-icon {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-icon:hover {
+  background-color: #E5E5E5;
+  border-radius: 4px;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-icon:last-child {
+  margin-right: 0;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-icon-disable {
+  cursor: not-allowed;
+  color: #b2b2b2;
+}
+.kdesigner-left-view-wrap .kdesigner-left-view-search .kdesigner-left-view-search-icon-disable:hover {
+  background-color: initial;
+}
+.kdesigner-left-view-wrap .kdesigner-tree {
+  margin-left: 0;
+  padding: 0;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-indent {
+  border-left: 0 solid white;
+  border-right: 0 solid white;
+  width: 6px;
+  display: block;
+  margin-right: 6px;
+  pointer-events: none;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-icon {
+  width: 16px;
+  height: 16px;
+  color: #999;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-icon-hidden {
+  width: 16px;
+  height: 16px;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-leaf-icon {
+  width: 16px;
+  height: 16px;
+  color: #999;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-leaf-icon > i {
+  width: 16px;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-title {
+  margin-left: 4px;
+  font-size: 12px;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-selected {
+  background-color: rgba(39, 112, 250, 0.15) !important;
+  color: #212121;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-selected .kdesigner-tree-node-title {
+  color: #212121;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-drag-line {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  border-top: 1px solid #2872FC !important;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-drag-line-by-control::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  border-top: 1px solid #2872FC !important;
+}
+.kdesigner-left-view-wrap .kdesigner-form-designer-left-view-tree-node-disabled .kdesigner-tree-node-title {
+  color: #999;
+}
+.kdesigner-left-view-wrap .kdesigner-tree-node-item {
+  padding-left: 12px;
+}
+.kdesigner-left-view-template-empty {
+  color: #666;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 227px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kdesigner-left-view-template-empty .text {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.kdesigner-left-view-template-empty .text-blod {
+  color: #212121;
+}
+.kdesigner-left-view-li-dropdowm-item {
+  width: 104px;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 13px;
+}
+.kdesigner-left-view-li-dropdowm-item-right {
+  padding-right: 5px;
+}
+.kdesigner-left-view-li-dropdowm-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kdesigner-main-view-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ECEEF2;
+}
+.kdesigner-main-view-wrapper-empty-panel {
+  position: absolute;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kdesigner-main-view-wrapper-empty-panel-img {
+  height: 80px;
+  margin-bottom: 12px;
+}
+.kdesigner-main-view-wrapper-empty-panel-tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #212121;
+}
+.kdesigner-main-view-wrapper > .react-flow {
+  position: absolute !important;
+}
+.react-flow__panel.react-flow__attribution {
+  display: none;
+}
+.kdesigner-top-view-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 8px 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  background-color: #F2F2F2;
+}
+.kdesigner-top-view-wrapper-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+.kdesigner-top-view-wrapper-toolbar-item-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 12px;
+  position: relative;
+}
+.kdesigner-top-view-wrapper-toolbar-item-group::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 4px;
+  right: 0px;
+  background-color: #D9D9D9;
+}
+.kdesigner-top-view-wrapper-toolbar-item-group:last-child::after {
+  display: none;
+}
+.kdesigner-top-view-wrapper-toolbar-item {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.kdesigner-top-view-wrapper-toolbar-item:hover {
+  background-color: #e5e5e5;
+}
+.kdesigner-top-view-wrapper-toolbar-item-selected {
+  background-color: #e5e5e5;
+}
+.kdesigner-top-view-wrapper-toolbar-operation-item {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 4px;
+}
+.kdesigner-top-view-wrapper-toolbar-operation-disable {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.3);
+}
+.kdesigner-top-view-wrapper-toolbar-operation-btn {
+  cursor: pointer;
+}
+.kdesigner-top-view-wrapper-toolbar-operation-btn:hover {
+  background-color: #e5e5e5;
+}
+.kdesigner-main-view-table-node {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 12px 8px rgba(0, 0, 0, 0.02);
+          box-shadow: 0px 1px 12px 8px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  width: 320px;
+  max-height: 580px;
+  border: 2px solid transparent;
+}
+.kdesigner-main-view-table-node-selected {
+  border: 2px solid #276FF5;
+}
+.kdesigner-main-view-table-node-add-icon {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: #276FF5;
+  color: #FFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.kdesigner-main-view-table-node-add-icon:hover {
+  background-color: #5797ff;
+}
+.kdesigner-main-view-table-node-add-icon:active {
+  background-color: #104ccc;
+}
+.kdesigner-main-view-table-node-header {
+  height: 36px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #212121;
+  border-bottom: 1px solid #E5E5E5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.kdesigner-main-view-table-node-body {
+  position: relative;
+}
+.kdesigner-main-view-table-node-field-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 8px 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+.kdesigner-main-view-table-node-field-panel:hover {
+  overflow: auto;
+  overflow: overlay;
+}
+.kdesigner-main-view-table-node-field-panel-is-connecting:hover {
+  overflow: hidden;
+}
+.kdesigner-main-view-table-node-footer {
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.kdesigner-main-view-table-node-field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  padding: 6px 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kdesigner-main-view-table-node-field-wrapper-icon-wrapper {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.kdesigner-main-view-table-node-field-wrapper-primary-key-icon {
+  color: #1BA854;
+}
+.kdesigner-main-view-table-node-field-wrapper-must-input-icon {
+  color: #FF4C64;
+}
+.kdesigner-main-view-table-node-field-wrapper-name {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 4px;
+}
+div.customHandle {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+          transform: none;
+  border: none;
+  opacity: 0;
+}
+.react-flow__edge-path:hover {
+  stroke-width: 4 !important;
+}
+.kdesigner-main-view-operation-box {
+  z-index: 4;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F8F8F8;
+  border-radius: 2px;
+  border: 1px solid #E9E9E9;
+}
+.kdesigner-main-view-operation-box-button {
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #E9E9E9;
+  cursor: pointer;
+  font-size: 14px;
+}
+.kdesigner-main-view-operation-box-button:last-child {
+  border-bottom: none;
+}
+.kdesigner-main-view-operation-box-button-icon {
+  font-size: 14px;
+  color: #212121;
+}
+.kdesigner-main-view-operation-box-button :hover {
+  color: #5582F3;
+}
+

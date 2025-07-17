@@ -1,0 +1,72 @@
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/KDEntityDesigner/KDEntityDesigner.less ***!
+  \**************************************************************************************************************************************************************************************************************************/
+.KDEntityDesigner_loading-wrapper_103s {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.KDEntityDesigner_entity-designer-wrapper_1E__ {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.KDEntityDesigner_entity-designer-wrapper_1E__ .KDEntityDesigner_tab-container_1NXA {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 0px;
+      -ms-flex-preferred-size: 0px;
+          flex-basis: 0px;
+  min-height: 0px;
+}
+.KDEntityDesigner_entity-designer-wrapper_1E__ .KDEntityDesigner_tab-container_1NXA .KDEntityDesigner_entity-tab_2Z4h,
+.KDEntityDesigner_entity-designer-wrapper_1E__ .KDEntityDesigner_tab-container_1NXA .KDEntityDesigner_tab-page_28lq {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  min-width: 0px;
+}
+.KDEntityDesigner_entity-designer-wrapper_1E__ .KDEntityDesigner_tab-container_1NXA .KDEntityDesigner_hidden_XYs3 {
+  display: none;
+}
+

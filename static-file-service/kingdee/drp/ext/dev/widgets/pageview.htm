@@ -1,0 +1,12 @@
+<div>
+	<div platform="${control.device}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+	   {{if control.platform=="mobile"}}
+	      <div class="app-page">
+	      	<div class="app-content" id="${control.id}"  viewid="${control.viewid}">
+	      	</div>
+	      </div>
+	   {{else}}
+	      <div id="${control.id}"  viewid="${control.viewid}"></div>
+	   {{/if}}
+	</div>
+</div>

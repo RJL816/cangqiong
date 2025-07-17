@@ -1,0 +1,1710 @@
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/KDAdvGrid.less ***!
+  \*****************************************************************************************************************************************************************************************************/
+.KDAdvGrid_bill-list_282n {
+  width: 100%;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_toolbar_1MCx {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_toolbar_1MCx li {
+  float: left;
+  padding: 2px 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_toolbar_1MCx li.KDAdvGrid_active_2Ey0 {
+  color: var(--kd-cq-theme-color);
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_panel_1W4- {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 0;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_selectedItems_2Fp0 {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 24px;
+  background-color: var(--kd-cq-theme-color-opacity-10);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #666;
+  padding: 0 12px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_selectedItems_2Fp0 .KDAdvGrid_count_1L5D {
+  color: var(--kd-cq-theme-color);
+  padding: 0 4px;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_card-header-line_2s1S {
+  height: 44px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #666;
+  line-height: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_card-header-line_2s1S span {
+  margin-right: 4px;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_card-header-line_2s1S span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.KDAdvGrid_bill-list_282n .KDAdvGrid_card-header-line_2s1S span:last-child {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/KDCardView.less ***!
+  \******************************************************************************************************************************************************************************************************/
+.KDCardView_chunk_9Wtl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  position: relative;
+}
+.KDCardView_chunk_9Wtl .KDCardView_content_y4Iv {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.KDCardView_chunk_9Wtl .KDCardView_operation_3r-g {
+  width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.KDCardView_chunk_9Wtl .KDCardView_operation_3r-g .KDCardView_bar-item_2X_j {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3cbaff;
+  color: #fff;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 11px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.KDCardView_loadding_3uEG {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15px;
+  height: 15px;
+  margin: 5px auto;
+  border-radius: 100%;
+  border: 2px solid #666;
+  border-bottom-color: transparent;
+  -webkit-animation: KDCardView_rotate_33oh 0.75s linear infinite;
+  animation: KDCardView_rotate_33oh 0.75s linear infinite;
+}
+@-webkit-keyframes KDCardView_rotate_33oh {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes KDCardView_rotate_33oh {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.KDCardView_nodatabox_q8Kz {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.KDCardView_no-data-card_gVMT {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.KDCardView_no-data-card_gVMT .KDCardView_zhangwei_3grn {
+  height: 25%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+.KDCardView_no-data-card_gVMT .KDCardView_no-data-container_1WHB {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.KDCardView_no-data-card_gVMT .KDCardView_no-data-container_1WHB .KDCardView_img-item_xSq6 {
+  width: 224px;
+  height: 128px;
+  background-image: url("data:image/png;base64,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");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  margin-bottom: 16px;
+}
+.KDCardView_no-data-card_gVMT .KDCardView_no-data-container_1WHB p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  font-weight: 400;
+}
+.KDCardView_cardTitle_FfXN {
+  width: 100%;
+  height: 44px;
+}
+.KDCardView_list_1ir4 .KDCardView_top-float-btn_2voI,
+.KDCardView_list_1ir4 .KDCardView_bottom-float-btn_20d1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20% 50% 50% 50%;
+  left: calc(50% - 10px);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.16);
+}
+.KDCardView_list_1ir4 .KDCardView_error-icon_22k4 {
+  color: red;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.KDCardView_list_1ir4 .KDCardView_top-float-btn_2voI {
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.KDCardView_list_1ir4 .KDCardView_top-float-btn_2voI .KDCardView_error-icon_22k4 {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.KDCardView_list_1ir4 .KDCardView_bottom-float-btn_20d1 {
+  bottom: 9px;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.KDCardView_list_1ir4 .KDCardView_bottom-float-btn_20d1 .KDCardView_error-icon_22k4 {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/common/MobileVirtualView.less ***!
+  \*************************************************************************************************************************************************************************************************************/
+.MobileVirtualView_init-item-flex-grow_28Xe {
+  -webkit-box-flex: 0!important;
+  -webkit-flex-grow: 0!important;
+      -ms-flex-positive: 0!important;
+          flex-grow: 0!important;
+}
+.MobileVirtualView_virtual-container_14QI {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.MobileVirtualView_view-container_3Ju8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/base/Aggregate.less ***!
+  \**********************************************************************************************************************************************************************************************************/
+.Aggregate_aggregate-container_2Bjh {
+  height: 36px;
+  width: 100%;
+  background-color: #FFE7D6;
+  position: absolute;
+  bottom: 0;
+  padding: 8px 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-title-area_3WFX {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  position: relative;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-loading-text_2mKj {
+  margin-left: 20px;
+  color: #666666;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-completed-text_3LDn {
+  font-weight: bold;
+  color: #212121;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-title_nwht {
+  font-size: 14px;
+  line-height: 20px;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_theme-color_2SjT {
+  color: var(--kd-cq-theme-color);
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 .Aggregate_aggregate-content_3Rzm {
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  padding: 0 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 .Aggregate_aggregate-content_3Rzm .Aggregate_aggregate-content-item_kxNJ {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 .Aggregate_aggregate-content_3Rzm .Aggregate_aggregate-content-item_kxNJ .Aggregate_aggregate-content-item-title_2x-2 {
+  color: #666666;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 .Aggregate_aggregate-content_3Rzm .Aggregate_aggregate-content-item_kxNJ .Aggregate_aggregate-content-item-value_2-Fj {
+  color: #212121;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 .Aggregate_aggregate-content_3Rzm .Aggregate_aggregate-content-item_kxNJ:not(last-child) {
+  margin-right: 12px;
+}
+.Aggregate_aggregate-container_2Bjh .Aggregate_aggregate-content-area_2zs3 .Aggregate_show-detail-icon_qeDX {
+  font-size: 16px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-left: 4px;
+  color: #CCCCCC;
+}
+.Aggregate_aggregate-detail_3Efy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: calc(100vh - 80px);
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-title-area_35Jf {
+  position: relative;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-title-area_35Jf .Aggregate_aggregate-detail-title_3NUX {
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-title-area_35Jf .Aggregate_aggregate-detail-close-icon_fXoz {
+  margin-left: 16px;
+  color: #999;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-title-area_35Jf::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #E5E5E5;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px;
+  overflow: auto;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_aggregate-detail-item_2H-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  font-size: 14px;
+  padding-top: 12px;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_aggregate-detail-item_2H-5 .Aggregate_item-title_1kzO {
+  color: #666666;
+  width: 120px;
+  margin-right: 16px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_aggregate-detail-item_2H-5 .Aggregate_item-value_3izI {
+  color: #212121;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: end;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_mul-currency-aggregate-detail-item_UD3X {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  font-size: 14px;
+  padding-top: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_mul-currency-aggregate-detail-item_UD3X .Aggregate_mul-currency-item_3qOw {
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_mul-currency-aggregate-detail-item_UD3X .Aggregate_mul-currency-item_3qOw .Aggregate_item-title_1kzO {
+  color: #666666;
+  width: 120px;
+  margin-right: 16px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_mul-currency-aggregate-detail-item_UD3X .Aggregate_mul-currency-item_3qOw .Aggregate_item-value_3izI {
+  color: #212121;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: end;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe .Aggregate_mul-currency-aggregate-detail-item_UD3X .Aggregate_mul-currency-item_3qOw:last-child {
+  margin-bottom: 0px;
+}
+.Aggregate_aggregate-detail_3Efy .Aggregate_aggregate-detail-content_3Doe > :first-child {
+  padding-top: 0px;
+}
+
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/KDCardRowPanel.less ***!
+  \**********************************************************************************************************************************************************************************************************/
+.KDCardRowPanel_intersection_1ou6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/base/CardField.less ***!
+  \**********************************************************************************************************************************************************************************************************/
+.CardField_field_3h-j {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #999999;
+}
+.CardField_field_3h-j.CardField_text-align-baseline_3CxN {
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.CardField_field_3h-j.CardField_radio_2c6X {
+  position: relative;
+  padding: 13px 0 13px 12px;
+  width: 100%;
+  background-color: #fff;
+  color: #212121;
+}
+.CardField_field_3h-j.CardField_radio_2c6X .CardField_value-disabled_3KjX {
+  display: none;
+}
+.CardField_field_3h-j.CardField_radioline_sy27:after {
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  display: block;
+  content: "";
+  width: 100%;
+  padding-left: 12px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.CardField_field_3h-j .CardField_value_1Odp {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.CardField_field_3h-j .CardField_listfieldval_3jQv {
+  line-height: 1.5;
+}
+.CardField_field_3h-j .CardField_textarea-wrapper_-C3B {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+.CardField_field_3h-j .CardField_value-disabled_3KjX {
+  color: #999999;
+}
+.CardField_field_3h-j .CardField_text-value_3JH8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.CardField_field_3h-j .CardField_text-value-color_mAOt {
+  color: #212121;
+  font-weight: normal;
+}
+.CardField_field_3h-j .CardField_text-omit_1_LY {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.CardField_field_3h-j .CardField_text-omit_1_LY.CardField_textarea-wrapper_-C3B {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.CardField_field_3h-j .CardField_textarea-fold-wrapper_1CKw {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.CardField_field_3h-j .CardField_text-wordwrap_CjeG {
+  word-break: break-word;
+  text-align: left;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+}
+.CardField_field_3h-j .CardField_left_3raP {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.CardField_field_3h-j .CardField_center_2x6P {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.CardField_field_3h-j .CardField_right_5g3m {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.CardField_field_3h-j .CardField_justifyContentEnd_26h9 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.CardField_field_3h-j .CardField_style_1R2y {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.CardField_field_3h-j .CardField_titlebox_3Mbc {
+  overflow: hidden;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.CardField_field_3h-j .CardField_notmustInput_b6bs {
+  margin-right: 12px;
+}
+.CardField_field_3h-j .CardField_listhascolon_2dJa {
+  margin-right: 0px;
+}
+.CardField_field_3h-j .CardField_title_imGc {
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.CardField_field_3h-j .CardField_title_imGc.CardField_listfieldtitle_2HmX {
+  line-height: 1.5;
+}
+.CardField_field_3h-j .CardField_title_imGc.CardField_disabled_2xk_ {
+  color: #999999;
+}
+.CardField_field_3h-j .CardField_link_3LPd {
+  text-decoration: underline;
+  color: #345791;
+}
+.CardField_field_3h-j .CardField_must_3Egt {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  color: #fa3232;
+  width: 8px;
+  margin-left: 4px;
+  padding-top: 3px;
+}
+.CardField_field_3h-j .CardField_text-combo_cSvh {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+.CardField_field-CT_2Ns1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212121;
+  font-size: 16px;
+  background-color: #fff;
+  position: relative;
+}
+.CardField_field-CT_2Ns1.CardField_radio_2c6X {
+  position: relative;
+}
+.CardField_field-CT_2Ns1.CardField_normal_heId,
+.CardField_field-CT_2Ns1.CardField_checkbox-option_1i0Y {
+  padding: 12px;
+}
+.CardField_field-CT_2Ns1.CardField_checkbox-switch_3_Mc {
+  padding: 10px 12px;
+}
+.CardField_field-CT_2Ns1 .CardField_value_1Odp {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  font-weight: normal;
+}
+.CardField_field-CT_2Ns1 .CardField_is-view-value_15pi {
+  color: #212121;
+}
+.CardField_field-CT_2Ns1 .CardField_textarea-wrapper_-C3B {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+.CardField_field-CT_2Ns1 .CardField_textarea-fold-wrapper_1CKw {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.CardField_field-CT_2Ns1 .CardField_value-disabled_3KjX {
+  color: #999999;
+}
+.CardField_field-CT_2Ns1 .CardField_text-value_3JH8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.5;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+.CardField_field-CT_2Ns1 .CardField_text-value-color_mAOt {
+  color: #666666;
+}
+.CardField_field-CT_2Ns1 .CardField_text-omit_1_LY {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.CardField_field-CT_2Ns1 .CardField_text-wordwrap_CjeG {
+  word-break: break-word;
+  text-align: left;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+}
+.CardField_field-CT_2Ns1 .CardField_left_3raP {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.CardField_field-CT_2Ns1 .CardField_center_2x6P {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.CardField_field-CT_2Ns1 .CardField_right_5g3m {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.CardField_field-CT_2Ns1 .CardField_justifyContentEnd_26h9 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.CardField_field-CT_2Ns1 .CardField_style_1R2y {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.CardField_field-CT_2Ns1 .CardField_titlebox_3Mbc {
+  overflow: hidden;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  margin-right: 16px;
+}
+.CardField_field-CT_2Ns1 .CardField_titlebox_3Mbc.CardField_textarealabel_1WkI {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+.CardField_field-CT_2Ns1 .CardField_titlebox_3Mbc.CardField_titleTop_3afg {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+.CardField_field-CT_2Ns1 .CardField_label-width_2Dgx {
+  max-width: 128px;
+}
+.CardField_field-CT_2Ns1 .CardField_title_imGc {
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  overflow: hidden;
+  line-height: 1.5;
+  word-break: break-word;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重点，不能用block等其他*/
+  -webkit-line-clamp: 2;
+  /*重点IE和火狐不支持*/
+  -webkit-box-orient: vertical;
+  /*重点*/
+}
+.CardField_field-CT_2Ns1 .CardField_title_imGc.CardField_disabled_2xk_ {
+  color: #999999;
+}
+.CardField_field-CT_2Ns1 .CardField_link_3LPd {
+  text-decoration: underline;
+  color: #345791;
+}
+.CardField_field-CT_2Ns1 .CardField_must_3Egt {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  color: #fa3232;
+  width: 8px;
+  margin-left: 4px;
+  padding-top: 4px;
+}
+.CardField_field-CT_2Ns1.CardField_show-validate-box_2RjU {
+  padding-bottom: 32px !important;
+}
+.CardField_field-CT_2Ns1.CardField_show-validate-box_2RjU .CardField_validate-box_24-N {
+  position: absolute;
+  bottom: 12px;
+  font-size: 12px;
+  color: #FB2323;
+  line-height: 16px;
+  text-align: right;
+  right: 0;
+  margin: 0 12px;
+  min-width: 100px;
+}
+.CardField_field-CT_2Ns1.CardField_show-validate-box_2RjU .CardField_fontSizeInherit_1vCC {
+  font-size: inherit;
+}
+.CardField_label-text-left_3KOe {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.CardField_label-text-center_RnSk {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.CardField_label-text-right_36LT {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.CardField_label-color_22ER {
+  color: #333;
+}
+.CardField_label-disabled-color_vEo3 {
+  color: #666;
+}
+.CardField_select-popup-header_3dUu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  padding: 0 12px;
+  background: #ffffff;
+  position: relative;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.CardField_select-popup-header_3dUu:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  background-color: #e5e5e5;
+}
+.CardField_select-popup-header_3dUu .CardField_btn-active_30Vu {
+  background-color: #ddd;
+}
+.CardField_select-popup-header_3dUu .CardField_btn-cancel_2ET1,
+.CardField_select-popup-header_3dUu .CardField_btn-confirm_SR1K {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400px;
+}
+.CardField_select-popup-header_3dUu .CardField_btn-cancel_2ET1 {
+  color: #999;
+}
+.CardField_select-popup-header_3dUu .CardField_btn-confirm_SR1K {
+  color: var(--kd-cq-theme-color);
+}
+.CardField_select-popup-header_3dUu .CardField_title_imGc {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 16px;
+}
+.CardField_select-popup-header_3dUu .CardField_title-multiple_1IuB {
+  margin-left: 16px;
+  text-align: center;
+}
+.CardField_select-popup-header_3dUu .CardField_icon-cancel_2szl {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #999;
+}
+.CardField_select-popup-content_3OGp {
+  background: #ffffff;
+  overflow: visible;
+  width: 100%;
+}
+.CardField_select-popup-content_3OGp .CardField_list_g-H7 {
+  max-height: calc(100vh - 128px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.CardField_select-popup-content_3OGp .CardField_list_g-H7 li {
+  padding-left: 12px;
+  line-height: 44px;
+  height: 44px;
+  padding-right: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212121;
+  position: relative;
+}
+.CardField_select-popup-content_3OGp .CardField_list_g-H7 li:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 12px;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  background-color: #e5e5e5;
+}
+.CardField_select-popup-content_3OGp .CardField_list_g-H7 li:last-child:after {
+  display: none;
+}
+.CardField_select-popup-content_3OGp .CardField_list_g-H7 li .CardField_textOverflow_2QyT {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 24px);
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.CardField_text-check-button_2wUM {
+  font-size: 12px;
+  color: #212121;
+  line-height: 20px;
+  white-space: nowrap;
+  width: 40px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px 12px 0px 4px;
+}
+.CardField_is-view-title_335p {
+  color: #666;
+}
+.CardField_is-view-value_15pi {
+  color: #212121;
+}
+.CardField_privacy-icon_3iTo {
+  font-size: 16px;
+  padding: 0 0 0 4px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+.CardField_privacy-icon-list_2uwz {
+  font-size: 16px;
+  padding: 0 12px 0 4px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+.CardField_field-CT_2Ns1 .CardField_titlebox_3Mbc.CardField_label-vertical_27GC {
+  margin-bottom: 4px;
+  margin-right: 0;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+.CardField_field_3h-j .CardField_titlebox_3Mbc.CardField_label-vertical_27GC {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  margin: 0;
+}
+.CardField_title-vertical_2Pi5 {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.45;
+}
+.CardField_field-labelVertical_2DYH {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.CardField_field_3h-j .CardField_underline_24BY {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+}
+.CardField_field-CT_2Ns1 .CardField_underline_24BY {
+  padding: 6px 0px;
+  min-height: 37px;
+  border-bottom: 0.5px solid #e5e5e5;
+}
+.CardField_field_3h-j .CardField_border_1p6p {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  padding: 6px 12px;
+  border: 0.5px solid #d9d9d9;
+  border-radius: 2px;
+  min-height: 30px;
+}
+.CardField_field-CT_2Ns1 .CardField_border_1p6p {
+  padding: 6px 12px;
+  min-height: 38px;
+  border: 0.5px solid #d9d9d9;
+  border-radius: 2px;
+}
+.CardField_border_1p6p.CardField_red-border_fWVB,
+.CardField_underline_24BY.CardField_red-border_fWVB {
+  border-color: #FB2323;
+}
+.CardField_textarea-show-count_urR9 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.CardField_textarea-count_y3If {
+  width: 100%;
+  height: 24px;
+  padding-top: 4px;
+  line-height: 20px;
+  text-align: right;
+  color: #cccccc;
+  font-size: 14px;
+}
+.CardField_textarea-count-over_1nK_ {
+  color: #e1453e;
+}
+.CardField_field_3h-j .CardField_attachment-card-field_3NeE,
+.CardField_field-CT_2Ns1 .CardField_attachment-card-field_3NeE {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/KDCardField.less ***!
+  \*******************************************************************************************************************************************************************************************************/
+.KDCardField_span-container-value_3Lk4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+}
+.KDCardField_span-container-value-textarea_YgKe {
+  min-height: 19px;
+}
+.KDCardField_span-container-value-margin_NGYX {
+  margin-right: 7px;
+}
+.KDCardField_span-value_2aPT {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  /*word-wrap: break-word;
+    white-space: pre-line;*/
+}
+.KDCardField_text-wrap_VsyC {
+  word-break: break-word;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+}
+/* .edit-area {
+	display: flex;
+	align-items: center;
+	height: 100%;
+} */
+.KDCardField_lockEmpty_3kCy {
+  color: #999 !important;
+}
+.KDCardField_address-span-value_5urz {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  white-space: normal;
+}
+.KDCardField_must-input_2Tdh {
+  color: #FB2323;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/baseCardField/TextAreaField.less ***!
+  \***********************************************************************************************************************************************************************************************************************/
+.TextAreaField_value_readOnly_E497 {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow: auto;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.TextAreaField_value_fold_3DWw {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重点，不能用block等其他*/
+  -webkit-box-orient: vertical;
+  /*重点*/
+  overflow: hidden;
+  word-break: break-all;
+  line-height: normal;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/baseCardField/FlexField.less ***!
+  \*******************************************************************************************************************************************************************************************************************/
+.FlexField_flex-card-field_2_6x {
+  background: #FAFAFA;
+  position: relative;
+}
+.FlexField_flex-card-field_2_6x:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 12px;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  background-color: #E5E5E5;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/baseCardField/ParticularStyleField.less ***!
+  \******************************************************************************************************************************************************************************************************************************/
+.ParticularStyleField_labelfieldbox_2Lx5 {
+  padding: 6px 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.45;
+  font-size: 14px;
+  background-color: #ffffff;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.ParticularStyleField_labelfieldbox_2Lx5 .ParticularStyleField_titlebox_3j3B {
+  margin-right: 16px;
+  color: #666;
+  width: 60px;
+  overflow: hidden;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重点，不能用block等其他*/
+  -webkit-line-clamp: 2;
+  /*重点IE和火狐不支持*/
+  -webkit-box-orient: vertical;
+  /*重点*/
+}
+.ParticularStyleField_labelfieldbox_2Lx5 .ParticularStyleField_valuebox_3jbR {
+  color: #212121;
+  overflow: hidden;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重点，不能用block等其他*/
+  -webkit-line-clamp: 3;
+  /*重点IE和火狐不支持*/
+  -webkit-box-orient: vertical;
+  /*重点*/
+}
+.ParticularStyleField_labelfieldbox_2Lx5 .ParticularStyleField_valueheight_cOnF {
+  height: 100%;
+  overflow: auto;
+  color: #212121;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  word-break: break-all;
+}
+.ParticularStyleField_labelfieldbox_2Lx5 .ParticularStyleField_contentbox_1rnH {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #212121;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+  min-height: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.ParticularStyleField_labelfieldbox_2Lx5 .ParticularStyleField_contentheight_2t23 {
+  height: 100%;
+  overflow: auto;
+}
+.ParticularStyleField_seltextbox_1A1C,
+.ParticularStyleField_textareaBox_27bD {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*重点，不能用block等其他*/
+  -webkit-line-clamp: 3;
+  /*重点IE和火狐不支持*/
+  -webkit-box-orient: vertical;
+  /*重点*/
+  overflow: hidden;
+  word-break: break-all;
+}
+.ParticularStyleField_multext_1pxY {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+.ParticularStyleField_select-popup-header_nXgh {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  padding: 0 12px;
+  background: #ffffff;
+  position: relative;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.ParticularStyleField_select-popup-header_nXgh:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  background-color: #e5e5e5;
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_btn-active_1mW1 {
+  background-color: #ddd;
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_btn-cancel_3FPt,
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_btn-confirm_2tON {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400px;
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_btn-cancel_3FPt {
+  color: #999;
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_btn-confirm_2tON {
+  color: var(--kd-cq-theme-color);
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_title_1C0l {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 16px;
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_title-multiple_2MSe {
+  margin-left: 16px;
+  text-align: center;
+}
+.ParticularStyleField_select-popup-header_nXgh .ParticularStyleField_icon-cancel_H6YX {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #999;
+}
+.ParticularStyleField_select-popup-content_2Nva {
+  background: #ffffff;
+  overflow: visible;
+  width: 100%;
+}
+.ParticularStyleField_select-popup-content_2Nva .ParticularStyleField_list_182V {
+  max-height: calc(100vh - 128px);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.ParticularStyleField_select-popup-content_2Nva .ParticularStyleField_list_182V li {
+  padding-left: 12px;
+  line-height: 44px;
+  height: 44px;
+  padding-right: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212121;
+  position: relative;
+}
+.ParticularStyleField_select-popup-content_2Nva .ParticularStyleField_list_182V li:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 12px;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleY(0.5);
+      -ms-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+  background-color: #e5e5e5;
+}
+.ParticularStyleField_select-popup-content_2Nva .ParticularStyleField_list_182V li:last-child:after {
+  display: none;
+}
+.ParticularStyleField_select-popup-content_2Nva .ParticularStyleField_list_182V li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ParticularStyleField_select-popup-content_2Nva .ParticularStyleField_list_182V li .ParticularStyleField_textOverflow_3PE7 {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 24px);
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.ParticularStyleField_text-check-button_3keh {
+  font-size: 12px;
+  color: #212121;
+  line-height: 20px;
+  white-space: nowrap;
+  min-width: 40px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px 12px 0px 4px;
+}
+.ParticularStyleField_label-text-left_9uZq {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.ParticularStyleField_label-text-center_1Laj {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.ParticularStyleField_label-text-right_1FWa {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.ParticularStyleField_showmore_3CjL {
+  color: var(--kd-cq-theme-color);
+}
+.ParticularStyleField_privacy-icon_3aYO {
+  font-size: 16px;
+  padding: 0 0 0 4px;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+

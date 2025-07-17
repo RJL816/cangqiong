@@ -1,0 +1,8 @@
+{
+  "and": "并且",
+  "or": "或者",
+  "matchAllCond": "满足所有条件（并且）",
+  "matchAnyCond": "满足任意条件（或者）",
+  "customCond": "自定义逻辑",
+  "conditionLogic": "条件逻辑"
+}

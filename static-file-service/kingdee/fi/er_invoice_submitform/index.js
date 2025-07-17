@@ -1,0 +1,44 @@
+/**
+ *  自定义控件书写模板
+ */
+ (function(KDApi, $){
+    // 构造函数，变量名随意，与最后一句代码的KDApi.register的第二个参数一致即可
+    function HelloWorld (model) {
+        this._setModel(model)
+    }
+
+    // 原型中封装生命周期函数，固定格式
+    HelloWorld.prototype = {
+        _setModel: function(model) {
+            this.model = model
+        },
+        init: function(props){
+            // TO DO
+            initFunc(this.model, props)
+        },
+        update: function(props){
+            // TO DO
+        },
+        destoryed: function(){
+            // TO DO
+        }
+    }
+
+    // Other Code
+    var initFunc = function(model, props) {
+		submitForm();
+	}
+
+	function submitForm() {
+		var helperForm = document.getElementById("helperForm");
+		if (helperForm) {
+            helperForm.submit();
+		} else {
+			setTimeout(submitForm, 100);
+		}
+	} 
+
+    // 你只需知道第一个参数是你接下来要新增控件方案时填的方案id，第二个参数是上面声明的构造函数
+    KDApi.register('er_invoice_submitform', HelloWorld)
+})(window.KDApi, jQuery) // 这里的jQuery不是必须要传进去的，可移除，要用到的时候才传，PC端系统默认会有jQuery对象，版本是1.12.4
+

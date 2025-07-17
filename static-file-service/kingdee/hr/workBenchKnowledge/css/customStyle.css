@@ -1,0 +1,35 @@
+/* #knowledgeItems .kd-card-body{
+    padding-top: 0px;
+} */
+
+.confirm_content .kd-modal-body .confirm_content_title{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .confirm_content_detail .confirm_content_detail_info{
+    height: 50px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+  .confirm_content .kd-modal-body .confirm_content_link{
+    line-height: 30px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .kd-tooltip{
+    word-wrap: break-word;
+  }
+  
+
+  

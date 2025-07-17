@@ -1,0 +1,200 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/base/mobile/AttachmentPreviewer/previewer/PDFPreviewer.less ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.Dbjhp\+Pg_btn-div {
+  position: fixed;
+  top: 45%;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.\+vDwVRk-_base-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #e2e2e2;
+  -webkit-box-shadow: darkmagenta;
+          box-shadow: darkmagenta;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.\+vDwVRk-_base-btn:active {
+  background-color: #b3b1b1;
+}
+.REw-Zd22_zoom-in {
+  width: 30px;
+  height: 30px;
+  background-color: #e2e2e2;
+  -webkit-box-shadow: darkmagenta;
+          box-shadow: darkmagenta;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+._3-O1lAkx_zoom-out {
+  width: 30px;
+  height: 30px;
+  background-color: #e2e2e2;
+  -webkit-box-shadow: darkmagenta;
+          box-shadow: darkmagenta;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.lo5yT22r_rotate {
+  width: 30px;
+  height: 30px;
+  background-color: #e2e2e2;
+  -webkit-box-shadow: darkmagenta;
+          box-shadow: darkmagenta;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.Gs00UDNh_wait-load-data {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1050;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pKMpYqR\+_loadingtext {
+  font-size: 14px;
+  color: #212121;
+  margin-top: 16px;
+}
+.in\+HDDWR_errtext {
+  font-size: 14px;
+  color: #212121;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+._3w3hKZZr_errmsg {
+  font-size: 12px;
+  color: #666666;
+  line-height: 16px;
+}
+.X0Q\+Yl5G_pdf-viewer-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+.X0Q\+Yl5G_pdf-viewer-container .C9sM7hEL_pdf-viewer-wrapper {
+  width: 100%;
+  position: absolute;
+}
+.DjOTL3dY_pdf-viewer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page .textLayer {
+  display: none;
+}
+

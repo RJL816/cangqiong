@@ -1,0 +1,20 @@
+.kd-select-item-option-content {
+    width: 100%;
+    max-width: 230px;
+}
+.kd-select-icon-clear {
+    background: rgb(250, 250, 250);
+    padding-top: 0;
+}
+.kd-select-dropdown {
+    padding-top: 0;
+}
+.kd-select-dropdown-empty {
+    padding-top: 0;
+}
+.kd-checkbox-children {
+    flex-grow: 1;
+}
+.kd-select-multiple {
+    flex-wrap: nowrap;
+}

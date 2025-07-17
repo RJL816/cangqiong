@@ -1,0 +1,53 @@
+{
+  "appDetails.key0001": "应用级元数据",
+  "appDetails.key0002": "元素",
+  "appDetails.key0003": "规则",
+  "appDetails.key0004": "操作",
+  "appDetails.key0005": "服务",
+  "appDetails.key0006": "应用级模板",
+  "appDetails.key0007": "单据模板",
+  "appDetails.key0008": "应用模型",
+  "appDetails.key0009": "总数量",
+  "appDetails.key0010": "PC端页面模型",
+  "appDetails.key0011": "移动端端页面模型",
+  "appDetails.key0012": "业务对象模型",
+  "appDetails.key0013": "布局模型",
+  "appDetails.key0014": "页面模型",
+  "appDetails.key0015": "报表模型",
+  "appDetails.key0016": "参数模型",
+
+  "metaModel.key0001": "单据类型",
+  "metaModel.key0002": "元素",
+  "metaModel.key0003": "属性",
+  "metaModel.key0004": "规则",
+  "metaModel.key0005": "校验器",
+  "metaModel.key0006": "服务",
+  "metaModel.key0007": "操作",
+  "metaModel.key0008": "元模型",
+
+  "commonTemplate.key0001": "单据业务模板",
+  "commonTemplate.key0002": "单据系统模板",
+  "commonTemplate.key0003": "流程模板",
+  "commonTemplate.key0004": "流程节点模板",
+  "commonTemplate.key0005": "打印模板",
+  "commonTemplate.key0006": "通用模板",
+
+  "enterpriseApp.key0001": "企业应用",
+
+  "appList.key0001": "编码",
+  "appList.key0002": "名称",
+
+  "modelBar.key0001": "流程模型",
+  "modelBar.key0002": "打印模型",
+  "modelBar.key0003": "规则模型",
+  "modelBar.key0004": "插件模型",
+
+  "refresh.key0001": "获取刷新进度",
+  "refresh.key0002": "数据更新于",
+  "refresh.key0003": "数据正在刷新中",
+  "refresh.key0004": "刷新中",
+  "refresh.key0005": "刷新",
+
+  "loaddingSpin.key0001": "数据初始化中,可能需要等待较长的时间",
+  "loaddingSpin.key0002": "请稍后进入查看..."
+}

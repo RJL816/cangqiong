@@ -1,0 +1,135 @@
+.resultControl{
+	/*width:580px;*/
+	
+	min-width:580px;
+	max-width:700px;
+	width:100%;
+}
+.resultControl .selectivity-single-select-input{
+	display:none;
+	opacity: 0;
+	border:0;
+}
+.resultControl .selectivity-single-result-container{
+	top: 0;
+	font-size: 12px;
+	line-height: 28px;
+	position: absolute;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+.resultControl .selectivity-single-select {
+  min-height: 26px;
+  width:100%;
+  height: 26px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.resultControl .selectivity-caret {
+    border-top: 6.4px solid transparent;
+    border-color: #333;
+    top: 10px;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+	position: absolute;
+	right: 6.5px;
+}
+
+.resultContent{
+	margin-top: 8px;
+}
+
+.ruleResult{
+	border-collapse: separate;
+	width: 100%;
+}
+
+.ruleResult td
+{
+	padding-right: 11px;
+}
+
+.resultControl .ruleTitle{
+	background: #FAFAFA;
+    border: 1px solid #E5E5E5;
+	height:33px;
+}
+
+.resultControl .ruleTitle>span{
+	line-height:33px;
+	margin-left: 8px;
+}
+
+.resultControl .ruleTips{
+	margin-left: 2px;
+}
+
+.ruleResult .resultParam{
+	/*min-width:160px;*/
+	max-width:220px;
+	min-width:160px;
+	width:100%;
+}
+
+/*下拉样式*/
+.ruleResult .resultParam,.ruleResult .resultValueParam,.ruleResult .resultValueType,.ruleResult .resultValueBoolean{	
+	color: #000000!important;
+	padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    background: #FFFFFF;	
+	height: 26px;
+}
+
+.ruleResult .resultValueType{
+	min-width: 100px;
+}
+
+.ruleResult .resultValueParam {
+	/*width:188px;*/
+	max-width: 248px;
+    min-width: 188px;
+    width: 100%;
+}
+.ruleResult .resultValueEnumSelectDiv,.ruleResult .resultValueBooleanSelectDiv,.ruleResult .resultValueTextDiv,.ruleResult .resultValueNumberDiv,.ruleResult .resultValueDateDiv{
+	background: #FFFFFF;
+	/*width:190px;*/
+	max-width: 250px;
+    min-width: 190px;
+    width: 100%;
+}
+
+/*输入框样式*/
+.ruleResult .resultValueBoolean,.ruleResult  .resultValueEnum,.ruleResult  .resultValueNumber,.ruleResult  .resultValueDate{
+	width:100%;
+	min-width: 120px;
+	height: 26px;
+	background: #FFFFFF;
+	border-radius: 2px;
+	border: 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ruleResult .deleteResult{
+	width: 21px;
+	height: 21px;
+	font-size: 21px;
+	line-height: 30px;
+	cursor:pointer;
+}
+
+.addResultDiv{
+	margin-left: 2px;
+}
+
+#templeteTrResult{
+	display: none;
+}

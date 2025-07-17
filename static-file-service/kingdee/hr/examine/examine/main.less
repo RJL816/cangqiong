@@ -1,0 +1,101 @@
+.qualification-examine-container {
+  width: 100%;
+  padding: 20px;
+  .qualification-examine-warpper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .examine-header {
+      font-family: PingFangSC-Semibold;
+      font-size: 16px;
+      color: #212121;
+      letter-spacing: 0;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background: #5582f3;
+        border-radius: 3px;
+        width: 6px;
+        height: 14px;
+        margin-right: 6px;
+      }
+    }
+  }
+  .attachment-wrapper {
+    display: flex;
+    cursor: pointer;
+    color: #0e5fd8;
+    .kdicon {
+      margin-right: 5px;
+      color: #0e5fd8;
+      font-size: 16px;
+    }
+  }
+  .kd-table-wrapper {
+    padding: 0 12px;
+  }
+  .kd-table {
+    border-bottom: 1px solid #d9d9d9;
+    & > .kd-table-body td {
+      border: none;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 18px;
+      font-weight: 400;
+      padding: 4px 6px;
+    }
+
+    .kd-table-header {
+      border-bottom: none;
+      thead {
+        th {
+          background: #f3f5f8;
+          border: none;
+          color: #212121;
+          letter-spacing: 0;
+          line-height: 18px;
+          font-weight: 400;
+          padding: 4px 6px;
+        }
+      }
+    }
+  }
+  .expend-table {
+    th[data-code="selfAssess"],
+    th[data-code="selfAssRes"],
+    th[data-code="selfAssSum"],
+    th[data-code="fileNum"],
+    td[data-code="selfAssRes"],
+    td[data-code="selfAssSum"],
+    td[data-code="fileNum"] {
+      border: 1px solid rgb(217, 217, 217) !important;
+      border-bottom: none !important;
+      border-right: none !important;
+    }
+    th[data-code="selfAssess"],
+    th[data-code="fileNum"],
+    td[data-code="fileNum"] {
+      border-right: 1px solid rgb(217, 217, 217) !important;
+    }
+    th[data-code="selfAssess"] {
+      border-top: none !important;
+    }
+  }
+  .unexpend-table {
+    thead {
+      .kd-last {
+        display: none;
+      }
+    }
+  }
+}
+
+.qualification-examine-container-view {
+  pointer-events: nones;
+}

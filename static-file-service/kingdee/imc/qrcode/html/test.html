@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+#qrcode {
+	display: flex;
+	/* justify-content: stretch;
+	align-items: flex-start; */
+	flex-wrap: wrap;
+	width: 360px;
+	height: auto;
+	border: 1px solid #efefef;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+#qrcode>div {
+	width: 100%;
+	text-align:center;
+}
+#qrcode .title {
+	width: 360px;
+	height: 56px;
+	margin-bottom: 25px;
+	color: #ffffff;
+	background: #267DEE;
+	background-image: url('../css/title-bg@2x.png') ;
+	background-size: 360px 56px;
+}
+#qrcode .qr-img {
+	width: 194px;
+	height: 194px;
+}
+#qrcode .text {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+#qrcode .bottom {
+	display: flex;
+	justify-items: stretch;
+	height: 50px;
+	color: #ffffff;
+}
+#qrcode .bottom-l {
+	box-sizing: border-box;
+	width: 180px;
+	height: 100%;
+	padding-top: 7px;
+	background: #2b61c1;
+}
+#qrcode .bottom-l img {
+	width: 120px;
+	/* height: 22px; */
+	padding-left: 7px;
+	padding-top: 7px;
+}
+#qrcode .bottom-r {
+	box-sizing: border-box;
+	width: 180px;
+	height: 50px;
+	padding-left: 7px;
+	padding-top: 11px;
+	font-size: 13px;
+	background: #267DEE;
+}
+#qrcode .bottom-r img {
+	margin-right: 10px;
+}
+#qrcode .bottom-r .r1 {
+	float: left;
+	margin-top: 4px;
+    margin-left: 12px;
+	font-size: 13px;
+}
+#qrcode .bottom-r .r2 {
+	display: inline-block;
+	font-size: 20px;
+}
+</style>
+<body>
+<div id="qrcode" class="qrcode">
+	<div class="title">开票二维码</div>
+	<div>
+		<img class="qr-img" src="{{qrCode}}"  alt="">
+	</div>
+    <div class="text">{{orgName}}</div>
+    <div class="bottom">
+        <div class="bottom-l"><img src="../css/logo@2x.png"></div>
+        <div class="bottom-r">
+			<div class="r1">
+				<span>服务热线</span>
+			</div>
+			<div class="r2">
+				<img src="../css/tel@2x.png"><span>95113</span>
+			</div>
+		</div>
+    </div>
+</div>
+
+</body>
+<!-- {{orgName}} -->
+</html>

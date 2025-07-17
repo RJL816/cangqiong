@@ -1,0 +1,49 @@
+<div id="<%= listData.pageId %>" class="ztbox">
+    <div id="left"></div>
+    <div id="conter">
+        <ul>
+            <% for(var i=0;i < listData.processData.length;i++){ %>
+            <li>
+                <% if(listData.name && listData.name==='peopleRecruit'){ %>
+                <div class="topContent">
+                    <div class="<%= i == 0 ? 'rightLine_white' : 'rightLine' %>"></div>
+                    <div class="<%= listData.processData[i].isHasColor ? 'blueSpot' : 'graySpot' %>">
+                        <div></div>
+                    </div>
+                    <div class="<%= i == listData.processData.length-1 ? 'leftLine_white' : 'leftLine' %>"></div>
+                </div>
+                <div class="buttomCon">
+          <span class="<%= !listData.processData[i].isHasColor ? 'buttomContent_gray' : 'buttomContent_blue' %>  processItem"
+                id="<%= listData.processData[i].id %>"
+                name="<%= listData.processData[i].number ? listData.processData[i].number : 0 %>">
+            <span class="nodeName" title="<%= listData.processData[i].nodename %>"><%= listData.processData[i].nodename %></span>
+          </span>
+                </div>
+                <div class="timeshow" title="<%= listData.processData[i].time %>"><%= listData.processData[i].time %></div>
+                <% } %>
+
+                <% if(listData.name == null || listData.name !== 'peopleRecruit'){ %>
+                <div class="topContent">
+                    <div class="<%= i == 0 ? 'rightLine_white' : 'rightLine' %>"></div>
+                    <div class="blueSpot">
+                        <div></div>
+                    </div>
+                    <div class="<%= i == listData.processData.length-1 ? 'leftLine_white' : 'leftLine' %>"></div>
+                </div>
+                <div class="buttomCon">
+          <span class="<%= listData.processData[i].number == 0 ? 'buttomContent_gray' : 'buttomContent_blue' %>  processItem"
+                id="<%= listData.processData[i].id %>"
+                name="<%= listData.processData[i].number ? listData.processData[i].number : 0 %>">
+            <span class="nodeName" title="<%= listData.processData[i].nodename %>"><%= listData.processData[i].nodename %></span>
+            <span class="nodeNum">(<%= listData.processData[i].number ? listData.processData[i].number.trim() : 0 %>)</span>
+          </span>
+                </div>
+                <% } %>
+
+            </li>
+            <% } %>
+        </ul>
+        <div id="scroll"><span></span></div>
+    </div>
+    <div id="right"></div>
+</div>

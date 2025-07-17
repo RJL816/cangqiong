@@ -1,0 +1,323 @@
+/** 工具栏 */
+.dbmanage-toolbar
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #FFFFFF;
+	height: 44px;
+	padding-left: 6px;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
+	overflow: visible;
+}
+
+.dbmanage-toolbar-sub
+{
+	float: left;
+	position: relative;
+	height: 100%;
+}
+
+.dbmanage-toolbar-seperator
+{
+	float: left;
+	position: relative;
+	width: 0;
+	height: 0;
+}
+
+
+.dbmanage-main
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #E9ECF1;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+.dbmanage-db-connection-btn
+{
+    user-select:none;
+	border: 1px solid #CBCBCB;
+    text-align: center;
+    background: #ebeef0;
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dbmanage-search-box
+{
+	position: absolute;
+	right: 0px;
+    width: 171px;
+    height: 33px;
+    float: right;
+    bottom: 6px;
+}
+.dbmanage-main-titleBar 
+{
+    height: 64px;
+    width: 100%;
+    background: #FFFFFF;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.15);
+}
+
+.dbmanage-main-titleBar-searchBox
+{
+    position: absolute;
+    width: 180px;
+    right: 8px;
+    height: 25px;
+    float: right;
+    top: 10px;
+    transition: width .12s ease-in;
+    -webkit-transition: width .12s ease-in;
+}
+.dbmanage-main-content 
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 45px;
+    position: absolute;
+}
+.dbmanage-db-connection-card-item
+{
+    position: relative;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    box-sizing: content-box;
+    height: 130px;
+    width: 316px;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 20px 0 20px 20px;
+    background: #fff;
+    display: inline-block;
+    user-select:none;
+}
+.dbmanage-db-connection-card-item-icon
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -13px;
+    transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+}
+.dbmanage-db-connection-card-item-creator
+{
+    position: absolute;
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #999999;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.dbmanage-db-connection-card-item-creator:hover
+{
+    color: #276FF5;
+}
+.dbmanage-db-connection-card-item-creator-icon
+{
+    position: absolute;
+    margin: auto;
+    width: 52px;
+    height: 52px;
+    top: 22px;
+    left: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.dbmanage-db-connection-card-item-head
+{
+    position: absolute;
+    top: 0px;
+    left: 75px;
+    /*width = 300 - 65 px;*/
+    width: 225px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+}
+.dbmanage-db-connection-card-item-head-title
+{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 40px;
+    line-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dbmanage-db-connection-card-item-permission
+{
+    position: absolute;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    bottom: 5px;
+    cursor: pointer;
+}
+.dbmanage-db-connection-card-item-head-operator
+{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dbmanage-db-connection-card-item-head-operator-edit
+{
+    width: 16px;
+    height: 16px;
+    float: right;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+}
+.dbmanage-db-connection-card-item-head-operator-delete
+{
+    width: 16px;
+    height: 16px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    cursor: pointer;
+}
+.dbmanage-db-connection-card-item-edit-setting-close
+{
+    user-select:none;
+    position: absolute;
+    cursor: pointer;
+    font-size: 13px;
+    transform: scaleX(0.75) scaleY(1.05) rotate(90deg);
+    -webkit-transform: scaleX(0.75) scaleY(1.05) rotate(90deg);
+    -ms-transform: scaleX(0.75) scaleY(1.05) rotate(90deg);
+    -moz-transform: scaleX(0.75) scaleY(1.05) rotate(90deg);
+    -o-transform: scaleX(0.75) scaleY(1.05) rotate(90deg);
+}
+.dbmanage-db-connection-card-item-edit-setting-open
+{
+    user-select:none;
+    position: absolute;
+    cursor: pointer;
+    font-size: 13px;
+    transform: scaleX(1.05) scaleY(0.75) rotate(180deg);
+    -webkit-transform: scaleX(1.05) scaleY(0.75) rotate(180deg);
+    -ms-transform: scaleX(1.05) scaleY(0.75) rotate(180deg);
+    -moz-transform: scaleX(1.05) scaleY(0.75) rotate(180deg);
+    -o-transform: scaleX(1.05) scaleY(0.75) rotate(180deg);
+}
+.dbmanage-db-connection-card-item-body 
+{
+    position: absolute;
+    left: 75px;
+    width: 220px;
+    top: 45px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 70px;
+    line-height: 22px;
+}
+.dbmanage-db-connection-card-item-body-item
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dbmanage-db-connection-card-item-selected
+{
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+}
+.dbmanage-db-connection-card-item-perm-dialog
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+    top: 1px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    padding-left: 4px;
+    border-bottom: 1px solid #ccc;
+}
+.dbmanage-db-connection-card-item-perm-dialog-icon
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 5px;
+    bottom: 6px;
+    cursor: pointer;
+    z-index: 1;
+}
+.dbmanage-db-connection-card-item-perm-dialog-input
+{
+    position: absolute;
+    left: 1px;
+    width: 85%;
+    top: 0px;
+    height: 100%;
+    font-size: 12px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    color: #666;
+    text-overflow: ellipsis;
+}
+
+.dbmanage-db-connection-super-query-dialog-splitLine
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #CBCBCB;
+}
+
+.dbmanage-db-connection-super-query-dialog-type
+{
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,76 @@
+﻿.menu-more {
+  background: #FFF;
+  position: absolute;
+  border-radius: 4px;
+  color: #333;
+  text-align: center;
+  box-shadow: 3px 5px 10px rgba(0,0,0,.1), -3px -3px 10px rgba(0,0,0,.1);
+}
+
+.menu-more::after {
+  content: '';
+  display: inline-block;
+  border: 6px solid transparent;
+  border-top: 6px solid #FFF;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-bottom: none;
+  position: absolute;
+  bottom: -6px;
+  right: 10px;
+}
+
+.menu-more .menu-item {
+  line-height: 44px;
+  min-width: 88px;
+  padding: 0 16px;
+  display: none;
+  text-align: left;
+}
+
+.menu-more .menu-item.show {
+  display: block;
+}
+
+
+.menu-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.0001);
+  z-index: 9999;
+}
+
+.custom-control-container {
+  position: relative;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.remove {
+  animation: anima_remove 1s;
+}
+
+@keyframes anima_remove {
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,45 @@
+(function ()
+{
+    var oManager = com.kingdee.bos.qing.framework.common.MultilanguageManager;
+    var oPackage = com.kingdee.bos.extreport.common;
+    oManager.registPackageResources(oPackage,
+        {
+            bold: "加粗",
+            italic: "斜体",
+            color: "字体颜色",
+            alignLeft: "左对齐",
+            alignCenter: "居中",
+            alignRight: "右对齐",
+            underline: "下划线",
+            systemDefault: "系统默认",
+            statusCursor: "段落#1, 字符#2",
+            statusRemainChar: "还可以输入#1字",
+            statusWarningMaxChar: "字数超过#1字上限",
+            clear: "清空",
+            expressionDefinition: "表达式定义",
+            cursorPositioningTips: "定位光标到出错位置",
+            expression: "表达式",
+            functionDeclaration: "函数说明",
+            function: "函数",
+            search: "搜索",
+            nothingSearched: "找不到符合的结果",
+            firstDay: "第一天",
+            lastDay: "最后一天",
+            front: "前",
+            behind: "后",
+            year: "年",
+            season: "季",
+            month: "月",
+            week: "周",
+            day: "日",
+            relativeTime: "服务端当前时间",
+            fixedTime: "固定时间",
+            ok: "确定",
+            today: "今天",
+            currentMonth: "本月",
+            currentQuarter: "本季",
+            thisYear: "本年",
+            hasSyntaxError: "函数表达式存在语法错误，请重新输入。",
+            executingExp: "正在执行函数表达式，请稍后重试。"
+        });
+})();

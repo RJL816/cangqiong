@@ -1,0 +1,14 @@
+{
+  "end": "结束",
+  "deleteConfirm": "确定删除",
+  "deleteSuccess": "删除成功",
+  "confirm": "确定",
+  "cancel": "取消",
+  "warn1": "节点吗？",
+  "message1": "节点总数不可超过15个",
+  "add": "新增",
+  "copy": "复制",
+  "delete": "删除",
+  "flowTitle": "流程设置",
+  "lessNodeMessage": "流程至少保留1个节点"
+}

@@ -1,0 +1,23 @@
+{
+  "nodes.key0001": "概览",
+  "nodes.key0002": "服务网络切换",
+  "nodes.key0003": "链名",
+  "nodes.key0004": "服务节点数",
+  "nodes.key0005": "区块高度",
+  "nodes.key0006": "交易总数",
+  "nodes.key0007": "运行天数",
+  "nodes.key0008": "个",
+  "nodes.key0009": "笔",
+  "nodes.key0010": "天",
+
+  "nodes.key0011": "网络节点",
+  "nodes.key0012": "节点属性",
+  "nodes.key0014": "服务中心名称",
+  "nodes.key0015": "归属企业",
+  "nodes.key0016": "数字身份地址",
+  "nodes.key0017": "服务中心状态",
+  "nodes.key0018": "已授权",
+  "nodes.key0019": "停用",
+  "nodes.key0020": "永久禁用",
+  "nodes.key0021": "申请中"
+}

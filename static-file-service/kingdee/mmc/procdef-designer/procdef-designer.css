@@ -1,0 +1,77 @@
+
+.pddBorderRun {
+    stroke-dasharray: 10;
+    animation: pddBorderDash 0.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pddBorderDash {
+    to {
+        stroke-dashoffset: -20;
+    }
+}
+
+.pddText {
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #777777;
+}
+
+.pddBlank {
+    cursor: default;
+    text-align: center;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+}
+
+.pddButton {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #777777;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+}
+
+.pddButtonDisabled {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #777777;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+    opacity:0.2;
+}
+
+.pddButton:hover,
+.pddButtonSelected {
+    background-color: #efefef;
+    color: #999999;
+}
+
+.pddLogo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+    background-image: url("src/res/kingdee-welkin-logo.png");
+    border-radius: 10px 0 0 0;
+}
+
+.pddTitle {
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #777777;
+    text-shadow: 1px 1px 2px #999999;
+}

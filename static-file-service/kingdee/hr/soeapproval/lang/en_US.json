@@ -1,0 +1,9 @@
+{
+  "input_content": "Please enter the content",
+  "must_select": "Please select",
+  "email": "email：",
+  "phone": "phone：",
+  "search_result": "search result：",
+  "search_sum": "A total of ",
+  "hit_result": " resumes were found"
+}

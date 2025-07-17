@@ -1,0 +1,309 @@
+#detailLine {
+    position: relative;
+    overflow: visible;
+    min-height: 100px;
+}
+
+#detailLine .table {
+    max-height: 250px;
+    overflow-y: auto;
+    min-width: 821px;
+}
+
+#detailLine .part {
+    position: relative;
+    display: flex;
+    min-width: 821px;
+    /* min-width: 1236px; */
+}
+
+#detailLine .part input {
+    width: 100%;
+    padding: 0 8px;
+    text-align: inherit;
+    font-size: 10px;
+    height: 23px;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+}
+
+#detailLine .part .daterange input {
+    width: 48%;
+    padding: 0 8px;
+    text-align: inherit;
+    font-size: 10px;
+    height: 23px;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+}
+
+#detailLine .part select {
+    width: 100%;
+    border-color: #DBDBDB;
+}
+
+#detailLine .part .required::before {
+    content: '*';
+    color: red;
+}
+
+#detailLine .title{
+    background-color: #FFFCF2;
+}
+
+#detailLine .part.title .name{
+    text-align: center;
+    color: #8C5302;
+}
+
+#detailLine .part .name {
+    margin: 4px 8px;
+}
+
+#detailLine .part .num {
+    line-height: 23px;
+    text-align: center;
+    color: #8C5302;
+}
+
+#detailLine .part .num {
+    width: 16px;
+}
+
+#detailLine .part .xmmc {
+    flex: 160px;
+}
+
+#detailLine .part .ggxh {
+    flex: 80px;
+}
+
+#detailLine .part .xmdw {
+    flex: 80px;
+}
+
+#detailLine .part .xmsl {
+    flex: 100px;
+    text-align: right;
+}
+
+#detailLine .part .xmdj {
+    flex: 100px;
+    text-align: right;
+}
+
+#detailLine .part .xmje {
+    flex: 100px;
+    text-align: right;
+}
+
+#detailLine .part .sl {
+    flex: 80px;
+    text-align: center;
+}
+
+#detailLine .part .se {
+    flex: 100px;
+    text-align: right;
+}
+
+#detailLine .part .cz {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+#detailLine .part .pzlx {
+    flex: 110px;
+}
+
+#detailLine .part .qdphm {
+    flex: 110px;
+}
+
+#detailLine .part .fpdm {
+    flex: 110px;
+}
+
+#detailLine .part .fphm {
+    flex: 90px;
+}
+
+#detailLine .part .pzhm {
+    flex: 100px;
+}
+
+#detailLine .part .kjrq {
+    flex: 90px;
+}
+
+#detailLine .part .hjje {
+    flex: 100px;
+}
+
+#detailLine .part .kcje {
+    flex: 100px;
+}
+
+#detailLine .part .bz {
+    flex: 100px;
+}
+
+#detailLine .part .ysgjzl {
+    flex: 110px;
+}
+
+#detailLine .part .ysgjph {
+    flex: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#detailLine .part .textRight {
+    text-align: right;
+}
+
+#detailLine .part .qyd {
+    flex: 110px;
+}
+
+#detailLine .part .ddd {
+    flex: 110px;
+}
+
+#detailLine .part .yshwmc {
+    flex: 110px;
+}
+
+#detailLine .part .daterange {
+    flex: 200px;
+}
+
+#detailLine .part .tips {
+    width: 17px;
+    height: 16px;
+    background: url('../img/tips.png') no-repeat;
+    cursor: pointer;
+    margin-left: 2px;
+    transform: scale(0.8);
+}
+
+#detailLine .part .tooltips::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    display: block;
+    margin-top: -7px;
+    background: #fff;
+    position: absolute;
+    margin-left: 77px;
+    z-index: -1;
+}
+
+#detailLine .part .tooltips {
+    width: 172px;
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 4px;
+    color: #7e7b7b;
+    transform: translate(36px, -34px);
+    display: none;
+}
+
+#detailLine .part .cz .del {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url('../img/del.png') no-repeat;
+    cursor: pointer;
+}
+
+#detailLine .btn {
+    display: inline-block;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 2px;
+    border: 1px solid #5582F3;
+    line-height: 18px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+#detailLine .addDeduction{
+    display: none;
+}
+
+#detailLineTotal .total {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    line-height: 28px;
+    text-align: left;
+    color: #8C5302;
+    border-top: 1px solid  rgb(141, 85, 5);
+    background-color: #FFFCF2;
+}
+
+#detailLineTotal .total .total-l {
+    display: inline-block;
+    width: 60%;
+}
+
+#detailLineTotal .total .total-m {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+#detailLineTotal .total .total-r {
+    display: inline-block;
+    text-align: right;
+    width: 15%;
+    /* margin-right: 50px; */
+}
+#detailLineTotal .amountTaxTotal div{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#detailLineTotal .amountTaxTotalUppercase{
+    margin-right: 30px;
+}
+
+#detailLine .drop-down {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 37px;
+    width: 212px;
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.2);
+
+}
+#detailLine .drop-down ul {
+    max-height: 168px;
+    padding-top: 5px;
+    margin-bottom: -3px;
+    margin-right: -8px;
+    overflow: scroll;
+}
+#detailLine .drop li {
+    width: 100%;
+    padding: 5px 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+#detailLine .drop li:hover {
+    background: #f5f5f5;
+}

@@ -1,0 +1,63 @@
+<div>
+    <div>
+        <label class="${required ? 'required' : ''}">${name}</label>
+		{{if type === "input"}}
+		    {{if id === "issystem"}}
+                {{if value === "1"}}
+                    <input id="${id}" type="checkbox" checked="true"/>
+                {{else}}
+                    <input id="${id}" type="checkbox"/>
+                {{/if}}
+            {{else}}
+                {{if disabled === true}}
+                    <input id="${id}" type="text" placeholder="${placeholder}" value="${value}" required="${required}" disabled="true"/>
+                {{else}}
+                    <input id="${id}" type="text" placeholder="${placeholder}" value="${value}" required="${required}"/>
+                {{/if}}
+            {{/if}}
+		{{/if}}
+		{{if type === "select"}}
+		    {{if disabled === true}}
+			    <select id="${id}" required="${required}" disabled="true">
+				    {{each(i,option) options}}
+                    <option>${option}</option>
+                    {{/each}}
+			    </select>
+			{{else}}
+			    <select id="${id}" required="${required}">
+				    {{each(i,option) options}}
+                    <option>${option}</option>
+                    {{/each}}
+			    </select>
+			{{/if}}
+		{{/if}}
+		{{if type === "checkbox"}}
+		    {{if disabled === true}}
+			    <input id="${id}" type="checkbox" value="${value}" disabled="true"/>
+			{{else}}
+			    <input id="${id}" type="checkbox" value="${value}"/>
+			{{/if}}
+		{{/if}}
+		{{if type === "radiogroup"}}
+		    {{each(j,group) groups}}
+			    {{if value === group}}
+				    <span class="radiogroup-span">
+					    {{if disabled === true}}
+						    <input type="checkbox" value="${group}" name="platform" checked="true" disabled="true"/>${group}
+						{{else}}
+						    <input type="checkbox" value="${group}" name="platform" checked="true"/>${group}
+						{{/if}}
+					</span>
+				{{else}}
+				    <span class="radiogroup-span">
+					    {{if disabled === true}}
+						    <input type="checkbox" value="${group}" name="platform" disabled="true"/>${group}
+						{{else}}
+						    <input type="checkbox" value="${group}" name="platform"/>${group}
+						{{/if}}
+					</span>
+				{{/if}}
+			{{/each}}
+		{{/if}}
+    </div>
+</div>

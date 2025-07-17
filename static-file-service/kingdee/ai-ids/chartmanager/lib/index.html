@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  </head>
+  <body>
+    <div id="mock_container">
+      <div>
+        <label>请选择json模板数据：</label>
+        <select id="sel"></select>
+      </div>
+    </div>
+    <div
+      id="1754375131368582144root940a15ccf2434801afdf8a0638dd5af5"
+      data-page-id="1754375131368582144root940a15ccf2434801afdf8a0638dd5af5"
+    >
+      <div id="container"></div>
+    </div>
+
+    <script src="./echarts.8.js"></script>
+    <script src="./d3.min.js"></script>
+    <script src="./bundle.js"></script>
+    <script>
+      //   const enter = new qhx.Enter();
+      //   console.log("enter name is ", enter.name);
+
+      //   ai_ids.testFunc();
+    </script>
+    <script>
+      const mock_container = document.getElementById("mock_container");
+
+      const jsonTemplateList = [
+        {
+          id: "pie",
+          name: "饼图",
+          uniqueCode: "pie_wrapper",
+        },
+        {
+          id: "test",
+          name: "测试",
+          uniqueCode: "test_wrapper",
+        },
+        {
+          id: "modelAnalysic",
+          name: "模型分析",
+          uniqueCode: "model_ana",
+        },
+      ];
+      const selectDom = document.getElementById("sel");
+      jsonTemplateList.forEach((item) => {
+        const OPTION_DOM = document.createElement("OPTION");
+        OPTION_DOM.textContent = item.name;
+        OPTION_DOM.setAttribute("value", item.id);
+        selectDom.appendChild(OPTION_DOM);
+      });
+      selectDom.addEventListener("change", function (ev) {
+        const idx = this.selectedIndex;
+        const item = jsonTemplateList[this.selectedIndex];
+        console.log("item is ", item);
+        runChart(item);
+      });
+
+      function runChart(chartData) {
+        const model = {
+          invoke: () => null,
+          invokeAsync: () => null,
+          dom: document.getElementById("container"),
+          pageId: "1754375131368582144root940a15ccf2434801afdf8a0638dd5af5",
+          moduleId: "34234234", // 模块id标识 "ai-ids"
+        };
+        const props = {
+          data: {
+            uniqueCode: chartData.uniqueCode,
+            chartType: "echart",
+          },
+        };
+        const aiIdsEl = ai_ids.AiIdsEl.run(model, props, chartData.id);
+      }
+      runChart(jsonTemplateList[0]);
+    </script>
+  </body>
+</html>

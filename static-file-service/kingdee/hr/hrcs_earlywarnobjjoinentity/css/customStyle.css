@@ -1,0 +1,59 @@
+#customcontrolap #rightMainContent .kd-tree-root{
+    width: 100%;
+    /* overflow: hidden; */
+}
+#customcontrolap #rightMainContent .kd-tree-root .kd-tree-node-title-wrap{
+    overflow: hidden;
+}
+#customcontrolap #rightMainContent .kd-tree-root .kd-tree-node-title-wrap .kd-checkbox-default{
+    width: 100%;
+    display: inline-flex;
+}
+#customcontrolap #rightMainContent .kd-tree-root .kd-tree-node-title-wrap .kd-checkbox-default .kd-checkbox-children{
+    width: calc(100% - 24px);
+    justify-content: flex-start !important;
+}
+#customcontrolap #rightMainContent .kd-tree-root .kd-tree-node-title-wrap .kd-checkbox-default .kd-checkbox-children .kd-tree-node-title{
+    width: calc(100% - 40px);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.kd-message-box {
+    align-items: center;
+}
+#customcontrolap .kdOpEditSign {
+    cursor: pointer !important;
+
+}
+#customcontrolap #leftTreeWrap .kd-tree-node-item {
+    padding-left: 16px;
+}
+#customcontrolap .kd-tabs {
+    width: 100%;
+    max-height: calc(100% - 47px);
+}
+#customcontrolap .kd-split-wrapper .kd-tabs-tab-list {
+    display: flex !important;
+    width: 100%;
+    left: 0 !important;
+    /* justify-content: center; */
+}
+#customcontrolap .kd-split-wrapper .kd-tabs-tab-list .kd-tab-pane-type-line {
+    padding: 0;
+    width: 50%;
+    text-align: center;
+}
+#customcontrolap .kd-split-wrapper .kd-tabs-tab-list .kd-tab-pane-type-line > span {
+    display: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#customcontrolap .kd-split-wrapper .kd-tabs-right-arrows-line {
+    display: none !important;
+}
+#customcontrolap .kd-tabs .kd-tabs-navs-line {
+    width: calc(100% - 32px) !important;
+    margin: 0 16px;
+}

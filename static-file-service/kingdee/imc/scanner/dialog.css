@@ -1,0 +1,54 @@
+.loadModal {
+    /*position: fixed;*/
+	position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0 ,0 ,0 , 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.loadModal .dialog {
+    background-color: #666;
+    border-radius: 5px;
+    padding: 20px;
+}
+.loadModal .loading {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.loadModal .loading > div {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 16px;
+}
+.loadModal .loading > div .cirle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.loadModal .cirle.col1 {
+    background-color: #2386ee;
+}
+.loadModal .cirle.col2 {
+    background-color: #00ccfe;
+}
+.loadModal .cirle.col3 {
+    background-color: #05C8C8;
+}
+.loadModal .cirle.col4 {
+    background-color: #A06EFF;
+}
+.loadModal .contentTxt {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}

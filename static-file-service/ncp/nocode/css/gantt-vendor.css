@@ -1,0 +1,51 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/component/gantt/index.less ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.qPN86Ihb_gantt {
+  overflow: auto;
+}
+.QmNsMek8_gantt_wrapper {
+  position: relative;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.QmNsMek8_gantt_wrapper .nX9Q70q2_arrow {
+  margin-left: 4px;
+  color: #666666;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.QmNsMek8_gantt_wrapper .hRZCwyvk_arrow_up {
+  rotate: 180deg;
+}
+.asVmewe1_gantt_viewmode {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 99px;
+  height: 43px;
+  background-color: #fafafa;
+  border-left: 1px solid #d9d9d9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+}
+

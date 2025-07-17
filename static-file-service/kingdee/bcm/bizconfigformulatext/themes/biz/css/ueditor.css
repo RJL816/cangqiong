@@ -1,0 +1,185 @@
+/*基础UI构建
+*/
+/* common layer */
+.edui-biz .edui-box {
+    border: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+div.edui-box {
+    position: relative;
+    display: -moz-inline-box !important;
+    display: inline-block !important;
+    vertical-align: top;
+}
+
+.edui-biz .edui-clearfix {
+    zoom: 1
+}
+
+.edui-biz .edui-clearfix:after {
+    content: '\20';
+    display: block;
+    clear: both;
+}
+
+ * html div.edui-box {
+    display: inline !important;
+}
+
+*:first-child+html div.edui-box {
+    display: inline !important;
+}
+
+/* control layout */
+.edui-biz .edui-button-body, .edui-menubutton-body {
+    position: relative;
+}
+
+
+.edui-biz .edui-toolbar {
+    position: relative;
+}
+
+/*
+ * default theme
+ */
+.edui-biz .edui-label {
+    cursor: default;
+}
+
+/* 工具栏 */
+.edui-biz .edui-toolbar {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    padding: 1px;
+    overflow: hidden; 
+    zoom: 1;
+    width:auto;
+    height:auto;
+}
+
+.edui-biz .edui-toolbar .edui-button{
+    margin: 1px;
+}
+/*UI工具栏、编辑区域、底部*/
+.edui-biz .edui-editor {
+    border: 1px solid #d4d4d4;
+    background-color: white;
+    position: relative;
+    overflow: visible;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.edui-editor div{
+    width:auto;
+    height:auto;
+}
+.edui-biz .edui-editor-toolbarbox {
+    position: relative;
+    zoom: 1;
+    -webkit-box-shadow:0 1px 4px rgba(204, 204, 204, 0.6);
+    -moz-box-shadow:0 1px 4px rgba(204, 204, 204, 0.6);
+    box-shadow:0 1px 4px rgba(204, 204, 204, 0.6);
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+}
+
+.edui-biz .edui-editor-toolbarboxouter {
+    border-bottom: 1px solid #d4d4d4;
+    background-color: #fafafa;
+    background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    background-repeat: repeat-x;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+.edui-biz .edui-editor-toolbarboxinner {
+    padding: 2px;
+}
+
+.edui-biz .edui-editor-iframeholder {
+    position: relative;
+}
+
+.edui-biz .edui-editor-iframeholder textarea {
+    font-family: consolas, "Courier New", "lucida console", monospace;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.edui-biz .edui-editor-bottomContainer {
+    overflow: hidden;
+}
+
+
+/*普通按钮样式及状态*/
+.edui-biz .edui-toolbar .edui-button .edui-icon,
+.edui-biz .edui-toolbar .edui-menubutton .edui-icon,
+.edui-biz .edui-toolbar .edui-splitbutton .edui-icon {
+    height: 32px !important;
+    width: 32px !important;
+    background-image: url(../images/icons.png);
+    background-image: url(../images/icons.gif) \9;
+}
+
+.edui-biz .edui-toolbar .edui-button .edui-button-wrap {
+    padding: 1px;
+    position: relative;
+}
+
+.edui-biz .edui-toolbar .edui-button .edui-state-hover .edui-button-wrap {
+    background-color: #fff5d4;
+    padding: 0;
+    border: 1px solid #dcac6c;
+}
+
+.edui-biz .edui-toolbar .edui-button .edui-state-checked .edui-button-wrap {
+    background-color: #ffe69f;
+    padding: 0;
+    border: 1px solid #dcac6c;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.edui-biz .edui-toolbar .edui-button .edui-state-active .edui-button-wrap {
+    background-color: #ffffff;
+    padding: 0;
+    border: 1px solid gray;
+}
+
+
+.bizconfigformulatext .input{
+	background:url(../images/open.png) no-repeat 0 0;
+	background-position-x:right;
+	cursor: pointer;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-color:black;
+	border-width:1px;
+	font-size:12px;
+	width:288px;
+	height:18px;
+	text-align:center;
+}
+
+
+

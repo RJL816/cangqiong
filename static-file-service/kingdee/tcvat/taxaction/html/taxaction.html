@@ -1,0 +1,105 @@
+<style>                
+        #taxactionEchart {            
+            height:100%;
+        }
+        
+        #taxactionDialog {
+            width: 300px;
+            height: 325px;
+			z-index: 100;
+            position: fixed;
+            background: white;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px;
+            display: none;
+            overflow: auto;
+        }
+        
+        #taxactionDialog p {
+            text-align: left;
+            padding-left: 14px;
+			font-size: 18px;
+			font-weight: bold;
+			height: 34px;
+			line-height: 40px;
+        }
+        
+        #taxactionDialog ul {
+            padding-left: 0;
+            font-size: 14px;
+        }
+        
+        #taxactionDialog ul li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+    
+        #taxactionDialog ul li div {
+            display: inline-block;
+        }
+        
+        #taxactionDialog .specialrow {
+            display: flex;
+            align-items: center;
+        }
+        
+        #taxactionDialog .item {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        #taxactionDialog .bit {
+            height: 14px;
+            width: 14px;
+            min-width: 14px;
+            margin-right: 10px;
+        }
+        
+        #taxactionDialog .hrefline {
+            color: #2b87f3;
+            cursor: pointer;
+            width: 12%;
+        }
+        
+        #taxactionDialog .rightarrow {
+            height: 12px;
+            width: 12px;
+            position: relative;
+        }
+        
+        #taxactionDialog .rightarrow:before {
+            content: "";
+            height: 6px;
+            width: 6px;
+            top: 3px;
+            left: 0px;
+            border-width: 1px 1px 0 0;
+            border-color: #2b87f3;
+            border-style: solid;
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            position: absolute;
+            cursor: pointer;
+        }
+        
+        #taxactionDialog .rightarrow:after {
+            content: "";
+            height: 6px;
+            width: 6px;
+            top: 3px;
+            left:5px;
+            border-width: 1px 1px 0 0;
+            border-color: #2b87f3;
+            border-style: solid;
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            position: absolute;
+            cursor: pointer;
+        }
+    </style>
+<div id="taxactionEchart" style="height:100%"></div>
+<div id="taxactionDialog">
+    <p  id="event"></p>
+    <ul id="ranklist">
+    </ul>
+</div>

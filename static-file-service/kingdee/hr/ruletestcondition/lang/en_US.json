@@ -1,0 +1,20 @@
+{	
+	"deleterow": "Delete Row",
+	"no": "No",
+	"last": "Last",
+	"yes": "Yes",
+	"inputconditionparam": "Input Condition Patameters",
+	"paramname": "Parameter Name",
+	"paramvalue": "Parameter Value",
+	"nodata": "Data is not available.",
+	"page": "Page",
+	"first": "First",
+	"addrow": "Add Row",
+	"loading": "Loading...",
+    "loadMore": "Load more...",
+    "noResults": "No params found",
+	"noResultsForTerm": "No results for <b>%s</b>",
+	"allselect": "Select All",
+	"selected":"Selected",
+	"term":"Item"
+}

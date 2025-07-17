@@ -1,0 +1,13 @@
+{
+    "createdDes": "由【转置列】 和【原始指标】生成",
+    "transListDes": "需要转置的列",
+    "transListPlaceHolder": "请选择需转置的列",
+    "targetListDes": "原始指标字段",
+    "cretedListDes": "生成的指标字段",
+    "dataView": "预览",
+    "dataView1": "数据",
+    "selectAll": "全选",
+    "emptyText": "此处数据由当前及前序数据加工步骤加工生成",
+    "selectplaceholder": "请输入需要搜索的内容",
+    "titleDes": "规则配置"
+}

@@ -1,0 +1,41 @@
+<ul>
+    <li link-attr="${id}" name="${name}">
+        <label class="${required ? 'required' : ''}">${name}</label>
+		{{if type === "input"}}
+		    {{if disabled === true}}
+                <input type="text" value="${value}" placeholder="${placeholder}" required="${required}" readonly="true"/>
+            {{else}}
+                <input type="text" value="${value}" placeholder="${placeholder}" required="${required}"/>
+            {{/if}}
+			{{if valueList}}
+                <i class="iconfont icon-search" type="${type}" valueList="${valueList}"></i>
+            {{/if}}
+		{{/if}}
+		{{if type === "select"}}
+		    <select id="${id}" required="${required}" value="${value}">
+			    <option>${value}</option>
+				{{each(i,option) options}}
+				    {{if option !== value}}
+                        <option>${option}</option>
+				    {{/if}}
+                {{/each}}
+			</select>
+		{{/if}}
+		{{if type === "checkbox"}}
+		    {{if value === true || value === "true" || value === "1"}}
+			    <input id="${id}" type="checkbox" value="${value}" checked="${value}"/>
+			{{else}}
+			    <input id="${id}" type="checkbox" value="${value}"/>
+			{{/if}}
+		{{/if}}
+		{{if type === "radiogroup"}}
+		    {{each(j,group) groups}}
+			    {{if value === group}}
+				    <span class="radiogroup-span"><input type="checkbox" value="${group}" name="platform" checked="true"/>${group}</span>
+				{{else}}
+				    <span class="radiogroup-span"><input type="checkbox" value="${group}" name="platform"/>${group}</span>
+				{{/if}}
+			{{/each}}
+		{{/if}}
+    </li>
+</ul>

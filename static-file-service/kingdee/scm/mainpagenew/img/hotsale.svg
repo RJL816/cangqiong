@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="429px" viewBox="0 0 100 429" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>编组 6@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#FD8D52" offset="0%"></stop>
+            <stop stop-color="#FECF6F" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="-1.10334818e-13 0 100 0 100 429 -1.10334818e-13 429"></polygon>
+        <linearGradient x1="50%" y1="33.4397971%" x2="50%" y2="128.91613%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.401333042" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="新提案" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="采购商城-首页" transform="translate(-360.000000, -690.000000)">
+            <g id="编组-6" transform="translate(360.000000, 690.000000)">
+                <g id="JL22O2N5WPEG4">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+                <g id="编组" transform="translate(18.000000, 163.000000)">
+                    <g id="编组-7">
+                        <g id="编组-11">
+                            <text id="热销商品" font-family="PingFangSC-Medium, PingFang SC" font-size="16" font-weight="400" line-spacing="12.8" fill="#FFFFFF">
+                                <tspan x="0" y="85.8">热销商品</tspan>
+                            </text>
+                            <text id="hot" opacity="0.600000024" font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" line-spacing="12.8" fill="#FFFFFF">
+                                <tspan x="20.792" y="88.8"></tspan>
+                                <tspan x="20" y="101.6">HOT</tspan>
+                            </text>
+                            <g id="火" transform="translate(4.000000, 0.000000)" fill-rule="nonzero">
+                                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="56" height="56.8"></rect>
+                                <path d="M18.375,53.96 C15.05,46.86 16.8,42.7775 19.425,39.05 C22.225,34.79 22.925,30.7075 22.925,30.7075 C22.925,30.7075 25.2,33.5475 24.325,38.1625 C28.175,33.725 28.875,26.625 28.35,23.9625 C37.1,30.175 40.95,43.8425 35.875,53.7825 C62.825,38.1625 42.525,14.91 39.025,12.425 C40.25,15.0875 40.425,19.525 37.975,21.655 C33.95,6.035 23.975,3.0175 23.975,3.0175 C25.2,11.005 19.775,19.7025 14.525,26.27 C14.35,23.075 14.175,20.945 12.425,17.75 C12.075,23.6075 7.7,28.2225 6.475,34.08 C4.9,42.0675 7.7,47.7475 18.375,53.96 L18.375,53.96 Z" id="路径" fill="url(#linearGradient-4)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

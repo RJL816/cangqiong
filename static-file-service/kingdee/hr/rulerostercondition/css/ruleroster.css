@@ -1,0 +1,124 @@
+.rosterControl{
+	/*width:500px;*/
+	min-width:500px;
+	max-width:620px;
+	width:100%;
+}
+
+.rosterControl .selectivity-single-select-input{
+	display:none;
+	opacity: 0;
+}
+.rosterControl .selectivity-single-result-container{
+	top: 0;
+	font-size: 12px;
+	line-height: 28px;
+	position: absolute;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+.rosterControl .selectivity-single-select {
+	min-height: 26px;
+	width:100%;
+	height: 26px;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative;
+	box-sizing: content-box;
+}
+
+.rosterControl .selectivity-caret {
+	border-top: 6.4px solid transparent;
+	border-color: #333;
+	top: 10px;
+	border-bottom: 3px solid transparent;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	right: 5px;
+}
+
+.rosterControl .ruleTitle{
+	background: #FAFAFA;
+    border: 1px solid #E5E5E5;
+	height: 33px;
+	position: relative;
+}
+
+.rosterControl .ruleTitle>span{
+	line-height: 33px;
+	margin-left: 8px;
+}
+
+.rosterControl .ruleTitle .logic{
+	position: absolute;
+    right: 160px;	
+}
+
+.rosterControl .conditionLogicDiv{
+    position: absolute;
+    right: 8px;
+    height: 29px;
+    top: 1px;
+	width: 150px;
+}
+
+.rosterControl .conditionLogic{
+	color: #000000!important;
+	padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    background: #FFFFFF;
+}
+
+.rosterContent{
+	margin-top: 8px;
+}
+
+.ruleRoster{
+	border-collapse: separate;
+	width:100%;
+}
+
+.ruleRoster td
+{
+	padding-right: 11px;
+}
+
+.ruleRoster .rosterParam{	
+	/*width:160px;*/
+	max-width:220px;
+	min-width:160px;
+	width:100%;
+	height: 26px;
+	color: #000000!important;
+	padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    background: #FFFFFF;
+}
+
+.ruleRoster .rosterValueTextDiv{
+	/*width:190px;*/
+	max-width: 250px;
+    min-width: 190px;
+    width: 100%;
+}
+
+.ruleRoster .deleteRoster{
+	width: 21px;
+	height: 21px;
+	font-size: 21px;
+	line-height: 30px;
+	cursor:pointer;
+}
+
+.addRosterDiv{
+	margin-left: 2px;
+}
+
+#templeteTrRoster{
+	display: none;
+}

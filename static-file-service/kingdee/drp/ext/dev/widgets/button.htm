@@ -1,0 +1,15 @@
+<div>
+    {{if control.text}}
+        <div class="btn ${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}" id="${control.id}"  viewid="${control.viewid}">
+            {{if control._customData.iconClass}}
+            <i class="iconfont ${control._customData.iconClass}"></i>
+            {{/if}}
+            ${control.text}
+        </div>
+    {{/if}}
+	{{if control.icon}}
+	    <i class="iconfont2 iconfont ${control.icon}" active="${control.active}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}" id="${control.id}"  viewid="${control.viewid}" title="${control.name}"></i>
+	{{else}}
+	    <div class="btn ${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}" id="${control.id}"  viewid="${control.viewid}">${control.name}</div>
+	{{/if}}
+</div>

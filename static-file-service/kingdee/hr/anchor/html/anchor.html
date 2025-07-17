@@ -1,0 +1,19 @@
+<div class="hr-achor">
+    <img class="hr-achor-lock" alt="hr-achor" src="<%= openPic %>" />
+
+    <div class="hideScrollbar_wrap">
+        <div class="achor-side-bar">
+            <em class="circle-start"></em>
+            <em class="circle-end"></em>
+        </div>        
+        <ul class="hr-achor-ul">
+            <% if(childList){ %>
+                <% for(var i=0; i<childList.length; i++){ %>
+                    <li target="<%= childList[i] %>" index="<%= i %>" class="hr-achor-li"><em class="pointer"></em><span class="text"><%= childNameList[i] %></span></li>
+                <% } %>
+            <% } %>
+            <a class="arrow" href="javascript:void(0);"></a>
+        </ul>        
+    </div>
+</div>
+<img class="hr-achor-icon" alt="锚点控件图标" src="<%= anchorPic %>" />

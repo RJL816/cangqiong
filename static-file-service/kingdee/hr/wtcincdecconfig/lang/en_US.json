@@ -1,0 +1,8 @@
+{
+  "and": "and",
+  "or": "or",
+  "matchAllCond": "Match All Condition (and)",
+  "matchAnyCond": "Match Any Condition (or)",
+  "customCond": "Custom Condition",
+  "conditionLogic": "Condition Logic"
+}

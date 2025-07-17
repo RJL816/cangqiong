@@ -1,0 +1,99 @@
+.scale_input .area_box {
+  cursor: text;
+  overflow: hidden;
+}
+.scale_input .area_box textarea {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  resize: none;
+  transform: scale(1);
+  font-size: 14px;
+  font-family: monospace;
+  color: #000;
+  overflow: hidden;
+}
+.scale_inputjl .area_box {
+  cursor: text;
+  overflow: hidden;
+}
+.approval {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  font-family: monospace;
+}
+.approval .jus_title {
+  text-align-last: justify;
+  padding: 0 2px;
+}
+.approval .date_view {
+  text-align: right;
+}
+.approval .date_view span {
+  margin: 0 10px;
+}
+.approval .approval_body1 {
+  width: 630px;
+  height: 891px;
+  padding-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  background: #fff;
+}
+.approval .approval_body1 .approval_title {
+  font-size: 24px;
+  font-family: monospace;
+  color: #212121;
+  letter-spacing: 13.4px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.approval .approval_body1 .jianli_title {
+  width: 42px;
+  height: 381px;
+  border-right: 2px solid #666666;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 130px 0;
+}
+.approval .approval_body1 td {
+  height: 37px;
+  text-align: center;
+  padding: 0 2px;
+}
+.approval .approval_body2 {
+  width: 630px;
+  height: 891px;
+  margin-top: 20px;
+  padding-top: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  background: #fff;
+}
+.approval .approval_body2 .fillform_p {
+  align-self: start;
+  padding-left: 88px;
+  padding-top: 5px;
+}
+.approval .approval_body2 .table2_first_row td {
+  height: 0;
+  border: 0;
+}
+.approval .approval_body2 td {
+  height: 32px;
+  text-align: center;
+  padding: 0 2px;
+}

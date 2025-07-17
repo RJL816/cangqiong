@@ -1,0 +1,29 @@
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/KDIFrame.less ***!
+  \****************************************************************************************************************************************************************************************************/
+.KDIFrame_root_1dik {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/base/HtmlPanel.less ***!
+  \**********************************************************************************************************************************************************************************************************/
+.HtmlPanel_root_3yOu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+

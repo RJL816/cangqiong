@@ -1,0 +1,16 @@
+{
+    "subscriptiondiagram": "Subscription Diagram",
+    "triggerevent": "Trigger Event",
+    "subscriptionrule": "Subscription Rule",
+    "eventtarget": "Event Target",
+    "zoomin": "Zoom In",
+    "zoomout": "Zoom Out",
+    "copy": "copy",
+    "copysuccess": "Copy Success",
+    "copyfail": "Copy Fail",
+    "fullscreen": "Full Screen",
+    "cancelfullscreen": "Cancel Full Screen",
+    "reset": "Reset",
+    "subscriptioninfo": "Subscription Info",
+    "configurationinformation": "Configuration Information"
+}

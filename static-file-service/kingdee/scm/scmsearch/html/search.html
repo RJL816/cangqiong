@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>自定义控件-搜索</title>
+	<link rel=stylesheet type=text/css href="../css/search.css">
+</head>
+
+<body>
+	<div class="app">
+		<div class="content">
+			<select class="selectid" id="selectid" autocomplete="off">
+				<option value="goods">{{goods}}</option>
+				<option value="supplier.name">{{supplierNmae}}</option>
+				<option value="brand">{{brand}}</option>
+				<option value="models">{{models}}</option>
+				<option value="classify">{{classify}}</option>
+			</select>
+			<input class="inputid" id="inputid" type="text" placeholder="{{test}}" value="<%= inputvalue%>" />
+		</div>
+		<button class="buttonid">{{search}}</button>
+	</div>
+</body>
+
+</html>

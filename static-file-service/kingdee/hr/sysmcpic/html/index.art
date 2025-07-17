@@ -1,0 +1,14 @@
+<div class="PreviewPic-content">
+    <%if(text){%>
+    <div class="yunzhijiasysm">
+        <div class="yunzhijia_message">
+           <%=text%>
+        </div>
+    </div>
+    <% } else{%>
+    <div class="noData">
+        <img src="images/mobile/emotion/zanwushuju_280_160.png?v=1.0">
+        <div class="noData-text"><%=nodata%></div>
+    </div>
+    <% } %>
+</div>

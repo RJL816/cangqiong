@@ -1,0 +1,67 @@
+<ul>
+    <li link-attr="${id}" name="${name}">
+        <label>${name}</label>
+        {{if type === "text"}}
+            {{if id === "style" || id === "labelstyle" || id === "inputstyle"}}
+			    <textarea type="text" rows="4">${value}</textarea>
+			{{else}}
+			    {{if id === "textalign"}}
+			    <div class="radio-group">
+				    {{each(i,item) [{n:'左',v:'left'},{n:'中',v:'center'},{n:'右',v:'right'}]}}
+					<div class="radio">
+					    {{if value===item['v']}}
+                            <input type="radio" name="${name}" checked="true" value="${item['v']}"/>
+                        {{else}}
+                            <input type="radio" name="${name}" value="${item['v']}"/>
+                        {{/if}}
+						<span>${item['n']}</span>
+					</div>
+					{{/each}}
+			    </div>
+				{{else}}
+				<input type="text" value="${value}"/>
+				{{/if}}
+			{{/if}}
+		{{/if}}
+        {{if type === "bool" || type === "checkbox"}}
+            {{if value===true}}
+                <input type="checkbox" name="${name}" checked="true"/>
+            {{else}}
+                <input type="checkbox" name="${name}"/>
+            {{/if}}
+        {{/if}}
+        {{if type === "number"}}
+            <input type="number" value="${value}"/>
+        {{/if}}
+        {{if type === "popselectdata"}}
+            <input type="text" value="${displayValue}"/>
+            <input type="text" value="${value}" class="hide select_v"/>
+            <i class="iconfont icon-search" type="${type}" valueList="${valueList}"></i>
+        {{/if}}
+        {{if type === "selectdata" || type === "select"}}
+            <input type="text" value="${value}"/>
+            <i class="iconfont icon-search" type="${type}" valueList="${valueList}"></i>
+        {{/if}}
+		{{if type === "operations"}}
+            <input type="text" readonly="true"/>
+            <i class="input-icon el-icon-arrow-down" type="${type}"></i>
+        {{/if}}
+		{{if type === "radiogroup"}}
+            <div class="radio-group">
+			    {{each(i,item) valueList}}
+					<div class="radio">
+					    {{if value===item['v']}}
+                            <input type="radio" name="${name}" checked="true" value="${item['v']}"/>
+                        {{else}}
+                            <input type="radio" name="${name}" value="${item['v']}"/>
+                        {{/if}}
+						<span>${item['n']}</span>
+						{{if item['default'] === true}}
+						<span class="default">(默认)</span>
+						{{/if}}
+					</div>
+				{{/each}}
+			</div>
+        {{/if}}
+    </li>
+</ul>

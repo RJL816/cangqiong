@@ -1,0 +1,46 @@
+.app{
+    width: 613px;
+    display: flex;
+}
+.content{
+    width: 515px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 2px 0px 0px 2px;
+    display: flex;
+    border-width:1px;
+    border-style:solid;
+}
+.selectid{
+    width: 93px;
+    background: #F6F7F9;
+    border-radius: 2px 0px 0px 2px;
+    border: 0;
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: #666666;
+    line-height: 20px;
+}
+.inputid{
+    width: 422px;
+    height: 38px;
+    border: 0;
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: #999999;
+    line-height: 16px;
+    padding-left: 10px;
+}
+.buttonid{
+    width: 98px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    cursor : pointer;
+    border-left: 0;
+    border-width:1px;
+    border-style:solid;
+	border-radius: 0px 2px 2px 0px;
+}

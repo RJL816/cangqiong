@@ -1,0 +1,16 @@
+{
+    "configName":"导入场景",
+    "taskNumber":"任务编号",
+    "taskType":"操作类型",
+    "creatorName":"操作人",
+    "createTime":"操作时间",
+    "process":"进度",
+    "op":"操作",
+    "continue":"继续",
+    "success":"成功：",
+    "fail":"失败：",
+    "deleteFile":"删除附件",
+    "exportFailMsg":"导出失败原因",
+    "taskStatusName":"任务状态",
+    "failureReason":"异常原因"
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>脚本开发</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/codemirror.css">
+		<link rel="stylesheet" href="css/dialog.css">
+		<link rel="stylesheet" href="css/matchesonscrollbar.css">
+		<link rel="stylesheet" href="css/simplescrollbars.css">
+		<link rel="stylesheet" href="css/foldgutter.css">
+		<link rel="stylesheet" href="css/theme/midnight.css">
+		<link rel="stylesheet" href="css/devtools.css">
+		<script src="js/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<!-- 要调试的表单 -->
+		<iframe id="form" class="form" frameborder="0" scrolling="no" src="">
+		</iframe>
+		<div id="debug">
+			<header role="banner">
+	            <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+		            <div class="container-fluid">
+		                <div class="navbar-header">
+		                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                  </button>
+		                </div>
+		                <div class="navbar-collapse collapse">
+		                    <ul class="nav navbar-nav">
+		                		<li id="open-sources" class="consoleOpened">
+		                			<a href="#" title="Sources" class="highlight">Sources</a>
+		                		</li>
+		                		<li id="open-console">
+		                			<a href="#" title="控制台" class="highlight">Console</a>
+		                		</li>
+		                    </ul>
+						    <ul class="nav navbar-nav pull-right">
+						  		<li>
+						  			<span class="toolbar-divider toolbar-item"></span>
+							    </li>
+								<li class="">
+							       <a href="#" title="Customize and control Devtools" ><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+							    </li>
+		                    </ul>
+		                </div>
+		            </div>
+	            </nav>
+			</header>
+			<!-- 调试 -->
+			<div role="main" id="main" >
+				<!-- 源码 -->
+				<div id="main-box">
+					<!-- 左侧窗口，脚本树结构 -->
+					<div class="split split-horizontal window" id="main-left">
+						<div class='treeRoot'>
+					        <div id="tree" class='tree maintree'>
+					        	<div class="page">
+						        	<span class='tree_indent'></span>
+						          	<a href="javascript:void(0)" class="formArrowClass arrow_down"></a>
+						          	<span class='folder_icon'></span>
+						          	<span class='form_caption'></span>
+						        </div>
+						        <div class="treeChild hidden"></div>
+		        			</div>
+	      				</div>
+					</div>
+					<!-- 中间窗口，脚本内容展示 -->
+					<div class="split split-horizontal window" id="main-center">
+						<ul class='scriptTitle'>
+				            <li id='scriptTab' class="hidden"></li>
+				        </ul>
+				        <div class="scriptCode" style="width:100%;height:calc(100% - 30px);">
+				        	<div id="editcode" style="height:100%;" >
+								<textarea id="code" class="code" name="code" style="width:100%;height:calc(100% - 10px);" disabled >click right tree of scripts</textarea>
+							</div>
+						</div>
+						<div class="operate operate-codeMirror hidden" >
+							<ul>
+								<li id="add-to-watches"><span>Add to watches</span></li>
+								<!-- <li id="copy"><span>Copy selected text</span></li> -->
+							</ul>
+						</div>
+					</div>
+					<!-- 右侧窗口，包含调试命令，变量、断点、watch等 -->
+					<div class="split split-horizontal window window-boder-left" id="main-right">
+						<!-- 调试命令 -->
+						<div class="debug-cmd">
+							<div role="navigation" class="navbar navbar-default navbar-elegent-default fixed">
+				                <div class="debug-navbar">
+				                	<ul class="nav navbar-nav">
+				                		<li class="" id="resume">
+				                			<a href="javascript:void(0)" title="Resume script execution F8" ><span class="fa fa-resume-off fa-lg"></span></a>
+				                		</li>
+				                		<li class="" id="stepOver">
+				                			<a href="javascript:void(0)" title="Step over next function call F10" ><span class="fa fa-over-off fa-lg" aria-hidden="true"></span></a>
+				                		</li>
+				                		<li class="" id="stepInto">
+				                			<a href="javascript:void(0)" title="Step into next function call F11" ><span class="fa fa-into-off fa-lg" aria-hidden="true"></span></a>
+				                		</li>
+				                		<li class="" id="stepOut">
+				                			<a href="javascript:void(0)" title="Step out of next function call F12" ><span class="fa fa-out-off fa-lg" aria-hidden="true"></span></a>
+				                		</li>
+				                		<li>
+			  								<span class="toolbar-divider toolbar-item"></span>
+				   						</li>
+				                		<li class="" id="deactiveBreakpoint">
+				                			<a href="javascript:void(0)" title="Deactive breakpoints F9" ><span class="fa fa-active fa-lg" aria-hidden="true"></span></a>
+				                		</li>
+				                		<li class="" style="display:none">
+				                			<a href="javascript:void(0)" title="Customize and control Devtools" ><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+				                		</li>
+				                    </ul>
+				                </div>
+				            </div>
+						</div>
+						<div class="debug-info">
+							<!-- 变量 Variables -->
+							<div>
+								<div role="navigation" class="navbar navbar-default navbar-elegent-default">
+					                <div class="debug-navbar">
+					                    <ul class="nav navbar-nav">
+					                		<li class="">
+					                			<a href="#" title="变量" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> Variables</span></a>
+					                		</li>
+					                    </ul>
+					                </div>
+					            </div>
+								<div class="debug-content variable-expressions" style="display:none;">
+								</div>
+							</div>
+							<!-- 断点 Breakpoints -->
+							<div>
+								<div role="navigation" class="navbar navbar-default navbar-elegent-default">
+					                <div class="debug-navbar">
+					                    <ul class="nav navbar-nav">
+					                		<li class="">
+					                			<a href="#" title="断点" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> Breakpoints</span></a>
+					                		</li>
+					                    </ul>
+					                </div>
+					            </div>
+								<div class="debug-content list-breakpoint" style="display:none;"> 
+								</div>
+								<div class="operate operate-breakpoint hidden" >
+									<ul>
+										<li id="remove-breakpoint">Remove breakpoint<span></span></li>
+										<li id="remove-all-breakpoints"><span>Remove all breakpoints</span></li>
+										<li id="deactivate-breakpoints"><span>Deactivate breakpoints</span></li>
+										<li id="activate-breakpoints"><span>Activate breakpoints</span></li>
+										<li id="enable-all-breakpoints"><span>Enable all breakpoints</span></li>
+										<li id="disable-all-breakpoints"><span>Disable all breakpoints</span></li>
+									</ul>
+								</div>
+							</div>
+							<!-- 观察 Watches -->
+							<div>
+								<div role="navigation" class="navbar navbar-default navbar-elegent-default">
+					                <div class="debug-navbar">
+					                    <ul class="nav navbar-nav">
+					                		<li class="">
+					                			<a href="javascript:void(0)" title="观察" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> Watches</span></a>
+					                		</li>
+					                    </ul>
+					                    <ul class="nav navbar-nav pull-right">
+					                		<li class="" id="add-watch">
+					                			<a href="javascript:void(0)" title="Add watch" ><span class="fa fa-plus" aria-hidden="true"></span></a>
+					                		</li>
+					                		<li class=""  id="refresh-watch">
+					                			<a href="javascript:void(0)" title="Refresh" ><span class="fa fa-refresh" aria-hidden="true"></span></a>
+					                		</li>
+					                    </ul>
+					                </div>
+					            </div>
+								<div class="debug-content watch-expressions" style="display:none;">
+								</div>
+								<div class="operate operate-watch hidden" >
+									<ul>
+										<li id="addnew-watch"><span>Add watch expression</span></li>
+										<li id="remove-watch"><span>Remove watch expression</span></li>
+										<li id="remove-all-watches"><span>Remove all watch expressions</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 输出控制台 -->
+				<div class="split split-horizontal window window-boder-top hidden" id="main-console" style="width:100%">
+					<div role="navigation" class="navbar navbar-default navbar-elegent">
+		                <div class="container-fluid">
+		                    <ul class="nav navbar-nav">
+								<li class="clear-console" id="clear-console">
+									<a href="javascript:void(0)" title="Clear console" ><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+								</li>
+		                    </ul>
+		                    <!-- <ul class="nav navbar-nav pull-right">
+								<li class="" id="close-console">
+									<a href="#" title="Close console" ><span class="fa fa-times" aria-hidden="true"></span></a>
+								</li>
+		                    </ul> -->
+		                </div>
+		            </div>
+				</div>
+			</div>	
+		</div>
+
+	    <script src="js/jquery-1.11.3.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/codemirror.js"></script>
+		<script src="js/plugin/addon/scroll/simplescrollbars.js"></script>
+		<script src="js/plugin/addon/selection/active-line.js"></script>
+		
+		<script src="js/plugin/addon/dialog/dialog.js"></script>
+		<script src="js/plugin/addon/search/searchcursor.js"></script>
+		<script src="js/plugin/addon/search/search.js"></script>
+		<script src="js/plugin/addon/search/matchesonscrollbar.js"></script>
+		<script src="js/plugin/addon/search/jump-to-line.js"></script>
+		
+		<script src="js/plugin/addon/fold/foldcode.js"></script>
+		<script src="js/plugin/addon/fold/foldgutter.js"></script>
+		<script src="js/plugin/addon/fold/brace-fold.js"></script>
+		<script src="js/plugin/addon/fold/markdown-fold.js"></script>
+  		<script src="js/plugin/addon/fold/comment-fold.js"></script>
+		
+		<script src="js/plugin/mode/javascript/javascript.js"></script>
+		
+		<script src="js/split.js"></script>
+		<script src="js/devtools.js"></script>
+	</body>
+</html>

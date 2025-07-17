@@ -1,0 +1,142 @@
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/base/CardField.less ***!
+  \*******************************************************************************************************************************************************************************************************/
+.CardField_field_3T87 {
+  color: #707070;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.CardField_field_3T87 .CardField_title_1_aG {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.5;
+}
+.CardField_field_3T87 .CardField_value_1ru8 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.CardField_field_3T87 .CardField_value-content_1Bfc {
+  width: 100%;
+}
+.CardField_field_3T87 .CardField_text-value_2gyi {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.CardField_field_3T87 .CardField_text-omit_tUpZ {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.5;
+}
+.CardField_field_3T87 .CardField_text-wordwrap_2w_Z {
+  word-break: break-all;
+  text-align: left;
+  overflow-y: hidden;
+}
+.CardField_field_3T87 .CardField_left_1AZA {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.CardField_field_3T87 .CardField_center_uFqL {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.CardField_field_3T87 .CardField_right_1EQ1 {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.CardField_pre_wxfV {
+  font-family: inherit;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.CardField_link_2O9f {
+  color: #5E80EB;
+}
+.CardField_link_2O9f:hover {
+  cursor: pointer;
+}
+.CardField_link-disabled_jXXM {
+  color: #333333 !important;
+}
+.CardField_label-disabled_3oj3 {
+  opacity: 0.5;
+}
+.CardField_mulcomb_35nE {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.CardField_fl-gr_2Co8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.CardField_pd-8_lRrk {
+  padding-right: 8px;
+}
+.CardField_label-container_2z6f {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.CardField_label-container_2z6f .CardField_privacy-text_3ruT {
+  padding-right: 8px;
+}
+

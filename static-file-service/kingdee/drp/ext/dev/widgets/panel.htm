@@ -1,0 +1,23 @@
+<div>
+	{{if control.paneltype === 'pop'}}
+	    <div id="${control.id}" paneltype="${control.paneltype}" class="panel-ctrl ${control.plat=='pc'?'clearfix':''} ${control.class} ${control.direction} ${control.aligntype}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+	        <div>${control.name}<i class="iconfont el-icon-close"></i></div>
+			<div viewid="${control.viewid}">
+			    {{if control._customData.plat === 'pc'}}
+	                {{if control._customData.inlineGrid }}
+			            <label>${control.name}</label>
+	                {{/if}}
+	            {{/if}}
+	        </div>
+			<button>确定</button>
+		</div>
+	{{else}}
+	    <div id="${control.id}"  viewid="${control.viewid}" class="panel-ctrl ${control.plat=='pc'?'clearfix':''} ${control.class} ${control.direction} ${control.aligntype}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+	   {{if control._customData.plat === 'pc'}}
+	       {{if control._customData.inlineGrid }}
+			<label>${control.name}</label>
+	       {{/if}}
+	   {{/if}}
+	    </div>
+	{{/if}}
+</div>

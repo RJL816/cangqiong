@@ -1,0 +1,217 @@
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/base/NotificationHooks.less ***!
+  \***************************************************************************************************************************************************************************************************************/
+.NotificationHooks_warning-color_2ELU {
+  color: var(--warning-color);
+}
+.NotificationHooks_error-color_aSZC {
+  color: var(--error-color);
+}
+.NotificationHooks_success-color_3GPU {
+  color: var(--success-color);
+}
+.NotificationHooks_warning-bg-color_3esu {
+  background-color: var(--warning-bg-color);
+  border: 1px solid var(--warning-border-color);
+}
+.NotificationHooks_error-bg-color_3cBC {
+  background-color: var(--error-bg-color);
+  border: 1px solid var(--error-border-color);
+}
+.NotificationHooks_success-bg-color_3dtr {
+  background-color: var(--success-bg-color);
+  border: 1px solid var(--success-border-color);
+}
+.NotificationHooks_move-up-in_YMm8 {
+  -webkit-animation-name: NotificationHooks_MessageMoveIn_12VD;
+          animation-name: NotificationHooks_MessageMoveIn_12VD;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+@-webkit-keyframes NotificationHooks_MessageMoveIn_12VD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes NotificationHooks_MessageMoveIn_12VD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.NotificationHooks_move-up-leave_3_eH {
+  -webkit-animation-name: NotificationHooks_MessageMoveOut_1aur;
+          animation-name: NotificationHooks_MessageMoveOut_1aur;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  opacity: 0;
+}
+@-webkit-keyframes NotificationHooks_MessageMoveOut_1aur {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@keyframes NotificationHooks_MessageMoveOut_1aur {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+.NotificationHooks_notification_1WRD {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 90vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 8px;
+  position: absolute;
+}
+.NotificationHooks_move-top-animation_v87k {
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+}
+.NotificationHooks_button-div_1-bf {
+  width: 70px;
+  height: 26px;
+  border: 1px solid #FFC799;
+  padding-left: 9px;
+  color: #EE812A;
+  line-height: 26px;
+}
+.NotificationHooks_no-close-button_bZnm {
+  margin: 0 0px 0 25px;
+}
+.NotificationHooks_has-close-button_2lmz {
+  margin: 0 28px 0 25px;
+}
+.NotificationHooks_notification-content_3LqV {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 200px;
+  max-width: 1000px;
+  min-height: 40px;
+  z-index: 999999;
+  padding: 9px 20px;
+  pointer-events: all;
+  border-radius: 4px;
+  text-align: left;
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_icon_23Yt {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  color: #666;
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_content_2Pzu {
+  line-height: 1.5em;
+  font-size: 14px;
+  max-height: 120px;
+  overflow-y: auto;
+  word-break: break-word;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_close-icon_CWK7 {
+  position: absolute;
+  top: 11px;
+  cursor: pointer;
+  right: 20px;
+  color: #666;
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_icon-success_25pT {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  color: #666;
+  color: var(--success-color);
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_icon-error_3Eot {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  color: #666;
+  color: var(--error-color);
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_icon-warning_2nNy {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  color: #666;
+  color: var(--warning-color);
+}
+.NotificationHooks_notification-content_3LqV .NotificationHooks_feedback_fMoO {
+  float: right;
+  height: 1.5em;
+  margin-left: 12px;
+}
+
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/KDNotification.less ***!
+  \*******************************************************************************************************************************************************************************************************/
+.KDNotification_notification-wrapper_lf97 {
+  position: fixed;
+  top: 16px;
+  width: 100%;
+  z-index: 99999;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 90vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  pointer-events: none;
+}
+

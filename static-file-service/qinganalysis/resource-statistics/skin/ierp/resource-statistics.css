@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+.resource-statistics-data-table-cell-num
+{
+    position: relative;
+    top: 50%;
+    margin-top: -8px;
+    text-align: center;
+}

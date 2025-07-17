@@ -1,0 +1,53 @@
+{
+  "appDetails.key0001": "App-level Metadata",
+  "appDetails.key0002": "Element",
+  "appDetails.key0003": "Rule",
+  "appDetails.key0004": "Operator",
+  "appDetails.key0005": "Service",
+  "appDetails.key0006": "App-level Template",
+  "appDetails.key0007": "Document Template",
+  "appDetails.key0008": "Application Model",
+  "appDetails.key0009": "Total Quantity",
+  "appDetails.key0010": "PC Page Model",
+  "appDetails.key0011": "Mobile Page Model",
+  "appDetails.key0012": "Entity Model",
+  "appDetails.key0013": "Layout Model",
+  "appDetails.key0014": "Page Model",
+  "appDetails.key0015": "Report Model",
+  "appDetails.key0016": "Parameter model",
+
+  "metaModel.key0001": "ModelType",
+  "metaModel.key0002": "Element",
+  "metaModel.key0003": "Property",
+  "metaModel.key0004": "Rule",
+  "metaModel.key0005": "Validator",
+  "metaModel.key0006": "Service",
+  "metaModel.key0007": "Operator",
+  "metaModel.key0008": "Meta Model",
+
+  "commonTemplate.key0001": "Business Model Template",
+  "commonTemplate.key0002": "System Model Template",
+  "commonTemplate.key0003": "Workflow Template",
+  "commonTemplate.key0004": "Workflow Node Template",
+  "commonTemplate.key0005": "Print Template",
+  "commonTemplate.key0006": "Generic Template",
+
+  "enterpriseApp.key0001": "Enterprise Apps",
+
+  "appList.key0001": "Encode",
+  "appList.key0002": "Name",
+
+  "modelBar.key0001": "Workflow Model",
+  "modelBar.key0002": "Print Model",
+  "modelBar.key0003": "Rule Model",
+  "modelBar.key0004": "Plugin Model",
+
+  "refresh.key0001": "Refresh progress is ",
+  "refresh.key0002": "Data updated on",
+  "refresh.key0003": "Data is refreshing",
+  "refresh.key0004": "REFRESHING",
+  "refresh.key0005": "REFRESH",
+
+  "loaddingSpin.key0001": "Data initialization may take a long time",
+  "loaddingSpin.key0002": "Please check in later..."
+}

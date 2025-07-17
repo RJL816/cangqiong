@@ -1,0 +1,8 @@
+<div>
+	<li id="${control.id}"  viewid="${control.viewid}" class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+		{{if control.name}}
+		<label class="checkbox-inline"  class="${control.required ? 'required' : ''}">${control.name}</label>
+		{{/if}}
+		<input type="checkbox" value="${control.value}" checked="checked" style="width:${control.width}" disabled="${control.disabled}"/>
+	</li>
+</div>

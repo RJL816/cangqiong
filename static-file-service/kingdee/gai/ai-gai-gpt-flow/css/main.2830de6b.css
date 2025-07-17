@@ -1,0 +1,755 @@
+/* this will be exported as base.css and can be used for a basic styling */
+/* these are the necessary styles for React Flow, they get used by base.css and style.css */
+.react-flow__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.react-flow__pane {
+  z-index: 1;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.react-flow__pane.selection {
+    cursor: pointer;
+  }
+.react-flow__pane.dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+.react-flow__viewport {
+  transform-origin: 0 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.react-flow__renderer {
+  z-index: 4;
+}
+.react-flow__selection {
+  z-index: 6;
+}
+.react-flow__nodesselection-rect:focus,
+.react-flow__nodesselection-rect:focus-visible {
+  outline: none;
+}
+.react-flow .react-flow__edges {
+  pointer-events: none;
+  overflow: visible;
+}
+.react-flow__edge-path,
+.react-flow__connection-path {
+  stroke: #b1b1b7;
+  stroke-width: 1;
+  fill: none;
+}
+.react-flow__edge {
+  pointer-events: visibleStroke;
+  cursor: pointer;
+}
+.react-flow__edge.animated path {
+    stroke-dasharray: 5;
+    -webkit-animation: dashdraw 0.5s linear infinite;
+            animation: dashdraw 0.5s linear infinite;
+  }
+.react-flow__edge.animated path.react-flow__edge-interaction {
+    stroke-dasharray: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+.react-flow__edge.inactive {
+    pointer-events: none;
+  }
+.react-flow__edge.selected,
+  .react-flow__edge:focus,
+  .react-flow__edge:focus-visible {
+    outline: none;
+  }
+.react-flow__edge.selected .react-flow__edge-path,
+  .react-flow__edge:focus .react-flow__edge-path,
+  .react-flow__edge:focus-visible .react-flow__edge-path {
+    stroke: #555;
+  }
+.react-flow__edge-textwrapper {
+    pointer-events: all;
+  }
+.react-flow__edge-textbg {
+    fill: white;
+  }
+.react-flow__edge .react-flow__edge-text {
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+.react-flow__connection {
+  pointer-events: none;
+}
+.react-flow__connection .animated {
+    stroke-dasharray: 5;
+    -webkit-animation: dashdraw 0.5s linear infinite;
+            animation: dashdraw 0.5s linear infinite;
+  }
+.react-flow__connectionline {
+  z-index: 1001;
+}
+.react-flow__nodes {
+  pointer-events: none;
+  transform-origin: 0 0;
+}
+.react-flow__node {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: all;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.react-flow__node.dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+.react-flow__nodesselection {
+  z-index: 3;
+  transform-origin: left top;
+  pointer-events: none;
+}
+.react-flow__nodesselection-rect {
+    position: absolute;
+    pointer-events: all;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+.react-flow__handle {
+  position: absolute;
+  pointer-events: none;
+  min-width: 5px;
+  min-height: 5px;
+  background-color: #333;
+}
+.react-flow__handle.connectionindicator {
+    pointer-events: all;
+    cursor: crosshair;
+  }
+.react-flow__handle-bottom {
+    top: auto;
+    left: 50%;
+    bottom: -4px;
+    transform: translate(-50%, 0);
+  }
+.react-flow__handle-top {
+    left: 50%;
+    top: -4px;
+    transform: translate(-50%, 0);
+  }
+.react-flow__handle-left {
+    top: 50%;
+    left: -4px;
+    transform: translate(0, -50%);
+  }
+.react-flow__handle-right {
+    right: -4px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+.react-flow__edgeupdater {
+  cursor: move;
+  pointer-events: all;
+}
+.react-flow__panel {
+  position: absolute;
+  z-index: 5;
+  margin: 15px;
+}
+.react-flow__panel.top {
+    top: 0;
+  }
+.react-flow__panel.bottom {
+    bottom: 0;
+  }
+.react-flow__panel.left {
+    left: 0;
+  }
+.react-flow__panel.right {
+    right: 0;
+  }
+.react-flow__panel.center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.react-flow__attribution {
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2px 3px;
+  margin: 0;
+}
+.react-flow__attribution a {
+    text-decoration: none;
+    color: #999;
+  }
+@-webkit-keyframes dashdraw {
+  from {
+    stroke-dashoffset: 10;
+  }
+}
+@keyframes dashdraw {
+  from {
+    stroke-dashoffset: 10;
+  }
+}
+.react-flow__edgelabel-renderer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.react-flow__node-default,
+.react-flow__node-input,
+.react-flow__node-output,
+.react-flow__node-group {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bbb;
+}
+.react-flow__node-default.selected,
+  .react-flow__node-default:focus,
+  .react-flow__node-default:focus-visible,
+  .react-flow__node-input.selected,
+  .react-flow__node-input:focus,
+  .react-flow__node-input:focus-visible,
+  .react-flow__node-output.selected,
+  .react-flow__node-output:focus,
+  .react-flow__node-output:focus-visible,
+  .react-flow__node-group.selected,
+  .react-flow__node-group:focus,
+  .react-flow__node-group:focus-visible {
+    outline: none;
+    border: 1px solid #555;
+  }
+.react-flow__nodesselection-rect,
+.react-flow__selection {
+  background: rgba(150, 150, 180, 0.1);
+  border: 1px dotted rgba(155, 155, 155, 0.8);
+}
+.react-flow__controls {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.08);
+}
+.react-flow__controls-button {
+    border: none;
+    background: #fefefe;
+    border-bottom: 1px solid #eee;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    padding: 5px;
+  }
+.react-flow__controls-button:hover {
+      background: #f4f4f4;
+    }
+.react-flow__controls-button svg {
+      width: 100%;
+      max-width: 12px;
+      max-height: 12px;
+    }
+.react-flow__controls-button:disabled {
+      pointer-events: none;
+    }
+.react-flow__controls-button:disabled svg {
+        fill-opacity: 0.4;
+      }
+.react-flow__minimap {
+  background-color: #fff;
+}
+.react-flow__resize-control {
+  position: absolute;
+}
+.react-flow__resize-control.left,
+.react-flow__resize-control.right {
+  cursor: ew-resize;
+}
+.react-flow__resize-control.top,
+.react-flow__resize-control.bottom {
+  cursor: ns-resize;
+}
+.react-flow__resize-control.top.left,
+.react-flow__resize-control.bottom.right {
+  cursor: nwse-resize;
+}
+.react-flow__resize-control.bottom.left,
+.react-flow__resize-control.top.right {
+  cursor: nesw-resize;
+}
+/* handle styles */
+.react-flow__resize-control.handle {
+  width: 4px;
+  height: 4px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  background-color: #3367d9;
+  transform: translate(-50%, -50%);
+}
+.react-flow__resize-control.handle.left {
+  left: 0;
+  top: 50%;
+}
+.react-flow__resize-control.handle.right {
+  left: 100%;
+  top: 50%;
+}
+.react-flow__resize-control.handle.top {
+  left: 50%;
+  top: 0;
+}
+.react-flow__resize-control.handle.bottom {
+  left: 50%;
+  top: 100%;
+}
+.react-flow__resize-control.handle.top.left {
+  left: 0;
+}
+.react-flow__resize-control.handle.bottom.left {
+  left: 0;
+}
+.react-flow__resize-control.handle.top.right {
+  left: 100%;
+}
+.react-flow__resize-control.handle.bottom.right {
+  left: 100%;
+}
+/* line styles */
+.react-flow__resize-control.line {
+  border-color: #3367d9;
+  border-width: 0;
+  border-style: solid;
+}
+.react-flow__resize-control.line.left,
+.react-flow__resize-control.line.right {
+  width: 1px;
+  transform: translate(-50%, 0);
+  top: 0;
+  height: 100%;
+}
+.react-flow__resize-control.line.left {
+  left: 0;
+  border-left-width: 1px;
+}
+.react-flow__resize-control.line.right {
+  left: 100%;
+  border-right-width: 1px;
+}
+.react-flow__resize-control.line.top,
+.react-flow__resize-control.line.bottom {
+  height: 1px;
+  transform: translate(0, -50%);
+  left: 0;
+  width: 100%;
+}
+.react-flow__resize-control.line.top {
+  top: 0;
+  border-top-width: 1px;
+}
+.react-flow__resize-control.line.bottom {
+  border-bottom-width: 1px;
+  top: 100%;
+}
+
+.react-flow__node-LLMAction .react-flow__handle-connecting {
+  background: red;
+}
+.react-flow__node-JavaPluginAction .react-flow__handle-connecting {
+  background: red;
+}
+.react-flow__node-MessageAction .react-flow__handle-connecting {
+  background: red;
+}
+.react-flow__node-input,
+.react-flow__node-output {
+  border: none;
+}
+.react-flow__node-input .react-flow__handle-connecting {
+  background: red;
+}
+.react-flow__node-output .react-flow__handle-connecting {
+  background: red;
+}
+.react-flow__node-LLMAction .react-flow__handle-valid {
+  background: #276ff5;
+}
+.react-flow__node-JavaPluginAction .react-flow__handle-valid {
+  background: #276ff5;
+}
+.react-flow__node-MessageAction .react-flow__handle-valid {
+  background: #276ff5;
+}
+.react-flow__node-input .react-flow__handle-valid {
+  background: #276ff5;
+}
+.react-flow__node-output .react-flow__handle-valid {
+  background: #276ff5;
+}
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__node-default.selected,
+.react-flow__node-default:focus,
+.react-flow__node-default:focus-visible,
+.react-flow__node-input.selected,
+.react-flow__node-input:focus,
+.react-flow__node-input:focus-visible,
+.react-flow__node-output.selected,
+.react-flow__node-output:focus,
+.react-flow__node-output:focus-visible,
+.react-flow__node-group.selected,
+.react-flow__node-group:focus,
+.react-flow__node-group:focus-visible {
+  border: none;
+}
+.react-flow__handle-left {
+  left: -5px;
+}
+.react-flow__handle-top {
+  top: -5px;
+}
+.react-flow__handle-right {
+  right: -5px;
+}
+.react-flow__handle-bottom {
+  bottom: -5px;
+}
+.react-flow__node {
+  outline: none;
+}
+.react-flow__node.selectable:hover {
+  z-index: 900 !important;
+}
+
+.gaiFlow-App-lWcG_ {
+  position: relative;
+  display: -moz-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+       flex-direction: row;
+}
+.gaiFlow-App-lWcG_ .mainFlow-App-xI4nq {
+  margin-left: 280px;
+  position: relative;
+  -moz-box-flex: 1;
+       flex: 1 1;
+}
+.gaiFlow-App-lWcG_ .mainFlow-App-xI4nq .loading-App-eo1zu {
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+       justify-content: center;
+  -moz-box-align: center;
+       align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.gaiFlow-App-lWcG_ .mainFlow-App-xI4nq .loading-App-eo1zu .loadingImg-App-saSOQ {
+  width: 96px;
+  height: 96px;
+}
+.gaiFlow-App-lWcG_ .mainFlow-App-xI4nq .flowContent-App-kn9KD {
+  display: block;
+  background-color: #fff;
+  height: 100%;
+}
+.gaiFlow-App-lWcG_ .mainFlow-App-xI4nq .flowContent-App-kn9KD.hidden-App-odNcX {
+  display: node;
+}
+
+.edgeLabel-index-AufBE {
+  position: absolute;
+  line-height: 18px;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 7px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nodeText-index-O6JxD {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.sourceHandle-index-wcZkx,
+.targetHandle-index-YB2_f {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  box-shadow: 1px 2px 10px -1px hsla(225, 93%, 12%, 0.12);
+  overflow: hidden;
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: center;
+       justify-content: center;
+  -moz-box-align: center;
+       align-items: center;
+}
+.sourceHandle-index-wcZkx.hidden-index-GFVdN,
+.targetHandle-index-YB2_f.hidden-index-GFVdN {
+  opacity: 0;
+  box-shadow: none;
+}
+.sourceHandle-index-wcZkx .icon-index-Ytccu,
+.targetHandle-index-YB2_f .icon-index-Ytccu {
+  width: 12px;
+  height: 12px;
+  color: #999999;
+  pointer-events: none;
+}
+.sourceHandle-index-wcZkx.handleHover-index-QCeRt,
+.targetHandle-index-YB2_f.handleHover-index-QCeRt {
+  background-color: #5582f3;
+}
+.sourceHandle-index-wcZkx.handleHover-index-QCeRt .icon-index-Ytccu,
+.targetHandle-index-YB2_f.handleHover-index-QCeRt .icon-index-Ytccu {
+  color: #fff;
+}
+.sourceHandle-index-wcZkx.sourceHandleLeft-index-CsI6Q .icon-index-Ytccu,
+.targetHandle-index-YB2_f.sourceHandleLeft-index-CsI6Q .icon-index-Ytccu {
+  transform: scale(1) rotate(90deg);
+}
+.sourceHandle-index-wcZkx.sourceHandleBottom-index-IBvHE .icon-index-Ytccu,
+.targetHandle-index-YB2_f.sourceHandleBottom-index-IBvHE .icon-index-Ytccu {
+  transform: scale(1) rotate(0deg);
+}
+.sourceHandle-index-wcZkx.sourceHandleRight-index-SSCx5 .icon-index-Ytccu,
+.targetHandle-index-YB2_f.sourceHandleRight-index-SSCx5 .icon-index-Ytccu {
+  transform: scale(1) rotate(-90deg);
+}
+.sourceHandle-index-wcZkx.targetHandleTop-index-HVecV .icon-index-Ytccu,
+.targetHandle-index-YB2_f.targetHandleTop-index-HVecV .icon-index-Ytccu {
+  transform: scale(1) rotate(0deg);
+}
+.wrapper-index-RrQcF {
+  height: 50px;
+  width: 200px;
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+       align-items: center;
+  -moz-box-pack: center;
+       justify-content: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e7eb;
+  background-color: #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+  vertical-align: middle;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+.wrapper-index-RrQcF .content-index-MPiqx {
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+       align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+.wrapper-index-RrQcF .content-index-MPiqx::before {
+  margin-right: 12px;
+}
+.wrapper-index-RrQcF .content-index-MPiqx .name-index-FjD9w {
+  display: inline-block;
+  padding-left: 6px;
+  overflow: auto;
+  -moz-box-flex: 1;
+       flex: 1 1;
+}
+.wrapper-index-RrQcF .content-index-MPiqx svg {
+  color: black;
+  width: 15px;
+  height: 15px;
+}
+.wrapper-index-RrQcF .content-index-MPiqx svg g,
+.wrapper-index-RrQcF .content-index-MPiqx svg path {
+  fill: black;
+}
+.wrapper-index-RrQcF .error-index-p9YbB {
+  position: absolute;
+  right: 0;
+  display: -moz-box;
+  display: flex;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background-color: #ef4444;
+  border-radius: 20px;
+  -moz-box-pack: center;
+       justify-content: center;
+  -moz-box-align: center;
+       align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transform: translate(30px, 0) rotate(0) skew(0) skewY(0) scaleX(1) scaleY(1);
+}
+.wrapper-index-RrQcF .error-index-p9YbB .errorText-index-ohwZJ {
+  position: absolute;
+  left: 30px;
+  color: #000;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  background-color: #fff;
+  white-space: nowrap;
+}
+.wrapperImage-index-hiVO8 {
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+       align-items: center;
+  padding: 4px 8px;
+  width: 240px;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  background-color: #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 #0000000d;
+}
+.wrapperImage-index-hiVO8:hover {
+  border: 1px solid #5582f3;
+}
+.wrapperImage-index-hiVO8.notDraggable-index-G2GSF {
+  cursor: not-allowed;
+  background-color: #f1f5f9;
+}
+.wrapperImage-index-hiVO8 .content-index-MPiqx {
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+       align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+.wrapperImage-index-hiVO8 .content-index-MPiqx::before {
+  margin-right: 12px;
+}
+.wrapperImage-index-hiVO8 .content-index-MPiqx .name-index-FjD9w {
+  display: inline-block;
+  padding-left: 6px;
+  overflow: auto;
+  -moz-box-flex: 1;
+       flex: 1 1;
+}
+.wrapperImage-index-hiVO8 .content-index-MPiqx svg {
+  color: black;
+  width: 15px;
+  height: 15px;
+}
+.wrapperImage-index-hiVO8 .content-index-MPiqx svg g,
+.wrapperImage-index-hiVO8 .content-index-MPiqx svg path {
+  fill: black;
+}
+
+.nodeText-index-oxw13 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.nodeText-index-CytMY {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.nodeText-index-puqAy {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.nodeText-index-TU5PG {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+}
+
+.panel-index-fJfiR {
+  position: absolute;
+  background-color: #fff;
+  width: 280px;
+  height: 100%;
+  margin: 0;
+  top: 0;
+}
+.panel-index-fJfiR .title-index-SygAV {
+  width: 100%;
+  height: 40px;
+  background: #f2f2f2;
+  padding: 8px 12px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+.panel-index-fJfiR .title-index-SygAV .text-index-gtiOt {
+  color: #276ff5;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  display: inline-block;
+  padding: 4px 8px;
+}
+.panel-index-fJfiR .panelContent-index-mxfvl {
+  display: -moz-box;
+  display: flex;
+  padding: 20px;
+  -moz-box-align: center;
+       align-items: center;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+       flex-direction: column;
+}
+
+
+/*# sourceMappingURL=main.2830de6b.css.map*/

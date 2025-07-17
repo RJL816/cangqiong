@@ -1,0 +1,18 @@
+{
+	"allselect": "Select All",
+	"equal": "Equals",
+	"deleterow": "Delete",
+	"no": "No",
+	"param": "Parameters",
+	"yes": "Yes",
+	"returnresult": "Return Result",
+	"term": "Item",
+	"value": "Value",
+	"addresult": "Add Result",
+	"selected": "Selected",
+	"operationtarget": "Operation Index",
+	"loading": "Loading...",
+    "loadMore": "Load more...",
+    "noResults": "No params found",
+	"noResultsForTerm": "No results for <b>%s</b>"
+}

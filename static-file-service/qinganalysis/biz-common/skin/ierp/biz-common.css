@@ -1,0 +1,424 @@
+.q-common-pagination
+{
+	position: absolute;
+	width: 100%;
+	height: 32px;
+	font-family:" Microsoft YaHei";
+	padding-left: 8px;
+	padding-right: 7px;
+	align-items: center;
+	display: inline-block;
+	background: #fff;
+	box-sizing: border-box;
+	color: #404040;
+}
+
+.q-common-pagination-total-selected
+{
+	display: inline-block;
+	height: 32px;
+	color: #404040;
+	font-size: 12px;
+	user-select: text;
+	white-space: nowrap;
+	line-height: 32px;
+}
+
+.q-common-pagination-total-row
+{
+	display: inline-block;
+	height: 32px;
+	color: #404040;
+	font-size: 12px;
+	user-select: text;
+	white-space: nowrap;
+	line-height: 32px;
+}
+
+.q-common-pagination-select-all
+{
+	display: inline-block;
+	height: 32px;
+	font-size: 12px;
+	white-space: nowrap;
+	color: var(--color-main, #5582F3);
+	cursor: pointer;
+	line-height: 32px;
+	margin-left: 15px;
+}
+
+.q-common-pagination-select-all:hover
+{
+	color: var(--color-lightish, #87adff);
+}
+
+.q-common-pagination-operation
+{
+	display: inline-block;
+	height: 32px;
+	width: 490px;
+	position: absolute;
+	right: 8px;
+}
+
+.q-common-pagination-operation-total-page
+{
+	position: absolute;
+	display: inline-block;
+	height: 16px;
+	user-select: text;
+	line-height: 32px;
+	right: 275px;
+}
+
+.q-common-pagination-operation-total-page2
+{
+	position: relative;
+	display: inline-block;
+	height: 16px;
+	user-select: text;
+	line-height: 32px;
+	margin-left: 10px;
+	float: right;
+}
+
+.q-common-pagination-operation-current-page
+{
+	position: absolute;
+	display: inline-block;
+	font-size: 12px;
+	right: 195px;
+	user-select: text;
+	line-height: 32px;
+}
+
+.q-common-pagination-operation-current-page2
+{
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	user-select: text;
+	line-height: 32px;
+	margin-left: 10px;
+	float: right;
+}
+
+.q-common-pagination-operation-current-page-input
+{
+	box-sizing: border-box;
+	outline: 0;
+	margin: 0 3px;
+	text-align: center;
+	font-size: 12px;
+	width: 32px;
+	height: 24px;
+	border: 1px solid;
+	color: #404040;
+	background: #fff;
+}
+
+.q-common-pagination-operation-current-page-input_border
+{
+	border-color: #d9d9d9;
+	transition: border-color 300ms;
+}
+
+.q-common-pagination-operation-current-page-input_border_hover
+{
+	border-color: var(--color-main, #5582f3);
+	transition: border-color 300ms;
+}
+
+.q-common-pagination-operation-switch-page
+{
+	position: relative;
+	display: inline-block;
+	/*right: 90px;*/
+	font-size: 0;
+	top: 4px;
+	margin-left: 10px;
+	float: right;
+}
+
+.q-common-pagination-operation-switch-page-button
+{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.q-common-pagination-operation-combobox-page-size
+{
+	position: relative;
+	right: 2px;
+	top: 4px;
+	width: 86px;
+	height: 24px;
+	color: #404040;
+	background-color: transparent;
+	box-shadow: 0 0 0 0 #dbdbdb;
+	margin-left: 10px;
+	float: right;
+	display: inline-block;
+}
+/*弹出窗口选择器-回显框*/
+.sa-qing-publish-dialog-selector-input
+{
+	position: absolute;
+	left: 1px;
+	right: 1px;
+	bottom: 1px;
+	top: 1px;
+	font-size: 12px;
+	color: rgb(102, 102, 102);
+	padding-left: 4px;
+}
+.sa-qing-publish-ctrl-textfield-input
+{
+	position: absolute;
+	left: 1px;
+	width: calc(100% - 26px);
+	top: 0px;
+	height: 100%;
+	font-size: 12px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	padding-left: 4px;
+	background-color: rgba(255,255,255,0);
+	outline: none;
+}
+/*弹出窗口选择器-弹出按钮*/
+.sa-qing-publish-dialog-selector-input-icon
+{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	right: 5px;
+	bottom: 6px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+/*日期范围选择器*/
+.q-common-singlelineborder
+{
+	width: 210px !important;
+	box-shadow: 0px 0px 0px 1px #dbdbdb;
+}
+
+.q-common-singlelineborder:hover
+{
+	box-shadow: 0px 0px 0px 1px #dbdbdb;
+}
+
+.q-common-dsb-widget-calendar-okcancel-left
+{
+	position: absolute;
+	right: 90px;
+	width: 60px;
+	bottom: 10px;
+	height: 24px;
+}
+
+.q-common-dsb-widget-calendar-okcancel-right
+{
+	position: absolute;
+	right: 20px;
+	width: 60px;
+	bottom: 10px;
+	height: 24px;
+}
+
+.q-common-fromDate-text
+{
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+.q-common-date-Separator
+{
+	position: absolute;
+	top: 0;
+	left: 90px;
+}
+
+.q-common-toDate-text
+{
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+/*排序*/
+.q-common-sort-box
+{
+	z-index: 65535;
+	position: absolute;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.q-common-sort-box_clickable
+{
+	border: 1px solid #3cf;
+	background-color: #fff;
+}
+
+.q-common-label-selector-container
+{
+	height: calc(100% - 30px);
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.q-common-data-viewer-container
+{
+	box-shadow: 0 1px 0 0 #dbdbdb;
+	overflow: hidden;
+}
+.q-common-data-viewer-text
+{
+	position: relative;
+	left: 0px;
+	width: calc(100% - 25px);
+	top: 0px;
+	height: 100%;
+	border: 0;
+	padding: 0px 4px 0px 4px;
+	box-sizing: border-box;
+	color: #c0c0c0;
+	outline: none;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.q-common-data-viewer-icon
+{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	top: 50%;
+	margin-top: -8px;
+	right: 3px;
+	cursor: pointer;
+}
+
+.q-common-label-editor
+{
+	border: 1px solid #ccc;
+}
+
+.q-common-label-editor-container
+{
+	height: calc(100% - 34px);
+	width: 100%;
+	color: #666666;
+	overflow-y: auto;
+	padding-left: 10px;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+.q-common-label-editor-add
+{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	position: relative;
+	margin-right: 5px;
+}
+
+.q-common-label-editor-label
+{
+	border: 1px solid rgb(204, 204, 204);
+	display: inline-block;
+	padding-left: 2px;
+	padding-right: 5px;
+	max-width: 102px;
+	height: 20px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.q-common-label-editor-label-active
+{
+	border-color: #88a7f6;
+	border-color: var(--color-lightish, #88a7f6);
+}
+
+.q-common-label-editor-label-text-enable
+{
+	cursor: pointer;
+	max-width: 88px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-left: 1px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.q-common-label-editor-label-text-enable:hover
+{
+	color: #88a7f6;
+	color: var(--color-lightish, #88a7f6);
+}
+
+.q-common-label-editor-label-text
+{
+	display: inline-block;
+}
+
+.q-common-label-editor-delete-btn
+{
+	display: inline-block;
+	padding-left: 5px;
+	position: relative;
+	top: -1px;
+	cursor: pointer;
+	height: 20px;
+	line-height: 20px;
+}
+
+.q-common-label-editor-relation-btn
+{
+	display: inline-block;
+	position: relative;
+	top: -2px;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+}
+
+.q-common-label-editor-warning
+{
+	display: inline-block;
+	position: relative;
+	cursor: default;
+	top: -5px;
+	height: 16px;
+	width: 16px;
+}
+
+.q-common-label-editor-container-title
+{
+	display: inline-block;
+}
+
+.q-common-label-editor-container-top
+{
+	margin: 7px 10px;
+}
+
+.q-common-label-editor-container-tips
+{
+	display: inline-block;
+	top: -12px;
+	position: relative;
+	margin-left: 3px;
+}

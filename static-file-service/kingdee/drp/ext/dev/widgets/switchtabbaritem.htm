@@ -1,0 +1,16 @@
+<div>
+    <div id="${control.id}"  viewid="${control.viewid}" class="switch-tab-item middle ${control.class} ${control.active?'active':''}" style="${control.unactivestyle};${(control.style||'') + control._customData.style};${control.active?control.activestyle:''}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+        <div class="tab-content ${control._customData.hideContent}">
+        </div>
+        <div class="tab-name ${control._customData.hideTabname}">${ control.name }</div>
+        {{if control.sort}}
+        <div class="sort">
+            <span class="iconfont iconclose_icon1" class="${control.active }"></span>
+            <span class="iconfont iconopen_icon" ></span>
+        </div>
+        {{/if}}
+        {{if control.more}}
+        <span class="iconfont iconopen_icon"></span>
+        {{/if}}
+    </div>
+</div>

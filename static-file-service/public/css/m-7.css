@@ -1,0 +1,105 @@
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/KDQRCode.less ***!
+  \****************************************************************************************************************************************************************************************************/
+.KDQRCode_QRCode-value_1aJf {
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+}
+.KDQRCode_QRCodeProtal_21ZZ {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+.KDQRCode_barCode_3EZK {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/base/Video.less ***!
+  \******************************************************************************************************************************************************************************************************/
+.Video_video_3HA8 {
+  background-color: #000;
+}
+
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/mobile/base/VideoRecord.less ***!
+  \************************************************************************************************************************************************************************************************************/
+.VideoRecord_video_record_H297 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.VideoRecord_video_record_H297 .VideoRecord_btn_2mBs {
+  height: 30px;
+  width: 100px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  border: 1px solid gray;
+}
+.VideoRecord_video_record_H297 .VideoRecord_tips_3QZ5 {
+  color: red;
+}
+.VideoRecord_video_record_H297 .VideoRecord_video_299o {
+  width: 100%;
+  height: 400px;
+  border: 1px solid red;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.VideoRecord_video_record_H297 .VideoRecord_yzj_tips_1JG4 {
+  color: red;
+}
+.VideoRecord_video_record_H297 .VideoRecord_yzj_btn_container_1q-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.VideoRecord_video_record_H297 .VideoRecord_yzj_btn_container_1q-6 .VideoRecord_yjz_btn_2lSK {
+  height: 30px;
+  width: 100px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  border: 1px solid gray;
+  margin: 3px;
+}
+

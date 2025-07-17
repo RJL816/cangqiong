@@ -1,0 +1,38 @@
+.filter-tree .custom-tree-node {
+    display: inline-block;
+    width: 100%;
+}
+.filter-tree  .tree-node-btn{
+    float: right;
+    margin-right: 10px;
+}
+
+.filter-tree  .el-icon-edit{
+	font-size:16px;
+}
+
+.filter-tree  .el-icon-delete{
+	font-size:16px;
+}
+
+.filter-tree  .el-icon-folder-add{
+	font-size:16px;
+}
+
+.filter-tree  .el-icon-document-add{
+	font-size:16px;
+}
+
+/* .custom-tree-node-label {
+  margin-top: -5px; 
+} */
+.filter-tree  .tree-icon {
+  vertical-align: middle; 
+  width: 14px;
+  height: 14px;
+}
+
+/* 设置选中节点的文字颜色 */
+.filter-tree  .el-tree-node.is-current > .el-tree-node__content {
+  color: #3A87EC; 
+}

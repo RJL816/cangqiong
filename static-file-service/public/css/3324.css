@@ -1,0 +1,153 @@
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/page/SystemTaskNotice.less ***!
+  \************************************************************************************************************************************************************************************************/
+.SystemTaskNotice_icon-container_3PoL {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 73vh;
+  z-index: 1050;
+}
+.SystemTaskNotice_icon-container_3PoL.SystemTaskNotice_right0_2q6y {
+  right: 0;
+}
+.SystemTaskNotice_icon-container_3PoL.SystemTaskNotice_no_1nxm {
+  display: none;
+}
+.SystemTaskNotice_icon-container_3PoL .SystemTaskNotice_amount-box_18bJ {
+  width: 87px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 24px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0px 4px 4px 0px;
+  color: #330000;
+  line-height: 24px;
+  padding-left: 23px;
+  margin-left: -21px;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/base/TaskNotice/WaveProgressRotate.less ***!
+  \***************************************************************************************************************************************************************************************************************************/
+.WaveProgressRotate_wave-progress-box-wrap_31ua {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.WaveProgressRotate_wave-progress-box_krLl {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #2962ef;
+}
+.WaveProgressRotate_wave-progress-box_krLl .WaveProgressRotate_wave_M0EI {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #89b7fe), color-stop(91%, #2962ef));
+  background-image: linear-gradient(-180deg, #89b7fe 13%, #2962ef 91%);
+  border-radius: 50%;
+}
+.WaveProgressRotate_wave-progress-box_krLl .WaveProgressRotate_wave-mask_3Xsz {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  border-radius: 40%;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transform: translate(-50%, -70%) rotate(0);
+      -ms-transform: translate(-50%, -70%) rotate(0);
+          transform: translate(-50%, -70%) rotate(0);
+  -webkit-animation: WaveProgressRotate_toRotate_2ZmO 10s linear -5s infinite;
+          animation: WaveProgressRotate_toRotate_2ZmO 10s linear -5s infinite;
+  z-index: 20;
+}
+@-webkit-keyframes WaveProgressRotate_toRotate_2ZmO {
+  50% {
+    -webkit-transform: translate(-50%, -70%) rotate(180deg);
+            transform: translate(-50%, -70%) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -70%) rotate(360deg);
+            transform: translate(-50%, -70%) rotate(360deg);
+  }
+}
+@keyframes WaveProgressRotate_toRotate_2ZmO {
+  50% {
+    -webkit-transform: translate(-50%, -70%) rotate(180deg);
+            transform: translate(-50%, -70%) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -70%) rotate(360deg);
+            transform: translate(-50%, -70%) rotate(360deg);
+  }
+}
+.WaveProgressRotate_wave-progress-box_krLl .WaveProgressRotate_percent-txt_gPd9 {
+  position: absolute;
+  z-index: 11;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top: 0;
+  width: 27px;
+  height: 17px;
+  font-size: 11px;
+  -webkit-transform: scale(0.916);
+  -ms-transform: scale(0.916);
+      transform: scale(0.916);
+  font-family: PingFangSC-Regular, sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0;
+}
+.WaveProgressRotate_wave-progress-box_krLl .WaveProgressRotate_percent-txt_gPd9 .WaveProgressRotate_percent_1jUR {
+  position: relative;
+  left: -1px;
+}
+

@@ -1,0 +1,20 @@
+<div>
+	<div class="${control.class}" id="${control.id}" viewid="${control.viewid}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}" xml="${control.xml}" data="${controlStr}">
+		{{if control.fmtter}}
+		  ${content}
+		{{else}}
+			<label style="${control.labelstyle + ';width:'+ control.labelwidth}" class="${control.required ? 'required' : ''}">${control.name} </label>
+			{{if (control.editable===false || control.editable==='false')}}
+				<span class="val-wrap" style="${control.inputstyle}">
+					${control.value}
+				</span>
+			{{else}}
+				{{if control.nameplaceholder}}
+					<input type="${control.type}" style="${control.inputstyle}" value="${control.defaultvalue}" name="${control.id}" placeholder="${control.nameplaceholder}" title="${control.title}" disabled="${control.disabled}" />
+				{{else}}
+					<input type="${control.type}" style="${control.inputstyle}" value="${control.defaultvalue}" name="${control.id}" placeholder="${control.placeholder}" title="${control.title}" disabled="${control.disabled}" />
+				{{/if}}
+			{{/if}}
+		{{/if}}
+	</div>
+</div>

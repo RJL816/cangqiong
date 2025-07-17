@@ -1,0 +1,14 @@
+{
+    "title": "标题行",
+    "dataRow": "数据行",
+    "sortRow": "排序规则",
+    "addCol": "插入列",
+    "delCol": "删除列",
+    "addNew": "选中列并双击“预警参数”插入",
+    "noneSort": "不排序",
+    "ascSort": "升序",
+    "descSort": "降序",
+    "titleDes": "正文表格",
+    "tips": "请选择要删除的列",
+    "tips1": "保存失败，请检查正文表格是否配置完整。"
+}

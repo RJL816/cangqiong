@@ -1,0 +1,54 @@
+.selectivity-result-label-wrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 32px;
+    padding: 0 16px;
+}
+.clickIconclose, .clickIconopen {
+    font-size: inherit;
+    /* width: 20px; */
+    height: 100%;
+    position: relative;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    color: #bbb;
+    font-family: iconfont!important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 32px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: inherit;
+    cursor: pointer;
+}
+.clickIconclose:before {
+    content: "\EA24";
+}
+.clickIconopen:before {
+    content: "\EA22";
+}
+.selectivity-result-children {
+    /* padding: 0 16px; */
+}
+.selectivity-result-children .selectivity-result-item {
+    padding-left: 41px !important;
+    white-space: nowrap;
+}
+
+.selectivity-result-label-wrap.selectivity-result-label-wrap-leve2 {
+    padding-left: 41px;
+}
+.selectivity-result-label-wrap.selectivity-result-label-wrap-leve3 {
+    padding-left: 49px;
+}
+
+.sselectivity-result-item-level2.selectivity-result-item {
+
+}
+.selectivity-result-item-level3.selectivity-result-item {
+    padding-left: 66px !important;
+}

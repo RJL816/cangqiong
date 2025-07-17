@@ -1,0 +1,22 @@
+{
+  "tableView": "Table View",
+  "matrixGridView": "Matrix Grid View",
+  "matrixGridDetailView": "Matrix Grid Detail View",
+  "filter": "Filter",
+  "calibrated": "Calibrated",
+  "calibrationDashboard": "Calibration Dashboard",
+  "calibrationReasons": "Calibration Reasons",
+  "calibrationSubjects": "Calibration Subjects",
+  "numberOfSubjects": "Number Of Subjects",
+  "ratio": "Ratio",
+  "number": "Number",
+  "pre-calibrationRatio": "Pre-calibration Ratio",
+  "calibratedRatio": "Calibrated Ratio",
+  "suggestedRatio": "Suggested Ratio",
+  "matrixGridDescription": "Matrix Grid Description",
+  "superiorAppraiser": "Superior Appraiser",
+  "addRequiredCalibrationReasons": "Add Calibration Reasons（Required）",
+  "addCalibrationReasons": "Add Calibration Reasons",
+  "people": "Number of Subjects",
+  "calibrationHistory": "Calibration History"
+}

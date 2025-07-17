@@ -1,0 +1,879 @@
+/*轻建模数据权限*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #E2E7EF;
+}
+
+.modelset-data-auth
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modelset-data-auth-toolbar
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    overflow: visible;
+    padding-left: 5px;
+    background-color: #fff;
+    height: 45px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #dbdbdb;
+}
+
+.modelset-data-auth-toolbar-combobox
+{
+    top: 10px;
+    position: absolute;
+    width: 130px;
+    min-width: 125px !important;
+    height: 25px;
+    min-height: 25px;
+    background-color: unset;
+}
+
+.view-type-tab-title
+{
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #666666;
+    display: inline-block;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: 400;
+    height: 20px;
+    width: auto;
+    margin-top: 7px;
+}
+
+.view-type-box-checked
+{
+    background: #E0EFFF;
+    border: 1px solid rgba(39,111,245,1);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #276FF5;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.view-type-box-unchecked
+{
+    background: #FAFAFA;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.sbm-container
+{
+    top: 56px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.sbm-left-panel
+{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    left: 0;
+    height: 100%;
+    box-shadow: 1px 0 0 0 #dbdbdb;
+}
+
+.sbm-left-panel-toolbar
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #dbdbdb;
+}
+
+.sbm-left-panel-toolbar-text
+{
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    width: auto;
+    height: 16px;
+}
+
+.sbm-left-search-box
+{
+    top: 8px;
+    width: 20px;
+    height: 30px;
+    float: right;
+    right: 40px;
+    position: absolute;
+}
+
+.sbm-left-refresh-btn
+{
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    float: right;
+    right: 15px;
+    position: absolute;
+}
+
+.sbm-left-tree-table
+{
+    position: absolute;
+    top: 46px;
+    width: 100%;
+    bottom: 0;
+}
+
+.sbm-left-tree-table-item
+{
+    position: absolute !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    right: 10px;
+}
+
+.sbm-left-not-data-container
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    height: 125px;
+    transform: translate(0%, -50%);
+}
+
+.sbm-left-not-data-text
+{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.sbm-left-not-data-icon
+{
+    position: absolute;
+    left: 50%;
+    width: 170px;
+    top: 0;
+    height: 98px;
+    transform: translate(-50%, 0%);
+}
+
+.sbm-right-panel
+{
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 301px;
+}
+
+.sbm-right-panel-sys-user-add
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 80px;
+    height: 30px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-sys-user-delete
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 0;
+    height: 30px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-sys-role-add
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 80px;
+    height: 30px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-sys-role-delete
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 0;
+    height: 30px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-model-role-manage
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 0;
+    height: 30px;
+    width: 100px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-model-role-add
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 180px;
+    height: 30px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-model-role-delete
+{
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 5px;
+    right: 100px;
+    height: 30px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbm-right-panel-viewer-index
+{
+    position: relative;
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+    text-align: center;
+    display: inline-block;
+}
+
+.sbm-right-panel-viewer-index-container
+{
+    position: absolute;
+    top: 10px;
+    height: 23px;
+    width: 100%;
+    text-align: center;
+}
+
+.sbm-right-panel-enable-button
+{
+    position: relative;
+    height: 19px;
+    line-height: 19px;
+    width: 31px;
+    text-align: center;
+    display: inline-block;
+}
+
+.sbm-right-panel-enable-button-container
+{
+    position: absolute;
+    top: 10px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sbm-right-panel-edit-icon
+{
+    position: relative;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sbm-right-panel-edit-icon-container
+{
+    position: absolute;
+    top: 14px;
+    height: 16px;
+    width: 57px;
+    left: 50%;
+    margin-left: -29px;
+}
+
+.data-auth-delete-dialog
+{
+    position: absolute;
+    left: 0;
+    top: 125px;
+    width: 370px;
+    height: 23px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+.sbu-container
+{
+    top: 56px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.sbu-left-panel
+{
+    position: absolute;
+    top: 0;
+    width: 320px;
+    left: 0;
+    height: 100%;
+    box-shadow: 1px 0 0 0 #dbdbdb;
+}
+
+.sbu-left-panel-user-label
+{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    color: #666;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+.sbu-left-panel-user-label-selected
+{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-top: 2px solid #5582F3;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbu-left-panel-list-item-label
+{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    left: 20px;
+    right: 0;
+    line-height: 30px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.sbu-left-panel-list-item-delete
+{
+    position: absolute;
+    top: 7px;
+    height: 16px;
+    width: 16px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.sbu-left-panel-link-container
+{
+    position: absolute;
+    top: 36px;
+    width: 100%;
+    height: 32px;
+    border-bottom: 2px solid #ccc;
+}
+
+.sbu-left-panel-model-role-manage
+{
+    position: absolute;
+    text-align: left;
+    top: 0;
+    line-height: 32px;
+    left: 8px;
+    height: 32px;
+    width: auto;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.sbu-left-panel-add-user
+{
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+    height: 32px;
+    line-height: 32px;
+    left: 8px;
+    width: 80px;
+    color: #5582F3;
+    cursor: pointer;
+}
+
+.auth-setting-switch-button-text
+{
+    position: relative;
+    text-align: left;
+    left: 0;
+    width: auto;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.auth-setting-switch-button-tips
+{
+    position: relative;
+    text-align: left;
+    margin-left: 4px;
+    top: 3px;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.auth-setting-switch-button
+{
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    top: 3px;
+    height: 19px;
+    line-height: 19px;
+    display: inline-block;
+}
+
+.auth-setting-combo-box-label
+{
+    position: relative;
+    text-align: left;
+    top: 0;
+    margin-left: 10px;
+    height: 45px;
+    line-height: 45px;
+    width: auto;
+    display: inline-block;
+}
+
+.auth-setting-combo-box
+{
+    position: relative;
+    text-align: left;
+    margin-left: 10px;
+    width: 100px;
+    top: 8px;
+    height: 24px;
+    display: inline-block;
+    color: #000000;
+}
+
+.sbu-right-panel
+{
+    height: 100%;
+    top: 0;
+    position: absolute;
+    right: 0;
+    left: 327px;
+    box-shadow: -1px 0 0 0 #dbdbdb;
+}
+
+.sbu-right-table-name
+{
+    position: absolute;
+    text-align: left;
+    left: 20px;
+    right: 0;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.auth-setting-field-enable
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    height: 22px;
+    line-height: 22px;
+}
+
+.auth-setting-field-enable-combobox
+{
+    position: relative;
+    text-align: left;
+    left: 0;
+    width: 16px;
+    top: 0;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+}
+
+.auth-setting-field-enable-text
+{
+    position: relative;
+    text-align: left;
+    left: 0;
+    width: auto;
+    top: -3px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+}
+
+.field-table-cell-editable
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    line-height: 26px;
+    padding-left: 4px;
+}
+
+.field-table-datatype-icon
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.field-table-datatype-text
+{
+    position: absolute;
+    left: 30px;
+    right: 6px;
+    height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    line-height: 20px;
+}
+
+.modeler-auth-filter-table-op
+{
+    position: relative;
+    top: 6px;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.modeler-auth-filter-table-op-insert
+{
+    left: 4px;
+}
+
+.modeler-auth-filter-table-op-delete
+{
+    margin-left: 8px;
+}
+
+.modeler-auth-field-popup
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    background: rgb(255,255,255);
+    box-shadow: 0 0 2px 0 #ccc;
+    z-index: 9999999;
+}
+
+.modeler-auth-field-popup-search
+{
+    position: absolute;
+    height: 25px;
+    top: 2px;
+    left: 2px;
+    right: 0;
+}
+
+.modeler-auth-field-popup-search-result
+{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 12px;
+    text-align: center;
+}
+
+.modeler-auth-field-popup-list-item
+{
+    position: relative;
+    color: #828282;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.modeler-auth-field-popup-list-item-text
+{
+    max-width: 88%;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.modeler-auth-field-popup-list-item-field-name
+{
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    display: none;
+}
+
+.modeler-auth-field-popup-show-field-name
+{
+    position: absolute;
+    bottom: 2px;
+    height: 25px;
+    width: 100%;
+    border-top: 1px solid #CBCBCB;
+}
+
+.modeler-auth-field-popup-use-raw-type
+{
+    position: absolute;
+    bottom: 30px;
+    border-top: 1px solid #CBCBCB;
+    height: 25px;
+    width: 100%;
+}
+
+.modeler-auth-field-popup-list-item-title
+{
+    position: relative;
+    color: #828282;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-auth-field-popup-list-item:hover
+{
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+
+.modeler-auth-field-popup-list-owner
+{
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 1px;
+    right: -1px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.modeler-auth-list-item_selected_enabled
+{
+    color: #fff;
+    background-color: #88a7f6;
+    background-color: var(--color-lightish, #88a7f6);
+}
+
+.modeler-auth-list-item_selected_enabled:hover
+{
+    color: #fff;
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+
+.modeler-auth-enum-popup-list-owner
+{
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    right: -1px;
+    overflow: auto;
+    cursor: pointer;
+    padding-bottom:3px;
+}
+
+.modeler-auth-field-selection-checkbox-icon
+{
+    position: absolute;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.modeler-auth-field-selection-checkbox-text
+{
+    position: relative;
+    top: 0;
+    width: auto;
+    float: left;
+    margin-left: 22px;
+    line-height: 23px;
+    white-space: nowrap;
+}
+
+.modeler-auth-common-cell-editable
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    line-height: 26px;
+    padding-left: 4px;
+}
+
+.modeler-auth-common-cell-editable:hover
+{
+    box-shadow: 0 1px 0 0 #5582f3;
+    box-shadow: 0 1px 0 0 var(--color-main, #5582f3);
+}
+
+.modeler-auth-filter-table-prompt
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 2px;
+    cursor: default;
+}
+
+.sbm-left-tree-text
+{
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.sbm-left-tree-number-container
+{
+    color: #c0c0c0;
+}
+
+.sbm-left-tree-number_selected
+{
+    color: inherit;
+}
+
+
+.data-auth-preset
+{
+    color:  #b2b2b2;
+    border: 1px solid #b2b2b2;
+    padding: 1px 2px;
+    margin-right: 2px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.data-auth-preset_selected
+{
+    color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    padding: 1px 2px;
+    margin-right: 2px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+}

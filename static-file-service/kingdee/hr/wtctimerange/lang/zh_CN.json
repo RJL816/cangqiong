@@ -1,0 +1,11 @@
+{
+  "selectStartTime": "选择开始时间",
+  "selectEndTime": "选择结束时间",
+  "noEmpty": "值不能为空",
+  "morning": "上半天",
+  "afternoon": "下半天",
+  "allDay": "全天",
+  "customizeTime": "时分",
+  "msg1": "结束时间不能小于开始时间。",
+  "msg2": "开始时间不能大于结束时间。"
+}

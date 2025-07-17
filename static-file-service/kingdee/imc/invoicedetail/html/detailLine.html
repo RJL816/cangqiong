@@ -1,0 +1,139 @@
+<div id='detailLine'>
+	<div class="part title" id="detailpart{{pageId}}">
+		<div class='name num'></div>
+		<div class='name xmmc required'>项目名称</div>
+        <div class='name ggxh'>规格型号</div>
+        <div class='name xmdw'>单位</div>
+        <div class='name xmsl'>数量</div>
+        <div class='name xmdj' id="headdj{{pageId}}">单价{{if hsbz=='1'}}(含税){{else}}(不含税){{/if}}</div>
+        <div class='name xmje required' id="headje{{pageId}}">金额{{if hsbz=='1'}}(含税){{else}}(不含税){{/if}}</div>
+        <div class='name sl required'>税率</div>
+        <div class='name se'>税额</div>
+        <div class='name cz'></div>
+	
+	</div>
+	<div class="table" id="detailtable{{pageId}}"></div>
+	<div class="drop-down" id="drop-down{{pageId}}">
+		<ul id="drop{{pageId}}" class="drop"></ul>
+	</div>
+	<div id='addDetail{{pageId}}' class="operation" style="margin-left:10px; margin-bottom:10px;">
+		<div class="addDetailLine btn" id="addDetailLine{{pageId}}">+添加明细</div>
+		<div class="addDeduction btn" id="addDeduction{{pageId}}">+添加扣除金额</div>
+		<div class="addDiscountLine btn" id="addDiscountLine{{pageId}}">+添加折扣行</div>
+	</div>
+</div>
+<div id="detailLineTotal">
+	<div class="total" id="amountTotal{{pageId}}">
+		<div class="total-l">合计</div>
+		<div class="total-m" id="amountAcc{{pageId}}"></div>
+		<div class="total-r" id="taxAcc{{pageId}}"></div>
+	</div>
+	<div class="total amountTaxTotal" id="amountTaxTotal{{pageId}}">
+		<div>价税合计（大写）</div>
+		<div class="amountTaxTotalUppercase" id="amountTaxTotalUppercase{{pageId}}"></div>
+		<div>（小写）</div>
+		<div class="amountTaxTotalLowercase" id="amountTaxTotalLowercase{{pageId}}"></div>
+	</div>
+</div>
+
+<div id='deductionsLine{{pageId}}'>
+	<div id='detailLine'>
+		<div class="part title" id="detailpart{{pageId}}">
+			<div class='name num'></div>
+			<div class='name pzlx'>凭证类型</div>
+			<div class='name qdphm'>数电票号码</div>
+			<div class='name fpdm'>发票代码</div>
+			<div class='name fphm'>发票号码</div>
+			<div class='name pzhm'>凭证号码</div>
+			<div class='name kjrq'>开具日期</div>
+			<div class='name hjje'>凭证合计金额</div>
+			<div class='name kcje'>本次扣除金额</div>
+			<div class='name bz'>备注</div>
+			<div class='name cz'></div>
+		</div>
+		<div class="table" id="deductionstable{{pageId}}"></div>
+		<div class="drop-down" id="drop-down{{pageId}}">
+			<ul id="drop{{pageId}}" class="drop"></ul>
+		</div>
+		<div id='addDetail{{pageId}}' class="operation" style="margin-left:10px; margin-bottom:10px;">
+			<div class="addDetailLine btn" id="addDeductionsLine{{pageId}}">+添加明细</div>
+		</div>
+	</div>
+</div>
+
+<div id='transportLine{{pageId}}'>
+	<div id='detailLine'>
+		<div class="part title" id="detailpart{{pageId}}">
+			<div class='name num'></div>
+			<div class='name ysgjzl required'>运输工具种类</div>
+			<div class='name ysgjph required'>
+				运输工具牌号
+				<div class='tips' id='tips{{pageId}}'></div>
+				<div class='tooltips'>
+					若运输工具种类属于无牌号的工具种类时，请填写“无”
+				</div>
+			</div>
+			<div class='name qyd required'>起运地</div>
+			<div class='name ddd required'>到达地</div>
+			<div class='name yshwmc required'>运输货物名称</div>   
+			<div class='name cz'></div>
+		</div>
+		<div class="table" id="transporttable{{pageId}}"></div>
+		<div class="drop-down" id="drop-down{{pageId}}">
+			<ul id="drop{{pageId}}" class="drop"></ul>
+		</div>
+		<div id='addDetail{{pageId}}' class="operation" style="margin-left:10px; margin-bottom:10px;">
+			<div class="addDetailLine btn" id="addTransportLine{{pageId}}">+添加明细</div>
+		</div>
+	</div>
+</div>
+
+<div id='travelLine{{pageId}}'>
+	<div id='detailLine'>
+		<div class="part title" id="detailpart{{pageId}}">
+			<div class='name num'></div>
+			<div class='name ysgjph required'>出行人</div>
+			<div class='name ysgjzl required'>出行人证件类型</div>
+			<div class='name ysgjph required'>有效身份证件号</div>
+			<div class='name ysgjph required'>出行日期</div>
+			<div class='name qyd required'>旅客出发地</div>
+			<div class='name ddd required'>旅客到达地</div>
+			<div class='name ysgjzl required'>交通工具类型</div>   
+			<div class='name ysgjph'>
+				等级
+				<div class='tips' id='travelLineTips{{pageId}}'></div>
+				<div class='tooltips'>
+					若交通工具类型选择“火车、飞机、船舶”，则等级为必填项，否则为非必填项。
+				</div>
+			</div>   
+			<div class='name cz'></div>
+		</div>
+		<div class="table" id="travelTable{{pageId}}"></div>
+		<div class="drop-down" id="drop-down{{pageId}}">
+			<ul id="drop{{pageId}}" class="drop"></ul>
+		</div>
+		<div id='addDetail{{pageId}}' class="operation" style="margin-left:10px; margin-bottom:10px;">
+			<div class="addDetailLine btn" id="addTravelLine{{pageId}}">+添加明细</div>
+		</div>
+	</div>
+</div>
+
+<div id='vehichevesselshipsLine{{pageId}}'>
+	<div id='detailLine'>
+		<div class="part title" id="detailpart{{pageId}}">
+			<div class='name num'></div>
+			<div class='name ysgjph required'>保险单号</div>
+			<div class='name ysgjph required'>车牌号/船舶登记号</div>
+			<div class='name ysgjph required'>税款所属期起</div>
+			<div class='name ysgjph required'>税款所属期止</div>
+			<div class='name ysgjph required'>代收车船税金额</div>
+			<div class='name ysgjph required'>车辆识别代码/车架号码</div>
+			<div class='name ysgjph required'>滞纳金金额</div>
+			<div class='name ysgjph required'>金额合计</div>   
+		</div>
+		<div class="table" id="vehichevesselshipsTable{{pageId}}"></div>
+		<div class="drop-down" id="drop-down{{pageId}}">
+			<ul id="drop{{pageId}}" class="drop"></ul>
+		</div>
+	</div>
+</div>

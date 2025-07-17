@@ -1,0 +1,20 @@
+{
+  "sun": "Sun",
+  "mon": "Mon",
+  "tue": "Tue",
+  "wed": "Wed",
+  "thu": "Thu",
+  "fri": "Fri",
+  "sat": "Sat",
+  "workDay": "Work Day",
+  "setWorkDay": "Set Weekday",
+  "index": "Index",
+  "del": "Delete",
+  "none": "None",
+  "overtime": "Overtime",
+  "rest": "Rest",
+  "work": "Work",
+  "workMain": "Work(main)",
+  "OFF": "OFF",
+  "noOFF": "No OFF"
+}

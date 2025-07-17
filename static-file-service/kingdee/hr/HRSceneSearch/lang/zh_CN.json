@@ -1,0 +1,20 @@
+{
+    "searchType": "搜索分类：",
+    "type1": "分词搜索",
+    "type2": "短语搜素",
+    "searchCond": "搜索关系：",
+    "cond1": "或",
+    "cond2": "且",
+    "searchResult": "搜索结果",
+    "searchLink": "搜索链路",
+    "adjust": "调整排序权重",
+    "close": "收起过滤",
+    "open": "展开过滤",
+    "GPT": "GPT词性识别",
+    "ES": "ES搜索",
+    "word": "词性",
+    "metaData": "元数据",
+    "noData": "暂无数据",
+    "noLimit": "不限",
+    "more": "更多"
+}

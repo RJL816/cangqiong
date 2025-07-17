@@ -1,0 +1,55 @@
+<style>
+    #taxmapul {
+        float: left;
+        padding-left: 20px;
+        max-width: 240px;
+    }
+
+    #taxmapul li {
+        list-style-type: none;
+        height: 32px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        color: #999999;
+        /* overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; */
+    }
+
+    #taxmapul li p {
+        height: 12px;
+        /* background: rgb(129, 211, 248); */
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    #taxmapul li span:last-child {
+        font-size: 12px;
+    }
+    #mapBox{
+        display: inline-block;
+    }
+    #taxmapul li .city {
+   /*     width: 40px;*/
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+    }
+    #taxmapul #middleLine {
+        /* height: 148px; */
+        width: 1px;
+        background: #CCCCCC;
+        position: absolute;
+        left: 65px;
+    }
+</style>
+<ul id="taxmapul">
+    <div  id ="topfive"  style="font-size: 14px;margin:40px 0 30px">
+    </div>
+    <div id="middleLine"></div>
+</ul>
+<div id="mapBox" style="{{mapBoxStyle}}">
+</div>

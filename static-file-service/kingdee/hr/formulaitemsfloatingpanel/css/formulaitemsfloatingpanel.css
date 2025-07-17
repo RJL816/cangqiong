@@ -1,0 +1,103 @@
+.formulaItemsFloatingPanel{
+  top: -10000px;
+  left: -10000px;
+  z-index: 1050;
+  font-size: 12px;
+  width: 150px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #333333;
+  opacity: 0.9;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  overflow: auto;
+}
+.formulaItemsFloatingPanel.extend{
+  height: 420px;
+  position: fixed;
+}
+.floatingPanel-toolFont{
+  font-size: 14px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.floatingPanel-extend{
+  position: relative;
+  width: 15px;
+  height: 15px;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.headSign {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.floatingPanel-search{
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+.floatingPanel-searchInput{
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  margin: 0 0px 0 22px;
+  width: 95px;
+}
+.floatingPanel-searchIcon{
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.floatingPanel-list-content{
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: auto;
+  height: 375px;
+}
+.floatingPanel-list{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+  align-items: stretch;
+  padding: 0px;
+  margin: 5px 0px 0px;
+  overflow: auto;
+}
+.floatingPanel-list-item{
+  padding: 4px 5px;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}

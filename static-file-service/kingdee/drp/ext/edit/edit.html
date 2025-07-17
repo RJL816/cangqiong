@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>页面编辑  </title>
+	<script type="text/javascript" src="./vue.js"></script>
+	<script type="text/javascript" src="./axios.min.js"></script>
+	<script type="text/javascript" src="./qs.js"></script>
+    <script type="text/javascript" src="./pako.min.js"></script>	
+	
+</head>  
+<body>
+<div id="form"> 
+ 	<div><span style="display:block;width:110px;float:left">页面Key: </span><span style="display:block;width:310px;float:left"><input type="text" v-model="viewId" /><button type="button" v-on:click="save">保存</button></span><span style="display:block;width:110px;float:left"><button type="button" v-on:click="extend">二开扩展</button></span></div>
+ 	<div style="margin-top:10px;clear:both">
+ 	<span style="display:block;width:110px;float:left;">页面所属应用: </span>
+ 	<select name="public-choice" v-model="appId">                                        
+    <option :value="app.id" v-for="app in appList" >{{app.name}}</option>                                     
+   </select>
+ 	</div> 
+ 	<div style="margin-top:10px"><span style="clear:both;display:block;width:110px;float:left">是否需要登录: </span><input type="checkbox" v-model="needlogin" style="float:left"/> <span style="display:block;float:left;margin-left:30px;width:80px;">登录类型: </span>
+ 	 <select name="public-choice" v-model="logintype">    
+ 	  <option value="none">无</option>    
+ 	  <option value="member">企业会员</option>                                           
+    <option value="nextcloud">苍穹用户</option>                                    
+   </select>
+  </div>
+ 	<div><span style="clear:both;display:block;width:80px;float:left">页面内容: </span><div>
+ 	<div style="clear:both;margin-top:10px"><textarea rows="50" style="width:1500px" v-model="detail"></textarea></div>
+</div>
+<script>
+ var getQueryString =function(name) {
+      var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)')
+      var r = window.location.search.substr(1).match(reg)
+      if (r != null) {
+        return unescape(r[2])
+      }
+      return null
+    };
+var uri;
+if (window.location.href.match('/isv/')){
+  uri = window.location.href.split('/isv/')[0]
+} else if (window.location.href.match('/kingdee/')){
+  uri = window.location.href.split('/kingdee/')[0]
+} else {
+  uri = window.location.origin
+}
+var viewId = getQueryString("viewId");
+Vue.prototype.$http = axios;
+ new Vue({
+ el:"#form",
+ data:{
+ 	viewId:"",
+ 	detail:"",
+ 	appId:0,
+ 	appList:[],
+ 	logintype:"nextcloud",
+ 	needlogin:true
+ },
+ methods:{
+	 save:function(event){
+		 this.$http.post(uri+"/kapi/app/ocepfp/editViewAction",
+		{viewId:this.viewId,detail:window.btoa(pako.gzip(this.detail, { to: 'string' })),appId:this.appId,event:"saveView",needlogin:this.needlogin,logintype:this.logintype},
+		 {
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        }
+        ).then(res=>{
+			 if (res.data.success){
+			 	alert("保存成功");
+				this.detail=res.data.data;
+			 }else{
+			 	alert("保存失败,可能是xml编写有问题或xml标签没有闭合");
+			 }
+		 });
+	 },
+	 extend:function(event){
+	    alert("扩展");
+	 }
+ },
+ created: function(){
+	 this.$http.post(uri+"/kapi/app/ocepfp/editViewAction",
+	  {viewId:viewId,event:"loadView"},
+	  		 {
+          headers:{
+             'Content-Type': 'application/json'
+          }
+        }).then(res => {
+	 			if(res.status == 200) {
+                   	 var resData = res.data.data;
+                   	 this.viewId=viewId;
+                   	 this.appList=resData.appList;
+                   	 if (resData==undefined){
+                   	 	alert("没有找到对应的页面");
+                   	 	return;
+                   	 }
+                     this.detail=resData.detail.replace(new RegExp(">","gm"),">\r");
+                     this.appId=resData.appId;
+                     this.logintype=resData.logintype;
+                     this.needlogin=resData.needlogin;
+                    }
+                }).catch(function(e){
+                     alert("出错了");
+               });
+ }
+ });
+ </script>
+ </body>

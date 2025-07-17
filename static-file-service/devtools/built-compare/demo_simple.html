@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title>Orion Compare Demo</title>
+	<style type="text/css">
+		.compareContainer {
+			position: absolute;
+			top: 2px;
+			bottom: 0;
+			width: 99%;
+			overflow-y: auto;
+			margin-left:5px;
+			border:1px solid #bebebe;
+		}
+	</style>
+    <link rel="stylesheet" type="text/css" href="./css/built-compare.css"/>
+	<script src="./js/require.js"></script>
+	<script>
+	/*global require window */
+	require(["./js/built-compare-amd.js"], function(Compare) {
+	    var options = {
+	        parentDivId: "compareParentDiv",
+	        newFile: {
+	            Content: "contents on left\n"
+	        },
+	        oldFile: {
+	            Content: "contents on right\n"
+	        }
+	    };
+	    //Constructing the Compare widget instance starts the compare view automatically
+		var compare = new Compare(options);
+	});
+</script>
+</head>
+<body>
+    <div>
+        <div id="compareParentDiv" class="compareContainer"></div>
+    </div>
+</body>
+</html>

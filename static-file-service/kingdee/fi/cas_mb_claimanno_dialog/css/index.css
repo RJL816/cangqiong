@@ -1,0 +1,103 @@
+﻿.custom-control-cas-mb-claimanno-dialog-container {
+  position: relative;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-align: center;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog {
+  display: inline-block;
+  vertical-align: middle;
+  width: 280px;
+  background: #FFF;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog .cas-mb-dialog_title {
+  padding: 16px 16px 0 16px;
+  font-size: 16px;
+  color: #212121;
+  font-weight: bolder;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog .cas-mb-dialog_msg {
+  padding: 10px 16px 10px 16px;
+  font-size: 14px;
+  color: #404040;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog .cas-mb-dialog_btns {
+  display: flex;
+  border-top: 0.5px solid #EFEFEF;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog .btn {
+ flex: 1;
+ width: 0;
+ font-size: 16px;
+ text-align: center;
+ padding: 12px 16px;
+ color: #212121;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog .btn:not(:last-of-type) {
+  border-right: 0.5px solid #EFEFEF;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box  .cas-mb-dialog .btn:last-of-type {
+  color: #276FF5;
+}
+
+.custom-control-cas-mb-claimanno-dialog-container-container—box .cas_mb_claimanno_dialog_ignore_confirm {
+  padding: 0 16px 16px 16px;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box .cas_mb_claimanno_dialog_ignore_confirm input {
+  vertical-align: middle;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box .cas_mb_claimanno_dialog_ignore_confirm input[type=checkbox] {
+  display: none;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box .cas_mb_claimanno_dialog_ignore_confirm label {
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box .cas_mb_claimanno_dialog_ignore_confirm label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4ElEQVRYR+2XsQqDMBCGz4TgJuruoKA+gljoQ/VJ+lCFFh9BBR3cVdwkJC0RDFQ6pk2Hyxq4/7tvut8By8+xnA9vAMMwFJzzqxCikFISk3CEEEkprRhjlyiKqn22BlDh67rewjBknucBpdRkPgghYFkWGMeRu6573iE0QNd1d9/3yyAIjAYfh03TBPM8P5IkOak/DdC2rYjjmJje/AigTPR9L9M03RRrgLqun1mWfXX7fXjTNJDn+ZaNAGgADaABNIAG0AAaQAP/Y8D6UWr9LLdeTNSJbLWa/aQQfAix3o5fiRz8IUMag/IAAAAASUVORK5CYII=);
+  margin-right: 4px;
+}
+.custom-control-cas-mb-claimanno-dialog-container-container—box .cas_mb_claimanno_dialog_ignore_confirm input[type=checkbox]:checked + label::before {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACh0lEQVRYR92XT2jTUBzHv82fphujtr04kR5abLuzoGVSvYoIouiQVfEgjCEydIPJRNhNnJdNKYL/TqKTOcRdRDyKaOkOnm0r7aGI26WtZWxJ0yTykqVraltTTBfxHfNeft/P+/177zlg83DYrA8DQKFQiIqiuCBJUlSWZcpKOIqiZJqmUyzLTvr9/pRuuw5AxAVB+Ojz+Vi32w2apq3UhyRJqFQqKBaLIsdxR3WIOkAul/vs8XiGvV6vpcLNxkqlEsrlcjIYDB4hc3WAbDYrBQIByuqdNwMQT+TzeTkUCqkurgOk02klHA73dPe68Uwmg0gkomr/vwBzK1W8StZw6RiL6ydZg2d77oEH70Uk3omqaD8HfLnbv3sAK6s1zCxW64LxGIPZc87dAUhmJIw9ElCTNL3YEI2HYxyYppbSkxBkfsiI3+exwWviQ/spPJ/gMOD6vdtbDrD+U8H5BR5rZUUVH/Q4sDTpwt49rY8a0wD33op49kHEaIzB9CljHPWgbvAKLiYEfP0uq58GXMDiNRfC+9ofJaYBDt7YxOZ2Pt2JO3HmMGNIJhLr8ccCPqW1oJNYPxnnMBzufI6YBphd0mqZjD4nsDzlwoHBnZ3delnF65Q2T8bcBSdOHzJCtmqtpgG2qgpG5gV8W9PcS8SXpzj0OR1orHUyN3GCxdXjxobTSpx8Mw1AFhPxkXkeW9uhIGGIhijMvNip9bNRBrdHW+fIX3lA//nNag03G5oL5QBkLeHb1nq73XftAd0QASAgjaNTrVsO0JwPf6p1ywGIwdy6jCtPBfUMT1zmEOpQ6z0B6GS0m7muqqAbw2bX/psAtl9Kbb+W2/4wIQlk69PMbAZbvc721/EvlWmGMDuw+XoAAAAASUVORK5CYII=);
+}
+
+.hidden {
+  display: none;
+}

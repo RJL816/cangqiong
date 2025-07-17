@@ -1,0 +1,163 @@
+.wtc_shiftRule-btns {
+    text-align: right;
+    padding: 10px 0;
+}
+
+.wtc_shiftRule-btns > button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: var(--theme-color, var(--themeColor, #679AF8));
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wtc_shiftRule-custom-table .wtc_shiftRule-workday-wrap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 37px;
+}
+.wtc_shiftRule-custom-table .custom-body .custom-able-border {
+    border: 1px solid var(--theme-color, var(--themeColor, #679AF8)) !important;
+}
+
+/*-----------------以上是日历模板新增样式---------------------*/
+
+.wtc_shiftRule-custom-table {
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.wtc_shiftRule-btns .wtc_shiftRule-btn-del {
+    margin-left: 10px;
+}
+
+.wtc_shiftRule-custom-table .custom-header {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.wtc_shiftRule-custom-table .custom-body {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    max-height: 400px;
+    overflow: auto;
+    align-items: center;
+    height: 40px;
+}
+
+.wtc_shiftRule-custom-table .custom-header-order {
+    width: 5.5%;
+    height: 34px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.wtc_shiftRule-custom-table .custom-body-order {
+    width: 5.5%;
+    /* height: 40px; */
+    font-size: 12px;
+    text-align: center;
+    line-height: 39px;
+    align-items: center;
+}
+
+.wtc_shiftRule-custom-table .custom-header .custom-header-border {
+    position: relative;
+    width: 4px;
+    height: 20px;
+    margin-top: 7px;
+    border-right: 1px solid #c7cbd3;
+    float: right;
+    cursor: col-resize;
+    z-index: 1;
+
+}
+
+.wtc_shiftRule-custom-table .custom-header-th {
+    /* border: 1px solid #f0f0f0;*/
+    width: 13.5%;
+    height: 34px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.wtc_shiftRule-custom-table .custom-body-td {
+    border: 1px solid #fff;
+    width: 13.5%;
+    height: 100%;
+}
+
+.wtc_shiftRule-custom-table .custom-disable-td {
+    background: #f3f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wtc_shiftRule-custom-table .custom-disable-line {
+    width: 50px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.wtc_shiftRule-custom-table .custom-able-td {
+    padding: 1px;
+    display: flex;
+}
+
+.wtc_shiftRule-custom-table .custom-able-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.wtc_shiftRule-custom-table .custom-able-div .wtc-shiftRule-more-btn {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    cursor: pointer;
+}
+
+.wtc_shiftRule-custom-table .custom-shift-time-overLap {
+    border: 1px dashed #F32F2F;
+    /*border-top: 1px dashed #F32F2F;*/
+    /*border-bottom: 1px dashed #F32F2F;*/
+    /*border-right: 1px dashed #F32F2F;*/
+}
+
+.wtc_shiftRule-custom-table .custom-box-color {
+    margin-left: 5px;
+    margin-top: 11px;
+    width: 15px;
+    height: 15px;
+    float: left;
+    background-color: #f9b941;
+}
+
+.wtc_shiftRule-custom-table .custom-number {
+    margin-left: 5px;
+    margin-top: 11px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc((100% - 35px) / 2);
+}
+
+.wtc_shiftRule-custom-table .custom-time {
+    margin-left: 5px;
+    margin-top: 12px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc((100% - 35px) / 2);
+}

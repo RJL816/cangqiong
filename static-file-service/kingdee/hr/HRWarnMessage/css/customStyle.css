@@ -1,0 +1,12 @@
+#maintable .kd-select-bordered {
+    height: 100%;
+}
+
+.ui-state-highlight-HRMessage {
+    /* height: 20px; */
+    width: 180px;
+    border: 1px dashed var(--theme-color);
+    margin-right: 8px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}

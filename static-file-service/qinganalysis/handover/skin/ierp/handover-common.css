@@ -1,0 +1,276 @@
+@CHARSET "UTF-8";
+
+body
+{
+    background-color: #fff;
+}
+
+.management-handover-toolbar
+{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    padding-left: 18px;
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+}
+
+.management-handover-data
+{
+    position: absolute;
+	width: 100%;
+    height: 100%;
+    top: 100px;
+    background-color: rgb(226, 231, 239);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15) inset;
+    border-top: 1px solid #ddd;
+}
+
+.management-handover-content
+{
+	position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    background-color: #fff;
+}
+
+.management-handover-content-row-count
+{
+	position: absolute;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #d7e2e2;
+    display: none;
+}
+
+.management-handover-content-row-count-show
+{
+    display: block;
+}
+
+.management-handover-content-table
+{
+	position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 41px;
+    bottom: 10px;
+    background-color: #fff;
+}
+
+.management-handover-search-icon
+{
+    position: absolute;
+    float: right;
+    top: 16px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+}
+
+.management-handover-search-searchBox
+{
+    position: absolute;
+    float: right;
+    right: 50px;
+    width: 180px;
+    height: 25px;
+    top: 10px;
+    transition: width .12s ease-in;
+    -webkit-transition: width .12s ease-in;
+}
+
+.management-handover-search-icon
+{
+    position: absolute;
+    float: right;
+    top: 16px;
+    right: 110px;
+    width: 20px;
+    height: 20px;
+}
+
+.management-handover-search-searchBox-input
+{
+	left: 22px;
+    width: 85px;
+    top: 2px;
+}
+
+.management-handover-searching-searchBox
+{
+    position: absolute;
+    float: right;
+    right: 40px;
+    width: 230px;
+    height: 43px
+}
+
+.management-handover-searching-icon
+{
+    position: absolute;
+    float: right;
+    top: 16px;
+    right: 210px;
+    width: 20px;
+    height: 20px;
+}
+
+.management-handover-searching-searchBox-input
+{
+	left: 22px;
+    width: 180px;
+    top: 2px;
+}
+
+.management-handover-tips
+{
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    left: 50%;
+    top: 50%;
+    margin-left: -185px;
+    margin-top: -195px;
+    text-align: center;
+    z-index: 1;
+}
+
+.management-handover-tips-background
+{
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -110px;
+}
+
+.management-handover-tips-background-no-data
+{
+    width: 200px;
+    margin-left: -100px;
+}
+
+.management-handover-tips-background-no-data-icon
+{
+    top: 50%;
+    height: 220px;
+    width: 220px;
+    margin-top: -160px;
+}
+
+.management-handover-tips-text
+{
+    position: absolute;
+    width: 100%;
+    top: 286px;
+    font-size: 16px;
+    text-align: center;
+    color: #BBBBBB;
+}
+
+.management-handover-data-table-cell
+{
+    position: relative;
+	top: 50% !important;
+    margin-top: -8px;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.management-handover-data-table-cell-checkbox
+{
+	position: absolute;
+	top: 50% !important;
+    margin-top: -11px;
+    padding-left: 10px;
+}
+
+.management-handover-data-table-cell-merge
+{
+	background-color: #fff !important;
+}
+
+.management-handover-data-table-cell-btb
+{
+	border-top: 1px solid #d7e2e2;
+}
+
+.management-handover-data-table-cell-bl
+{
+	border-left: 1px solid #d7e2e2;
+}
+
+.management-handover-record-progress-ul
+{
+	width: 550px;
+    height: 350px;
+	overflow: auto;
+}
+
+.management-handover-record-progress-li
+{
+	position: relative;
+    padding: 12px 25px;
+    list-style: none;
+    height: 54px;
+    border-left: 1px solid #cccccc;
+}
+
+.management-handover-record-progress-li:before
+{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+
+.management-handover-record-progress-li-content
+{
+	position: absolute;
+    top: -15px;
+}
+
+.management-handover-record-progress-li-content-time
+{
+    font-size: 14px;
+    color: #999999;
+}
+
+.management-handover-record-progress-li-content-text
+{
+	font-size: 14px;
+    color: #999999;
+}
+
+.management-handover-search-user-change-area
+{
+    outline: none;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 23px;
+}
+
+.management-handover-search-user-hide
+{
+    display:none
+}

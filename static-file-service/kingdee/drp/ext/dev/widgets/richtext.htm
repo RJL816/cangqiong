@@ -1,0 +1,5 @@
+<div>
+    <div id="${control.id}"  viewid="${control.viewid}" class="${control.plat=='pc'?'clearfix':''} ${control.class} ${control.direction} ${control.aligntype}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+    {{html control.content}}
+    </div>
+</div>

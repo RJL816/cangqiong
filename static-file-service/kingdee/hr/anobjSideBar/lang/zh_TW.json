@@ -1,0 +1,6 @@
+{
+    "dataFilter": "數據過濾",
+    "trans": "行列轉置",
+    "warnMessage": "行列轉置生成的字段已被報表引用，無法刪除",
+    "groupAssign": "分組賦值"
+}

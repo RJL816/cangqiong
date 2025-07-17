@@ -1,0 +1,6 @@
+{
+    "workRole": "工作台角色",
+    "workRoleTips": "系统会记录最新选择的工作台角色，并推送相关的工作看板信息与知识信息",
+    "workRoleChoose": "选择角色",
+    "workRoleChooseTips": "请选择您的角色："
+}

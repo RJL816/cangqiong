@@ -1,0 +1,13 @@
+<div>
+	<div required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}" xml="${control.xml}" data="${controlStr}">
+		<div class="fm-control" style="${control.colwidth};">
+			{{if control.name}}
+			<label style="${control.labelstyle + ';width:'+ control.labelwidth}" class="${control.required ? 'required' : ''}">${control.name}</label>
+			{{/if}}
+			<div class="linkgroup fm-item" style="margin-left: -${control.labelwidth}; padding-left: ${control.labelwidth};${(control.style||'') + control._customData.style}">
+				<div data-toggle id="${control.id}"  viewid="${control.viewid}" type="${control.type}">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

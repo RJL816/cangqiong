@@ -1,0 +1,56 @@
+﻿.mon-m-stock-detail-list {
+  padding: 12px;
+}
+.mon-m-stock-detail-list__item {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px 0px rgba(2, 11, 28, 0.1);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.mon-m-stock-detail-list__item .header {
+  background: #f8faff;
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  padding: 8px 12px 6px 12px;
+}
+
+.mon-m-stock-detail-list__item .header .bank-name {
+  flex: 1;
+  font-weight: 500;
+  color: #276FF5;
+}
+
+.mon-m-stock-detail-list__item .header .bank-account {
+  text-align: right;
+  font-weight: 400;
+  color: #276FF5;
+  margin-left: 36px;
+}
+
+.mon-m-stock-detail-list__item  .detail-list__item {
+  display: flex;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.mon-m-stock-detail-list__item  .detail-list {
+  padding: 8px 12px 6px 12px;
+}
+
+.mon-m-stock-detail-list__item  .detail-list__item {
+  margin-bottom: 4px;
+}
+
+.mon-m-stock-detail-list__item  .detail-list__item .currency {
+  flex: 1;
+  font-weight: 400;
+  color: #929292;
+}
+
+.mon-m-stock-detail-list__item  .detail-list__item .value {
+  flex: 1;
+  font-weight: 400;
+  color: #212121;
+  text-align: right;
+}

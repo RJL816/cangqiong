@@ -1,0 +1,15 @@
+{
+    "noGroup": "未分組",
+    "group": "分組",
+    "dataView": "預覽",
+    "dataView1": "數據",
+    "assignNumber": "賦值列編碼",
+    "assignName": "賦值列名稱",
+    "assignDepend": "賦值列依據",
+    "assignNumberPlaceHolder": "僅支持英文大小寫、數字與“_”",
+    "settingName": "分組設置",
+    "addBtn": "添加分組",
+    "valueSpan": "值",
+    "noNameDes": "上述分組未覆蓋的值歸到此分組",
+    "noData": "此處數據由當前及前序數據加工步驟加工生成"
+}

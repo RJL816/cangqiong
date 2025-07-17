@@ -1,0 +1,36 @@
+<div>
+	<div  class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}">
+		{{if !control._customData.hideLable}}
+		<label style="${control.labelstyle + ';width:'+ control.labelwidth}" class="${control.required ? 'required' : ''}">${control.name}</label>
+		{{/if}}
+		{{if control._customData.plat==='pc'}}
+			{{if !control._customData.inlineGrid}}
+				{{if (control.editable === 'false' || control.editable === false)}}
+				<span class="val-wrap" style="${control.inputstyle}">
+					${control.value}
+				</span>
+				{{else}}
+				<div class="${control.disabled ? 'input-wrap disabled':'input-wrap'}">
+					<span><i class="iconfont2 icon-thus"></i></span>
+					<input style="float:unset;" type="number" maxlength="${control.maxlength}" min="${control.min}" max="${control.max}" precision="" style="${(control.style||'') + control._customData.style}" placeholder="${control.placeholder}" disabled/>
+					<span><i class="iconfont2 icon-add"></i></span>
+				</div>
+				{{/if}}
+			{{/if}}
+		{{else}}
+			{{if control.editable === 'false' || control.editable === false}}
+			<span class="no-edit" style="${control.inputstyle}">${control.value}</span>
+			{{else}}
+			<div class="number-box justify-between align-center">
+				<div class="minus middle">
+					<i class="iconfont iconreduce"></i>
+				</div>
+				<input class="number-input" type="number" style="${control.inputstyle}" value="${control.value}" disabled/>
+				<div class="plus middle">
+					<i class="iconfont iconadd"></i>
+				</div>
+			</div>
+			{{/if}}
+		{{/if}}
+	</div>
+</div>

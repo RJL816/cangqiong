@@ -1,0 +1,166 @@
+.q-common-pagination
+{
+	position: absolute;
+	width: 100%;
+	height: 32px;
+	font-family:" Microsoft YaHei";
+	padding-left: 8px;
+	padding-right: 7px;
+	align-items: center;
+	display: inline-block;
+	background: #fff;
+	box-sizing: border-box;
+	color: #404040;
+}
+
+.q-common-pagination-total-selected
+{
+	display: inline-block;
+	height: 32px;
+	color: #404040;
+	font-size: 12px;
+	user-select: text;
+	white-space: nowrap;
+	line-height: 32px;
+}
+
+.q-common-pagination-total-row
+{
+	display: inline-block;
+	height: 32px;
+	color: #404040;
+	font-size: 12px;
+	user-select: text;
+	white-space: nowrap;
+	line-height: 32px;
+}
+
+.q-common-pagination-select-all
+{
+	display: inline-block;
+	height: 32px;
+	font-size: 12px;
+	white-space: nowrap;
+	color: var(--color-main, #5582F3);
+	color: #5582F3\0;
+	cursor: pointer;
+	line-height: 32px;
+	margin-left: 15px;
+}
+
+.q-common-pagination-select-all:hover
+{
+	color: var(--color-lightish, #87adff);
+}
+
+.q-common-pagination-operation
+{
+	display: inline-block;
+	height: 32px;
+	width: 400px;
+	position: absolute;
+	right: 8px;
+}
+
+.q-common-pagination-operation-total-page
+{
+	position: absolute;
+	display: inline-block;
+	height: 16px;
+	user-select: text;
+	line-height: 32px;
+	right: 185px;
+}
+
+.q-common-pagination-operation-current-page
+{
+	position: absolute;
+	display: inline-block;
+	font-size: 12px;
+	right: 111px;
+	user-select: text;
+	line-height: 32px;
+}
+
+.q-common-pagination-operation-current-page-input
+{
+	box-sizing: border-box;
+	outline: 0;
+	margin: 0 3px;
+	text-align: center;
+	font-size: 12px;
+	width: 32px;
+	height: 24px;
+	border: 1px solid;
+	color: #404040;
+	background: #fff;
+}
+
+.q-common-pagination-operation-current-page-input_border
+{
+	border-color: #d9d9d9;
+	transition: border-color 300ms;
+}
+
+.q-common-pagination-operation-current-page-input_border_hover
+{
+	border-color: var(--color-main, #5582f3);
+	transition: border-color 300ms;
+}
+
+.q-common-pagination-operation-switch-page
+{
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	font-size: 0;
+	top: 4px;
+}
+
+.q-common-pagination-operation-switch-page-button
+{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 4px;
+	cursor: pointer;
+}
+
+/*弹出窗口选择器-回显框*/
+.sa-qing-publish-dialog-selector-input
+{
+	position: absolute;
+	left: 1px;
+	right: 1px;
+	bottom: 1px;
+	top: 1px;
+	font-size: 12px;
+	color: rgb(102, 102, 102);
+	padding-left: 4px;
+}
+.sa-qing-publish-ctrl-textfield-input
+{
+	position: absolute;
+	left: 1px;
+	width: 90%;
+	top: 0px;
+	height: 100%;
+	font-size: 12px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	padding-left: 4px;
+	background-color: rgba(255,255,255,0);
+	outline: none;
+}
+/*弹出窗口选择器-弹出按钮*/
+.sa-qing-publish-dialog-selector-input-icon
+{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	right: 5px;
+	bottom: 6px;
+	cursor: pointer;
+	z-index: 1;
+}

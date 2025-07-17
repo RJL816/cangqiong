@@ -1,0 +1,102 @@
+#advUl{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#advUl li{
+    display: flex;
+    flex-direction: column;
+    height: 100px !important;
+    justify-content: space-around;
+    align-items: stretch;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 14px;
+    width: 100% !important;
+}
+
+#advUl li:hover {
+    cursor: pointer;
+}
+.top-line{
+    display: flex;
+    align-content: center;
+}
+.bottom-line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.icon-top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 31px;
+    height: 31px;
+    background-image: url("../images/top-small.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-xs{
+    width: 72px;
+    height: 57px;
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-image: url("../images/flagback.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2px;
+    align-items: center;
+    color: #FFFFFF;
+}
+.publish-time{
+    font-size: 14px;
+    color: #999999;
+}
+.adv-title{
+    color: #212121;
+    font-size: 16px;
+    font-weight: bold;
+}
+.icon-ji{
+    position: relative;
+    width: 40px;
+    height: 18px;
+    background-image: url("../images/jiaji.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2px 4px 0 4px;
+}
+.coins{
+    position: relative;
+    width: 20px;
+    height: 16px;
+    background-image: url("../images/money.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 4px 10px
+}
+.sub-title{
+    color: #666666;
+    font-size: 14px;
+	width:80%;
+	display: flex;
+}
+
+.show-none{
+    display: none;
+}
+
+.text-format{
+    max-width:33%;/*要显示文字的宽度*/
+    text-overflow :ellipsis; /*让截断的文字显示为点点。还有一个值是clip意截断不显示点点*/
+    white-space:nowrap; /*让文字不换行*/
+    overflow : hidden; /*超出要隐藏*/
+}

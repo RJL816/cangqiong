@@ -1,0 +1,50 @@
+.PreviewPic-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.yunzhijia{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 432px;
+    background-image: url("../image/yunzhijia.png");
+    background-size: cover;
+}
+.yuanzhijia_message{
+    margin-top: 63px;
+    margin-left: 224px;
+    max-width: 240px;
+    padding: 5px 13px 7px;
+    background: #FFFFFF;
+    border-radius: 0px 8px 8px 8px;
+    font-size: 9px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 15px;
+    word-wrap: break-word;
+}
+.noData{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.noData-pic{
+    width: 280px;
+    height: 160px;
+    background-image: url("../image/noData.png");
+    background-size: cover;
+}
+.noData-text{
+    margin-top: 12px;
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 20px;
+}

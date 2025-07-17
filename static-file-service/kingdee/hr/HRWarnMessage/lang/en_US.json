@@ -1,0 +1,14 @@
+{
+    "title": "Title line",
+    "dataRow": "Data row",
+    "sortRow": "Sorting rule",
+    "addCol": "Insert column",
+    "delCol": "Delete column",
+    "addNew": "Select the column and double-click Alert Parameters to insert it",
+    "noneSort": "Do not sort",
+    "ascSort": "Ascending",
+    "descSort": "Descending order",
+    "titleDes": "Text table",
+    "tips": "Please select the column to delete",
+    "tips1": "Save Fail. Please check that the body table is fully configured"
+}

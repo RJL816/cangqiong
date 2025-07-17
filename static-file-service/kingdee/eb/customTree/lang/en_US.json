@@ -1,0 +1,9 @@
+{
+  "add_category": "add category",
+  "add_report": "add report",
+  "delete": "delete",
+  "modify": "modify",
+  "follow": "follow",
+  "unfollow": "unfollow",
+  "filter_placeholder": "Enter keywords for filtering"
+}

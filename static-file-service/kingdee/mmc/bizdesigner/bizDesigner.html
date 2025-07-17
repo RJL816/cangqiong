@@ -1,0 +1,59 @@
+<div id="mmc_bizDesigner">
+  <div class="left-panel">
+    <div class="panel-info">
+      <div class="panel-info-name">模型名称</div>
+      <div class="panel-info-bh" title='模型编码'>模型编码</div>
+    </div>
+    <span class="panel-toggle icons icon-play3"></span>
+    <div class="header">
+      <div class="tabs">
+        <span class="active">组件</span>
+        <span>元件</span>
+      </div>
+    </div>
+    <div class="body">
+      <div class="transform-box">
+        <div class="card" id="computecomponent_panel">
+          <div class="card-box">
+            <div class="card-item-title">
+              <span>常用组件</span>
+              <span class="icons icon-minus"></span>
+            </div>
+            <div class="card-item-container">
+              <div class="card-item large" id="adjust_panel" draggable="true" title="调整组件">
+                <span class="icons icon-enlarge2"></span>
+              </div>
+              <div class="card-item large" id="connect_panel" draggable="true" title="连接组件">
+                <span class="icons icon-arrow-up-left2"></span>
+              </div>
+              <div class="card-item large" id="eigen_panel" draggable="true" title="特征值组件">
+                <span class="icons icon-calculator"></span>
+              </div>
+              <div class="card-item large" id="query_panel" draggable="true" title="查询组件">
+                <span class="icons icon-search"></span>
+              </div>
+              <div class="card-item large" id="detail_panel" draggable="true" title="明细组件">
+                <span class="icons icon-table"></span>
+              </div>
+              <div class="card-item large" id="txt_panel" draggable="true" title="文本组件">
+                <span class="icons icon-file-text"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="element_panel">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="scroll-box">
+      <div id="mgDesignerContainer" style="overflow:visible;width:200%;height:200%;transform-origin: 0px 0px 0px;"></div>
+    </div>
+    <div class="button">
+      <span id="bizdesigner-zoomout" class="icons icon-zoom-out"></span>
+      <span id="bizdesigner-zoomvalue">100%</span>
+      <span id="bizdesigner-zoomin" class="icons icon-zoom-in"></span>
+    </div>
+  </div>
+</div>

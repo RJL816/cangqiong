@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weboffice</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .tip {
+            text-decoration: none;
+        }
+
+        .tip:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="tip" href="javascript:void(0);">如无法打开weboffice,请点击此处打开</a>
+    <script>
+        // 获取weboffice地址
+        function getParam(name, url) {
+            if (!url) return false;
+            var regex = new RegExp('[?&]' + name + '=(.*)');
+            var results = regex.exec(url);
+            if (!results) return false;
+            if (!results[1]) return false;
+            return decodeURIComponent(results[1]);
+        }
+        // 初始化
+        function init() {
+            var para = getParam('weboffice', window.location.href)
+            if (!para) return
+            var iframe = document.createElement("iframe")
+            iframe.src = para
+            iframe.style.display = 'none'
+            document.body.appendChild(iframe)
+            var a = document.querySelector("a")
+            a.href = para
+        }
+        init()
+    </script>
+</body>
+
+</html>

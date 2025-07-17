@@ -1,0 +1,473 @@
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/layout/designer/HeaderNavDropDown.less ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+.GWucqz0j_header_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 100%;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.Ovudhbpp_header_nav_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+}
+.Ovudhbpp_header_nav_container:hover {
+  background: var(--dots-color-background-hover, rgba(255, 255, 255, 0.12));
+  border-radius: 4px;
+}
+.Ovudhbpp_header_nav_container:active {
+  background: var(--dots-color-background-hover, rgba(255, 255, 255, 0.12));
+  border-radius: 4px;
+}
+.Ovudhbpp_header_nav_container i {
+  line-height: 16px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: var(--kd-nc-page-header-dot-color-text, rgba(255, 255, 255, 0.5));
+}
+.Ovudhbpp_header_nav_container i:hover {
+  color: var(--kd-nc-page-header-dot-color-text-hover, #ffffff);
+}
+.q2r5C6zu_header_nav_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 160px;
+  color: #212121 !important;
+}
+.q2r5C6zu_header_nav_menu .kd-dropdown-menu-item:not(.disabled):active {
+  background-color: #F2F9FF;
+}
+.i1eYlHah_header_nav_menu_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0 12px 12px !important;
+}
+.i1eYlHah_header_nav_menu_item:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+._4rcXUi6A_header_nav_menu_item_divider {
+  height: 1px;
+  margin: 4px 0;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #D8D8D8;
+}
+.i1eYlHah_header_nav_menu_item i {
+  margin-right: 8px;
+}
+.i1eYlHah_header_nav_menu_item > span {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/component/apps/Statistic/index.less ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+.ge4-TjAI_drawer .kd-drawer-header {
+  height: 40px;
+  border-bottom: none;
+  -webkit-box-shadow: inset 0px -1px 0px 0px #d9d9d9;
+          box-shadow: inset 0px -1px 0px 0px #d9d9d9;
+}
+.ge4-TjAI_drawer .kd-drawer-body {
+  background: #FAFAFA;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: auto;
+}
+.ge4-TjAI_drawer .kd-drawer-title {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.ge4-TjAI_drawer .ByDmoXK4_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ge4-TjAI_drawer .ByDmoXK4_title .mJUSmbno_title-desc {
+  font-size: 16px;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 600;
+}
+.ge4-TjAI_drawer .ByDmoXK4_title .UduWhfDy_add {
+  color: #666666;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.ge4-TjAI_drawer .ByDmoXK4_title .UduWhfDy_add .s77pvofM_icon {
+  margin-right: 4px;
+}
+.ge4-TjAI_drawer .ByDmoXK4_title .UduWhfDy_add:hover {
+  color: var(--kd-nc-primary-6, #276FF5);
+}
+.UcdA4c8o_card_empty {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.UcdA4c8o_card_empty .rjPmWQiu_empty_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+.UcdA4c8o_card_empty .BuobLxbD_empty_text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212121;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/component/apps/Statistic/StatisticSetting.less ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.Zqnm\+uFS_statistics-setting-modal .kd-modal-container-box {
+  height: auto !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-modal-body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 0;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-form-field {
+  margin-right: 0;
+  margin-bottom: 24px;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-form-field-wrapper {
+  width: 100%;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-form-field-label {
+  line-height: 20px;
+  font-size: 14px;
+  color: #212121;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-form-field-vertical .kd-form-field-label {
+  margin-bottom: 8px;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-form-field-wrapper .kd-select {
+  width: 100%;
+  overflow: hidden;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-input-size-large,
+.Zqnm\+uFS_statistics-setting-modal .kd-select-size-large {
+  font-size: 14px;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-checkbox {
+  line-height: 20px;
+  font-size: 14px;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-checkbox-group > :not(:last-child) {
+  margin-right: 24px;
+  margin-bottom: 12px;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-checkbox-default-margin {
+  margin-right: 8px;
+}
+.Zqnm\+uFS_statistics-setting-modal .kd-modal-footer {
+  border-top: none !important;
+}
+.XEWz\+Ixc_statistics-setting-modal-form-item-checkbox .kd-form-field-wrapper-message {
+  margin-top: -11px;
+}
+.pkgnqvI4_statistics-setting-modal-footer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 14px;
+  background: #f8f8f8;
+}
+.SLVI63xV_statistics-setting-modal-body .v6VzcB10_form-item-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.SLVI63xV_statistics-setting-modal-body .v6VzcB10_form-item-row .kd-form-field {
+  width: 50%;
+  padding-right: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.SLVI63xV_statistics-setting-modal-body .v6VzcB10_form-item-row .kd-form-field:last-child {
+  padding-right: 0;
+  padding-left: 12px;
+}
+.SLVI63xV_statistics-setting-modal-body .O1KTVDth_form-item-row-50 {
+  width: 50%;
+  padding-right: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.SLVI63xV_statistics-setting-modal-body .Yhbgz058_form-item-vertical {
+  margin-bottom: 24px;
+}
+.SLVI63xV_statistics-setting-modal-body .Yhbgz058_form-item-vertical ._011rxes1_form-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.SLVI63xV_statistics-setting-modal-body .Yhbgz058_form-item-vertical ._0vojJeKi_filter {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #666;
+}
+.SLVI63xV_statistics-setting-modal-body .Yhbgz058_form-item-vertical ._0vojJeKi_filter i {
+  margin-right: 4px;
+}
+.SLVI63xV_statistics-setting-modal-body .Yhbgz058_form-item-vertical ._0vojJeKi_filter:hover,
+.SLVI63xV_statistics-setting-modal-body .Yhbgz058_form-item-vertical ._0vojJeKi_filter.Hr4i7Apt_is-active {
+  color: var(--kd-nc-primary-6, #276FF5);
+}
+.SLVI63xV_statistics-setting-modal-body ._2S-gIQ-6_filter-label-bar {
+  margin-top: 8px;
+}
+._3L66tnD7_sync-filter-setting {
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+._3L66tnD7_sync-filter-setting:hover {
+  color: var(--kd-nc-primary-6, #276FF5);
+}
+._3L66tnD7_sync-filter-setting i {
+  margin-right: 4px;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/component/apps/Statistic/StatisticCard.less ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.ImFi\+SK4_statCard {
+  background: #FFFFFF;
+  height: 352px;
+  border-radius: 8px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-shadow: var(--card-shadow-default);
+          box-shadow: var(--card-shadow-default);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.ImFi\+SK4_statCard:hover {
+  -webkit-box-shadow: var(--card-shadow-hover);
+          box-shadow: var(--card-shadow-hover);
+}
+.ImFi\+SK4_statCard + .ImFi\+SK4_statCard {
+  margin-top: 12px;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/component/common/TreeNodeTitle.less ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+.O8Hm\+nQz_title {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.O8Hm\+nQz_title {
+  --kd-c-input-padding-left: 8px;
+}
+.O8Hm\+nQz_title .OuZ9o325_title-name {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+.O8Hm\+nQz_title ._3Q38LMSO_title-icon {
+  display: none;
+  color: #212121;
+  font-weight: 400;
+}
+.O8Hm\+nQz_title ._3Q38LMSO_title-icon .bnA7BGaC_title-drag {
+  margin-left: 8px;
+  cursor: move;
+}
+.O8Hm\+nQz_title ._3Q38LMSO_title-icon .cbPfkWhG_title-more:hover {
+  color: #5582f3;
+}
+.O8Hm\+nQz_title ._3Q38LMSO_title-icon .bnA7BGaC_title-drag:hover {
+  color: #5582f3;
+}
+.O8Hm\+nQz_title:hover ._3Q38LMSO_title-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+[data-node-visible='true'] ._3Q38LMSO_title-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.jQdR1264_tree-node-item-hover {
+  background-color: var(--kd-c-tree-node-color-backgroung-hover, var(--kd-g-color-hover, #f5f5f5));
+}
+.tzoheLQL_popper {
+  -webkit-animation: none !important;
+          animation: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!../../node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/web/component/custom/index.less ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+._73PhxGtV_custom {
+  width: 100%;
+  height: 100%;
+}
+.X58ucWuM_custom_main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+._73PhxGtV_custom .\+jDUwFlb_addcardmark {
+  top: 148px;
+}
+

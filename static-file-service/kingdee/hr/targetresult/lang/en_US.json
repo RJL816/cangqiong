@@ -1,0 +1,8 @@
+{	
+	"yes":"Yes",
+	"no":"No",
+	"loading": "Loading...",
+    "loadMore": "Load more...",
+    "noResults": "No params found",
+	"noResultsForTerm": "No results for <b>%s</b>"
+}

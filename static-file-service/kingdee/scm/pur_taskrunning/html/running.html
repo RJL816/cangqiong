@@ -1,0 +1,20 @@
+<div>
+	<div>
+			<ul class="ulnonestyle">
+				<% for(var i=0;i < taskdetail.length;i++){ %>
+
+					<% if(taskdetail[i].status == 1){ %>
+						<li class="nostart"><%= taskdetail[i].name %></li>
+					<% } %>
+					<% if(taskdetail[i].status == 2){ %>
+						<li class="loading"><%= taskdetail[i].name %></li>
+					<% } %>
+					<% if(taskdetail[i].status == 4){ %>
+						<li class="success"><%= taskdetail[i].name %></li>
+					<% } %>
+					
+				<% } %>
+			</ul>
+	</div>
+</div>
+
