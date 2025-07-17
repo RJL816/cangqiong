@@ -1,0 +1,98 @@
+.dialog-selectsourceBox{
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;			
+	left: 0;
+	top: 0;
+}
+.dialog-selectsourceBox .mask{
+	z-index: 2;
+	position: absolute;
+	background: #333;
+	opacity: 0.5;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.dialog-selectsource {
+	z-index: 5;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	font-size: 14px;
+	background-color: #eeeeee;
+	border: 2px solid #777777;
+	border-left: 2px solid #dddddd;
+	border-top: 2px solid #dddddd;
+	padding: 15px 20px 0px 20px;
+	width: 300px;
+}
+
+.dialog-selectsource p {
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.dialog-selectsource-sourcelist {
+	height: 60px;
+	padding: 0px;
+	background-color: #ffffff;
+	border: 2px solid #777777;
+	border-right: 2px solid #dddddd;
+	border-bottom: 2px solid #dddddd;
+	overflow-y: auto;
+	overflow-x: hidden;
+	min-width: 240px;
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently
+	supported by Chrome and Opera */
+}
+
+.dialog-selectsource-sourcelist ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.dialog-selectsource-sourcelist li {
+	padding: 2px 0 2px 2px;
+	margin: 0;
+	list-style: none;
+	cursor: pointer;
+	line-height: 18px;
+}
+
+.dialog-selectsource-sourcelist li:hover {
+	background-color: rgb(239, 246, 253);
+}
+
+.dialog-selectsource-sourcelist li.dialog-selectsource-sourcelist-li-selected {
+	background-color: rgb(199, 222, 252);
+}
+
+.dialog-selectsource-sourcelist-ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.dialog-selectsource-buttons>input {
+	min-width: 80px;
+	height: 20px;
+	margin: 10px 10px 20px 0px;
+	line-height: 0;
+}

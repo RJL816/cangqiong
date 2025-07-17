@@ -1,0 +1,23 @@
+<div>
+    {{if control.icon}}
+	<div class="${control.class}" style="${(control.style||'') + control._customData.style}" id="${control.id}"  viewid="${control.viewid}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}" xml="${control.xml}" data="${controlStr}">
+	    {{if control.iconposition === 'left'}}
+		    {{if control._customData.iconClass}}
+			<i class="iconfont2 iconfont ${control._customData.iconClass}"></i>
+			{{else}}
+			<img src="${control._customData.icon}"/>
+		    {{/if}}
+		{{/if}}
+		<span>${control.text}</span>
+		{{if control.iconposition === 'right'}}
+		    {{if control._customData.iconClass}}
+			<i class="iconfont2 iconfont ${control._customData.iconClass}"></i>
+			{{else}}
+			<img src="${control._customData.icon}"/>
+		    {{/if}}
+		{{/if}}
+	</div>
+	{{else}}
+	<label class="${control.class}" style="${(control.style||'') + control._customData.style}" id="${control.id}"  viewid="${control.viewid}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}" xml="${control.xml}" data="${controlStr}">${control.text}</label>
+	{{/if}}
+</div>

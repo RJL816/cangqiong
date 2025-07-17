@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Orion Compare Demo</title>
+	<link rel="stylesheet" type="text/css" href="./css/built-compare.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/svnDiff.css"/>
+    
+	<script src="./js/require.js"></script>
+	<script src=".././debug-page/js/jquery-1.11.3.js"></script>
+	<script src="./js/svnDiff.js"></script>
+</head>
+<body>
+	<div class="script card">
+		<div class="svn_toolbar">
+			<span id="compareCommandHolder"></span>
+	    </div>
+	    <hr>
+	    <div>
+	        <div id="compareParentDiv" class="compareContainer"></div>
+	    </div>
+	</div>
+    <div class="page">
+	    <ul class="page-title"></ul>
+	    <div class="page-content"></div>
+	</div>
+	<div class="tipinfoarea">
+	    <span class="info-icon"></span>
+	    <span class="tip"></span>
+	    <span class="info"></span>
+	    <span class="close-icon" onClick="closeTipInfo()"></span>
+	</div>
+</body>
+</html>

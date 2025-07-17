@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>错误</title>
+    <desc>Created with Sketch.</desc>
+    <g id="错误" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,1 C11.8659932,1 15,4.13400675 15,8 C15,11.8659932 11.8659932,15 8,15 C4.13400675,15 1,11.8659932 1,8 C1,4.13400675 4.13400675,1 8,1 Z" id="路径" fill="#FB2323"></path>
+        <path d="M8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 Z" id="路径" fill="#FB2323"></path>
+        <rect id="矩形" fill="#FFFFFF" transform="translate(8.000000, 8.000000) rotate(-315.000000) translate(-8.000000, -8.000000) " x="7.5" y="3" width="1" height="10" rx="0.5"></rect>
+        <rect id="矩形备份" fill="#FFFFFF" transform="translate(8.000000, 8.000000) rotate(-45.000000) translate(-8.000000, -8.000000) " x="7.5" y="3" width="1" height="10" rx="0.5"></rect>
+    </g>
+</svg>

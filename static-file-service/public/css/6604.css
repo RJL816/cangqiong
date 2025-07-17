@@ -1,0 +1,29 @@
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/common/wps/style.less ***!
+  \*****************************************************************************************************************************************************************************************************/
+.style_previewer-container_3qr- {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+}
+.style_previewer-container_3qr- .style_error_3V2g {
+  color: #212121;
+  font-size: 16px;
+}
+.style_previewer-container_3qr- .style_previewer_1b63 {
+  width: 100%;
+  height: 100%;
+}
+

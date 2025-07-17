@@ -1,0 +1,17 @@
+{
+  "setIntvTime_key001": "If it is not set, you will be free in the last two weeks by default after saving",
+  "setIntvTime_key002": "Available interview time",
+  "setIntvTime_key003": "Non optional time",
+  "setIntvTime_today": "今",
+  "setIntvTime_key004": "Beijing time",
+  "setIntvTime_key005": "No more prompt within 7 days",
+  "setIntvTime_key006": "Week {text}",
+  "setIntvTime_key007": "yyyy/MM",
+  "setIntvTime_mon": "Monday",
+  "setIntvTime_tues": "Tuesday",
+  "setIntvTime_wednes": "Wednesday",
+  "setIntvTime_thurs": "Thursday",
+  "setIntvTime_fri": "Friday",
+  "setIntvTime_satur": "Saturday",
+  "setIntvTime_week": "Sunday"
+}

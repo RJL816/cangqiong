@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .ids__analysis-report_wrapper,
+      .ids__report_wrapper {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ids__analysis-report_wrapper">
+      <div class="ids__report_wrapper">
+        <div id="saleforecasthomepage"></div>
+      </div>
+    </div>
+
+    <script src="./ai_ids_setting.js"></script>
+    <script src="./utils.js"></script>
+
+    <script src="../lib/svgHelper.js"></script>
+    <script src="./templateScript.js"></script>
+    <script src="./customChartUtils.js"></script>
+
+    <script src="./chartUtils.js"></script>
+    <script src="./chartSetting.js"></script>
+    <script src="./renderUtils.js"></script>
+    <script src="./homePage/js/movin.js"></script>
+    <script src="./homePage/js/movin1.js"></script>
+    <script src="./homePage/js/xiaok.js"></script>
+    <script src="./homePage/js/imgAnimatin.js"></script>
+    <script src="./homePage/js/xiaok_calc.js"></script>
+    <script src="./homePage/js/xiaok_calc_data.js"></script>
+
+    <script src="./homePage/js/xiaok_default.js"></script>
+    <script src="./homePage/js/xiaok_default_data.js"></script>
+    <script src="./homePage/js/partical_line.js"></script>
+    <script src="./homePage/js/partical_line_animData.js"></script>
+
+    <script src="./homepage.js"></script>
+    <script>
+      //   IDS_ModelAna_ChartUtils.chartData['error_mark_line'] =
+      //     window.errorLineData.data //桑吉图测试数据
+
+      var $$container = document.querySelector("#saleforecasthomepage");
+      var i = 1;
+
+      window.onload = function () {
+        render();
+      };
+      function render() {
+        //在开始绘图前清空之前的图形（如果有的话）
+        // window.IDS_ModelAna_ChartUtils.clear()
+
+        // var containerId = propsData.containerId;
+        // var uniqueKey = chartType + "_" + containerId;
+        // var chartInstance = ai_ids.setting.getChartInstanceByKey(chartType);
+        var chartInstance;
+        if (chartInstance) {
+          //如果已经渲染过了，
+          IDS_ModelAna_RenderUtils.updateRender(chartType);
+        } else {
+          //   //   IDS_ModelAna_RenderUtils.$$page[uniqueKey] = true
+          //   console.log(
+          //     'IDS_ModelAna_RenderUtils $$page is ',
+          //     IDS_ModelAna_RenderUtils.$$page,
+          //   )
+          IDS_ModelAna_RenderUtils.main(
+            {
+              templateData: window.homepageTemplate.templateData,
+
+              uniqueCode: "homePage"
+            },
+            $$container
+          );
+          //   IDS_ModelAna_RenderUtils.main(templateData, model.dom) //IDS_ModelAna_RenderUtils
+        }
+      }
+    </script>
+  </body>
+</html>

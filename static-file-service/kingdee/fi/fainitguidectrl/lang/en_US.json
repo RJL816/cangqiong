@@ -1,0 +1,24 @@
+﻿{
+  "key0001": "Your initialization has ", 
+  "key0002": " Items need to be configured, please follow the steps one by one!",
+  "key0003": "Please complete the previous steps",
+  "key0004": "Done and Exit",
+  "key0005": "no data,",
+  "key0006": "Go To Add",
+  "key0007": "Total ",
+  "key0008": " data",
+  "key0009": "View Data",
+  "nodeInfos":{
+    "fa_assetcategory": ["Asset Class","Create asset classes as a basis for asset management"],
+    "fa_depremethod": ["Depreciation Method","Determine if you need to create a custom depreciation method"],
+    "fa_depresystem": ["Asset Policy","Create asset policy as a basis for asset accounting"],
+    "fa_depreuse": ["Depreciation Use","Create depreciation use as a basis for multi-ledger accounting"],
+    "fa_assetbook": ["Asset Books","Create asset books to start asset bookkeeping"],
+    "fa_changemode": ["Way of Change","Create change methods as a basis for card creation"],
+    "fa_storeplace": ["Storage Location","Create storage locations as a basis for asset card creation"],
+    "fa_usestatus": ["Status of Use","Create usage status as a basis for asset card creation"],
+    "fa_initcard_real": ["Physical Card Initialization","Import physical information of account book enablement opening card"],
+    "fa_initcard_fin": ["Finance Card Initialization","Import the financial information of the book to enable the opening card"],
+    "node_endinit": ["End Initialization","End initialization and exit the wizard"]
+  }
+}

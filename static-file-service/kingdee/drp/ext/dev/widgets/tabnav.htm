@@ -1,0 +1,10 @@
+<div>
+	<ul id="${control.id}"  viewid="${control.viewid}" class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+		<li active="${control.active}" attr-orderNumber="${control.orderNumber}" attr-hidden="${control.hidden}">
+			<a href="#${control.id}">${control.name}</a>
+			{{if !control.isLastTab}}
+			<span>|</span>
+			{{/if}}
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,46 @@
+
+.wtc_calculationReport-group {
+    color: #333;
+    font-size: 14px;
+}
+
+
+.wtc_calculationReport-group .wtc_calculationReport-children {
+    margin-left: 20px;
+}
+
+.wtc_calculationReport-group .wtc_calculationReport-group-name {
+    font-size: 16px;
+    padding: 6px 0;
+}
+.wtc_calculationReport-group .wtc_calculationReport-group-name:hover {
+    color: var(--themeColor, #276FF5);
+}
+
+.wtc_calculationReport-group .wtc_calculationReport-group-name > i {
+    font-size: 12px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.wtc_calculationReport-group .wtc_calculationReport-group-name > span {
+    font-weight: 700;
+    cursor: pointer;
+}
+.wtc_calculationReport-group .wtc_calculationReport-label-item {
+    display: flex;
+    padding: 4px 0;
+}
+.wtc_calculationReport-group .wtc_calculationReport-label-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wtc_calculationReport-group .wtc_calculationReport-label-item .wtc_calculationReport-label-item-detail {
+    margin-left: 10px;
+    flex: 0 0 60px;
+    width: 60px;
+    color: var(--themeColor, #276FF5);
+    font-size: 12px;
+    cursor: pointer;
+}

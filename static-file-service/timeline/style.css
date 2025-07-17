@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  background: #F2F8FF;
+  text-align: center;
+}
+
+.place_holder{
+  display: block;
+  height: 80px;
+  background: #F2F8FF;
+}
+
+.center {
+  width: 200px;
+  height: 31px;
+  border: 1px solid #CBD0D8;
+  background: #ffffff;
+  color: #999999;
+  text-align: center;
+  line-height: 31px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 16px;
+}
+
+.timeline ul {
+  color: #cccccc;
+  padding: 0;
+  margin: 0px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 60px;
+  margin: 0 auto;
+  height: 109px;
+}
+
+.timeline canvas {
+  display: block;
+  position: absolute;
+  background: #F2F8FF;
+  z-index: -1;
+}
+
+.timeline ul li div {
+  position: relative;
+}
+
+.city_picture {
+  /* background: #ff6666; */
+  width: 150px;
+  height: 93px;
+  /*这里的top要是减去了date的高度  */
+  top: 25px;
+  /* border-radius: 15px; */
+}
+
+.pin_date {
+  /* background: #ffffff; */
+  width: 60px;
+  height: 30px;
+  top: 54px;
+}
+
+.pin {
+  display: inline-block;
+   /* background: #ffffff;  */
+  width: 30px;
+  height: 30px;
+}
+
+.date {
+  display: inline-block;
+   /* background: #ffffff;  */
+  width: 30px;
+  height: 30px;
+  font-size: 8px;
+  vertical-align: top;
+}
+
+.date_month {
+  width: 30px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 12px;
+  color: #aaaaaa;
+  text-align: left;
+}
+
+.date_day {
+  width: 30px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 17px;
+  color: #555555;
+  text-align: left;
+}
+
+.timeline ul li:nth-child(odd) div.city_picture {
+  left: 60px;
+}
+
+.timeline ul li:nth-child(even) div.city_picture {
+  left: -150px;
+}
+
+.timeline ul li:nth-child(odd) div.pin_date {
+  left: -25px;
+}
+
+.timeline ul li:nth-child(even) div.pin_date {
+  left: 25px;
+}
+
+.img_pin {
+  /* width: 60px; */
+  height: 30px;
+}
+
+.img_city {
+  width: 150px;
+  height: 93px;
+  display: block;
+  border-radius: 8px;
+}
+
+.slogon {
+  position: absolute;
+  color: white;
+  width: 150px;
+  height: 15px;
+  line-height: 15px;
+  left: 0;
+  font-size: 11px;
+  top: -15px;
+  /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: left;
+  /* opacity: 0.2; */
+}
+
+@media (max-width:320px){
+  .timeline ul li:nth-child(odd) div.city_picture {
+    left: 50px;
+  }
+  
+  /* 这个值改起来最麻烦， 除了位移量，还要减去自己的宽度 */
+  .timeline ul li:nth-child(even) div.city_picture {
+    left: -103px;
+  }
+  
+  .timeline ul li:nth-child(odd) div.pin_date {
+    left: -20px;
+  }
+  
+  .timeline ul li:nth-child(even) div.pin_date {
+    left: 20px;
+  }
+
+  .city_picture {
+    width: 113px;
+    height: 70px;
+    top: 25px;
+  }
+
+  .img_city {
+    width: 113px;
+    height: 70px;
+  }
+
+  .slogon {
+    width: 113px;
+  }
+}

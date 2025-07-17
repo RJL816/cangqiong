@@ -1,0 +1,9 @@
+
+/*# sourceMappingURL=index.css.map*/
+
+.kd-slider-track {
+    background-color: var(--theme-color) ;
+}
+.kd-slider-handle {
+    border: 2px solid var(--theme-color) ;
+}

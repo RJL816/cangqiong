@@ -1,0 +1,354 @@
+﻿html, body {
+	background-color: white;
+}
+
+div {
+	text-align: left;
+}
+
+/*标准控制元素样式*/
+.line {
+	font-size: 4px;
+	cursor: pointer;
+	z-index: 2000;
+}
+
+.arrow {
+	font-size: 1px;
+	line-height: 2px;
+	height: 7px;
+	width: 7px;
+	cursor: pointer;
+}
+
+.up {
+	background-image: url(arrow/up.png);
+	margin-left: -3px;
+}
+
+.down {
+	background-image: url(arrow/down.png);
+	margin-left: -3px;
+	margin-top: -6px;
+}
+
+.left {
+	background-image: url(arrow/left.png);
+	margin-top: -3px;
+}
+
+.right {
+	background-image: url(arrow/right.png);
+	margin-left: -6px;
+	margin-top: -3px;
+}
+
+.port {
+	height: 7px;
+	width: 7px;
+	border: 1px solid #fbcb09;
+	font-size: 1px;
+	line-height: 1px;
+	cursor: default;
+	background-color: white;
+	z-index: 100001;
+}
+
+.node_mask {
+	z-index: 900001;
+	background-color: red;
+	opacity: 0.5;
+}
+
+.target_broker {
+	height: 13px;
+	width: 13px;
+	border: 1px solid red;
+	font-size: 1px;
+	line-height: 1px;
+	cursor: pointer;
+	z-index: 90000;
+	border: 1px solid #fbcb09;
+	background-color: white;
+	border-radius: 7px;
+}
+
+.NOT_TARGET {
+	cursor: url(cursor/forbidden.png), default;
+}
+
+/*其他图形元素样式*/
+.node {
+	cursor: default;
+	border: 1px solid rgba(85, 130, 243, 0.2);
+	border-radius: 8px;
+	box-shadow: 0px 2px 8px 0px rgba(69, 112, 211, 0.2);
+	text-align: left;
+	z-index: 100;
+	background-color: white;
+}
+.node.hover{
+	url(isc-mark.png);
+}
+.highlight-node {
+	background-color: lightyellow;
+}
+
+.group {
+	cursor: default;
+	border: 1px solid lightgray;
+	overflow: hidden;
+	text-align: left;
+	z-index: 0 !important;
+	background-color: white;
+}
+
+#panel .current {
+	background-color: rgba(85, 130, 243, 0.5);
+}
+
+#panel .node {
+	cursor: pointer;
+	border: 0px solid;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px 0px;
+}
+
+#panel .hover {
+	background-color: rgb(236, 247, 255);
+}
+
+.hover {
+	z-index: 6000;
+	cursor: pointer;
+	border: 1.6px solid rgba(85, 130, 243, 0.5);
+}
+
+.current {
+	border: 2px solid #5582f3;
+	background-color: #ffffff;
+	z-index: 5000;
+}
+
+.annotation {
+	background-color: rgb(240, 246, 251);
+	cursor: pointer;
+	z-index: 4000;
+}
+
+.start-point-NormalTransition {
+	width: 5px;
+	height: 5px;
+	border-radius: 3px;
+	z-index: 2000;
+}
+
+.start-point-CompensationTransition,
+	.start-point-CompensationTransition-passed {
+	width: 15px !important;
+	height: 15px !important;
+	margin-top: -5px;
+	margin-left: -5px;
+	border-radius: 7px;
+	background-image: url(../img/rollback.svg);
+	z-index: 2000;
+	margin-left: -5px;
+}
+
+.start-point-CompensationTransition-unextcuted {
+	width: 15px !important;
+	height: 15px !important;
+	margin-top: -5px;
+	margin-left: -5px;
+	border-radius: 7px;
+	background-image: url(../img/rollback-unextcuted.svg);
+	z-index: 2000;
+	margin-left: -5px;
+}
+
+.start-point-ErrorTransition, .start-point-ErrorTransition-passed {
+	width: 15px !important;
+	height: 15px !important;
+	margin-top: -5px;
+	margin-left: -5px;
+	border-radius: 7px;
+	background-image: url(../img/error.svg);
+	z-index: 2000;
+}
+
+.start-point-ErrorTransition-unextcuted {
+	width: 15px !important;
+	height: 15px !important;
+	margin-top: -5px;
+	margin-left: -5px;
+	border-radius: 7px;
+	background-image: url(../img/error-unextcuted.svg);
+	z-index: 2000;
+}
+
+.annotation PRE {
+	color: #8097B5;
+	text-align: left;
+	font: 9pt;
+}
+
+.annotation:hover {
+	color: #fbcb09;
+}
+.openBlock:hover{
+	color:orange;
+	border: 2px solid orange;
+}
+.title {
+	padding: 3px 0px;
+	font-size: 9pt;
+	text-align: left;
+	word-break: break-all;
+	line-height: 100%;
+}
+.node_content {
+	padding: 3px;
+	text-align: left;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.svgTitle{
+	font-size:16px;
+}
+.GRAPH_EDITOR_TIPS {
+	color: gray;
+	font-style: italic;
+	font-size: 90%;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 350px;
+	display: none;
+}
+
+.prior-node {
+	background-color: orange;
+}
+
+.selected_line {
+	font-size: 1px;
+	z-index: 100000;
+	color: #5582F3;
+}
+
+.selected_line PRE {
+	color: #5582F3
+}
+
+.ADD_NEW_NODE {
+	cursor: url(cursor/new_node.png), default;
+}
+
+.ADD_NEW_NODE .group {
+	cursor: url(cursor/new_node.png), default !important;
+}
+
+.ADD_NEW_LINK .node {
+	cursor: url(cursor/new_link.png), default;
+}
+
+.ADD_NEW_LINK .prior-node, .ADD_NEW_LINK .line, .ADD_NEW_LINK .annotation,
+	.ADD_NEW_LINK .arrow, .ADD_NEW_NODE .node, .ADD_NEW_NODE .line,
+	.ADD_NEW_NODE .annotation, .ADD_NEW_LINK .NOT_ALLOWED {
+	cursor: url(cursor/forbidden.png), default;
+}
+
+.RANGE_DIV {
+	position: absolute;
+	border: 1px dotted lightgray;
+}
+
+.copy_flag {
+	position: absolute;
+	display: none;
+	width: 24px;
+	height: 24px;
+	background-image: url(ico/plus3.png);
+	top: 0px;
+	right: 0px;
+	z-index: 10000;
+}
+
+.COPY_THIS_NODE .node {
+	cursor: url(cursor/copy.png), default;
+}
+
+.NEW_LINK_DIR_bottom {
+	width: 13px;
+	height: 13px;
+	background-image: url(cursor/bottom.png);
+	z-index: 999999;
+}
+
+.NEW_LINK_DIR_top {
+	width: 13px;
+	height: 13px;
+	background-image: url(cursor/top.png);
+	z-index: 999999;
+}
+
+.NEW_LINK_DIR_right {
+	width: 13px;
+	height: 13px;
+	background-image: url(cursor/right.png);
+	z-index: 999999;
+}
+
+.NEW_LINK_DIR_left {
+	width: 13px;
+	height: 13px;
+	background-image: url(cursor/left.png);
+	z-index: 999999;
+}
+
+.node_menu {
+	position: absolute;
+	padding: 2px;
+	background-color: rgb(250, 250, 250);
+	border: 1px solid lightgray;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 10px;
+	margin-left: 1px;
+}
+
+.node_menu .dup_node {
+	background-image: url(ico/add_node.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+
+.node_menu .dup_node:hover, .node_menu .remove_node:hover {
+	border: 1px solid orange;
+	border-radius: 3px;
+}
+
+.node_menu .remove_node {
+	background-image: url(ico/delete_node.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+
+.Lane .title {
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+}
+olid lightgray;
+}

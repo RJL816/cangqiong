@@ -1,0 +1,56 @@
+.tablecustomcontrolap tr {
+  height: 30px;
+}
+
+.tablecustomcontrolap tr, td {
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.tablecustomcontrolap table {
+  border-color: #F3F3F3;
+}
+
+.tablecustomcontrolap .table_first_row {
+  background-color: #F3F3F3;
+  text-align: center;
+}
+
+.tablecustomcontrolap .table_row:hover {
+  background-color: #F3F3F3;
+}
+
+.tablecustomcontrolap .outer_div__full, .outer_div__half, .outer_div__empty {
+  width: 20px;
+  height: 20px;
+  border: 1px #909090 solid;
+  margin: 0 auto;
+}
+
+.tablecustomcontrolap .outer_div__full {
+  background-color: #2788EE;
+}
+
+.tablecustomcontrolap .inner_div__full {
+  height: 20px;
+  margin-left: 2px;
+}
+
+.tablecustomcontrolap .inner_div__half {
+  margin: 4px auto auto auto;
+  width: 10px;
+  height: 10px;
+  background-color: #2788EE;
+}
+
+.tablecustomcontrolap .cursor_pointer {
+  cursor: pointer;
+}
+
+.tablecustomcontrolap .shrink_or_expand.cursor_pointer:hover {
+  color: #2788EE;
+}
+
+.tablecustomcontrolap .outer_div__full.cursor_pointer:hover, .outer_div__half.cursor_pointer:hover, .outer_div__empty.cursor_pointer:hover {
+  border: 1px #2788EE solid;
+}

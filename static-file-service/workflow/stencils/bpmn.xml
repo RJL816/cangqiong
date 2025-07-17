@@ -1,0 +1,1595 @@
+<shapes name="ierp.bpmn">
+  <!-- 画线 -->
+  <shape type="svg" name="SequenceFlow" width="21" height="21" w="21" h="21">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-63.000000, -390.000000)" stroke="#7F93BC" stroke-width="2">
+        <g transform="translate(63.000000, 383.000000)">
+          <path d="M19.5,8.5 L0.886085046,27.113915"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 开始_跳过 -->
+  <shape type="svg" name="StartSignalEvent_SKIP" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+      <mask id="def_1509763508496_2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="115" height="45" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508496_1"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -361.000000)" stroke="#BBBBBB">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 62.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#def_1509763508496_2)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508496_1"/>
+            <g transform="translate(16.000000, 10.000000)">
+              <circle cx="12.5" cy="12.5" r="12.5"/>
+              <polygon transform="translate(13.888889, 12.500000) rotate(90.000000) translate(-13.888889, -12.500000) " points="13.8888889 7.87037037 18.9814815 17.1296296 8.7962963 17.1296296"/>
+            </g>
+            <g transform="translate(3.000000, 0.000000)" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M31.5989857,0.73555958 L0.645255725,31.6892895"/>
+              <path d="M60.4424116,1.19459528 L18.3181125,43.3188945"/>
+              <path d="M90.1962241,0.929943229 L46.5530258,44.5731415"/>
+              <path d="M108.808971,11.8060168 L76.8063722,43.808616"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 开始_运用 -->
+  <shape type="svg" name="StartSignalEvent_USE" width="115" height="45" w="115" h="45">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -361.000000)">
+        <g transform="translate(169.000000, 361.000000)">
+          <g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#def_1509763508496_1"/>
+            <rect stroke="#BBBBBB" stroke-width="1" x="0.5" y="0.5" width="114" height="44" rx="22"/>
+          </g>
+          <g transform="translate(16.000000, 10.000000)" stroke="#666666">
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+            <polygon transform="translate(13.888889, 12.500000) rotate(90.000000) translate(-13.888889, -12.500000) " points="13.8888889 7.87037037 18.9814815 17.1296296 8.7962963 17.1296296"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 开始_走过 -->
+  <shape type="svg" name="StartSignalEvent_TRAVERSED" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-481.000000, -361.000000)">
+        <g transform="translate(481.000000, 361.000000)">
+          <g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#def_1509763508496_1"/>
+            <rect stroke="#7F93BC" stroke-width="1" x="0.5" y="0.5" width="114" height="44" rx="22"/>
+          </g>
+          <g transform="translate(16.000000, 10.000000)">
+            <circle stroke="#2B87F3" cx="12.5" cy="12.5" r="12.5"/>
+            <polygon fill="url(#def_1509763508501_3)" transform="translate(13.888889, 12.500000) rotate(90.000000) translate(-13.888889, -12.500000) " points="13.8888889 7.87037037 18.9814815 17.1296296 8.7962963 17.1296296"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 开始 -->
+  <shape type="svg" name="StartSignalEvent" width="40" height="40" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-212.000000, -216.000000)" stroke="#7F93BC" stroke-width="2">
+        <g transform="translate(213.000000, 217.000000)">
+          <circle cx="19" cy="19" r="19"/>
+          <polygon transform="translate(21.111111, 19.000000) rotate(90.000000) translate(-21.111111, -19.000000) " points="21.1111111 11.962963 28.8518519 26.037037 13.3703704 26.037037"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 开始_处理中 -->
+  <shape type="svg" name="StartSignalEvent_PROCESSING" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -361.000000)">
+        <g transform="translate(779.000000, 361.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="115" height="45" rx="22.5"/>
+          <g transform="translate(16.000000, 10.000000)" stroke="#FFFFFF">
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+            <polygon transform="translate(13.888889, 12.500000) rotate(90.000000) translate(-13.888889, -12.500000) " points="13.8888889 7.87037037 18.9814815 17.1296296 8.7962963 17.1296296"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 开始节点挂起 -->
+  <shape type="svg" name="StartSignalEvent_HANGUP" width="120" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M96,47.5 L24,47.5 C17.5106542,47.5 11.6356542,44.8696729 7.38299064,40.6170094 C3.13032709,36.3643458 0.5,30.4893458 0.5,24 C0.5,17.5106542 3.13032709,11.6356542 7.38299064,7.38299064 C11.6356542,3.13032709 17.5106542,0.5 24,0.5 L96,0.5 C102.489346,0.5 108.364346,3.13032709 112.617009,7.38299064 C116.869673,11.6356542 119.5,17.5106542 119.5,24 C119.5,30.4893458 116.869673,36.3643458 112.617009,40.6170094 C108.364346,44.8696729 102.489346,47.5 96,47.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+		<text font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="16" letter-spacing="1" fill="#F88181">
+			<tspan x="53" y="33"></tspan>
+			<tspan x="70" y="33"></tspan>
+		</text>
+		<g transform="translate(8.000000, 8.000000)">
+			<circle fill="#F88181" cx="16" cy="16" r="12"/>
+			<path d="M16.9685632,12.7190613 C17.53821,11.76965 18.4608472,11.7680787 19.0314368,12.7190613 L22.9685632,19.2809387 C23.53821,20.23035 23.0980496,21 21.9914698,21 L14.0085302,21 C12.8992496,21 12.4608472,20.2319213 13.0314368,19.2809387 L16.9685632,12.7190613 Z" fill="#FFFFFF" transform="translate(18.000000, 16.000000) rotate(90.000000) translate(-18.000000, -16.000000) "/>
+		</g>
+    </g>
+  </shape>
+  <!-- 结束_处理中 -->
+  <shape type="svg" name="EndNoneEvent_PROCESSING" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -431.000000)">
+        <g transform="translate(779.000000, 431.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="115" height="45" rx="22.5"/>
+          <g transform="translate(16.000000, 10.000000)" stroke="#FFFFFF">
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+            <rect x="8.33333333" y="8.33333333" width="8.33333333" height="8.33333333" rx="0.921052632"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 结束_跳过 -->
+  <shape type="svg" name="EndNoneEvent_SKIP" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+      <mask id="def_1509763508496_2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="115" height="45" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508496_1"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -431.000000)" stroke="#BBBBBB">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 132.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#def_1509763508496_2)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508496_1"/>
+            <g transform="translate(16.000000, 10.000000)">
+              <circle cx="12.5" cy="12.5" r="12.5"/>
+              <rect x="8.33333333" y="8.33333333" width="8.33333333" height="8.33333333" rx="0.921052632"/>
+            </g>
+            <g transform="translate(3.000000, 0.000000)" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M31.5989857,0.73555958 L0.645255725,31.6892895"/>
+              <path d="M60.4424116,1.19459528 L18.3181125,43.3188945"/>
+              <path d="M90.1962241,0.929943229 L46.5530258,44.5731415"/>
+              <path d="M108.808971,11.8060168 L76.8063722,43.808616"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 结束_运用 -->
+  <shape type="svg" name="EndNoneEvent_USE" width="115" height="45" w="115" h="45">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -431.000000)">
+        <g transform="translate(169.000000, 431.000000)">
+          <g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#def_1509763508496_1"/>
+            <rect stroke="#BBBBBB" stroke-width="1" x="0.5" y="0.5" width="114" height="44" rx="22"/>
+          </g>
+          <g transform="translate(16.000000, 10.000000)" stroke="#666666">
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+            <rect x="8.33333333" y="8.33333333" width="8.33333333" height="8.33333333" rx="0.921052632"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 结束_走过 -->
+  <shape type="svg" name="EndNoneEvent_TRAVERSED" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-481.000000, -431.000000)">
+        <g transform="translate(481.000000, 431.000000)">
+          <g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#def_1509763508496_1"/>
+            <rect stroke="#7F93BC" stroke-width="1" x="0.5" y="0.5" width="114" height="44" rx="22"/>
+          </g>
+          <g transform="translate(16.000000, 10.000000)">
+            <circle stroke="#2B87F3" cx="12.5" cy="12.5" r="12.5"/>
+            <rect fill="url(#def_1509763508501_3)" x="8.33333333" y="8.33333333" width="8.33333333" height="8.33333333" rx="0.921052632"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 结束 -->
+  <shape type="svg" name="EndNoneEvent" width="40" height="40" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-212.000000, -296.000000)" stroke="#7F93BC" stroke-width="2">
+        <g transform="translate(213.000000, 297.000000)">
+          <circle cx="19" cy="19" r="19"/>
+          <rect x="12.6666667" y="12.6666667" width="12.6666667" height="12.6666667" rx="1.4"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 结束节点挂起 -->
+  <shape type="svg" name="EndNoneEvent_HANGUP" width="120" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M96,47.5 L24,47.5 C17.5106542,47.5 11.6356542,44.8696729 7.38299064,40.6170094 C3.13032709,36.3643458 0.5,30.4893458 0.5,24 C0.5,17.5106542 3.13032709,11.6356542 7.38299064,7.38299064 C11.6356542,3.13032709 17.5106542,0.5 24,0.5 L96,0.5 C102.489346,0.5 108.364346,3.13032709 112.617009,7.38299064 C116.869673,11.6356542 119.5,17.5106542 119.5,24 C119.5,30.4893458 116.869673,36.3643458 112.617009,40.6170094 C108.364346,44.8696729 102.489346,47.5 96,47.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+		<text font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="16" letter-spacing="1" fill="#F88181">
+			<tspan x="53" y="33"></tspan>
+		</text>
+		<g transform="translate(8.000000, 8.000000)">
+			<circle fill="#F88181" cx="16" cy="16" r="12"/>
+			<rect fill="#FFFFFF" x="11" y="11" width="10" height="10"/>
+		</g>
+    </g>
+  </shape>
+  <!-- 终止 -->
+  <shape type="svg" name="EndTerminateEvent" width="40" height="40" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-212.000000, -357.000000)" stroke-width="2" stroke="#7F93BC">
+        <g transform="translate(213.000000, 358.000000)">
+          <circle cx="19" cy="19" r="19"/>
+          <circle cx="19.0247123" cy="19.0247123" r="12.4792983"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 终止_处理中 -->
+  <shape type="svg" name="EndTerminateEvent_PROCESSING" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -501.000000)">
+        <g transform="translate(779.000000, 501.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="115" height="45" rx="22.5"/>
+          <g transform="translate(16.000000, 10.000000)" stroke="#FFFFFF">
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+            <circle cx="12.5162581" cy="12.5162581" r="8.36795941"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 终止_跳过 -->
+  <shape type="svg" name="EndTerminateEvent_SKIP" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+      <mask id="def_1509763508496_2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="115" height="45" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508496_1"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -501.000000)" stroke="#BBBBBB">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 202.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#def_1509763508496_2)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508496_1"/>
+            <g transform="translate(16.000000, 10.000000)">
+              <circle cx="12.5" cy="12.5" r="12.5"/>
+              <circle cx="12.5162581" cy="12.5162581" r="8.36795941"/>
+            </g>
+            <g transform="translate(3.000000, 1.000000)" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M31.5989857,0.73555958 L0.645255725,31.6892895"/>
+              <path d="M60.4424116,1.19459528 L18.3181125,43.3188945"/>
+              <path d="M90.1962241,0.929943229 L46.5530258,44.5731415"/>
+              <path d="M108.808971,11.8060168 L76.8063722,43.808616"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 终止_运用 -->
+  <shape type="svg" name="EndTerminateEvent_USE" width="115" height="45" w="115" h="45">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -501.000000)">
+        <g transform="translate(169.000000, 501.000000)">
+          <g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#def_1509763508496_1"/>
+            <rect stroke="#BBBBBB" stroke-width="1" x="0.5" y="0.5" width="114" height="44" rx="22"/>
+          </g>
+          <g transform="translate(16.000000, 10.000000)" stroke="#666666">
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+            <circle cx="12.5162581" cy="12.5162581" r="8.36795941"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 终止_走过 -->
+  <shape type="svg" name="EndTerminateEvent_TRAVERSED" width="115" height="45" w="115" h="45">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508496_1" x="0" y="0" width="115" height="45" rx="22.5"/>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-481.000000, -501.000000)">
+        <g transform="translate(481.000000, 501.000000)">
+          <g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#def_1509763508496_1"/>
+            <rect stroke="#7F93BC" stroke-width="1" x="0.5" y="0.5" width="114" height="44" rx="22"/>
+          </g>
+          <g transform="translate(16.000000, 10.000000)">
+            <circle stroke="#2B87F3" cx="12.5" cy="12.5" r="12.5"/>
+            <circle fill="url(#def_1509763508501_3)" cx="12.5162581" cy="12.5162581" r="8.86795941"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 终止节点挂起 -->
+  <shape type="svg" name="EndTerminateEvent_HANGUP" width="120" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M96,47.5 L24,47.5 C17.5106542,47.5 11.6356542,44.8696729 7.38299064,40.6170094 C3.13032709,36.3643458 0.5,30.4893458 0.5,24 C0.5,17.5106542 3.13032709,11.6356542 7.38299064,7.38299064 C11.6356542,3.13032709 17.5106542,0.5 24,0.5 L96,0.5 C102.489346,0.5 108.364346,3.13032709 112.617009,7.38299064 C116.869673,11.6356542 119.5,17.5106542 119.5,24 C119.5,30.4893458 116.869673,36.3643458 112.617009,40.6170094 C108.364346,44.8696729 102.489346,47.5 96,47.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+		<text font-family="PingFangSC-Regular, PingFang SC" font-size="16" font-weight="normal" line-spacing="16" letter-spacing="1" fill="#F88181">
+			<tspan x="53" y="33"></tspan>
+		</text>
+		<g transform="translate(8.000000, 8.000000)">
+			<circle fill="#F88181" cx="16" cy="16" r="12"/>
+			<circle fill="#FFFFFF" cx="16" cy="16" r="6"/>
+		</g>
+    </g>
+  </shape>
+  <!-- 人工 -->
+  <shape type="svg" name="UserTask" width="40" height="40" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-440.000000, -216.000000)" stroke-width="2" stroke="#7F93BC">
+        <g transform="translate(441.000000, 217.000000)">
+          <g>
+            <path d="M32.5,33.5 C32.5,30.6767093 29.1746802,27.0641706 27.5371775,26.5258626 C26.1449449,26.1498364 22.1164534,24.8073733 22.1164534,24.8073733 L22.1164534,23.1499536 C23.5280988,22.4441309 23.3685593,21.0646711 24.2339215,20.1987292 C25.0993592,19.3333671 26.3423105,18.8424179 26.530059,17.0731508 C26.7183368,15.3028249 25.6455668,15.0781217 25.6455668,15.0781217 L25.6455668,11.6883644 C25.2315774,8.7889765 20.0076018,7.5460252 18.1254536,8.14824202 C16.2433055,8.78844717 13.6465814,8.00695847 13.6841389,8.14824202 C15.0769008,10.1817132 13.147441,10.596232 12.8842453,11.6883392 L12.8842453,15.0781217 C12.4416842,15.0781217 11.8680643,15.3043626 12.0562917,17.0736297 C12.2440654,18.8439556 13.4485242,19.3333419 14.3524041,20.1987292 C15.2562839,21.0641165 15.0582267,22.4441309 16.4698721,23.1499536 L16.4698721,24.8074237 C16.4698721,24.8074237 12.8368763,25.9875547 11.1242608,26.5258626 C9.41164534,27.0641706 6.5,30.6767093 6.5,33.5"/>
+            <circle cx="19" cy="19" r="19"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 人工_处理中 -->
+  <shape type="svg" name="UserTask_PROCESSING" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -646.000000)">
+        <g transform="translate(779.000000, 646.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)" stroke="#FFFFFF">
+            <path d="M21.3815789,22.0394737 C21.3815789,20.1820456 19.1938685,17.8053754 18.1165641,17.4512254 C17.2006217,17.2038397 14.5502983,16.3206403 14.5502983,16.3206403 L14.5502983,15.2302326 C15.4790124,14.7658756 15.3740522,13.8583363 15.9433694,13.2886376 C16.5127363,12.7193204 17.3304675,12.3963276 17.4539862,11.232336 C17.5778532,10.067648 16.8720834,9.91981688 16.8720834,9.91981688 L16.8720834,7.68971342 C16.599722,5.78222138 13.1628959,4.96449026 11.9246406,5.36068554 C10.6863852,5.78187314 8.97801407,5.26773583 9.00272295,5.36068554 C9.91901368,6.69849553 8.64963226,6.97120526 8.47647717,7.68969684 L8.47647717,9.91981688 C8.18531854,9.91981688 7.80793704,10.0686596 7.93177086,11.2326511 C8.05530617,12.3973392 8.84771331,12.7193039 9.44237109,13.2886376 C10.0370289,13.8579714 9.90672811,14.7658756 10.8354422,15.2302326 L10.8354422,16.3206735 C10.8354422,16.3206735 8.44531337,17.0970754 7.31859265,17.4512254 C6.19187194,17.8053754 4.27631579,20.1820456 4.27631579,22.0394737"/>
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 人工_跳过 -->
+  <shape type="svg" name="UserTask_SKIP" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508537_4" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+      <mask id="def_1509763508537_5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="50" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508537_4"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -646.000000)" stroke="#BBBBBB">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 347.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#def_1509763508537_5)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508537_4"/>
+            <g transform="translate(16.000000, 13.000000)">
+              <path d="M21.3815789,22.0394737 C21.3815789,20.1820456 19.1938685,17.8053754 18.1165641,17.4512254 C17.2006217,17.2038397 14.5502983,16.3206403 14.5502983,16.3206403 L14.5502983,15.2302326 C15.4790124,14.7658756 15.3740522,13.8583363 15.9433694,13.2886376 C16.5127363,12.7193204 17.3304675,12.3963276 17.4539862,11.232336 C17.5778532,10.067648 16.8720834,9.91981688 16.8720834,9.91981688 L16.8720834,7.68971342 C16.599722,5.78222138 13.1628959,4.96449026 11.9246406,5.36068554 C10.6863852,5.78187314 8.97801407,5.26773583 9.00272295,5.36068554 C9.91901368,6.69849553 8.64963226,6.97120526 8.47647717,7.68969684 L8.47647717,9.91981688 C8.18531854,9.91981688 7.80793704,10.0686596 7.93177086,11.2326511 C8.05530617,12.3973392 8.84771331,12.7193039 9.44237109,13.2886376 C10.0370289,13.8579714 9.90672811,14.7658756 10.8354422,15.2302326 L10.8354422,16.3206735 C10.8354422,16.3206735 8.44531337,17.0970754 7.31859265,17.4512254 C6.19187194,17.8053754 4.27631579,20.1820456 4.27631579,22.0394737"/>
+              <circle cx="12.5" cy="12.5" r="12.5"/>
+            </g>
+            <g transform="translate(1.000000, 0.000000)" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M26.5989857,0.73555958 L0.0601522779,27.053236"/>
+              <path d="M55.4424116,1.19459528 L7.78723318,48.8497737"/>
+              <path d="M85.1962241,0.929943229 L37.3128602,48.8133071"/>
+              <path d="M113.947243,1.6677453 L66.7651334,48.8498548"/>
+              <path d="M141.855749,1.56025771 L95.2758717,48.1401346"/>
+              <path d="M147.771094,24.637012 L123.681879,48.726227"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 人工_运用 -->
+  <shape type="svg" name="UserTask_USE" width="150" height="50" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -646.000000)">
+        <g transform="translate(169.000000, 646.000000)">
+          <rect stroke="#BBBBBB" fill="#FFFFFF" x="0.5" y="0.5" width="149" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)" stroke="#666666">
+            <path d="M21.3815789,22.0394737 C21.3815789,20.1820456 19.1938685,17.8053754 18.1165641,17.4512254 C17.2006217,17.2038397 14.5502983,16.3206403 14.5502983,16.3206403 L14.5502983,15.2302326 C15.4790124,14.7658756 15.3740522,13.8583363 15.9433694,13.2886376 C16.5127363,12.7193204 17.3304675,12.3963276 17.4539862,11.232336 C17.5778532,10.067648 16.8720834,9.91981688 16.8720834,9.91981688 L16.8720834,7.68971342 C16.599722,5.78222138 13.1628959,4.96449026 11.9246406,5.36068554 C10.6863852,5.78187314 8.97801407,5.26773583 9.00272295,5.36068554 C9.91901368,6.69849553 8.64963226,6.97120526 8.47647717,7.68969684 L8.47647717,9.91981688 C8.18531854,9.91981688 7.80793704,10.0686596 7.93177086,11.2326511 C8.05530617,12.3973392 8.84771331,12.7193039 9.44237109,13.2886376 C10.0370289,13.8579714 9.90672811,14.7658756 10.8354422,15.2302326 L10.8354422,16.3206735 C10.8354422,16.3206735 8.44531337,17.0970754 7.31859265,17.4512254 C6.19187194,17.8053754 4.27631579,20.1820456 4.27631579,22.0394737"/>
+            <circle cx="12.5" cy="12.5" r="12.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 人工节点_走过 -->
+  <shape type="svg" name="UserTask_TRAVERSED" width="150" height="50" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="def_1544756806271_1">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1544756806272_2">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#7F93BC" fill="#FFF"/>
+	  <path d="M126,0 L143,8.8817842e-16 C146.865993,1.78006981e-16 150,3.13400675 150,7 L150,24 L126,0 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+	  <rect fill-rule="nonzero" x="138" y="2" width="10" height="10"/>
+	  <path d="M139.456713,7.08341912 C139.051121,6.64978636 138.685304,6.52116439 138.284009,6.95944096 C137.882715,7.39771752 137.916781,7.75406459 138.322373,8.18769735 L140.376452,10.6200883 C140.779591,11.051099 141.764667,11.1553582 142.166971,10.7234366 L146.557075,5.56242375 C146.961826,5.12787458 147.192367,4.63591626 146.790225,4.19854829 C146.388082,3.76118033 145.895963,4.12142888 145.491212,4.55597805 L141.237666,8.98203091 L139.456713,7.08341912 Z" fill="url(#def_1544756806271_1)"/>
+	  <g transform="translate(16.000000, 13.000000)">
+		<path d="M21.3815789,22.0394737 C21.3815789,20.1820456 19.1938685,17.8053754 18.1165641,17.4512254 C17.2006217,17.2038397 14.5502983,16.3206403 14.5502983,16.3206403 L14.5502983,15.2302326 C15.4790124,14.7658756 15.3740522,13.8583363 15.9433694,13.2886376 C16.5127363,12.7193204 17.3304675,12.3963276 17.4539862,11.232336 C17.5778532,10.067648 16.8720834,9.91981688 16.8720834,9.91981688 L16.8720834,7.68971342 C16.599722,5.78222138 13.1628959,4.96449026 11.9246406,5.36068554 C10.6863852,5.78187314 8.97801407,5.26773583 9.00272295,5.36068554 C9.91901368,6.69849553 8.64963226,6.97120526 8.47647717,7.68969684 L8.47647717,9.91981688 C8.18531854,9.91981688 7.80793704,10.0686596 7.93177086,11.2326511 C8.05530617,12.3973392 8.84771331,12.7193039 9.44237109,13.2886376 C10.0370289,13.8579714 9.90672811,14.7658756 10.8354422,15.2302326 L10.8354422,16.3206735 C10.8354422,16.3206735 8.44531337,17.0970754 7.31859265,17.4512254 C6.19187194,17.8053754 4.27631579,20.1820456 4.27631579,22.0394737 C4.27631579,22.0394737 10.0066465,25.1044869 12.8289474,25.1044869 C15.7084009,25.1044869 21.3815789,22.0394737 21.3815789,22.0394737 Z" fill="url(#def_1544756806272_2)"/>
+		<circle stroke="#2B87F3" cx="12.5" cy="12.5" r="12.5"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 人工节点_挂起 -->
+  <shape type="svg" name="UserTask_HANGUP" width="150" height="50" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+	  <g transform="translate(16.000000, 13.000000)">
+		<path d="M21.3815789,22.0394737 C21.3815789,20.1820456 19.1938685,17.8053754 18.1165641,17.4512254 C17.2006217,17.2038397 14.5502983,16.3206403 14.5502983,16.3206403 L14.5502983,15.2302326 C15.4790124,14.7658756 15.3740522,13.8583363 15.9433694,13.2886376 C16.5127363,12.7193204 17.3304675,12.3963276 17.4539862,11.232336 C17.5778532,10.067648 16.8720834,9.91981688 16.8720834,9.91981688 L16.8720834,7.68971342 C16.599722,5.78222138 13.1628959,4.96449026 11.9246406,5.36068554 C10.6863852,5.78187314 8.97801407,5.26773583 9.00272295,5.36068554 C9.91901368,6.69849553 8.64963226,6.97120526 8.47647717,7.68969684 L8.47647717,9.91981688 C8.18531854,9.91981688 7.80793704,10.0686596 7.93177086,11.2326511 C8.05530617,12.3973392 8.84771331,12.7193039 9.44237109,13.2886376 C10.0370289,13.8579714 9.90672811,14.7658756 10.8354422,15.2302326 L10.8354422,16.3206735 C10.8354422,16.3206735 8.44531337,17.0970754 7.31859265,17.4512254 C6.19187194,17.8053754 4.27631579,20.1820456 4.27631579,22.0394737 C4.27631579,22.0394737 10.0066465,25.1044869 12.8289474,25.1044869 C15.7084009,25.1044869 21.3815789,22.0394737 21.3815789,22.0394737 Z" fill="#F88181"/>
+		<circle stroke="#F88181" cx="12.5" cy="12.5" r="12.5"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 人工节点取消 -->
+  <shape type="svg" name="UserTask_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+          <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+          <g transform="translate(8.000000, 8.000000)">
+            <path d="M24,24 C24,22.3149463 21.9536493,21.3782658 20.9459554,21.0569819 C20.0891969,20.8325543 17.6101252,20.0313181 17.6101252,20.0313181 L17.6101252,19.0421032 C18.47883,18.6208398 18.3806519,17.7975226 18.9131824,17.2806935 C19.4457595,16.7642105 20.2106526,16.4711922 20.3261902,15.4152223 C20.4420534,14.3586204 19.7818873,14.2245084 19.7818873,14.2245084 L19.7818873,12.2013646 C19.5271246,10.470893 16.3123703,9.72904953 15.1541253,10.0884768 C13.9958803,10.4705771 12.3978962,10.0041531 12.4210085,10.0884768 C13.2780928,11.3021344 12.0907329,11.5495359 11.9287663,12.2013496 L11.9287663,14.2245084 C11.656421,14.2245084 11.3034242,14.3595381 11.4192564,15.4155081 C11.5348095,16.47211 12.2760149,16.7641955 12.8322486,17.2806935 C13.3884824,17.7971916 13.2666011,18.6208398 14.1353059,19.0421032 L14.1353059,20.0313482 C14.1353059,20.0313482 11.8996162,20.735698 10.845699,21.0569819 C9.79178175,21.3782658 8,22.3149463 8,24 C8,24 11,28 16,28 C21,28 24,24 24,24 Z" fill="#2B87F3" fill-rule="evenodd"/>
+            <circle stroke="#2B87F3" stroke-width="1" cx="16" cy="16" r="11.5"/>
+          </g>
+          <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+  <!-- 审批 -->
+  <shape type="svg" name="AuditTask" width="38" height="37" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-193.000000, -740.000000)">
+        <g transform="translate(-1.000000, 0.000000)">
+          <g transform="translate(170.000000, 299.000000)">
+            <g transform="translate(0.000000, 422.000000)">
+              <g transform="translate(24.000000, 19.000000)">
+                <path d="M27.2977049,16.318 C21.9438994,16.318 17.6078689,20.6102898 17.6078689,25.9 C17.6078689,31.1897102 21.9438994,35.482 27.2977049,35.482 C32.6515105,35.482 36.987541,31.1897102 36.987541,25.9 C36.987541,20.6102898 32.6515105,16.318 27.2977049,16.318 Z" stroke="#7F93BC" stroke-width="2"/>
+                <rect fill="#7F93BC" x="6" y="24" width="7" height="2" rx="1"/>
+                <rect fill="#7F93BC" x="6" y="16" width="12" height="2" rx="1"/>
+                <rect fill="#7F93BC" x="6" y="8" width="17" height="2" rx="1"/>
+                <path d="M32.1896224,24.7539681 L32.0633202,24.7469756 L28.8292489,24.3616163 L28.5906929,23.8696381 L27.4349876,21.4779055 C27.4051882,21.4278101 27.3482601,21.3955958 27.2852459,21.3955958 C27.2222317,21.3955958 27.1653036,21.4278101 27.1758645,21.4029715 L25.7488435,24.3459414 L25.2251016,24.4227501 L22.5252386,24.8186558 C22.4776506,24.8252073 22.4401001,24.8563596 22.4270028,24.8962924 C22.4148182,24.9334424 22.4251357,24.9742236 22.4601283,25.0075769 L24.7860476,27.2509956 L24.6945653,27.774228 L24.2487009,30.323585 C24.242697,30.3615378 24.2591208,30.4005666 24.2938102,30.4253967 C24.332216,30.4528869 24.3849218,30.45686 24.4299781,30.4339799 L27.372459,28.9484529 L27.8231366,29.1759799 L30.3170905,30.4350689 C30.3599962,30.45686 30.412702,30.4528869 30.4511078,30.4253967 C30.4857973,30.4005666 30.5022211,30.3615378 30.4980686,30.33487 L29.9610643,27.1748796 L30.3411832,26.8082435 L32.2795833,24.9386353 C32.311336,24.9075607 32.3202723,24.8636119 32.3040946,24.8250772 C32.2864267,24.7829925 32.2414722,24.7535542 32.1896224,24.7539681 Z" stroke="#7F93BC" stroke-width="2" fill-rule="nonzero"/>
+                <path d="M0.00294494629,2.00140381 L0.00294494629,34.9992371 L0.00294494629,34.9992371 C0.00294494629,36.1038066 0.898375447,36.9992371 2.00294495,36.9992371 L12.9984904,36.9992371 L12.9984904,36.9992371 C13.5518111,36.9992371 14.0003663,36.550682 14.0003663,35.9973612 L14.0003663,35.9973612 L14.0003663,35.9973612 C14.0003663,35.4440404 13.5518111,34.9954853 12.9984904,34.9954853 L2.99813843,34.9954853 L2.99813843,34.9954853 C2.44585368,34.9954853 1.99813843,34.54777 1.99813843,33.9954853 L1.99813843,2.99864044 L1.99813843,2.99864044 C1.99813843,2.44635569 2.44585368,1.99864044 2.99813843,1.99864044 L29.0056458,1.99864044 L29.0056458,1.99864044 C29.5579305,1.99864044 30.0056458,2.44635569 30.0056458,2.99864044 L30.0056458,11.0020928 L30.0056458,11.0020928 C30.0056458,11.5537864 30.4528817,12.0010223 31.0045753,12.0010223 L31.0045753,12.0010223 L31.0045753,12.0010223 C31.5562688,12.0010223 32.0035048,11.5537864 32.0035048,11.0020928 L32.0035048,2.00140381 L32.0035048,2.00140381 C32.0035048,0.896834309 31.1080743,0.00140380859 30.0035048,0.00140380859 L2.00294495,0.00140380859 L2.00294495,0.00140380859 C0.898375447,0.00140380859 0.00294494629,0.896834309 0.00294494629,2.00140381 Z" fill="#7F93BC"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 审批_处理中 -->
+  <shape type="svg" name="AuditTask_PROCESSING" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -571.000000)">
+        <g transform="translate(779.000000, 571.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)" fill="url(#def_1509763508501_3)">
+            <path d="M18,11.5 C14.4101491,11.5 11.5,14.4101491 11.5,18 C11.5,21.5898509 14.4101491,24.5 18,24.5 C21.5898509,24.5 24.5,21.5898509 24.5,18 C24.5,14.4101491 21.5898509,11.5 18,11.5 Z" stroke="#FFFFFF"/>
+            <rect fill="#FFFFFF" x="4" y="16" width="5" height="1" rx="0.5"/>
+            <rect fill="#FFFFFF" x="4" y="11" width="8" height="1" rx="0.5"/>
+            <rect fill="#FFFFFF" x="4" y="6" width="12" height="1" rx="0.5"/>
+            <path d="M21.2740402,16.7691761 L21.2108892,16.7656798 L19.1210843,16.5166668 L19.0018063,16.2706777 L18.213834,14.6414781 C18.161957,14.5542681 18.0660559,14.5 17.9616748,14.5 C17.8572936,14.5 17.7613926,14.5542681 17.7296956,14.6040111 L16.8060655,16.5088294 L16.5441946,16.5472337 L14.7214939,16.8145199 C14.6229876,16.8280815 14.5419939,16.8952746 14.5121515,16.9862619 C14.4827655,17.0758579 14.5076459,17.174201 14.5795014,17.2426471 L16.0839055,18.6936898 L16.0381643,18.955306 L15.7364373,20.6806512 C15.7219691,20.7721089 15.7607818,20.8643417 15.8381835,20.9197445 C15.9174434,20.9764773 16.0231447,20.9844452 16.1116129,20.9395153 L18.0206026,19.9757518 L18.2459414,20.0895153 L19.9306675,20.9400598 C20.0180604,20.9844452 20.1237617,20.9764773 20.2030216,20.9197445 C20.2804233,20.8643417 20.319236,20.7721089 20.3056936,20.6862937 L19.9583965,18.6426318 L20.148456,18.4593138 L21.4591004,17.1951763 C21.5319881,17.1238454 21.5536236,17.017441 21.514769,16.9248903 C21.4751693,16.8305647 21.3801311,16.7683291 21.2740402,16.7691761 Z" stroke="#FFFFFF" fill-rule="nonzero"/>
+            <path d="M0.00198982857,1.35229987 L0.00198982857,23.6481332 L0.00198982857,23.6481332 C0.00198982857,24.3944639 0.607010437,24.9994845 1.35334118,24.9994845 L8.98052369,24.9994845 L8.98052369,24.9994845 C9.24516929,24.9994845 9.45970693,24.7849469 9.45970693,24.5203013 L9.45970693,24.5203013 L9.45970693,24.5203013 C9.45970693,24.2556557 9.24516929,24.041118 8.98052369,24.041118 L1.69218705,24.041118 L1.69218705,24.041118 C1.31902168,24.041118 1.01651137,23.7386077 1.01651137,23.3654423 L1.01651137,1.69906205 L1.01651137,1.69906205 C1.01651137,1.32589668 1.31902168,1.02338638 1.69218705,1.02338638 L19.3566262,1.02338638 L19.3566262,1.02338638 C19.7297916,1.02338638 20.0323019,1.32589668 20.0323019,1.69906205 L20.0323019,7.60061588 L20.0323019,7.60061588 C20.0323019,7.8812776 20.2598232,8.10879888 20.5404849,8.10879888 L20.5404849,8.10879888 L20.5404849,8.10879888 C20.8211466,8.10879888 21.0486679,7.8812776 21.0486679,7.60061588 L21.0486679,1.35229987 L21.0486679,1.35229987 C21.0486679,0.605969128 20.4436473,0.00094851932 19.6973165,0.00094851932 L1.35334118,0.00094851932 L1.35334118,0.00094851932 C0.607010437,0.00094851932 0.00198982857,0.605969128 0.00198982857,1.35229987 Z" fill="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 审批_跳过 -->
+  <shape type="svg" name="AuditTask_SKIP" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508537_4" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+      <mask id="def_1509763508537_5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="50" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508537_4"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -571.000000)">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 272.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1509763508537_5)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508537_4"/>
+            <g transform="translate(16.000000, 13.000000)">
+              <path d="M18,11.5 C14.4101491,11.5 11.5,14.4101491 11.5,18 C11.5,21.5898509 14.4101491,24.5 18,24.5 C21.5898509,24.5 24.5,21.5898509 24.5,18 C24.5,14.4101491 21.5898509,11.5 18,11.5 Z" stroke="#BBBBBB"/>
+              <rect fill="#BBBBBB" x="4" y="16" width="5" height="1" rx="0.5"/>
+              <rect fill="#BBBBBB" x="4" y="11" width="8" height="1" rx="0.5"/>
+              <rect fill="#BBBBBB" x="4" y="6" width="12" height="1" rx="0.5"/>
+              <path d="M21.2740402,16.7691761 L21.2108892,16.7656798 L19.1210843,16.5166668 L19.0018063,16.2706777 L18.213834,14.6414781 C18.161957,14.5542681 18.0660559,14.5 17.9616748,14.5 C17.8572936,14.5 17.7613926,14.5542681 17.7296956,14.6040111 L16.8060655,16.5088294 L16.5441946,16.5472337 L14.7214939,16.8145199 C14.6229876,16.8280815 14.5419939,16.8952746 14.5121515,16.9862619 C14.4827655,17.0758579 14.5076459,17.174201 14.5795014,17.2426471 L16.0839055,18.6936898 L16.0381643,18.955306 L15.7364373,20.6806512 C15.7219691,20.7721089 15.7607818,20.8643417 15.8381835,20.9197445 C15.9174434,20.9764773 16.0231447,20.9844452 16.1116129,20.9395153 L18.0206026,19.9757518 L18.2459414,20.0895153 L19.9306675,20.9400598 C20.0180604,20.9844452 20.1237617,20.9764773 20.2030216,20.9197445 C20.2804233,20.8643417 20.319236,20.7721089 20.3056936,20.6862937 L19.9583965,18.6426318 L20.148456,18.4593138 L21.4591004,17.1951763 C21.5319881,17.1238454 21.5536236,17.017441 21.514769,16.9248903 C21.4751693,16.8305647 21.3801311,16.7683291 21.2740402,16.7691761 Z" stroke="#BBBBBB" fill-rule="nonzero"/>
+              <path d="M0.00198982857,1.35229987 L0.00198982857,23.6481332 L0.00198982857,23.6481332 C0.00198982857,24.3944639 0.607010437,24.9994845 1.35334118,24.9994845 L8.98052369,24.9994845 L8.98052369,24.9994845 C9.24516929,24.9994845 9.45970693,24.7849469 9.45970693,24.5203013 L9.45970693,24.5203013 L9.45970693,24.5203013 C9.45970693,24.2556557 9.24516929,24.041118 8.98052369,24.041118 L1.69218705,24.041118 L1.69218705,24.041118 C1.31902168,24.041118 1.01651137,23.7386077 1.01651137,23.3654423 L1.01651137,1.69906205 L1.01651137,1.69906205 C1.01651137,1.32589668 1.31902168,1.02338638 1.69218705,1.02338638 L19.3566262,1.02338638 L19.3566262,1.02338638 C19.7297916,1.02338638 20.0323019,1.32589668 20.0323019,1.69906205 L20.0323019,7.60061588 L20.0323019,7.60061588 C20.0323019,7.8812776 20.2598232,8.10879888 20.5404849,8.10879888 L20.5404849,8.10879888 L20.5404849,8.10879888 C20.8211466,8.10879888 21.0486679,7.8812776 21.0486679,7.60061588 L21.0486679,1.35229987 L21.0486679,1.35229987 C21.0486679,0.605969128 20.4436473,0.00094851932 19.6973165,0.00094851932 L1.35334118,0.00094851932 L1.35334118,0.00094851932 C0.607010437,0.00094851932 0.00198982857,0.605969128 0.00198982857,1.35229987 Z" fill="#BBBBBB"/>
+            </g>
+            <g transform="translate(1.000000, 0.000000)" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M26.5989857,0.73555958 L0.0601522779,27.053236"/>
+              <path d="M55.4424116,1.19459528 L7.78723318,48.8497737"/>
+              <path d="M85.1962241,0.929943229 L37.3128602,48.8133071"/>
+              <path d="M113.947243,1.6677453 L66.7651334,48.8498548"/>
+              <path d="M141.855749,1.56025771 L95.2758717,48.1401346"/>
+              <path d="M147.771094,24.637012 L123.681879,48.726227"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 审批_运用 -->
+  <shape type="svg" name="AuditTask_USE" width="150" height="50" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -571.000000)">
+        <g transform="translate(169.000000, 571.000000)">
+          <rect stroke="#BBBBBB" fill="#FFFFFF" x="0.5" y="0.5" width="149" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)">
+            <path d="M18,11.5 C14.4101491,11.5 11.5,14.4101491 11.5,18 C11.5,21.5898509 14.4101491,24.5 18,24.5 C21.5898509,24.5 24.5,21.5898509 24.5,18 C24.5,14.4101491 21.5898509,11.5 18,11.5 Z" stroke="#666666"/>
+            <rect fill="#666666" x="4" y="16" width="5" height="1" rx="0.5"/>
+            <rect fill="#666666" x="4" y="11" width="8" height="1" rx="0.5"/>
+            <rect fill="#666666" x="4" y="6" width="12" height="1" rx="0.5"/>
+            <path d="M21.2740402,16.7691761 L21.2108892,16.7656798 L19.1210843,16.5166668 L19.0018063,16.2706777 L18.213834,14.6414781 C18.161957,14.5542681 18.0660559,14.5 17.9616748,14.5 C17.8572936,14.5 17.7613926,14.5542681 17.7296956,14.6040111 L16.8060655,16.5088294 L16.5441946,16.5472337 L14.7214939,16.8145199 C14.6229876,16.8280815 14.5419939,16.8952746 14.5121515,16.9862619 C14.4827655,17.0758579 14.5076459,17.174201 14.5795014,17.2426471 L16.0839055,18.6936898 L16.0381643,18.955306 L15.7364373,20.6806512 C15.7219691,20.7721089 15.7607818,20.8643417 15.8381835,20.9197445 C15.9174434,20.9764773 16.0231447,20.9844452 16.1116129,20.9395153 L18.0206026,19.9757518 L18.2459414,20.0895153 L19.9306675,20.9400598 C20.0180604,20.9844452 20.1237617,20.9764773 20.2030216,20.9197445 C20.2804233,20.8643417 20.319236,20.7721089 20.3056936,20.6862937 L19.9583965,18.6426318 L20.148456,18.4593138 L21.4591004,17.1951763 C21.5319881,17.1238454 21.5536236,17.017441 21.514769,16.9248903 C21.4751693,16.8305647 21.3801311,16.7683291 21.2740402,16.7691761 Z" stroke="#666666" fill-rule="nonzero"/>
+            <path d="M0.00198982857,1.35229987 L0.00198982857,23.6481332 L0.00198982857,23.6481332 C0.00198982857,24.3944639 0.607010437,24.9994845 1.35334118,24.9994845 L8.98052369,24.9994845 L8.98052369,24.9994845 C9.24516929,24.9994845 9.45970693,24.7849469 9.45970693,24.5203013 L9.45970693,24.5203013 L9.45970693,24.5203013 C9.45970693,24.2556557 9.24516929,24.041118 8.98052369,24.041118 L1.69218705,24.041118 L1.69218705,24.041118 C1.31902168,24.041118 1.01651137,23.7386077 1.01651137,23.3654423 L1.01651137,1.69906205 L1.01651137,1.69906205 C1.01651137,1.32589668 1.31902168,1.02338638 1.69218705,1.02338638 L19.3566262,1.02338638 L19.3566262,1.02338638 C19.7297916,1.02338638 20.0323019,1.32589668 20.0323019,1.69906205 L20.0323019,7.60061588 L20.0323019,7.60061588 C20.0323019,7.8812776 20.2598232,8.10879888 20.5404849,8.10879888 L20.5404849,8.10879888 L20.5404849,8.10879888 C20.8211466,8.10879888 21.0486679,7.8812776 21.0486679,7.60061588 L21.0486679,1.35229987 L21.0486679,1.35229987 C21.0486679,0.605969128 20.4436473,0.00094851932 19.6973165,0.00094851932 L1.35334118,0.00094851932 L1.35334118,0.00094851932 C0.607010437,0.00094851932 0.00198982857,0.605969128 0.00198982857,1.35229987 Z" fill="#666666"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 普通审批_走过 -->
+  <shape type="svg" name="AuditTask_TRAVERSED" width="150" height="50" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="def_1544756806271_1">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1544756806272_2">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#7F93BC" fill="#FFF"/>
+	  <path d="M126,0 L143,8.8817842e-16 C146.865993,1.78006981e-16 150,3.13400675 150,7 L150,24 L126,0 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+	  <rect fill-rule="nonzero" x="138" y="2" width="10" height="10"/>
+	  <path d="M139.456713,7.08341912 C139.051121,6.64978636 138.685304,6.52116439 138.284009,6.95944096 C137.882715,7.39771752 137.916781,7.75406459 138.322373,8.18769735 L140.376452,10.6200883 C140.779591,11.051099 141.764667,11.1553582 142.166971,10.7234366 L146.557075,5.56242375 C146.961826,5.12787458 147.192367,4.63591626 146.790225,4.19854829 C146.388082,3.76118033 145.895963,4.12142888 145.491212,4.55597805 L141.237666,8.98203091 L139.456713,7.08341912 Z" fill="url(#def_1544756806271_1)"/>
+	  <g transform="translate(16.000000, 13.000000)">
+		<path d="M18,11.5 C14.4101491,11.5 11.5,14.4101491 11.5,18 C11.5,21.5898509 14.4101491,24.5 18,24.5 C21.5898509,24.5 24.5,21.5898509 24.5,18 C24.5,14.4101491 21.5898509,11.5 18,11.5 Z" stroke="#2B87F3"/>
+		<rect fill="#2B87F3" x="4" y="16" width="5" height="1" rx="0.5"/>
+		<rect fill="#2B87F3" x="4" y="11" width="8" height="1" rx="0.5"/>
+		<rect fill="#2B87F3" x="4" y="6" width="12" height="1" rx="0.5"/>
+		<path d="M21.2700487,16.269192 L19.4517058,16.0525253 L18.6435534,14.3858587 C18.5013328,14.146773 18.2419596,14 17.9616748,14 C17.6813899,14 17.4220168,14.146773 17.2797962,14.3858587 L16.4716438,16.0525253 L14.6533008,16.319192 C14.3659458,16.3587529 14.1266442,16.5572798 14.037053,16.8304372 C13.9474617,17.1035947 14.0233143,17.4034122 14.2323881,17.6025253 L15.5456358,18.869192 L15.2425786,20.6025253 C15.198478,20.8812999 15.3161731,21.1609856 15.5471615,21.3263231 C15.7781499,21.4916606 16.083336,21.514666 16.3369517,21.3858587 L18.0206026,20.5358587 L19.7042534,21.3858587 C19.9578691,21.514666 20.2630552,21.4916606 20.4940436,21.3263231 C20.725032,21.1609856 20.8427272,20.8812999 20.7986265,20.6025253 L20.4955693,18.819192 L21.808817,17.5525253 C22.0280914,17.3379344 22.0941197,17.0132038 21.9757898,16.7313449 C21.8574599,16.4494859 21.5783792,16.2667305 21.2700487,16.269192 Z" fill="url(#def_1544756806272_2)" fill-rule="nonzero"/>
+		<path d="M0.00198982857,1.35229987 L0.00198982857,23.6481332 C0.00198982857,24.3944639 0.607010437,24.9994845 1.35334118,24.9994845 L8.98052369,24.9994845 C9.24516929,24.9994845 9.45970693,24.7849469 9.45970693,24.5203013 L9.45970693,24.5203013 C9.45970693,24.2556557 9.24516929,24.041118 8.98052369,24.041118 L1.69218705,24.041118 C1.31902168,24.041118 1.01651137,23.7386077 1.01651137,23.3654423 L1.01651137,1.69906205 C1.01651137,1.32589668 1.31902168,1.02338638 1.69218705,1.02338638 L19.3566262,1.02338638 C19.7297916,1.02338638 20.0323019,1.32589668 20.0323019,1.69906205 L20.0323019,7.60061588 C20.0323019,7.8812776 20.2598232,8.10879888 20.5404849,8.10879888 L20.5404849,8.10879888 C20.8211466,8.10879888 21.0486679,7.8812776 21.0486679,7.60061588 L21.0486679,1.35229987 C21.0486679,0.605969128 20.4436473,0.00094851932 19.6973165,0.00094851932 L1.35334118,0.00094851932 C0.607010437,0.00094851932 0.00198982857,0.605969128 0.00198982857,1.35229987 Z" fill="#2B87F3"/>
+      </g>
+    </g>
+  </shape>
+  <!-- 普通审批_挂起 -->
+  <shape type="svg" name="AuditTask_HANGUP" width="150" height="50" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+	  <g transform="translate(16.000000, 13.000000)">
+		<path d="M18,11 C14.1340068,11 11,14.1340068 11,18 C11,21.8659932 14.1340068,25 18,25 C21.8659932,25 25,21.8659932 25,18 C25,14.1340068 21.8659932,11 18,11 Z" stroke="#F88181"/>
+		<rect fill="#F88181" x="4" y="16" width="5" height="1" rx="0.5"/>
+		<rect fill="#F88181" x="4" y="11" width="8" height="1" rx="0.5"/>
+		<rect fill="#F88181" x="4" y="6" width="12" height="1" rx="0.5"/>
+		<path d="M21.2700487,16.269192 L19.4517058,16.0525253 L18.6435534,14.3858587 C18.5013328,14.146773 18.2419596,14 17.9616748,14 C17.6813899,14 17.4220168,14.146773 17.2797962,14.3858587 L16.4716438,16.0525253 L14.6533008,16.319192 C14.3659458,16.3587529 14.1266442,16.5572798 14.037053,16.8304372 C13.9474617,17.1035947 14.0233143,17.4034122 14.2323881,17.6025253 L15.5456358,18.869192 L15.2425786,20.6025253 C15.198478,20.8812999 15.3161731,21.1609856 15.5471615,21.3263231 C15.7781499,21.4916606 16.083336,21.514666 16.3369517,21.3858587 L18.0206026,20.5358587 L19.7042534,21.3858587 C19.9578691,21.514666 20.2630552,21.4916606 20.4940436,21.3263231 C20.725032,21.1609856 20.8427272,20.8812999 20.7986265,20.6025253 L20.4955693,18.819192 L21.808817,17.5525253 C22.0280914,17.3379344 22.0941197,17.0132038 21.9757898,16.7313449 C21.8574599,16.4494859 21.5783792,16.2667305 21.2700487,16.269192 Z" fill="#F88181"/>
+		<path d="M0.00198982857,1.35229987 L0.00198982857,23.6481332 C0.00198982857,24.3944639 0.607010437,24.9994845 1.35334118,24.9994845 L8.98052369,24.9994845 C9.24516929,24.9994845 9.45970693,24.7849469 9.45970693,24.5203013 L9.45970693,24.5203013 C9.45970693,24.2556557 9.24516929,24.041118 8.98052369,24.041118 L1.69218705,24.041118 C1.31902168,24.041118 1.01651137,23.7386077 1.01651137,23.3654423 L1.01651137,1.69906205 C1.01651137,1.32589668 1.31902168,1.02338638 1.69218705,1.02338638 L19.3566262,1.02338638 C19.7297916,1.02338638 20.0323019,1.32589668 20.0323019,1.69906205 L20.0323019,7.60061588 C20.0323019,7.8812776 20.2598232,8.10879888 20.5404849,8.10879888 L20.5404849,8.10879888 C20.8211466,8.10879888 21.0486679,7.8812776 21.0486679,7.60061588 L21.0486679,1.35229987 C21.0486679,0.605969128 20.4436473,0.00094851932 19.6973165,0.00094851932 L1.35334118,0.00094851932 C0.607010437,0.00094851932 0.00198982857,0.605969128 0.00198982857,1.35229987 Z" fill="#F88181"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 审批节点取消 -->
+  <shape type="svg" name="AuditTask_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+          <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+          <g transform="translate(8.000000, 8.000000)" fill="#2B87F3">
+            <path d="M22,14 C25.8659932,14 29,17.1340068 29,21 C29,24.8659932 25.8659932,28 22,28 C18.1340068,28 15,24.8659932 15,21 C15,17.1340068 18.1340068,14 22,14 Z M5.35334118,3.00094852 L23.6973165,3.00094852 C24.3997455,3.00094852 24.977,3.53688373 25.0424818,4.22215572 L25.0486679,4.35229987 L25.0486679,10.6006159 C25.0486679,10.8812776 24.8211466,11.1087989 24.5404849,11.1087989 C24.2910078,11.1087989 24.0835182,10.929029 24.0404894,10.6919624 L24.0323019,10.6006159 L24.0323019,4.69906205 C24.0323019,4.35982081 23.7822934,4.07897218 23.4564726,4.03071244 L23.3566262,4.02338638 L5.69218705,4.02338638 C5.3529458,4.02338638 5.07209717,4.27339489 5.02383743,4.59921565 L5.01651137,4.69906205 L5.01651137,26.3654423 C5.01651137,26.7046836 5.26651989,26.9855322 5.59234065,27.033792 L5.69218705,27.041118 L12.9805237,27.041118 C13.2451693,27.041118 13.4597069,27.2556557 13.4597069,27.5203013 C13.4597069,27.7555418 13.2901957,27.9511909 13.0666575,27.9917642 L12.9805237,27.9994845 L5.35334118,27.9994845 C4.65091225,27.9994845 4.07365769,27.4635493 4.00817593,26.7782773 L4.00198983,26.6481332 L4.00198983,4.35229987 C4.00198983,3.64987094 4.53792504,3.07261638 5.22319703,3.00713463 L5.35334118,3.00094852 L23.6973165,3.00094852 Z M22,15 C18.6862915,15 16,17.6862915 16,21 C16,24.3137085 18.6862915,27 22,27 C25.3137085,27 28,24.3137085 28,21 C28,17.6862915 25.3137085,15 22,15 Z M21.9616748,17 C22.2419596,17 22.5013328,17.146773 22.6435534,17.3858587 L22.6435534,17.3858587 L23.4517058,19.0525253 L25.2700487,19.269192 C25.5783792,19.2667305 25.8574599,19.4494859 25.9757898,19.7313449 C26.0941197,20.0132038 26.0280914,20.3379344 25.808817,20.5525253 L25.808817,20.5525253 L24.4955693,21.819192 L24.7986265,23.6025253 C24.8427272,23.8812999 24.725032,24.1609856 24.4940436,24.3263231 C24.2630552,24.4916606 23.9578691,24.514666 23.7042534,24.3858587 L23.7042534,24.3858587 L22.0206026,23.5358587 L20.3369517,24.3858587 C20.083336,24.514666 19.7781499,24.4916606 19.5471615,24.3263231 C19.3161731,24.1609856 19.198478,23.8812999 19.2425786,23.6025253 L19.2425786,23.6025253 L19.5456358,21.869192 L18.2323881,20.6025253 C18.0233143,20.4034122 17.9474617,20.1035947 18.037053,19.8304372 C18.1266442,19.5572798 18.3659458,19.3587529 18.6533008,19.319192 L18.6533008,19.319192 L20.4716438,19.0525253 L21.2797962,17.3858587 C21.4220168,17.146773 21.6813899,17 21.9616748,17 Z M12.5,19 C12.7761424,19 13,19.2238576 13,19.5 C13,19.7761424 12.7761424,20 12.5,20 L8.5,20 C8.22385763,20 8,19.7761424 8,19.5 C8,19.2238576 8.22385763,19 8.5,19 L12.5,19 Z M15.5,14 C15.7761424,14 16,14.2238576 16,14.5 C16,14.7761424 15.7761424,15 15.5,15 L8.5,15 C8.22385763,15 8,14.7761424 8,14.5 C8,14.2238576 8.22385763,14 8.5,14 L15.5,14 Z M19.5,9 C19.7761424,9 20,9.22385763 20,9.5 C20,9.77614237 19.7761424,10 19.5,10 L8.5,10 C8.22385763,10 8,9.77614237 8,9.5 C8,9.22385763 8.22385763,9 8.5,9 L19.5,9 Z"/>
+          </g>
+          <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+  <!-- 云之家会审_处理中 -->
+  <shape type="svg" name="YunzhijiaTask_PROCESSING" width="162" height="50" w="162" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -796.000000)">
+        <g transform="translate(779.000000, 796.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="162" height="50" rx="6.75675676"/>
+          <g transform="translate(16.000000, 18.000000)" stroke="#FFFFFF" stroke-linecap="round">
+            <path d="M10.1851852,7.37407702 C10.1143026,7.25437372 10.0391534,7.13759766 9.95995284,7.02396836 C8.96554124,5.59728332 7.33244786,4.66666667 5.48640632,4.66666667 C2.60667371,4.66666667 0.245138572,6.93127032 0.0179075902,9.81091016 C0.00604582589,9.96123125 0,10.1132283 0,10.2666667"/>
+            <path d="M9.58424438,14 L21.1717957,14 C23.2860545,14 25,12.2001577 25,10.0442685 C25,7.88837932 23.2860545,6.14068582 21.1717957,6.14068582 C20.7503103,6.14068582 19.9654748,6.33844338 19.9654748,6.33844338 C19.9654748,6.33844338 19.8519807,5.50987845 19.7439742,5.11505236 C19.6410821,4.73892205 19.508157,4.37556287 19.3480003,4.02783146 C18.2518568,1.64789018 15.8801059,0 13.1309018,0 C11.5799181,0 10.1490677,0.52447981 8.99962,1.40899471 C8.76538375,1.58924254 8.54283328,1.78444152 8.33333333,1.99320005" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 云之家会审_跳过 -->
+  <shape type="svg" name="YunzhijiaTask_SKIP" width="162" height="50" w="162" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508560_6" x="0" y="0" width="162" height="50" rx="6.75675676"/>
+      <mask id="def_1509763508560_7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="162" height="50" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508560_6"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -796.000000)" stroke="#BBBBBB">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 497.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#def_1509763508560_7)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508560_6"/>
+            <g transform="translate(16.000000, 18.000000)" stroke-linecap="round">
+              <path d="M10.1851852,7.37407702 C10.1143026,7.25437372 10.0391534,7.13759766 9.95995284,7.02396836 C8.96554124,5.59728332 7.33244786,4.66666667 5.48640632,4.66666667 C2.60667371,4.66666667 0.245138572,6.93127032 0.0179075902,9.81091016 C0.00604582589,9.96123125 0,10.1132283 0,10.2666667"/>
+              <path d="M9.58424438,14 L21.1717957,14 C23.2860545,14 25,12.2001577 25,10.0442685 C25,7.88837932 23.2860545,6.14068582 21.1717957,6.14068582 C20.7503103,6.14068582 19.9654748,6.33844338 19.9654748,6.33844338 C19.9654748,6.33844338 19.8519807,5.50987845 19.7439742,5.11505236 C19.6410821,4.73892205 19.508157,4.37556287 19.3480003,4.02783146 C18.2518568,1.64789018 15.8801059,0 13.1309018,0 C11.5799181,0 10.1490677,0.52447981 8.99962,1.40899471 C8.76538375,1.58924254 8.54283328,1.78444152 8.33333333,1.99320005" stroke-linejoin="round"/>
+            </g>
+            <g transform="translate(1.000000, 0.000000)" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M26.5989857,0.73555958 L0.0601522779,27.053236"/>
+              <path d="M55.4424116,1.19459528 L7.78723318,48.8497737"/>
+              <path d="M85.1962241,0.929943229 L37.3128602,48.8133071"/>
+              <path d="M113.947243,1.6677453 L66.7651334,48.8498548"/>
+              <path d="M141.855749,1.56025771 L95.2758717,48.1401346"/>
+              <path d="M160.276148,12.1319572 L123.681879,48.726227"/>
+              <path d="M159.930075,41.4780302 L152.681879,48.726227"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 云之家会审_运用 -->
+  <shape type="svg" name="YunzhijiaTask_USE" width="162" height="50" w="162" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -796.000000)">
+        <g transform="translate(169.000000, 796.000000)">
+          <rect stroke="#BBBBBB" fill="#FFFFFF" x="0.5" y="0.5" width="161" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 18.000000)" stroke="#666666" stroke-linecap="round">
+            <path d="M10.1851852,7.37407702 C10.1143026,7.25437372 10.0391534,7.13759766 9.95995284,7.02396836 C8.96554124,5.59728332 7.33244786,4.66666667 5.48640632,4.66666667 C2.60667371,4.66666667 0.245138572,6.93127032 0.0179075902,9.81091016 C0.00604582589,9.96123125 0,10.1132283 0,10.2666667"/>
+            <path d="M9.58424438,14 L21.1717957,14 C23.2860545,14 25,12.2001577 25,10.0442685 C25,7.88837932 23.2860545,6.14068582 21.1717957,6.14068582 C20.7503103,6.14068582 19.9654748,6.33844338 19.9654748,6.33844338 C19.9654748,6.33844338 19.8519807,5.50987845 19.7439742,5.11505236 C19.6410821,4.73892205 19.508157,4.37556287 19.3480003,4.02783146 C18.2518568,1.64789018 15.8801059,0 13.1309018,0 C11.5799181,0 10.1490677,0.52447981 8.99962,1.40899471 C8.76538375,1.58924254 8.54283328,1.78444152 8.33333333,1.99320005" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 云之家会审_走过 -->
+  <shape type="svg" name="YunzhijiaTask_TRAVERSED" width="162" height="50" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="def_1544756806271_1">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1544756806272_2">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L155.243243,49.5 C158.698755,49.5 161.5,46.6987546 161.5,43.2432432 L161.5,6.75675676 C161.5,3.30124542 158.698755,0.5 155.243243,0.5 L6.75675676,0.5 Z" stroke="#7F93BC" fill="#FFF"/>
+	  <path d="M138,0 L155,8.8817842e-16 C158.865993,1.78006981e-16 162,3.13400675 162,7 L162,24 L138,0 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+	  <rect fill-rule="nonzero" x="150" y="2" width="10" height="10"/>
+	  <path d="M151.456713,7.08341912 C151.051121,6.64978636 150.685304,6.52116439 150.284009,6.95944096 C149.882715,7.39771752 149.916781,7.75406459 150.322373,8.18769735 L152.376452,10.6200883 C152.779591,11.051099 153.764667,11.1553582 154.166971,10.7234366 L158.557075,5.56242375 C158.961826,5.12787458 159.192367,4.63591626 158.790225,4.19854829 C158.388082,3.76118033 157.895963,4.12142888 157.491212,4.55597805 L153.237666,8.98203091 L151.456713,7.08341912 Z" fill="url(#def_1544756806271_1)"/>
+	  <g transform="translate(16.000000, 12.000000)">
+		<circle fill="url(#def_1544756806272_2)" cx="12.5" cy="12.5" r="12.5"/>
+		<path d="M11.1842105,12.4347347 C11.1338466,12.3503574 11.0804511,12.2680435 11.024177,12.1879476 C10.3176214,11.1822956 9.15726559,10.5263158 7.84560449,10.5263158 C5.79947869,10.5263158 4.12154583,12.122606 3.96009224,14.1524273 C3.95166414,14.2583867 3.94736842,14.3655275 3.94736842,14.4736842" stroke="#FFFFFF" stroke-linecap="round"/>
+		<path d="M10.7572263,17.1052632 L18.9904864,17.1052632 C20.492723,17.1052632 21.7105263,15.8365773 21.7105263,14.3169186 C21.7105263,12.7972599 20.492723,11.565333 18.9904864,11.565333 C18.69101,11.565333 18.1333637,11.7047298 18.1333637,11.7047298 C18.1333637,11.7047298 18.0527231,11.120685 17.9759817,10.8423771 C17.9028741,10.5772477 17.8084273,10.3211204 17.6946318,10.076009 C16.915793,8.39841883 15.2306015,7.23684211 13.2772197,7.23684211 C12.1752049,7.23684211 11.1585481,7.60654122 10.3418353,8.23002447 C10.1754042,8.35707886 10.0172763,8.49467212 9.86842105,8.64182334" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 云之家会审 -->
+  <shape type="svg" name="YunzhijiaTask" width="40" height="40" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-444.000000, -466.000000)" stroke="#7F93BC" stroke-width="2">
+        <g transform="translate(445.000000, 467.000000)">
+          <circle cx="19" cy="19" r="19"/>
+          <path d="M17,18.9007968 C16.9234468,18.7725433 16.8422857,18.6474261 16.7567491,18.5256804 C15.6827845,16.9970893 13.9190437,16 11.9253188,16 C8.81520761,16 6.26474966,18.4263611 6.0193402,21.5116895 C6.00652949,21.6727478 6,21.8356017 6,22" stroke-linecap="round"/>
+          <path d="M16.3509839,26 L28.8655393,26 C31.1489389,26 33,24.0715975 33,21.7617163 C33,19.451835 31.1489389,17.5793062 28.8655393,17.5793062 C28.4103352,17.5793062 27.5627128,17.7911893 27.5627128,17.7911893 C27.5627128,17.7911893 27.4401391,16.9034412 27.3234922,16.4804132 C27.2123687,16.0774165 27.0688095,15.6881031 26.8958403,15.3155337 C25.7120053,12.7655966 23.1505144,11 20.1813739,11 C18.5063115,11 16.9609931,11.5619427 15.7195896,12.5096372 C15.4666144,12.7027599 15.2262599,12.9119016 15,13.1355715" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 云之家会审_挂起 -->
+  <shape type="svg" name="YunzhijiaTask_HANGUP" width="150" height="50" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+	  <g transform="translate(16.000000, 12.000000)">
+		<circle fill="#F88181" cx="12.5" cy="12.5" r="12.5"/>
+		<path d="M11.1842105,12.4347347 C11.1338466,12.3503574 11.0804511,12.2680435 11.024177,12.1879476 C10.3176214,11.1822956 9.15726559,10.5263158 7.84560449,10.5263158 C5.79947869,10.5263158 4.12154583,12.122606 3.96009224,14.1524273 C3.95166414,14.2583867 3.94736842,14.3655275 3.94736842,14.4736842" stroke="#FFFFFF" stroke-linecap="round"/>
+		<path d="M10.7572263,17.1052632 L18.9904864,17.1052632 C20.492723,17.1052632 21.7105263,15.8365773 21.7105263,14.3169186 C21.7105263,12.7972599 20.492723,11.565333 18.9904864,11.565333 C18.69101,11.565333 18.1333637,11.7047298 18.1333637,11.7047298 C18.1333637,11.7047298 18.0527231,11.120685 17.9759817,10.8423771 C17.9028741,10.5772477 17.8084273,10.3211204 17.6946318,10.076009 C16.915793,8.39841883 15.2306015,7.23684211 13.2772197,7.23684211 C12.1752049,7.23684211 11.1585481,7.60654122 10.3418353,8.23002447 C10.1754042,8.35707886 10.0172763,8.49467212 9.86842105,8.64182334" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 会审节点取消 -->
+  <shape type="svg" name="YunzhijiaTask_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+          <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+          <g transform="translate(8.000000, 8.000000)">
+            <circle fill="#2B87F3" cx="16" cy="16" r="12"/>
+            <g stroke-width="1" transform="translate(8.000000, 11.000000)" stroke="#FFFFFF" stroke-linecap="round">
+              <path d="M6.43274854,4.62034901 C6.38798057,4.54534694 6.34051795,4.47217898 6.29049653,4.40098268 C5.6624471,3.50706975 4.6310197,2.92397661 3.46509873,2.92397661 C1.64632024,2.92397661 0.154824361,4.34290121 0.011310057,6.14718681 C0.00381841635,6.24137296 9.54791801e-14,6.33660921 9.54791801e-14,6.43274854" stroke-width="0.888888889"/>
+              <path d="M6.05320698,8.77192982 L13.3716604,8.77192982 C14.7069818,8.77192982 15.7894737,7.64420909 15.7894737,6.29340132 C15.7894737,4.94259356 14.7069818,3.8475475 13.3716604,3.8475475 C13.1054592,3.8475475 12.6097735,3.97145575 12.6097735,3.97145575 C12.6097735,3.97145575 12.5380931,3.45230479 12.4698785,3.20492003 C12.404894,2.9692494 12.3209412,2.74158075 12.2197896,2.52370392 C11.5274885,1.03251265 10.0295406,-8.8817842e-15 8.29320112,-8.8817842e-15 C7.31363246,-8.8817842e-15 6.4099375,0.328621435 5.68397052,0.882828765 C5.53603184,0.995766002 5.39547365,1.11807113 5.26315789,1.24887221" stroke-width="0.888888889" stroke-linejoin="round"/>
+            </g>
+          </g>
+          <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+
+  <!-- RPA节点挂起 -->
+  <shape type="svg" name="RPATask_HANGUP" width="150" height="48" w="148" h="48">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M144,0.5 C145.518783,0.5 146.893783,1.11560847 147.889087,2.1109127 C148.884392,3.10621694 149.5,4.48121694 149.5,6 L149.5,6 L149.5,42 C149.5,43.5187831 148.884392,44.8937831 147.889087,45.8890873 C146.893783,46.8843915 145.518783,47.5 144,47.5 L144,47.5 L6,47.5 C4.48121694,47.5 3.10621694,46.8843915 2.1109127,45.8890873 C1.11560847,44.8937831 0.5,43.5187831 0.5,42 L0.5,42 L0.5,6 C0.5,4.48121694 1.11560847,3.10621694 2.1109127,2.1109127 C3.10621694,1.11560847 4.48121694,0.5 6,0.5 L6,0.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+	  <g transform="translate(8.000000, 8.000000)" fill-rule="nonzero" stroke="#F88181">
+		<path d="M17,4 C23.627417,4 29,9.372583 29,16 C29,22.627417 23.627417,28 17,28 C10.4745433,28 5.16560725,22.7914556 5.00379986,16.3049748 L5,16 L5,6.865 L3.24857164,8.59215221 L2.5,7.8949136 L5.44040406,5 L8.5,7.88740659 L7.76700456,8.59965922 L6,6.931 L6,16 C6,22.0751322 10.9248678,27 17,27 C23.0751322,27 28,22.0751322 28,16 C28,10.0212984 23.2302364,5.15663482 17.2884075,5.0037074 L17,5 L12,5 L12,4 L17,4 Z M22.9791667,11 C23.5429573,11 24,11.470101 24,12.05 L24,18.95 C24,19.529899 23.5429573,20 22.9791667,20 L11.0208333,20 C10.4570427,20 10,19.529899 10,18.95 L10,12.05 C10,11.470101 10.4570427,11 11.0208333,11 L22.9791667,11 Z M23,12 L11,12 L11,19 L23,19 L23,12 Z M15,14 L15,17 L14,17 L14,14 L15,14 Z M20,14 L20,17 L19,17 L19,14 L20,14 Z"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- RPA节点处理中 -->
+  <shape type="svg" name="RPATask_PROCESSING" width="150" height="48" w="148" h="48">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1657503205998_1">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6,0 L144,0 C147.313708,-6.08718376e-16 150,2.6862915 150,6 L150,42 C150,45.3137085 147.313708,48 144,48 L6,48 C2.6862915,48 4.05812251e-16,45.3137085 0,42 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" fill="url(#def_1657503205998_1)"/>
+	  <g transform="translate(8.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+		<g>
+		  <path d="M17,4 C23.627417,4 29,9.372583 29,16 C29,22.627417 23.627417,28 17,28 C10.4745433,28 5.16560725,22.7914556 5.00379986,16.3049748 L5,16 L5,6.865 L3.24857164,8.59215221 L2.5,7.8949136 L5.44040406,5 L8.5,7.88740659 L7.76700456,8.59965922 L6,6.931 L6,16 C6,22.0751322 10.9248678,27 17,27 C23.0751322,27 28,22.0751322 28,16 C28,10.0212984 23.2302364,5.15663482 17.2884075,5.0037074 L17,5 L12,5 L12,4 L17,4 Z M22.9791667,11 C23.5429573,11 24,11.470101 24,12.05 L24,18.95 C24,19.529899 23.5429573,20 22.9791667,20 L11.0208333,20 C10.4570427,20 10,19.529899 10,18.95 L10,12.05 C10,11.470101 10.4570427,11 11.0208333,11 L22.9791667,11 Z M23,12 L11,12 L11,19 L23,19 L23,12 Z M15,14 L15,17 L14,17 L14,14 L15,14 Z M20,14 L20,17 L19,17 L19,14 L20,14 Z"/>
+		</g>
+	  </g>
+    </g>
+  </shape>
+  <!-- RPA节点跳过 -->
+  <shape type="svg" name="RPATask_SKIP" width="150" height="48" w="148" h="48">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <path d="M6,0 L144,0 C147.313708,-6.08718376e-16 150,2.6862915 150,6 L150,42 C150,45.3137085 147.313708,48 144,48 L6,48 C2.6862915,48 4.05812251e-16,45.3137085 0,42 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="def_1657503206000_2"/>
+      <mask id="def_1657503206000_3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="48" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1657503206000_2"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1657503206000_3)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1657503206000_2"/>
+	  <g transform="translate(2.000000, 1.000000)" stroke="#BBBBBB" stroke-dasharray="3.205310854112139" stroke-linecap="square" stroke-width="0.931677019">
+		<line x1="22.7978315" y1="0.329210036" x2="0.0515561575" y2="24.435317"/>
+		<line x1="50.2085015" y1="0.475510342" x2="7.4160963" y2="45.2130248"/>
+		<line x1="77.4463005" y1="0.227061477" x2="34.4489941" y2="45.1787909"/>
+		<line x1="104.682345" y1="0.919691995" x2="62.4150382" y2="45.2131009"/>
+		<line x1="130.162327" y1="0.525241601" x2="88.4345204" y2="44.1938762"/>
+		<line x1="146.996828" y1="11.3404496" x2="115.347729" y2="44.9676164"/>
+		<line x1="146.781412" y1="38.626992" x2="142.251289" y2="44.9691642"/>
+	  </g>
+	  <g transform="translate(8.000000, 8.000000)" fill="#666666" fill-rule="nonzero">
+		<g>
+		  <path d="M17,4 C23.627417,4 29,9.372583 29,16 C29,22.627417 23.627417,28 17,28 C10.4745433,28 5.16560725,22.7914556 5.00379986,16.3049748 L5,16 L5,6.865 L3.24857164,8.59215221 L2.5,7.8949136 L5.44040406,5 L8.5,7.88740659 L7.76700456,8.59965922 L6,6.931 L6,16 C6,22.0751322 10.9248678,27 17,27 C23.0751322,27 28,22.0751322 28,16 C28,10.0212984 23.2302364,5.15663482 17.2884075,5.0037074 L17,5 L12,5 L12,4 L17,4 Z M22.9791667,11 C23.5429573,11 24,11.470101 24,12.05 L24,18.95 C24,19.529899 23.5429573,20 22.9791667,20 L11.0208333,20 C10.4570427,20 10,19.529899 10,18.95 L10,12.05 C10,11.470101 10.4570427,11 11.0208333,11 L22.9791667,11 Z M23,12 L11,12 L11,19 L23,19 L23,12 Z M15,14 L15,17 L14,17 L14,14 L15,14 Z M20,14 L20,17 L19,17 L19,14 L20,14 Z"/>
+		</g>
+	  </g>
+    </g>
+  </shape>
+  <!-- RPA节点已流转 -->
+  <shape type="svg" name="RPATask_TRAVERSED" width="150" height="48" w="148" h="48">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="80.2469136%" x2="0%" y2="19.7530864%" id="def_1657503206001_4">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M144,0.5 C145.518783,0.5 146.893783,1.11560847 147.889087,2.1109127 C148.884392,3.10621694 149.5,4.48121694 149.5,6 L149.5,6 L149.5,42 C149.5,43.5187831 148.884392,44.8937831 147.889087,45.8890873 C146.893783,46.8843915 145.518783,47.5 144,47.5 L144,47.5 L6,47.5 C4.48121694,47.5 3.10621694,46.8843915 2.1109127,45.8890873 C1.11560847,44.8937831 0.5,43.5187831 0.5,42 L0.5,42 L0.5,6 C0.5,4.48121694 1.11560847,3.10621694 2.1109127,2.1109127 C3.10621694,1.11560847 4.48121694,0.5 6,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+	  <g transform="translate(8.000000, 8.000000)" fill="#2B87F3" fill-rule="nonzero">
+		<g>
+		  <path d="M17,4 C23.627417,4 29,9.372583 29,16 C29,22.627417 23.627417,28 17,28 C10.4745433,28 5.16560725,22.7914556 5.00379986,16.3049748 L5,16 L5,6.865 L3.24857164,8.59215221 L2.5,7.8949136 L5.44040406,5 L8.5,7.88740659 L7.76700456,8.59965922 L6,6.931 L6,16 C6,22.0751322 10.9248678,27 17,27 C23.0751322,27 28,22.0751322 28,16 C28,10.0212984 23.2302364,5.15663482 17.2884075,5.0037074 L17,5 L12,5 L12,4 L17,4 Z M22.9791667,11 C23.5429573,11 24,11.470101 24,12.05 L24,18.95 C24,19.529899 23.5429573,20 22.9791667,20 L11.0208333,20 C10.4570427,20 10,19.529899 10,18.95 L10,12.05 C10,11.470101 10.4570427,11 11.0208333,11 L22.9791667,11 Z M23,12 L11,12 L11,19 L23,19 L23,12 Z M15,14 L15,17 L14,17 L14,14 L15,14 Z M20,14 L20,17 L19,17 L19,14 L20,14 Z"/>
+		</g>
+	  </g>
+	  <path d="M138.456713,8.08341912 C138.051121,7.64978636 137.685304,7.52116439 137.284009,7.95944096 C136.882715,8.39771752 136.916781,8.75406459 137.322373,9.18769735 L139.376452,11.6200883 C139.779591,12.051099 140.764667,12.1553582 141.166971,11.7234366 L145.557075,6.56242375 C145.961826,6.12787458 146.192367,5.63591626 145.790225,5.19854829 C145.388082,4.76118033 144.895963,5.12142888 144.491212,5.55597805 L140.237666,9.98203091 L138.456713,8.08341912 Z" fill="url(#def_1657503206001_4)"/>
+	  <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+    </g>
+  </shape>
+  <!-- RPA节点默认 -->
+  <shape type="svg" name="RPATask_USE" width="150" height="48" w="148" h="48">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M144,0.5 C145.518783,0.5 146.893783,1.11560847 147.889087,2.1109127 C148.884392,3.10621694 149.5,4.48121694 149.5,6 L149.5,6 L149.5,42 C149.5,43.5187831 148.884392,44.8937831 147.889087,45.8890873 C146.893783,46.8843915 145.518783,47.5 144,47.5 L144,47.5 L6,47.5 C4.48121694,47.5 3.10621694,46.8843915 2.1109127,45.8890873 C1.11560847,44.8937831 0.5,43.5187831 0.5,42 L0.5,42 L0.5,6 C0.5,4.48121694 1.11560847,3.10621694 2.1109127,2.1109127 C3.10621694,1.11560847 4.48121694,0.5 6,0.5 L6,0.5 Z" stroke="#BBBBBB" fill="#FFFFFF"/>
+	  <g transform="translate(8.000000, 8.000000)" fill="#666666" fill-rule="nonzero">
+		<g>
+		  <path d="M17,4 C23.627417,4 29,9.372583 29,16 C29,22.627417 23.627417,28 17,28 C10.4745433,28 5.16560725,22.7914556 5.00379986,16.3049748 L5,16 L5,6.865 L3.24857164,8.59215221 L2.5,7.8949136 L5.44040406,5 L8.5,7.88740659 L7.76700456,8.59965922 L6,6.931 L6,16 C6,22.0751322 10.9248678,27 17,27 C23.0751322,27 28,22.0751322 28,16 C28,10.0212984 23.2302364,5.15663482 17.2884075,5.0037074 L17,5 L12,5 L12,4 L17,4 Z M22.9791667,11 C23.5429573,11 24,11.470101 24,12.05 L24,18.95 C24,19.529899 23.5429573,20 22.9791667,20 L11.0208333,20 C10.4570427,20 10,19.529899 10,18.95 L10,12.05 C10,11.470101 10.4570427,11 11.0208333,11 L22.9791667,11 Z M23,12 L11,12 L11,19 L23,19 L23,12 Z M15,14 L15,17 L14,17 L14,14 L15,14 Z M20,14 L20,17 L19,17 L19,14 L20,14 Z"/>
+		</g>
+	  </g>
+    </g>
+  </shape>
+  <!-- RPA节点取消 -->
+  <shape type="svg" name="RPATask_CANCEL" width="150" height="48" w="148" h="48">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M144,0.5 C145.518783,0.5 146.893783,1.11560847 147.889087,2.1109127 C148.884392,3.10621694 149.5,4.48121694 149.5,6 L149.5,6 L149.5,42 C149.5,43.5187831 148.884392,44.8937831 147.889087,45.8890873 C146.893783,46.8843915 145.518783,47.5 144,47.5 L144,47.5 L6,47.5 C4.48121694,47.5 3.10621694,46.8843915 2.1109127,45.8890873 C1.11560847,44.8937831 0.5,43.5187831 0.5,42 L0.5,42 L0.5,6 C0.5,4.48121694 1.11560847,3.10621694 2.1109127,2.1109127 C3.10621694,1.11560847 4.48121694,0.5 6,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+	  <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+	  <g transform="translate(8.000000, 8.000000)" fill="#2B87F3" fill-rule="nonzero">
+		<g>
+		  <path d="M17,4 C23.627417,4 29,9.372583 29,16 C29,22.627417 23.627417,28 17,28 C10.4745433,28 5.16560725,22.7914556 5.00379986,16.3049748 L5,16 L5,6.865 L3.24857164,8.59215221 L2.5,7.8949136 L5.44040406,5 L8.5,7.88740659 L7.76700456,8.59965922 L6,6.931 L6,16 C6,22.0751322 10.9248678,27 17,27 C23.0751322,27 28,22.0751322 28,16 C28,10.0212984 23.2302364,5.15663482 17.2884075,5.0037074 L17,5 L12,5 L12,4 L17,4 Z M22.9791667,11 C23.5429573,11 24,11.470101 24,12.05 L24,18.95 C24,19.529899 23.5429573,20 22.9791667,20 L11.0208333,20 C10.4570427,20 10,19.529899 10,18.95 L10,12.05 C10,11.470101 10.4570427,11 11.0208333,11 L22.9791667,11 Z M23,12 L11,12 L11,19 L23,19 L23,12 Z M15,14 L15,17 L14,17 L14,14 L15,14 Z M20,14 L20,17 L19,17 L19,14 L20,14 Z"/>
+		</g>
+	  </g>
+	  <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+
+  <!-- 自动 -->
+  <shape type="svg" name="AutoTask" width="41" height="41" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-192.000000, -986.000000)" stroke="#7F93BC">
+        <g transform="translate(-1.000000, 0.000000)">
+          <g transform="translate(170.000000, 299.000000)">
+            <g transform="translate(0.000000, 670.000000)">
+              <g transform="translate(24.000000, 18.000000)">
+                <path d="M19.500005,39 C10.2333474,38.9988664 2.24630553,32.4822914 0.390009944,23.4082805 L1.72835957,23.4082805 C3.68542792,32.3583513 12.0016482,38.4533097 21.1305785,37.628168 C30.2595087,36.8030263 37.3467635,29.3157854 37.6655503,20.1600057 L34.4500012,20.1600057 C34.0910162,20.1600057 33.8000013,19.8691452 33.8000013,19.5103507 C33.8000013,19.1515562 34.0910162,18.8606957 34.4500012,18.8606957 L38.3500001,18.8606957 C38.5223908,18.8606957 38.6877208,18.9291413 38.8096194,19.0509753 C38.9315181,19.1728092 39,19.3380515 39,19.5103507 C39,30.2741868 30.2695549,39 19.500005,39 L19.500005,39 Z M19.500005,1.32001138 C9.70635113,1.32348763 1.67451859,9.07820763 1.33250969,18.8606957 L4.55000886,18.8606957 C4.90899385,18.8606957 5.20000869,19.1515562 5.20000869,19.5103507 C5.20000869,19.8691452 4.90899385,20.1600057 4.55000886,20.1600057 L0.650009882,20.1600057 C0.477619203,20.1600057 0.312289193,20.0915601 0.190390571,19.9697261 C0.0684919481,19.8478922 1.00142969e-05,19.6826499 1.00142969e-05,19.5103507 C-0.0100581746,9.49748296 7.57280316,1.10606764 17.5402709,0.0997868871 C27.5077386,-0.906493868 36.6164307,5.79980048 38.6100001,15.6124209 L37.2716504,15.6124209 C35.4402178,7.26869294 28.0466923,1.32263166 19.500005,1.32001138 Z" stroke-width="0.5" fill="#7F93BC" fill-rule="nonzero"/>
+                <polyline stroke-width="2" points="13 25 19.5 14 26 25"/>
+                <path d="M15,21 L24,21" stroke-width="2"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 自动_处理中 -->
+  <shape type="svg" name="AutoTask_PROCESSING" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509763508501_3">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -721.000000)">
+        <g transform="translate(779.000000, 721.000000)">
+          <rect fill="url(#def_1509763508501_3)" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)">
+            <path d="M12.5000032,25 C6.5598381,24.9992733 1.43993944,20.8219817 0.250006375,15.005308 L1.1079228,15.005308 C2.36245379,20.7425329 7.69336426,24.6495575 13.5452426,24.1206205 C19.3971209,23.5916835 23.940233,18.7921701 24.1445835,12.9230806 L22.0833341,12.9230806 C21.8532155,12.9230806 21.6666675,12.7366316 21.6666675,12.5066351 C21.6666675,12.2766386 21.8532155,12.0901896 22.0833341,12.0901896 L24.5833334,12.0901896 C24.6938403,12.0901896 24.799821,12.1340649 24.8779612,12.2121636 C24.9561013,12.2902623 25,12.3961868 25,12.5066351 C25,19.40653 19.4035608,25 12.5000032,25 L12.5000032,25 Z M12.5000032,0.84616114 C6.22201995,0.848389505 1.07340936,5.81936386 0.854172879,12.0901896 L2.91667235,12.0901896 C3.14679093,12.0901896 3.3333389,12.2766386 3.3333389,12.5066351 C3.3333389,12.7366316 3.14679093,12.9230806 2.91667235,12.9230806 L0.416673002,12.9230806 C0.306166156,12.9230806 0.20018538,12.8792052 0.122045238,12.8011065 C0.0439050949,12.7230078 6.41942108e-06,12.6170833 6.41942108e-06,12.5066351 C-0.00644754785,6.0881301 4.854361,0.709017719 11.2437634,0.0639659532 C17.6331658,-0.581085813 23.472071,3.71782082 24.75,10.0079621 L23.8920836,10.0079621 C22.7180883,4.65941855 17.9786489,0.847840808 12.5000032,0.84616114 Z" fill="#FFFFFF" fill-rule="nonzero"/>
+            <polyline stroke="#FFFFFF" points="8.33333333 16.025641 12.5 8.97435897 16.6666667 16.025641"/>
+            <path d="M10,13 L15,13" stroke="#FFFFFF"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 自动_跳过 -->
+  <shape type="svg" name="AutoTask_SKIP" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509763508537_4" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+      <mask id="def_1509763508537_5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="50" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509763508537_4"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -721.000000)">
+        <g transform="translate(1115.000000, 299.000000)">
+          <g transform="translate(0.000000, 422.000000)">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1509763508537_5)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509763508537_4"/>
+            <g transform="translate(16.000000, 13.000000)">
+              <path d="M12.5000032,25 C6.5598381,24.9992733 1.43993944,20.8219817 0.250006375,15.005308 L1.1079228,15.005308 C2.36245379,20.7425329 7.69336426,24.6495575 13.5452426,24.1206205 C19.3971209,23.5916835 23.940233,18.7921701 24.1445835,12.9230806 L22.0833341,12.9230806 C21.8532155,12.9230806 21.6666675,12.7366316 21.6666675,12.5066351 C21.6666675,12.2766386 21.8532155,12.0901896 22.0833341,12.0901896 L24.5833334,12.0901896 C24.6938403,12.0901896 24.799821,12.1340649 24.8779612,12.2121636 C24.9561013,12.2902623 25,12.3961868 25,12.5066351 C25,19.40653 19.4035608,25 12.5000032,25 L12.5000032,25 Z M12.5000032,0.84616114 C6.22201995,0.848389505 1.07340936,5.81936386 0.854172879,12.0901896 L2.91667235,12.0901896 C3.14679093,12.0901896 3.3333389,12.2766386 3.3333389,12.5066351 C3.3333389,12.7366316 3.14679093,12.9230806 2.91667235,12.9230806 L0.416673002,12.9230806 C0.306166156,12.9230806 0.20018538,12.8792052 0.122045238,12.8011065 C0.0439050949,12.7230078 6.41942108e-06,12.6170833 6.41942108e-06,12.5066351 C-0.00644754785,6.0881301 4.854361,0.709017719 11.2437634,0.0639659532 C17.6331658,-0.581085813 23.472071,3.71782082 24.75,10.0079621 L23.8920836,10.0079621 C22.7180883,4.65941855 17.9786489,0.847840808 12.5000032,0.84616114 Z" fill="#BBBBBB" fill-rule="nonzero"/>
+              <polyline stroke="#BBBBBB" points="8.33333333 16.025641 12.5 8.97435897 16.6666667 16.025641"/>
+              <path d="M10,13 L15,13" stroke="#BBBBBB"/>
+            </g>
+            <g transform="translate(1.000000, 0.000000)" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+              <path d="M26.5989857,0.73555958 L0.0601522779,27.053236"/>
+              <path d="M55.4424116,1.19459528 L7.78723318,48.8497737"/>
+              <path d="M85.1962241,0.929943229 L37.3128602,48.8133071"/>
+              <path d="M113.947243,1.6677453 L66.7651334,48.8498548"/>
+              <path d="M141.855749,1.56025771 L95.2758717,48.1401346"/>
+              <path d="M147.771094,24.637012 L123.681879,48.726227"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 自动_运用 -->
+  <shape type="svg" name="AutoTask_USE" width="150" height="50" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -721.000000)">
+        <g transform="translate(169.000000, 721.000000)">
+          <rect stroke="#BBBBBB" fill="#FFFFFF" x="0.5" y="0.5" width="149" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)">
+            <path d="M12.5000032,25 C6.5598381,24.9992733 1.43993944,20.8219817 0.250006375,15.005308 L1.1079228,15.005308 C2.36245379,20.7425329 7.69336426,24.6495575 13.5452426,24.1206205 C19.3971209,23.5916835 23.940233,18.7921701 24.1445835,12.9230806 L22.0833341,12.9230806 C21.8532155,12.9230806 21.6666675,12.7366316 21.6666675,12.5066351 C21.6666675,12.2766386 21.8532155,12.0901896 22.0833341,12.0901896 L24.5833334,12.0901896 C24.6938403,12.0901896 24.799821,12.1340649 24.8779612,12.2121636 C24.9561013,12.2902623 25,12.3961868 25,12.5066351 C25,19.40653 19.4035608,25 12.5000032,25 L12.5000032,25 Z M12.5000032,0.84616114 C6.22201995,0.848389505 1.07340936,5.81936386 0.854172879,12.0901896 L2.91667235,12.0901896 C3.14679093,12.0901896 3.3333389,12.2766386 3.3333389,12.5066351 C3.3333389,12.7366316 3.14679093,12.9230806 2.91667235,12.9230806 L0.416673002,12.9230806 C0.306166156,12.9230806 0.20018538,12.8792052 0.122045238,12.8011065 C0.0439050949,12.7230078 6.41942108e-06,12.6170833 6.41942108e-06,12.5066351 C-0.00644754785,6.0881301 4.854361,0.709017719 11.2437634,0.0639659532 C17.6331658,-0.581085813 23.472071,3.71782082 24.75,10.0079621 L23.8920836,10.0079621 C22.7180883,4.65941855 17.9786489,0.847840808 12.5000032,0.84616114 Z" fill="#666666" fill-rule="nonzero"/>
+            <polyline stroke="#666666" points="8.33333333 16.025641 12.5 8.97435897 16.6666667 16.025641"/>
+            <path d="M10,13 L15,13" stroke="#666666"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 自动节点_走过 -->
+  <shape type="svg" name="AutoTask_TRAVERSED" width="150" height="50" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="def_1544756806271_1">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M126,0 L143,8.8817842e-16 C146.865993,1.78006981e-16 150,3.13400675 150,7 L150,24 L126,0 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+	  <rect fill-rule="nonzero" x="138" y="2" width="10" height="10"/>
+	  <path d="M139.456713,7.08341912 C139.051121,6.64978636 138.685304,6.52116439 138.284009,6.95944096 C137.882715,7.39771752 137.916781,7.75406459 138.322373,8.18769735 L140.376452,10.6200883 C140.779591,11.051099 141.764667,11.1553582 142.166971,10.7234366 L146.557075,5.56242375 C146.961826,5.12787458 147.192367,4.63591626 146.790225,4.19854829 C146.388082,3.76118033 145.895963,4.12142888 145.491212,4.55597805 L141.237666,8.98203091 L139.456713,7.08341912 Z" fill="url(#def_1544756806271_1)"/>
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#7F93BC"/>
+	  <g transform="translate(16.000000, 13.000000)">
+		<path d="M12.5000032,25 C6.5598381,24.9992733 1.43993944,20.8219817 0.250006375,15.005308 L1.1079228,15.005308 C2.36245379,20.7425329 7.69336426,24.6495575 13.5452426,24.1206205 C19.3971209,23.5916835 23.940233,18.7921701 24.1445835,12.9230806 L22.0833341,12.9230806 C21.8532155,12.9230806 21.6666675,12.7366316 21.6666675,12.5066351 C21.6666675,12.2766386 21.8532155,12.0901896 22.0833341,12.0901896 L24.5833334,12.0901896 C24.6938403,12.0901896 24.799821,12.1340649 24.8779612,12.2121636 C24.9561013,12.2902623 25,12.3961868 25,12.5066351 C25,19.40653 19.4035608,25 12.5000032,25 Z M12.5000032,0.84616114 C6.22201995,0.848389505 1.07340936,5.81936386 0.854172879,12.0901896 L2.91667235,12.0901896 C3.14679093,12.0901896 3.3333389,12.2766386 3.3333389,12.5066351 C3.3333389,12.7366316 3.14679093,12.9230806 2.91667235,12.9230806 L0.416673002,12.9230806 C0.306166156,12.9230806 0.20018538,12.8792052 0.122045238,12.8011065 C0.0439050949,12.7230078 6.41942108e-06,12.6170833 6.41942108e-06,12.5066351 C-0.00644754785,6.0881301 4.854361,0.709017719 11.2437634,0.0639659532 C17.6331658,-0.581085813 23.472071,3.71782082 24.75,10.0079621 L23.8920836,10.0079621 C22.7180883,4.65941855 17.9786489,0.847840808 12.5000032,0.84616114 Z" fill="#2B87F3" fill-rule="nonzero"/>
+		<polyline stroke="#2B87F3" points="8.33333333 16.025641 12.5 8.97435897 16.6666667 16.025641"/>
+		<path d="M10,13 L15,13" stroke="#2B87F3"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 自动节点_挂起 -->
+  <shape type="svg" name="AutoTask_HANGUP" width="150" height="50" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+	  <g transform="translate(16.000000, 13.000000)">
+		<path d="M12.5000032,25 C6.5598381,24.9992733 1.43993944,20.8219817 0.250006375,15.005308 L1.1079228,15.005308 C2.36245379,20.7425329 7.69336426,24.6495575 13.5452426,24.1206205 C19.3971209,23.5916835 23.940233,18.7921701 24.1445835,12.9230806 L22.0833341,12.9230806 C21.8532155,12.9230806 21.6666675,12.7366316 21.6666675,12.5066351 C21.6666675,12.2766386 21.8532155,12.0901896 22.0833341,12.0901896 L24.5833334,12.0901896 C24.6938403,12.0901896 24.799821,12.1340649 24.8779612,12.2121636 C24.9561013,12.2902623 25,12.3961868 25,12.5066351 C25,19.40653 19.4035608,25 12.5000032,25 Z M12.5000032,0.84616114 C6.22201995,0.848389505 1.07340936,5.81936386 0.854172879,12.0901896 L2.91667235,12.0901896 C3.14679093,12.0901896 3.3333389,12.2766386 3.3333389,12.5066351 C3.3333389,12.7366316 3.14679093,12.9230806 2.91667235,12.9230806 L0.416673002,12.9230806 C0.306166156,12.9230806 0.20018538,12.8792052 0.122045238,12.8011065 C0.0439050949,12.7230078 6.41942108e-06,12.6170833 6.41942108e-06,12.5066351 C-0.00644754785,6.0881301 4.854361,0.709017719 11.2437634,0.0639659532 C17.6331658,-0.581085813 23.472071,3.71782082 24.75,10.0079621 L23.8920836,10.0079621 C22.7180883,4.65941855 17.9786489,0.847840808 12.5000032,0.84616114 Z" fill="#F88181"/>
+		<polyline stroke="#F88181" points="8.33333333 16.025641 12.5 8.97435897 16.6666667 16.025641"/>
+		<path d="M10,13 L15,13" stroke="#F88181"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 单据子流程_走过 -->
+  <shape type="svg" name="EventSubProcess_TRAVERSED" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509950265383_1">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-481.000000, -511.000000)">
+        <g transform="translate(481.000000, 511.000000)">
+          <rect stroke="#7F93BC" x="0.5" y="0.5" width="149" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)">
+            <polygon fill="url(#def_1509950265383_1)" points="0 0 18.3823529 0 25 6.61764706 25 25 0 25"/>
+            <rect fill="#FFFFFF" x="10" y="19" width="5" height="1"/>
+            <rect fill="#FFFFFF" transform="translate(12.500000, 19.500000) rotate(90.000000) translate(-12.500000, -19.500000) " x="10" y="19" width="5" height="1"/>
+            <rect stroke="#FFFFFF" x="8.5" y="15.5" width="8" height="8"/>
+            <polyline stroke="#FFFFFF" points="17.6470588 0 17.6470588 7.35294118 25 7.35294118"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 自动节点取消 -->
+  <shape type="svg" name="AutoTask_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+          <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+          <g transform="translate(8.000000, 8.000000)">
+            <g transform="translate(4.000000, 3.000000)">
+              <path d="M12.5000032,25 C6.5598381,24.9992733 1.43993944,20.8219817 0.250006375,15.005308 L1.1079228,15.005308 C2.36245379,20.7425329 7.69336426,24.6495575 13.5452426,24.1206205 C19.3971209,23.5916835 23.940233,18.7921701 24.1445835,12.9230806 L22.0833341,12.9230806 C21.8532155,12.9230806 21.6666675,12.7366316 21.6666675,12.5066351 C21.6666675,12.2766386 21.8532155,12.0901896 22.0833341,12.0901896 L24.5833334,12.0901896 C24.6938403,12.0901896 24.799821,12.1340649 24.8779612,12.2121636 C24.9561013,12.2902623 25,12.3961868 25,12.5066351 C25,19.40653 19.4035608,25 12.5000032,25 L12.5000032,25 Z M12.5,0.84616114 C6.22201995,0.848389505 1.07340936,5.81936386 0.854172879,12.0901896 L2.91667235,12.0901896 C3.14679093,12.0901896 3.3333389,12.2766386 3.3333389,12.5066351 C3.3333389,12.7366316 3.14679093,12.9230806 2.91667235,12.9230806 L0.416673002,12.9230806 C0.306166156,12.9230806 0.20018538,12.8792052 0.122045238,12.8011065 C0.0439050949,12.7230078 7.10542736e-15,12.6170833 7.10542736e-15,12.5066351 C-0.00644754785,6.0881301 4.854361,0.709017719 11.2437634,0.0639659532 C17.6331658,-0.581085813 23.472071,3.71782082 24.75,10.0079621 L23.8920836,10.0079621 C22.7180883,4.65941855 17.9786489,0.847840808 12.5,0.84616114 Z" fill="#2B87F3" fill-rule="nonzero"/>
+              <polyline stroke="#2B87F3" points="8.33333333 16.025641 12.5 8.97435897 16.6666667 16.025641"/>
+              <path d="M10,13 L15,13" stroke="#2B87F3"/>
+            </g>
+          </g>
+          <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+  <!-- 单据子流程 -->
+  <shape type="svg" name="EventSubProcess" width="36" height="36" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-668.000000, -303.000000)">
+        <g transform="translate(669.000000, 304.000000)">
+          <polygon stroke="#7F93BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0 0 25 0 34 9 34 34 0 34"/>
+          <rect stroke="#7F93BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="11" y="22" width="12" height="12"/>
+          <rect fill="#7F93BC" x="14" y="27" width="6" height="2"/>
+          <rect fill="#7F93BC" transform="translate(17.000000, 28.000000) rotate(90.000000) translate(-17.000000, -28.000000) " x="14" y="27" width="6" height="2"/>
+          <polyline stroke="#7F93BC" stroke-width="2" points="24 0 24 10 34 10"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 单据子流程_处理中 -->
+  <shape type="svg" name="EventSubProcess_PROCESSING" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509950265383_1">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -511.000000)">
+        <g transform="translate(779.000000, 511.000000)">
+          <rect fill="url(#def_1509950265383_1)" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)">
+            <path d="M0.5,0.5 L0.5,24.5 L24.5,24.5 L24.5,6.82475384 L18.1752462,0.5 L0.5,0.5 Z" stroke="#FFFFFF"/>
+            <rect stroke="#FFFFFF" fill="#FFFFFF" x="10" y="19" width="5" height="1"/>
+            <rect stroke="#FFFFFF" fill="#FFFFFF" transform="translate(12.500000, 19.500000) rotate(90.000000) translate(-12.500000, -19.500000) " x="10" y="19" width="5" height="1"/>
+            <rect stroke="#FFFFFF" x="8.5" y="15.5" width="8" height="9"/>
+            <polyline stroke="#FFFFFF" points="17.6470588 0 17.6470588 7.35294118 25 7.35294118"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 单据子流程_跳过 -->
+  <shape type="svg" name="EventSubProcess_SKIP" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509950265415_2" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+      <mask id="def_1509950265415_3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="50" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509950265415_2"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -511.000000)">
+        <g transform="translate(1115.000000, 511.000000)">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1509950265415_3)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509950265415_2"/>
+          <g transform="translate(1.000000, 0.000000)" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+            <path d="M26.5989857,0.73555958 L0.0601522779,27.053236"/>
+            <path d="M55.4424116,1.19459528 L7.78723318,48.8497737"/>
+            <path d="M85.1962241,0.929943229 L37.3128602,48.8133071"/>
+            <path d="M113.947243,1.6677453 L66.7651334,48.8498548"/>
+            <path d="M141.855749,1.56025771 L95.2758717,48.1401346"/>
+            <path d="M147.771094,24.637012 L123.681879,48.726227"/>
+          </g>
+          <g transform="translate(16.000000, 13.000000)">
+            <path d="M0.5,0.5 L0.5,24.5 L24.5,24.5 L24.5,6.82475384 L18.1752462,0.5 L0.5,0.5 Z" stroke="#BBBBBB"/>
+            <rect fill="#BBBBBB" x="10" y="19" width="5" height="1"/>
+            <rect fill="#BBBBBB" transform="translate(12.500000, 19.500000) rotate(90.000000) translate(-12.500000, -19.500000) " x="10" y="19" width="5" height="1"/>
+            <rect stroke="#BBBBBB" x="8.5" y="15.5" width="8" height="9"/>
+            <polyline stroke="#BBBBBB" points="17.6470588 0 17.6470588 7.35294118 25 7.35294118"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 单据子流程_运用 -->
+  <shape type="svg" name="EventSubProcess_USE" width="150" height="50" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -511.000000)">
+        <g transform="translate(169.000000, 511.000000)">
+          <rect stroke="#BBBBBB" fill="#FFFFFF" x="0.5" y="0.5" width="149" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 13.000000)">
+            <path d="M0.5,0.5 L0.5,24.5 L24.5,24.5 L24.5,6.82475384 L18.1752462,0.5 L0.5,0.5 Z" stroke="#666666"/>
+            <rect fill="#666666" x="10" y="19" width="5" height="1"/>
+            <rect fill="#666666" transform="translate(12.500000, 19.500000) rotate(90.000000) translate(-12.500000, -19.500000) " x="10" y="19" width="5" height="1"/>
+            <rect stroke="#666666" x="8.5" y="15.5" width="8" height="9"/>
+            <polyline stroke="#666666" points="17.6470588 0 17.6470588 7.35294118 25 7.35294118"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 消息通知_跳过 -->
+  <shape type="svg" name="NotifyTask_SKIP" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1509950265415_2" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+      <mask id="def_1509950265415_3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="50" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1509950265415_2"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-1115.000000, -811.000000)">
+        <g transform="translate(1115.000000, 811.000000)">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1509950265415_3)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1509950265415_2"/>
+          <g transform="translate(1.000000, 0.000000)" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="3.440366972477064">
+            <path d="M26.5989857,0.73555958 L0.0601522779,27.053236"/>
+            <path d="M55.4424116,1.19459528 L7.78723318,48.8497737"/>
+            <path d="M85.1962241,0.929943229 L37.3128602,48.8133071"/>
+            <path d="M113.947243,1.6677453 L66.7651334,48.8498548"/>
+            <path d="M141.855749,1.56025771 L95.2758717,48.1401346"/>
+            <path d="M147.771094,24.637012 L123.681879,48.726227"/>
+          </g>
+          <g transform="translate(16.000000, 16.000000)">
+            <polygon stroke="#BBBBBB" stroke-linecap="round" stroke-linejoin="round" points="0 2 22 2 22 18 0 18"/>
+            <polyline stroke="#BBBBBB" points="-1.38777878e-14 3 10.5 11 21 3"/>
+            <ellipse stroke="#FFFFFF" fill="#BBBBBB" cx="22.5493421" cy="2.5" rx="2.54934211" ry="2.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 消息通知_运用 -->
+  <shape type="svg" name="NotifyTask_USE" width="150" height="50" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-169.000000, -811.000000)">
+        <g transform="translate(169.000000, 811.000000)">
+          <rect stroke="#BBBBBB" fill="#FFFFFF" x="0.5" y="0.5" width="149" height="49" rx="6.75675676"/>
+          <g transform="translate(16.000000, 16.000000)">
+            <polygon stroke="#666666" stroke-linecap="round" stroke-linejoin="round" points="0 2 22 2 22 18 0 18"/>
+            <polyline stroke="#666666" points="-1.38777878e-14 3 10.5 11 21 3"/>
+            <ellipse stroke="#FFFFFF" fill="#666666" cx="22.5493421" cy="2.5" rx="2.54934211" ry="2.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 消息通知_走过 -->
+  <shape type="svg" name="NotifyTask_TRAVERSED" width="150" height="50" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="def_1544756806271_1">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1544756806272_2">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M126,0 L143,8.8817842e-16 C146.865993,1.78006981e-16 150,3.13400675 150,7 L150,24 L126,0 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+	  <rect fill-rule="nonzero" x="138" y="2" width="10" height="10"/>
+	  <path d="M139.456713,7.08341912 C139.051121,6.64978636 138.685304,6.52116439 138.284009,6.95944096 C137.882715,7.39771752 137.916781,7.75406459 138.322373,8.18769735 L140.376452,10.6200883 C140.779591,11.051099 141.764667,11.1553582 142.166971,10.7234366 L146.557075,5.56242375 C146.961826,5.12787458 147.192367,4.63591626 146.790225,4.19854829 C146.388082,3.76118033 145.895963,4.12142888 145.491212,4.55597805 L141.237666,8.98203091 L139.456713,7.08341912 Z" fill="url(#def_1544756806271_1)"/>
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#7F93BC"/>
+	  <g transform="translate(17.000000, 16.000000)" fill="url(#def_1544756806272_2)">
+		<path d="M20.0500064,1.4516129 C20.0171645,1.62940816 20,1.81269958 20,2 C20,2.33720954 20.0556358,2.66142464 20.1582288,2.96396677 L11.2804878,9.8725306 L2.20374573,2.80910626 C1.93797729,2.60228808 1.55487015,2.65007671 1.34805197,2.91584515 C1.14123379,3.18161358 1.18902242,3.56472073 1.45479086,3.7715389 L10.9060104,11.1263776 C11.1262477,11.297764 11.4347279,11.297764 11.6549652,11.1263776 L20.7840097,4.02225209 C21.2393966,4.5209849 21.8608967,4.86544736 22.5609756,4.96810508 L22.5609756,18 L2.00728323e-13,18 L2.00728323e-13,1.4516129 L20.0500064,1.4516129 Z"/>
+		<circle cx="23" cy="2" r="2"/>
+      </g>
+    </g>
+  </shape>
+  <!-- 消息通知 -->
+  <shape type="svg" name="NotifyTask" width="44" height="34" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-944.000000, -218.000000)">
+        <g transform="translate(945.000000, 220.000000)">
+          <polygon stroke="#7F93BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0 4 37 4 37 31 0 31"/>
+          <polyline stroke="#7F93BC" stroke-width="2" points="1 5 18.5 19 36 5"/>
+          <circle stroke="#FFFFFF" stroke-width="3" fill="#7F93BC" cx="37" cy="4" r="4"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 消息通知_处理中 -->
+  <shape type="svg" name="NotifyTask_PROCESSING" width="150" height="50" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1509950265383_1">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g transform="translate(-779.000000, -811.000000)">
+        <g transform="translate(779.000000, 811.000000)">
+          <rect fill="url(#def_1509950265383_1)" x="0" y="0" width="150" height="50" rx="6.75675676"/>
+          <g transform="translate(16.000000, 16.000000)">
+            <polygon stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="0 2 22 2 22 18 0 18"/>
+            <polyline stroke="#FFFFFF" points="-1.38777878e-14 3 10.5 11 21 3"/>
+            <ellipse stroke="#49A0F6" fill="#FFFFFF" cx="22.5493421" cy="2.5" rx="2.54934211" ry="2.5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 消息通知_挂起 -->
+  <shape type="svg" name="NotifyTask_HANGUP" width="150" height="50" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M6.75675676,0.5 C3.30124542,0.5 0.5,3.30124542 0.5,6.75675676 L0.5,43.2432432 C0.5,46.6987546 3.30124542,49.5 6.75675676,49.5 L143.243243,49.5 C146.698755,49.5 149.5,46.6987546 149.5,43.2432432 L149.5,6.75675676 C149.5,3.30124542 146.698755,0.5 143.243243,0.5 L6.75675676,0.5 Z" stroke="#F88181" fill-opacity="0.2" fill="#F88181"/>
+	  <g transform="translate(17.000000, 16.000000)">
+		<path d="M20.0500064,1.4516129 C20.0171645,1.62940816 20,1.81269958 20,2 C20,2.33720954 20.0556358,2.66142464 20.1582288,2.96396677 L11.2804878,9.8725306 L2.20374573,2.80910626 C1.93797729,2.60228808 1.55487015,2.65007671 1.34805197,2.91584515 C1.14123379,3.18161358 1.18902242,3.56472073 1.45479086,3.7715389 L10.9060104,11.1263776 C11.1262477,11.297764 11.4347279,11.297764 11.6549652,11.1263776 L20.7840097,4.02225209 C21.2393966,4.5209849 21.8608967,4.86544736 22.5609756,4.96810508 L22.5609756,18 L2.00728323e-13,18 L2.00728323e-13,1.4516129 L20.0500064,1.4516129 Z" fill="#F88181"/>
+		<circle fill="#F4524F" cx="23" cy="2" r="2"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 消息通知取消 -->
+  <shape type="svg" name="NotifyTask_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+          <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+          <g transform="translate(8.000000, 8.000000)">
+            <g transform="translate(4.000000, 7.000000)">
+              <rect fill="#2B87F3" x="0" y="0" width="24" height="18" rx="2"/>
+              <polyline stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="3 4 12 10 21 4"/>
+            </g>
+          </g>
+          <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+
+  <!-- 异常边界 -->
+  <shape type="svg" name="BoundaryErrorEvent_USE" width="24" height="24" w="24" h="24" inwidth="24" inheight="24">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<circle stroke="#C6C6C6" stroke-width="1" fill="#FFFFFF" cx="12" cy="12" r="11.5"/>
+        <path d="M6,13.5 L12,4.5 L10.5,10.5 L18,10.5 L12,19.5 L13.5,13.5 L9,13.5 L6,13.5 Z" fill="#C6C6C6"/>
+    </g>
+  </shape>
+  <!-- 异常边界节点_处理中 -->
+  <shape type="svg" name="BoundaryErrorEvent_PROCESSING" width="24" height="24" w="24" h="24" inwidth="24" inheight="24">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<circle stroke="#4598F0" stroke-width="1" fill="#FFFFFF" cx="12" cy="12" r="11.5"/>
+        <path d="M6,13.5 L12,4.5 L10.5,10.5 L18,10.5 L12,19.5 L13.5,13.5 L9,13.5 L6,13.5 Z" fill="#4598F0"/>
+    </g>
+  </shape>
+  <!-- 异常边界节点_走过 -->
+  <shape type="svg" name="BoundaryErrorEvent_TRAVERSED" width="24" height="24" w="24" h="24" inwidth="24" inheight="24">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<circle stroke="#A8B7CB" stroke-width="1" fill="#FFFFFF" cx="12" cy="12" r="11.5"/>
+        <circle fill="#F59C25" cx="12" cy="12" r="9"/>
+        <path d="M6,13.5 L12,4.5 L10.5,10.5 L18,10.5 L12,19.5 L13.5,13.5 L9,13.5 L6,13.5 Z" fill="#FFFFFF"/>
+    </g>
+  </shape>
+  <!-- 异常边界节点_异常 -->
+  <shape type="svg" name="BoundaryErrorEvent_HANGUP" width="24" height="24" w="24" h="24" inwidth="24" inheight="24">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <circle stroke="#A8B7CB" stroke-width="1" fill="#FFFFFF" cx="12" cy="12" r="11.5"/>
+      <circle fill="#E26735" cx="12" cy="12" r="9"/>
+      <path d="M6,13.5 L12,4.5 L10.5,10.5 L18,10.5 L12,19.5 L13.5,13.5 L9,13.5 L6,13.5 Z" fill="#FFFFFF"/>
+    </g>
+  </shape>
+  <!-- 网关 -->
+  <shape type="svg" name="InclusiveGateway_USE" width="36" height="36" w="40" h="40">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <rect stroke="#DDDDDD" fill="#FFFFFF" x="0.5" y="0.5" width="35" height="35" rx="4"/>
+	  <g transform="translate(6.000000, 6.000000)">
+		<path d="M13.3016665,3.53916791 L20.4608321,10.6983335 C21.1797226,11.4172241 21.1797226,12.5827759 20.4608321,13.3016665 L13.3016665,20.4608321 C12.5827759,21.1797226 11.4172241,21.1797226 10.6983335,20.4608321 L3.53916791,13.3016665 C2.82027736,12.5827759 2.82027736,11.4172241 3.53916791,10.6983335 L10.6983335,3.53916791 C11.4172241,2.82027736 12.5827759,2.82027736 13.3016665,3.53916791 Z" fill="#C2CCD1" fill-rule="nonzero"/>
+		<path d="M14.6666667,8 L16,9.33333333 L13.333,12 L16,14.6666667 L14.6666667,16 L12,13.333 L9.33333333,16 L8,14.6666667 L10.667,12 L8,9.33333333 L9.33333333,8 L12,10.666 L14.6666667,8 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+	  </g>
+    </g>
+  </shape>
+  <!-- 网关_跳过 -->
+  <shape type="svg" name="InclusiveGateway_SKIP" width="36" height="36" w="150" h="50">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <rect id="def_1568277589122_1" x="0" y="0" width="36" height="36" rx="4"/>
+      <mask id="def_1568277589124_2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="36" height="36" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1568277589122_1"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g>
+        <g stroke="#C6C6C6" stroke-dasharray="2,2">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#def_1568277589124_2)" stroke-width="2" fill="#FFFFFF" xlink:href="#def_1568277589122_1"/>
+          <path d="M21,1 L1,21"/>
+          <path d="M35,15 L15,35"/>
+        </g>
+        <g transform="translate(6.000000, 6.000000)">
+          <path d="M13.3016665,3.53916791 L20.4608321,10.6983335 C21.1797226,11.4172241 21.1797226,12.5827759 20.4608321,13.3016665 L13.3016665,20.4608321 C12.5827759,21.1797226 11.4172241,21.1797226 10.6983335,20.4608321 L3.53916791,13.3016665 C2.82027736,12.5827759 2.82027736,11.4172241 3.53916791,10.6983335 L10.6983335,3.53916791 C11.4172241,2.82027736 12.5827759,2.82027736 13.3016665,3.53916791 Z" fill="#C2CCD1" fill-rule="nonzero"/>
+          <path d="M14.6666667,8 L16,9.33333333 L13.333,12 L16,14.6666667 L14.6666667,16 L12,13.333 L9.33333333,16 L8,14.6666667 L10.667,12 L8,9.33333333 L9.33333333,8 L12,10.666 L14.6666667,8 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 网关_异常 -->
+  <shape type="svg" name="InclusiveGateway_HANGUP" width="36" height="36" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<rect stroke="#FFB5B6" fill="#FFE5E5" x="0.5" y="0.5" width="35" height="35" rx="4"/>
+		<g transform="translate(6.000000, 6.000000)">
+		  <path d="M13.3016665,3.53916791 L20.4608321,10.6983335 C21.1797226,11.4172241 21.1797226,12.5827759 20.4608321,13.3016665 L13.3016665,20.4608321 C12.5827759,21.1797226 11.4172241,21.1797226 10.6983335,20.4608321 L3.53916791,13.3016665 C2.82027736,12.5827759 2.82027736,11.4172241 3.53916791,10.6983335 L10.6983335,3.53916791 C11.4172241,2.82027736 12.5827759,2.82027736 13.3016665,3.53916791 Z" fill="#F35A59" fill-rule="nonzero"/>
+		  <path d="M14.6666667,8 L16,9.33333333 L13.333,12 L16,14.6666667 L14.6666667,16 L12,13.333 L9.33333333,16 L8,14.6666667 L10.667,12 L8,9.33333333 L9.33333333,8 L12,10.666 L14.6666667,8 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+		</g>
+    </g>
+  </shape>
+  <!-- 网关_走过 -->
+  <shape type="svg" name="InclusiveGateway_TRAVERSED" width="36" height="36" w="150" h="50">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<rect stroke="#8A9CC1" fill="#FFFFFF" x="0.5" y="0.5" width="35" height="35" rx="4"/>
+          <g transform="translate(6.000000, 6.000000)">
+            <path d="M13.3016665,3.53916791 L20.4608321,10.6983335 C21.1797226,11.4172241 21.1797226,12.5827759 20.4608321,13.3016665 L13.3016665,20.4608321 C12.5827759,21.1797226 11.4172241,21.1797226 10.6983335,20.4608321 L3.53916791,13.3016665 C2.82027736,12.5827759 2.82027736,11.4172241 3.53916791,10.6983335 L10.6983335,3.53916791 C11.4172241,2.82027736 12.5827759,2.82027736 13.3016665,3.53916791 Z" fill="#F59C25" fill-rule="nonzero"/>
+            <path d="M14.6666667,8 L16,9.33333333 L13.333,12 L16,14.6666667 L14.6666667,16 L12,13.333 L9.33333333,16 L8,14.6666667 L10.667,12 L8,9.33333333 L9.33333333,8 L12,10.666 L14.6666667,8 Z" fill="#FFFFFF" fill-rule="evenodd"/>
+          </g>
+    </g>
+  </shape>
+  <!-- 网关_处理中 -->
+  <shape type="svg" name="InclusiveGateway_PROCESSING" width="36" height="36" w="150" h="50">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <rect fill="#2D9BF3" x="0" y="0" width="36" height="36" rx="4"/>
+	  <g transform="translate(6.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+		<path d="M13.3016665,3.53916791 L20.4608321,10.6983335 C21.1797226,11.4172241 21.1797226,12.5827759 20.4608321,13.3016665 L13.3016665,20.4608321 C12.5827759,21.1797226 11.4172241,21.1797226 10.6983335,20.4608321 L3.53916791,13.3016665 C2.82027736,12.5827759 2.82027736,11.4172241 3.53916791,10.6983335 L10.6983335,3.53916791 C11.4172241,2.82027736 12.5827759,2.82027736 13.3016665,3.53916791 Z M9.33333333,8 L8,9.33333333 L10.667,12 L8,14.6666667 L9.33333333,16 L12,13.333 L14.6666667,16 L16,14.6666667 L13.333,12 L16,9.33333333 L14.6666667,8 L12,10.666 L9.33333333,8 Z"/>
+	  </g>
+    </g>
+  </shape>
+<!-- 网关取消 -->
+  <shape type="svg" name="InclusiveGateway_CANCEL" width="48" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <path d="M42,0.5 L6,0.5 C4.48121694,0.5 3.10621694,1.11560847 2.1109127,2.1109127 C1.11560847,3.10621694 0.5,4.48121694 0.5,6 L0.5,42 C0.5,43.5187831 1.11560847,44.8937831 2.1109127,45.8890873 C3.10621694,46.8843915 4.48121694,47.5 6,47.5 L42,47.5 C43.5187831,47.5 44.8937831,46.8843915 45.8890873,45.8890873 C46.8843915,44.8937831 47.5,43.5187831 47.5,42 L47.5,6 C47.5,4.48121694 46.8843915,3.10621694 45.8890873,2.1109127 C44.8937831,1.11560847 43.5187831,0.5 42,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+	  <path d="M23,1 L42,1 C44.7614237,1 47,3.23857625 47,6 L47,25 L47,25 L23,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+	  <g transform="translate(8.000000, 8.000000)" fill="#2B87F3" fill-rule="nonzero">
+		<path d="M17.7355553,4.71889054 L27.2811095,14.2644447 C28.2396302,15.2229654 28.2396302,16.7770346 27.2811095,17.7355553 L17.7355553,27.2811095 C16.7770346,28.2396302 15.2229654,28.2396302 14.2644447,27.2811095 L4.71889054,17.7355553 C3.76036982,16.7770346 3.76036982,15.2229654 4.71889054,14.2644447 L14.2644447,4.71889054 C15.2229654,3.76036982 16.7770346,3.76036982 17.7355553,4.71889054 Z M19.4615385,11 L15.9992308,14.4623077 L12.5384615,11 L11,12.5384615 L14.4607692,16.0007692 L11,19.4615385 L12.5384615,21 L15.9992308,17.5392308 L19.4615385,21 L21,19.4615385 L17.5376923,16.0007692 L21,12.5384615 L19.4615385,11 Z"/>
+	  </g>
+	  <path d="M36.3060194,4.30601937 C36.7140452,3.89799354 37.3755858,3.89799354 37.7836116,4.30601937 L40,6.52240775 L42.2163884,4.30601937 C42.6244142,3.89799354 43.2859548,3.89799354 43.6939806,4.30601937 C44.1020065,4.71404521 44.1020065,5.37558579 43.6939806,5.78361162 L41.4775923,8 L43.6939806,10.2163884 C44.1020065,10.6244142 44.1020065,11.2859548 43.6939806,11.6939806 C43.2859548,12.1020065 42.6244142,12.1020065 42.2163884,11.6939806 L40,9.47759225 L37.7836116,11.6939806 C37.3755858,12.1020065 36.7140452,12.1020065 36.3060194,11.6939806 C35.8979935,11.2859548 35.8979935,10.6244142 36.3060194,10.2163884 L38.5224077,8 L36.3060194,5.78361162 C35.8979935,5.37558579 35.8979935,4.71404521 36.3060194,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+
+<!-- 等待节点取消 -->
+  <shape type="svg" name="WaitTask_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		  <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+          <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+          <g transform="translate(8.000000, 8.000000)" fill="#2D9BF3" fill-rule="nonzero">
+            <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26.0007255,18.6722296 C26.6256896,19.4449571 27,20.4287661 27,21.5 C27,23.9852814 24.9852814,26 22.5,26 C20.9400147,26 19.5654285,25.2062125 18.7581204,24.0005166 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M23,18 L22,18 L22,22 L25,22 L25,21 L23,21 L23,18 Z M16,15 L8,12 L8,22 L18.0275426,22.0007074 C18.0093434,21.8363124 18,21.6692473 18,21.5 C18,19.0147186 20.0147186,17 22.5,17 C23.0263612,17 23.531615,17.0903714 24.0010919,17.2564447 L24,12 L16,15 Z M24,10 L8,10 L16,13 L24,10 Z"/>
+          </g>
+          <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+ <!-- 等待节点挂起 -->
+  <shape type="svg" name="WaitTask_HANGUP" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g fill="#F88181">
+        <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#F88181" fill-opacity="0.2"/>
+        <g transform="translate(8.000000, 8.000000)" fill-rule="nonzero">
+            <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26.0007255,18.6722296 C26.6256896,19.4449571 27,20.4287661 27,21.5 C27,23.9852814 24.9852814,26 22.5,26 C20.9400147,26 19.5654285,25.2062125 18.7581204,24.0005166 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M23,18 L22,18 L22,22 L25,22 L25,21 L23,21 L23,18 Z M16,15 L8,12 L8,22 L18.0275426,22.0007074 C18.0093434,21.8363124 18,21.6692473 18,21.5 C18,19.0147186 20.0147186,17 22.5,17 C23.0263612,17 23.531615,17.0903714 24.0010919,17.2564447 L24,12 L16,15 Z M24,10 L8,10 L16,13 L24,10 Z"/>
+        </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 等待节点处理中 -->
+  <shape type="svg" name="WaitTask_PROCESSING" width="150" height="48" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1575534562111_1">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0 L144,0 C147.313708,-6.08718376e-16 150,2.6862915 150,6 L150,42 C150,45.3137085 147.313708,48 144,48 L6,48 C2.6862915,48 4.05812251e-16,45.3137085 0,42 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" fill="url(#def_1575534562111_1)"/>
+        <g transform="translate(8.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26.0007255,18.6722296 C26.6256896,19.4449571 27,20.4287661 27,21.5 C27,23.9852814 24.9852814,26 22.5,26 C20.9400147,26 19.5654285,25.2062125 18.7581204,24.0005166 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M23,18 L22,18 L22,22 L25,22 L25,21 L23,21 L23,18 Z M16,15 L8,12 L8,22 L18.0275426,22.0007074 C18.0093434,21.8363124 18,21.6692473 18,21.5 C18,19.0147186 20.0147186,17 22.5,17 C23.0263612,17 23.531615,17.0903714 24.0010919,17.2564447 L24,12 L16,15 Z M24,10 L8,10 L16,13 L24,10 Z"/>
+        </g>
+    </g>
+  </shape>
+  <!-- 等待节点跳过 -->
+  <shape type="svg" name="WaitTask_SKIP" width="150" height="48" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <path d="M6,0 L144,0 C147.313708,-6.08718376e-16 150,2.6862915 150,6 L150,42 C150,45.3137085 147.313708,48 144,48 L6,48 C2.6862915,48 4.05812251e-16,45.3137085 0,42 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="def_1575534562114_2"/>
+      <mask id="def_1575534562114_3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="48" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1575534562114_2"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	  <g>
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1575534562114_3)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1575534562114_2"/>
+		<g transform="translate(2.000000, 1.000000)" stroke="#BBBBBB" stroke-dasharray="3.205310854112139" stroke-linecap="square" stroke-width="0.931677019">
+		  <line x1="22.7978315" y1="0.329210036" x2="0.0515561575" y2="24.435317"/>
+		  <line x1="50.2085015" y1="0.475510342" x2="7.4160963" y2="45.2130248"/>
+		  <line x1="77.4463005" y1="0.227061477" x2="34.4489941" y2="45.1787909"/>
+		  <line x1="104.682345" y1="0.919691995" x2="62.4150382" y2="45.2131009"/>
+		  <line x1="130.162327" y1="0.525241601" x2="88.4345204" y2="44.1938762"/>
+		  <line x1="146.996828" y1="11.3404496" x2="115.347729" y2="44.9676164"/>
+		  <line x1="146.781412" y1="38.626992" x2="142.251289" y2="44.9691642"/>
+		</g>
+		<g transform="translate(8.000000, 8.000000)" fill="#888BA6" fill-rule="nonzero">
+		  <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26.0007255,18.6722296 C26.6256896,19.4449571 27,20.4287661 27,21.5 C27,23.9852814 24.9852814,26 22.5,26 C20.9400147,26 19.5654285,25.2062125 18.7581204,24.0005166 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M23,18 L22,18 L22,22 L25,22 L25,21 L23,21 L23,18 Z M16,15 L8,12 L8,22 L18.0275426,22.0007074 C18.0093434,21.8363124 18,21.6692473 18,21.5 C18,19.0147186 20.0147186,17 22.5,17 C23.0263612,17 23.531615,17.0903714 24.0010919,17.2564447 L24,12 L16,15 Z M24,10 L8,10 L16,13 L24,10 Z"/>
+		</g>
+	  </g>
+    </g>
+  </shape>
+  <!-- 等待节点走过 -->
+  <shape type="svg" name="WaitTask_TRAVERSED" width="150" height="48" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="80.2469136%" x2="0%" y2="19.7530864%" id="def_1575534562117_4">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+        <path d="M138.456713,8.08341912 C138.051121,7.64978636 137.685304,7.52116439 137.284009,7.95944096 C136.882715,8.39771752 136.916781,8.75406459 137.322373,9.18769735 L139.376452,11.6200883 C139.779591,12.051099 140.764667,12.1553582 141.166971,11.7234366 L145.557075,6.56242375 C145.961826,6.12787458 146.192367,5.63591626 145.790225,5.19854829 C145.388082,4.76118033 144.895963,5.12142888 144.491212,5.55597805 L140.237666,9.98203091 L138.456713,8.08341912 Z" fill="url(#def_1575534562117_4)"/>
+        <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+        <g transform="translate(8.000000, 8.000000)" fill="#2D9BF3" fill-rule="nonzero">
+            <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26.0007255,18.6722296 C26.6256896,19.4449571 27,20.4287661 27,21.5 C27,23.9852814 24.9852814,26 22.5,26 C20.9400147,26 19.5654285,25.2062125 18.7581204,24.0005166 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M23,18 L22,18 L22,22 L25,22 L25,21 L23,21 L23,18 Z M16,15 L8,12 L8,22 L18.0275426,22.0007074 C18.0093434,21.8363124 18,21.6692473 18,21.5 C18,19.0147186 20.0147186,17 22.5,17 C23.0263612,17 23.531615,17.0903714 24.0010919,17.2564447 L24,12 L16,15 Z M24,10 L8,10 L16,13 L24,10 Z"/>
+        </g>
+    </g>
+  </shape>
+  <!-- 等待节点 -->
+  <shape type="svg" name="WaitTask_USE" width="150" height="48" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		 <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#BBBBBB" fill="#FFFFFF"/>
+         <g transform="translate(8.000000, 8.000000)" fill="#888BA6" fill-rule="nonzero">
+            <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26.0007255,18.6722296 C26.6256896,19.4449571 27,20.4287661 27,21.5 C27,23.9852814 24.9852814,26 22.5,26 C20.9400147,26 19.5654285,25.2062125 18.7581204,24.0005166 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M23,18 L22,18 L22,22 L25,22 L25,21 L23,21 L23,18 Z M16,15 L8,12 L8,22 L18.0275426,22.0007074 C18.0093434,21.8363124 18,21.6692473 18,21.5 C18,19.0147186 20.0147186,17 22.5,17 C23.0263612,17 23.531615,17.0903714 24.0010919,17.2564447 L24,12 L16,15 Z M24,10 L8,10 L16,13 L24,10 Z"/>
+         </g>
+    </g>
+  </shape>
+
+<!-- 调用子流程取消 -->
+  <shape type="svg" name="CallActivity_CANCEL" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+        <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill="#FEE6E6" fill-rule="nonzero"/>
+        <g transform="translate(8.000000, 8.000000)" fill="#2D9BF3">
+          <g transform="translate(6.000000, 8.000000)">
+            <path d="M18,0 C19.1045695,0 20,0.8954305 20,2 L20,14 C20,15.1045695 19.1045695,16 18,16 L16,16 C16,16.5522847 15.5522847,17 15,17 L5,17 C4.44771525,17 4,16.5522847 4,16 L2,16 C0.8954305,16 0,15.1045695 0,14 L0,2 C0,0.8954305 0.8954305,0 2,0 L18,0 Z M14,8 L6,8 L6,15 L14,15 L14,8 Z M18,2 L2,2 L2,14 L4,14 L4,7 C4,6.44771525 4.44771525,6 5,6 L15,6 C15.5522847,6 16,6.44771525 16,7 L16,14 L18,14 L18,2 Z M11,9 L11,11 L13,11 L13,12 L11,12 L11,14 L9,14 L9,12 L7,12 L7,11 L9,11 L9,9 L11,9 Z" fill-rule="nonzero"/>
+          </g>
+        </g>
+        <path d="M138.306019,4.30601937 C138.714045,3.89799354 139.375586,3.89799354 139.783612,4.30601937 L142,6.52240775 L144.216388,4.30601937 C144.624414,3.89799354 145.285955,3.89799354 145.693981,4.30601937 C146.102006,4.71404521 146.102006,5.37558579 145.693981,5.78361162 L143.477592,8 L145.693981,10.2163884 C146.102006,10.6244142 146.102006,11.2859548 145.693981,11.6939806 C145.285955,12.1020065 144.624414,12.1020065 144.216388,11.6939806 L142,9.47759225 L139.783612,11.6939806 C139.375586,12.1020065 138.714045,12.1020065 138.306019,11.6939806 C137.897994,11.2859548 137.897994,10.6244142 138.306019,10.2163884 L140.522408,8 L138.306019,5.78361162 C137.897994,5.37558579 137.897994,4.71404521 138.306019,4.30601937 Z" fill="#FF7C7C"/>
+    </g>
+  </shape>
+  <!-- 调用子流程挂起 -->
+  <shape type="svg" name="CallActivity_HANGUP" width="150" height="48" w="40" h="40">
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g fill="#F88181">
+		  <path d="M144,0.5 C145.518783,0.5 146.893783,1.11560847 147.889087,2.1109127 C148.884392,3.10621694 149.5,4.48121694 149.5,6 L149.5,6 L149.5,42 C149.5,43.5187831 148.884392,44.8937831 147.889087,45.8890873 C146.893783,46.8843915 145.518783,47.5 144,47.5 L144,47.5 L6,47.5 C4.48121694,47.5 3.10621694,46.8843915 2.1109127,45.8890873 C1.11560847,44.8937831 0.5,43.5187831 0.5,42 L0.5,42 L0.5,6 C0.5,4.48121694 1.11560847,3.10621694 2.1109127,2.1109127 C3.10621694,1.11560847 4.48121694,0.5 6,0.5 L6,0.5 Z" stroke="#F88181" fill-opacity="0.2"/>
+		  <g transform="translate(8.000000, 8.000000)" fill-rule="nonzero">
+			<g>
+			  <path d="M25.6,6 C26.9254834,6 28,7.05344765 28,8.35294118 L28,22.4705882 C28,23.7700818 26.9254834,24.8235294 25.6,24.8235294 L23.2,24.8235294 C23.2,25.4732762 22.6627417,26 22,26 L10,26 C9.3372583,26 8.8,25.4732762 8.8,24.8235294 L6.4,24.8235294 C5.0745166,24.8235294 4,23.7700818 4,22.4705882 L4,8.35294118 C4,7.05344765 5.0745166,6 6.4,6 L25.6,6 Z M20.8,15.4117647 L11.2,15.4117647 L11.2,23.6470588 L20.8,23.6470588 L20.8,15.4117647 Z M25.6,8.35294118 L6.4,8.35294118 L6.4,22.4705882 L8.8,22.47 L8.8,14.2352941 C8.8,13.5855474 9.3372583,13.0588235 10,13.0588235 L22,13.0588235 C22.6627417,13.0588235 23.2,13.5855474 23.2,14.2352941 L23.2,22.47 L25.6,22.4705882 L25.6,8.35294118 Z M17.2,16.5882353 L17.199,18.941 L19.6,18.9411765 L19.6,20.1176471 L17.199,20.117 L17.2,22.4705882 L14.8,22.4705882 L14.799,20.117 L12.4,20.1176471 L12.4,18.9411765 L14.799,18.941 L14.8,16.5882353 L17.2,16.5882353 Z"/>
+			</g>
+		  </g>
+      </g>
+    </g>
+  </shape>
+  <!-- 调用子流程处理中 -->
+  <shape type="svg" name="CallActivity_PROCESSING" width="150" height="48" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="45.3330874%" y1="100%" x2="45.3330876%" y2="0%" id="def_1575545324554_1">
+        <stop stop-color="#5295F1" offset="0%"/>
+        <stop stop-color="#44A7F9" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0 L144,0 C147.313708,-6.08718376e-16 150,2.6862915 150,6 L150,42 C150,45.3137085 147.313708,48 144,48 L6,48 C2.6862915,48 4.05812251e-16,45.3137085 0,42 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" fill="url(#def_1575545324554_1)"/>
+        <g transform="translate(8.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+           <g transform="translate(4.000000, 4.000000)">
+              <path d="M20,4 C21.1045695,4 22,4.8954305 22,6 L22,18 C22,19.1045695 21.1045695,20 20,20 L18,20 C18,20.5522847 17.5522847,21 17,21 L7,21 C6.44771525,21 6,20.5522847 6,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 Z M16,12 L8,12 L8,19 L16,19 L16,12 Z M20,6 L4,6 L4,18 L6,18 L6,11 C6,10.4477153 6.44771525,10 7,10 L17,10 C17.5522847,10 18,10.4477153 18,11 L18,18 L20,18 L20,6 Z M13,13 L13,15 L15,15 L15,16 L13,16 L13,18 L11,18 L11,16 L9,16 L9,15 L11,15 L11,13 L13,13 Z"/>
+            </g>
+        </g>
+    </g>
+  </shape>
+  <!-- 调用子流程跳过 -->
+  <shape type="svg" name="CallActivity_SKIP" width="150" height="48" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <path d="M6,0 L144,0 C147.313708,-6.08718376e-16 150,2.6862915 150,6 L150,42 C150,45.3137085 147.313708,48 144,48 L6,48 C2.6862915,48 4.05812251e-16,45.3137085 0,42 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="def_1575545324556_2"/>
+      <mask id="def_1575545324557_3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="48" fill="white">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#def_1575545324556_2"/>
+      </mask>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#BBBBBB" mask="url(#def_1575545324557_3)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="5,5" xlink:href="#def_1575545324556_2"/>
+            <g transform="translate(2.000000, 1.000000)" stroke="#BBBBBB" stroke-dasharray="3.205310854112139" stroke-linecap="square" stroke-width="0.931677019">
+              <line x1="22.7978315" y1="0.329210036" x2="0.0515561575" y2="24.435317"/>
+              <line x1="50.2085015" y1="0.475510342" x2="7.4160963" y2="45.2130248"/>
+              <line x1="77.4463005" y1="0.227061477" x2="34.4489941" y2="45.1787909"/>
+              <line x1="104.682345" y1="0.919691995" x2="62.4150382" y2="45.2131009"/>
+              <line x1="130.162327" y1="0.525241601" x2="88.4345204" y2="44.1938762"/>
+              <line x1="146.996828" y1="11.3404496" x2="115.347729" y2="44.9676164"/>
+              <line x1="146.781412" y1="38.626992" x2="142.251289" y2="44.9691642"/>
+            </g>
+            <g transform="translate(8.000000, 8.000000)" fill="#888BA6" fill-rule="nonzero">
+              <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26,22 C26,23.1045695 25.1045695,24 24,24 L22,24 C22,24.5522847 21.5522847,25 21,25 L11,25 C10.4477153,25 10,24.5522847 10,24 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M20,16 L12,16 L12,23 L20,23 L20,16 Z M24,10 L8,10 L8,22 L10,22 L10,15 C10,14.4477153 10.4477153,14 11,14 L21,14 C21.5522847,14 22,14.4477153 22,15 L22,22 L24,22 L24,10 Z M17,17 L17,19 L19,19 L19,20 L17,20 L17,22 L15,22 L15,20 L13,20 L13,19 L15,19 L15,17 L17,17 Z"/>
+            </g>
+       </g>
+    </g>
+  </shape>
+  <!-- 调用子流程走过 -->
+  <shape type="svg" name="CallActivity_TRAVERSED" width="150" height="48" w="40" h="40">
+    <defs xmlns="http://www.w3.org/2000/svg">
+      <linearGradient x1="100%" y1="80.2469136%" x2="0%" y2="19.7530864%" id="def_1575545324558_4">
+        <stop stop-color="#2BBD7E" offset="0%"/>
+        <stop stop-color="#51D590" offset="100%"/>
+      </linearGradient>
+    </defs>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#7F93BC" fill="#FFFFFF"/>
+        <path d="M138.456713,8.08341912 C138.051121,7.64978636 137.685304,7.52116439 137.284009,7.95944096 C136.882715,8.39771752 136.916781,8.75406459 137.322373,9.18769735 L139.376452,11.6200883 C139.779591,12.051099 140.764667,12.1553582 141.166971,11.7234366 L145.557075,6.56242375 C145.961826,6.12787458 146.192367,5.63591626 145.790225,5.19854829 C145.388082,4.76118033 144.895963,5.12142888 144.491212,5.55597805 L140.237666,9.98203091 L138.456713,8.08341912 Z" fill="url(#def_1575545324558_4)"/>
+        <path d="M125,1 L144,1 C146.761424,1 149,3.23857625 149,6 L149,25 L149,25 L125,1 Z" fill-opacity="0.258435236" fill="#4CC58D" fill-rule="nonzero"/>
+        <g transform="translate(8.000000, 8.000000)" fill="#2D9BF3">
+            <g transform="translate(6.000000, 8.000000)">
+              <path d="M18,0 C19.1045695,0 20,0.8954305 20,2 L20,14 C20,15.1045695 19.1045695,16 18,16 L16,16 C16,16.5522847 15.5522847,17 15,17 L5,17 C4.44771525,17 4,16.5522847 4,16 L2,16 C0.8954305,16 0,15.1045695 0,14 L0,2 C0,0.8954305 0.8954305,0 2,0 L18,0 Z M14,8 L6,8 L6,15 L14,15 L14,8 Z M18,2 L2,2 L2,14 L4,14 L4,7 C4,6.44771525 4.44771525,6 5,6 L15,6 C15.5522847,6 16,6.44771525 16,7 L16,14 L18,14 L18,2 Z M11,9 L11,11 L13,11 L13,12 L11,12 L11,14 L9,14 L9,12 L7,12 L7,11 L9,11 L9,9 L11,9 Z" fill-rule="nonzero"/>
+            </g>
+        </g>
+    </g>
+  </shape>
+  <!-- 调用子流程 -->
+  <shape type="svg" name="CallActivity_USE" width="150" height="48" w="150" h="50">
+    <connections>
+      <constraint name="N" perimeter="0" x="0.5" y="0"/>
+      <constraint name="S" perimeter="0" x="0.5" y="1"/>
+      <constraint name="W" perimeter="0" x="0" y="0.5"/>
+      <constraint name="E" perimeter="0" x="1" y="0.5"/>
+    </connections>
+    <g xmlns="http://www.w3.org/2000/svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		 <path d="M6,0.5 C2.96243388,0.5 0.5,2.96243388 0.5,6 L0.5,42 C0.5,45.0375661 2.96243388,47.5 6,47.5 L144,47.5 C147.037566,47.5 149.5,45.0375661 149.5,42 L149.5,6 C149.5,2.96243388 147.037566,0.5 144,0.5 L6,0.5 Z" stroke="#BBBBBB" fill="#FFFFFF"/>
+         <g transform="translate(8.000000, 8.000000)" fill="#888BA6" fill-rule="nonzero">
+	         <path d="M24,8 C25.1045695,8 26,8.8954305 26,10 L26,22 C26,23.1045695 25.1045695,24 24,24 L22,24 C22,24.5522847 21.5522847,25 21,25 L11,25 C10.4477153,25 10,24.5522847 10,24 L8,24 C6.8954305,24 6,23.1045695 6,22 L6,10 C6,8.8954305 6.8954305,8 8,8 L24,8 Z M20,16 L12,16 L12,23 L20,23 L20,16 Z M24,10 L8,10 L8,22 L10,22 L10,15 C10,14.4477153 10.4477153,14 11,14 L21,14 C21.5522847,14 22,14.4477153 22,15 L22,22 L24,22 L24,10 Z M17,17 L17,19 L19,19 L19,20 L17,20 L17,22 L15,22 L15,20 L13,20 L13,19 L15,19 L15,17 L17,17 Z"/>
+         </g>
+    </g>
+  </shape>
+
+</shapes>

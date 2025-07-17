@@ -1,0 +1,7 @@
+{
+    "addRelationTips": "添加依赖关系",
+    "delRelationTips": "点击删除最后一个依赖实体",
+    "addBtn": "添加实体依赖关系配置",
+    "iconTips": "依赖于",
+    "IFTips": "点击配置/查看实体依赖条件"
+}

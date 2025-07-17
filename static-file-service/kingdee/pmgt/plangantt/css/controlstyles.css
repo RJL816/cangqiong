@@ -1,0 +1,188 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:500');*/
+
+*{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gantt_control{
+    background: #ededed;
+    text-align: center;
+}
+
+.gantt_control input[type=button],
+.gantt_control input[type=file],
+.gantt_control input[type=checkbox],
+.gantt_control button{
+    font: 500 14px Roboto;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background: #fff;
+    padding: 4px 12px;
+    margin: 0 5px;
+    color: rgba(0,0,0,0.7);
+    line-height: 20px;
+}
+
+.gantt_control input[type=button]:hover,
+.gantt_control button:hover{
+    border: 1px solid #B3B3B3;
+    color: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.gantt_control input[type=button]:active,
+.gantt_control button:active{
+    background: #F7F7F7;
+}
+
+.gantt_control input[type=button]:focus,
+.gantt_control button:focus{
+   outline: none !important;
+}
+
+.gantt_control{
+    padding: 10px 0 12px;
+}
+
+.gantt_control input[type=radio],
+.gantt_control input[type=checkbox]{
+    display:none;
+}
+
+.gantt_control label{
+    padding: 0 6px;
+    color: rgba(0,0,0,0.54);
+    font: 14px Roboto;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.gantt_control select{
+    font: 500 14px Roboto;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background: #fff;
+    padding: 4px 12px;
+    margin: 0 5px;
+    color: rgba(0,0,0,0.7);
+}
+
+.material-icons{
+    position: relative;
+    top: 6px;
+    right: 2px;
+    color: rgba(0,0,0,0.54);
+}
+
+.material-icons.icon_color { 
+    color: #0288D1; 
+}
+
+.material-icons.md-inactive {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.checked_label{
+    color: rgba(0,0,0,0.7)!important;
+}
+
+.gantt_radio:checked,
+.gantt_radio:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.gantt_radio:checked + label,
+.gantt_radio:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.gantt_radio:checked + label:before,
+.gantt_radio:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.gantt_radio:checked + label:after,
+.gantt_radio:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #8a9ada;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.gantt_radio:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.gantt_radio:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*高亮周末*/
+.gantt_task_cell.week_end {
+    background-color: #EFF5FD;
+}
+.gantt_selected .gantt_task_cell.week_end {
+    background-color: #f0e493;
+}
+
+.gantt_task_line.gantt_critical_task {
+    background-color: #ff5252 !important;
+    border: 1px solid #ff5252;
+}
+
+.showCriticalPath{
+    background: #ff5252 !important;
+}
+
+/*添加基准线样式*/
+.baseline {
+    position: absolute;
+    border-radius: 2px;
+    opacity: 0.6;
+    margin-top: -7px;
+    height: 12px;
+    background: #ffd180;
+    border: 1px solid rgb(255, 153, 0);
+}
+.gantt_bars_area .gantt_task_line.basetask, .gantt_line_wrapper.basetask {
+    margin-top: -9px;
+}
+.gantt_side_content {
+    margin-bottom: 7px;
+}
+.gantt_links_area .gantt_task_link.baselink .gantt_line_wrapper {
+    margin-top: -9px;
+}
+.gantt_links_area .gantt_task_link.baselink .gantt_link_arrow {
+    margin-top: -12px;
+}
+.gantt_side_content.gantt_right {
+    bottom: 0;
+}
+ide_content.gantt_right {
+    bottom: 0;
+}
+
+

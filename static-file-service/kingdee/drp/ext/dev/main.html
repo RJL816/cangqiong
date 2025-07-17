@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/layer.css">
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/iconfont2.css">
+		<link rel="stylesheet" href="css/mobile-iconfont.css">
+		<link rel="stylesheet" href="css/el-icon.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/quick.css">
+		<link rel="stylesheet" href="css/widget.css">
+		<link rel="stylesheet" href="css/details.css">
+		<link rel="stylesheet" href="css/web.css">
+		<link rel="stylesheet" href="css/mobile.css">
+		<link rel="stylesheet" href="css/table.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<script src="plugin/require.js"></script>
+		<script src="plugin/jquery-1.12.4.min.js"></script>
+		<script src="plugin/jquery-BBC.js"></script>
+		<script src="js/formatXML.js"></script>
+		<script src="js/formatHTML.js"></script>
+		<script src="js/loadPath.js"></script>
+		<title>BBC集成开发平台</title>
+	</head>
+
+	<body>
+		<div class="view_top">
+			<ul id="fun-sub-list">
+			    <li class="top-file"><img src="image/menu.png" /><span>菜单</span></li>
+				<li class="top-save"><img src="image/save.png" /><span>保存</span></li>
+				<li class="to-new-page" type="preview"><img src="image/preview.png" /><span>预览</span></li>
+				<li class="export"><img src="image/export.png" /><span>导出</span></li>
+				<li type="publishMenu"><img src="image/publish.png" width="15" height="15" style="top:4px;"/><span>发布菜单</span></li>
+				<li type="selectApp">
+					<img src="image/publish.png" width="15" height="15" style="top:4px;"/><span>选择应用</span>
+				</li>
+				<li class="appNameWrapper hide">当前应用：<span class="appName"></span></li>
+			</ul>
+		</div>
+		<ul class="file-action-list hide">
+		    <li type="file-settings">文件<i class="iconfont icon-xiangyou"></i></li>
+		    <li type="env-settings">开发目录设置</li>
+		    <ul class="action-list-detail hide">
+		       <li class="top-new" createType="listView">新增列表文件</li>
+		       <li class="top-new" createType="billView">新增单据文件</li>
+		    </ul>
+		</ul>
+		<div id="view_main">
+			<div id="menu">
+				<div class="menu-top">基础控件</div>
+				<div class="menu-search smart-search"><i class="iconfont icon-search"></i><input type="text" placeholder="请输入控件名称" /></div>
+				<ul class="menu-link-left">
+				</ul>
+				<ul class="menu-content">
+				</ul>
+			</div>
+			<div class="content">
+				<div class="tab-container">
+					<ul>
+					  <div class="tab-new">
+					      <i class="iconfont icon-xinzeng"></i>
+					      <ul class="create-fun-list">
+		                      <li class="top-new" createtype="listView">新增列表文件</li>
+		                      <li class="top-new" createtype="billView">新增单据文件</li>
+		                  </ul>
+					  </div>
+					</ul>
+				</div>
+				<div class="show-container" style="--themecolor:#5582F3">
+				</div>
+			</div>
+			<i class="right-toggle iconfont icon-fanhui" style="display:none;"></i>
+			<div id="right-property-list">
+				<ul class="right-top">
+				    <li class="active" link-panel="file-box">所有文件</li>
+				    <li link-panel="property">属性</li>
+				</ul>
+				<div class="right-panel">
+				    <div class="file-panel">
+				        <div class="right-search smart-search file-search"><i class="iconfont icon-search"></i><input type="text" placeholder="请输入文件名"/></div>
+				       	<div class="file-history">
+				            <p class="title"><i class="iconfont icon-zuijindakai" style="top:-15px;"></i><span>最近打开</span><span class="hide" refresh="updateFileHistory"><img src="image/refresh.png"/></span></p>
+				            <div class="file-box empty-panel"></div>
+				        </div>
+				        <div class="file">
+				            <p class="title"><i class="iconfont icon-quanbu"></i><span>全部</span><span class="hide" refresh="getFiles"><img src="image/refresh.png"/></span></p>
+				            <div class="file-box empty-panel"></div>
+				        </div>
+				    </div>
+				    <div class="property-panel hide">
+				        <div class="control-search smart-search">
+				            <input type="text" placeholder="请输入节点名称"/><i class="iconfont icon-search hide"></i><i class="iconfont icon-select"></i>
+				        </div>
+				        <div class="property-tab">
+				            <span class="title">文件属性</span>
+				            <span><i class="iconfont icon-wenjianshuxing hover-layer" type="file-p" title="文件属性"></i><i class="iconfont icon-jiedianshuxing hover-layer" type="node-p" title="节点属性"></i></span>
+				        </div>
+				        <ul class="file-property"></ul>
+				        <div class="node-property hide">
+				            <div class="right-search smart-search property-search"><i class="iconfont icon-search"></i><input type="text" placeholder="请输入属性名称"/></div>
+				            <ul class="property"></ul>
+				        </div>
+				    </div>
+				</div>
+				<ul class="control-list hide"></ul>
+			</div>
+		</div>
+<!-- 		<div id="input-reminder"> -->
+<!-- 			<ul> -->
+<!-- 			</ul> -->
+<!-- 		</div> -->
+		<div class="status-box">
+		    <div class="success">
+		        <img src="image/success.png"/>
+		        <span>保存成功</span>
+		    </div>
+		    <div class="failed">
+		        <img src="image/failed.png"/>
+		        <span>保存失败</span>
+		    </div>
+		</div>
+		<div class="close-box"></div>
+		<!-- <div class="show-xmlOver"></div> -->
+		<ul class="right-fn-box contextmenu-box">
+		    <li type="expand">扩展</li>
+		    <li type="extend">继承</li>
+		    <li type="delete">删除</li>
+		    <li type="properties">属性</li>
+		</ul>
+		<ul class="right-package-box contextmenu-box">
+		    <li type="createFile" createType="listView">新建列表文件</li>
+		    <li type="createFile" createType="billView">新建单据文件</li>
+		    <li type="createPackage">新建文件夹</li>
+		    <li type="deletePackage">删除文件夹</li>
+		</ul>
+	</body>
+	<script>
+		require(["jquery", "jqTmpl", "js/view.js"], function($, jqTmpl, view) {
+			view.init();
+		});
+	</script>
+
+</html>

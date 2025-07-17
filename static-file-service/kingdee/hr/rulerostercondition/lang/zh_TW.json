@@ -1,0 +1,14 @@
+{	
+	"allcondition":"滿足以下所有條件",
+	"anycondition":"滿足以下任意條件",
+	"conditionconfig":"條件設置",
+	"selectlogic":"選擇邏輯",
+	"addcondition":"添加條件",
+	"onthelist":"在名單",
+	"inlist":"中",
+	"deleterow":"刪除",
+    "loading": "加載中...",
+    "loadMore": "加載更多...",
+    "noResults": "無可用的參數",
+    "noResultsForTerm": "沒有包含<b>%s</b>的參數"
+}

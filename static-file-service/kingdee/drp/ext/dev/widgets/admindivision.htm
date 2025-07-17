@@ -1,0 +1,13 @@
+<div>
+    <div class="cus-default" id="${control.id}"  viewid="${control.viewid}" class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}" xml="${control.xml}" data="${controlStr}">
+        {{if control.name}}
+        <label style="${control.labelstyle}" class="cus-name ${control.required ? 'required' : ''}">
+            ${ control.name }
+        </label>
+        {{/if}}
+        <div class="inner_input middle" class="${control.name ? '' : ' no-label'}">
+            <span class="no-edit" style="${control.inputstyle}">${ control.value }</span>
+            <span class="iconfont iconmore_icon"></span>
+        </div>
+    </div>
+</div>

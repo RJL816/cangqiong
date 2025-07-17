@@ -1,0 +1,228 @@
+@CHARSET "UTF-8";
+
+.management-handover-content
+{
+    overflow: auto;
+}
+
+.table-view
+{
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.message-handover-data-table-cell
+{
+    position: absolute;
+    top: 50% !important;
+    margin-top: -8px;
+    padding-left: 10px;
+}
+
+.message-handover-data-table-cell-merge
+{
+    background-color: #fff !important;
+}
+
+.message-handover-data-table-cell-btb
+{
+    border-top: 1px solid #d7e2e2;
+}
+
+.message-handover-data-table-cell-bl
+{
+    border-left: 1px solid #d7e2e2;
+}
+
+.resourceinfo-detaillist-sort-box
+{
+    z-index: 65535;
+    position: absolute;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.resourceinfo-detaillist-sort-box_clickable
+{
+    border: 1px solid #3cf;
+    background-color: #fff;
+}
+
+.schedule-detaillist-table-op
+{
+    position: relative;
+    top: 50%;
+    margin-top: -10px;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+    cursor: pointer;
+    float: right;
+    background-color: white;
+}
+.schedule-detailList-table-cell
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    margin: auto;
+}
+
+.schedule-detailList-table-cell-op
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.schedule-detailList-table-cell-status
+{
+    position: absolute;
+    border: solid 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color:red;
+    text-align: center;
+    width: 30px;
+    height: 16px;
+    left: 2px;
+}
+.schedule-detailList-table-cell-schedule
+{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    width: 75px;
+    height: 16px;
+    margin: auto
+}
+.schedule-detailList-table-cell-status-someFail
+{
+    position: absolute;
+    border: solid 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color:#ff831f;
+    text-align: center;
+    height: 16px;
+    left: 2px;
+}
+.schedule-detailList-table-cell-warn
+{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    width: 75px;
+    height: 16px;
+    margin: auto
+}
+.schedule-detailList-table-cell-status-success
+{
+    position: absolute;
+    border: solid 1px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color:#ff831f;
+    text-align: center;
+    height: 16px;
+    left: 2px;
+}
+
+.resourceinfo-detaillist-wopen
+{
+    cursor: pointer;
+    color: #49A5F7;
+    color: var(--color-main, #49A5F7);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -8px;
+    height: 16px;
+    width: 50px;
+}
+
+.schedule-detailList-table-cell-detail
+{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 40px;
+    bottom: 0;
+    width: 50px;
+    height: 16px;
+    line-height: 15px;
+    margin: auto
+
+}
+
+.schedule-detailList-table-cell-detail-someFail
+{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 68px;
+    bottom: 0;
+    width: 46px;
+    height: 16px;
+    line-height: 15px;
+    margin: auto
+}
+
+.resourceinfo-detaillist-op
+{
+    cursor: pointer;
+}
+
+.message-big-img
+{
+    display:block;
+    width: 200px;
+    height: 189px;
+    background-size: contain;
+    margin: 5% auto;
+}
+.message-error-text
+{
+    display:block;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top:  10px;
+    text-align: center;
+}
+.error-notice-text
+{
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: yellow;
+    color: rgb(188, 17, 24);
+    border: 1px solid rgb(188, 17, 24);
+    border-radius: 6px;
+    position: absolute;
+    margin-top: 57px;
+    left: 0px;
+}
+.del-notice-text
+{
+    margin-top: 55px;
+    margin-left: 17px;
+}

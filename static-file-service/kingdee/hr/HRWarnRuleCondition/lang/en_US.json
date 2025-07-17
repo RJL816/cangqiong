@@ -1,0 +1,17 @@
+{
+    "addBtn": "Add condition",
+    "conditionName": "Conditionname",
+    "operator": "Comparator ",
+    "value": "Value",
+    "conditionDes": "Description of conditions",
+    "return": "return",
+    "moreWarnObject": "More alert object fields",
+    "conditionLogic": "Conditionlogic",
+    "andLogic": "All conditions are met (and) ",
+    "orLogic": "Satisfy any condition (or) ",
+    "customLogic": "Custom Logic",
+    "mustInput": "Required",
+    "yes": "Yes ",
+    "no": "No ",
+    "date": "Please select date"
+}

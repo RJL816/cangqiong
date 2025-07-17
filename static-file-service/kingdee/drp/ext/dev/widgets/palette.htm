@@ -1,0 +1,13 @@
+<div>
+  <div class="${control.class}" style="${control.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"
+    id="${control.id}" viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}" >
+    {{each ['#5582f3', '#1871ea', '#26c1fb', '#24bebc', '#9f56fb'] }}
+      <div class="us6v-ci" style="background: ${$value}" >
+        <!-- <i class="el-icon-check cus-radio-img-i" :class="theme.toLowerCase() === child.value ? '' : 'active'" ></i> -->
+      </div>
+    {{/each}}
+    <div class="colorPoper">
+        <span class="el-color-picker__icon el-icon-arrow-down"></span>
+    </div>
+  </div>
+</div>

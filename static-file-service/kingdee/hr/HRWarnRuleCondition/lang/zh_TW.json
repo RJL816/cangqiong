@@ -1,0 +1,17 @@
+{
+    "addBtn": "添加條件",
+    "conditionName": "條件名稱",
+    "operator": "比較符",
+    "value": "值",
+    "conditionDes": "條件描述",
+    "return": "返回",
+    "moreWarnObject": "更多預警對象字段",
+    "conditionLogic": "條件邏輯",
+    "andLogic": "滿足所有條件（並且）",
+    "orLogic": "滿足任意條件（或者）",
+    "customLogic": "自定義邏輯",
+    "mustInput": "是否必填",
+    "yes": "是",
+    "no": "否",
+    "date": "請選擇日期"
+}

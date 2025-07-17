@@ -1,0 +1,79 @@
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/page/WebofficeDownload.less ***!
+  \*************************************************************************************************************************************************************************************************/
+.WebofficeDownload_download-root_Ubz9 {
+  width: 425px;
+  padding: 0 20px 24px;
+  font-size: 16px;
+}
+.WebofficeDownload_download-root_Ubz9 .WebofficeDownload_download-title_3jKv {
+  height: 48px;
+  line-height: 48px;
+}
+.WebofficeDownload_download-prompt_3Fp_ {
+  height: 48px;
+  margin-left: 120x;
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.WebofficeDownload_download-prompt_3Fp_ span {
+  font-size: 24px;
+  margin: 0 12px;
+  color: #FF991C;
+}
+.WebofficeDownload_download-prompt_3Fp_ .WebofficeDownload_download-prompt-text_b7rL {
+  height: 24px;
+  line-height: 24px;
+}
+.WebofficeDownload_download-btns_yUWP {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  margin: 0 12px;
+}
+.WebofficeDownload_download-btns_yUWP .WebofficeDownload_btn-prompt_AEpf {
+  height: 28px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.WebofficeDownload_download-btns_yUWP .WebofficeDownload_promp-btns_1HIF {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.WebofficeDownload_download-btns_yUWP .WebofficeDownload_promp-btns_1HIF div {
+  width: 60px;
+  height: 28px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.WebofficeDownload_download-btns_yUWP .WebofficeDownload_btn-download_96eS {
+  margin-right: 10px;
+}
+.WebofficeDownload_download-btns_yUWP .WebofficeDownload_btn-close_2gQY {
+  border: 1px solid #D9D9D9;
+  position: relative;
+}
+

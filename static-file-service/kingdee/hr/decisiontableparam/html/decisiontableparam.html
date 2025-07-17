@@ -1,0 +1,81 @@
+<div class="decisionTableParamAp">
+	<div class="AdvConAp_advCon_1WJb">
+		<div class="AdvConAp_bar_10iI">
+			<div class="AdvConAp_box_pChZ">
+				<div class="AdvConAp_collapse_2Csb primary-text-in-light">
+					<i class="AdvConAp_hide_1ImS"></i>
+					<span class="paramTitle AdvConAp_title_m5kd AdvConAp_cur_1IvL" title=""><%= configconditionparam %></span>
+				</div>
+			</div>		
+			<div class="AdvConAp_toolbar_1mZx" style="justify-content: flex-end;;height:24px;">
+				<div class="AdvConToolbar_advTollBar_1Oo_">
+					<div class="AdvConToolbar_toolbarItemSingle_1iKS link-color AdvConToolbar_textType_Cvzt" id="newRows">
+						<span class="AdvConToolbar_textspan_3nMe AdvConToolbar_toolbarItemSingle_cursor_nVC2"><%= addRow %></span>
+					</div>
+					<div class="AdvConToolbar_toolbarItemSingle_1iKS link-color AdvConToolbar_textType_Cvzt" id="delRows">
+						<span class="AdvConToolbar_textspan_3nMe AdvConToolbar_toolbarItemSingle_cursor_nVC2"><%= deleteRow %></span>
+					</div>
+					<div class="AdvConToolbar_toolbarItemSingle_1iKS link-color AdvConToolbar_textType_Cvzt" id="moveUp">
+						<span class="AdvConToolbar_textspan_3nMe AdvConToolbar_toolbarItemSingle_cursor_nVC2"><%= moveUp %></span>
+					</div>
+					<div class="AdvConToolbar_toolbarItemSingle_1iKS link-color AdvConToolbar_textType_Cvzt" id="moveDown">
+						<span class="AdvConToolbar_textspan_3nMe AdvConToolbar_toolbarItemSingle_cursor_nVC2"><%= moveDown %></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="decisionTableParamDiv">
+		<table class='decisionTableParam'>
+            <thead style="border-left: 1px solid #d9d9d9;">
+                <tr class="headTr">
+                    <th class="radioTh"></th>
+                    <th class="seqTh">#</th>
+                    <th><span style="color: red; padding-right: 1px;">*</span><%= paramname %></th>
+                    <th><%= displayname %></th><th style='display:none;'><%= paramkey %></th>
+                    <th><%= paramtype %></th>
+                    <th class="optTh"><span style="color: red; padding-right: 1px;">*</span><%= comparator %></th>
+                </tr>	
+            </thead>
+            <tbody class="tbodySign">
+
+            </tbody>	
+		</table>		
+	</div>
+	
+	<table class='templeteTable' style='display:none;'>
+		<tr class="bodyTr">
+			<td class="radioTd">
+				<div class="ag-react-container"><div class="paramRadio row-selection-icon kdfont hover-theme-hover-fc active-theme-active-fc kdfont-fuxuankuangweixuanzhong_yuan"></div></div>
+			</td>
+			<td class="seqTd">
+				<div class="CellClass_lightRender_293x CellClass_seq_Render_2_na">1</div>
+			</td>
+			<td class="nameTd">
+				<div class='paramNameDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit'>			
+					<div class='paramName'></div>
+				</div>
+			</td>
+			<td class="displayNameTd">
+				<div class='paramDisplayNameDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit'>			
+					<input class='paramDisplayName' type='text'>
+				</div>
+			</td>
+			<td class="numberTd" style='display:none;'>
+				<div class='paramNumberDiv'>
+					<span class='paramNumber'></span>
+				</div>	
+			</td>
+			<td class="typeTd">
+				<div class='paramTypeDiv'>
+					<span class='paramType'></span>
+				</div>			
+			</td>
+			<td class="optTd">
+				<div class='paramOptDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit'>			
+					<div class='paramOpt'></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

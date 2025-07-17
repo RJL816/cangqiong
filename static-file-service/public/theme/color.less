@@ -1,0 +1,2159 @@
+
+@import './kdesign-complete.less';
+:root{
+    --theme-color: #5582F3;
+    --theme-color-level1: rgb(242, 248, 255);
+    --theme-color-level2: rgb(242, 248, 255);
+    --theme-color-level3: rgb(227, 238, 255);
+    --theme-color-level4: rgb(181, 207, 255);
+    --theme-color-level5: rgb(135, 173, 255);
+    --theme-color-level6: rgb(85, 130, 243);
+    --theme-color-level7: rgb(55, 92, 202);
+    --theme-color-level8: rgb(31, 59, 161);
+	--theme-color-level9: rgb(13, 33, 121);
+	--theme-color-disabled: rgba(85, 130, 243, 0.6);
+	--hover-color: #f5f5f5;
+	--disabled-contain-bg: #f5f5f5;
+	--success-color: #1BA854; // 成功色(深)
+    --success-bg-color: #F2FFF5; // 成功反馈浮层的底色
+    --success-border-color: #6DD18E; // 成功反馈浮层的容器边框色
+    --warning-color: #FF991C; // 警示色(深)
+    --warning-bg-color: #FFF1D4; // 警示反馈浮层的底色
+    --warning-border-color: #FFCB78; // 警示反馈浮层的容器边框色
+    --error-color: #FB2323; // 失败色(深)
+    --error-bg-color: #FFF2F4; // 失败反馈浮层的底色
+    --error-border-color: #FF8088; // 失败反馈浮层的容器边框色
+    --ongoing-color: #276FF5; // 进行中(深)
+    --ongoing-bg-color: #F2F9FF; // 进行中反馈浮层的底色
+    --ongoing-border-color: #85B8FF; // 进行中反馈浮层的容器边框色
+    --disabled-color: #B2B2B2; // 失效色
+    --disabled-border-color: #D9D9D9; // 失效边框色
+    --link-color: #0E5FD8; // 链接色
+    --link-color-hover: #3987ED; // 链接色或辅助色(悬浮)
+    --link-color-active: #0041B0; // 链接色或辅助色(点击)
+	--primary-text-color: #212121; // 一级文本
+	--primary-text-color2: rgba(255, 255, 255, 1);
+    --secondary-text-color: #666;
+    --secondary-text-color2: rgba(255, 255, 255, 0.65);
+    --third-text-color: #999;
+    --third-text-color2: rgba(255, 255, 255, 0.4);
+    --placeholder-text-color: #B2B2B2;
+    --placeholder-text-color2: rgba(255, 255, 255, 0.3);
+    --bg: #FFF;
+    --bg2: #F2F2F2;
+    --contain-bg: #FAFAFA;
+    --radius-size: 2px;
+    --input-color: #999;
+    --strong-border-color: #D9D9D9;
+    --strong-border-color-1: #D9D9D9;
+    --weak-border-color: #E5E5E5;
+    --zebra-stripe-deep-bg-color: #ECEEF2;
+    --btn-default-ghost-color: #212121;
+    --btn-default-ghost-active-bg: #FFF;
+    --grid-hyper-link-text-decoration: none;
+    --grid-row-selected-bg-color: @theme-color-level1;
+    --bill-list-grid-row-selected-bg-color: @theme-color-level1;
+    --entry-entity-grid-row-selected-bg-color: @theme-color-level1;
+    --report-list-grid-row-selected-bg-color: @theme-color-level1;
+    --bill-list-grid-row-selected-dark-bg-color: hsl(213, 100%, 95.5%);
+    --entry-entity-grid-row-selected-dark-bg-color: hsl(213, 100%, 95.5%);
+    --report-list-grid-row-selected-dark-bg-color: hsl(213, 100%, 95.5%);
+	--treemenu-star-color: #FFF;
+	--treemenu-star-select-color: #ffc859;
+	--treemenu-first-level-bg-color: #343848;
+	--treemenu-first-level-color: #c1cadc;
+	--treemenu-first-level-hover-color: #FFF;
+	--treemenu-first-level-hover-bg-color: #21242d;
+	--treemenu-third-level-title-color:rgba(255, 255, 255, 0.5);
+  --treemenu-lower-level-color: rgba(255, 255, 255, 0.8);
+	--treemenu-lower-level-hover-color: @theme-color;
+	--treemenu-lower-level-bg-color: #21242d;
+  --container-baritem-text-color: #0E5FD8;
+  --baritem-text-type-fc-color: rgb(85, 130, 243);
+  --hover-color-opacity20: rgba(245,245,245,.2);
+  --baritem-bd-type-bd-color: #D9D9D9;
+  --baritem-bd-type-fc-color: #212121;
+  --baritem-bd-type-min-width: 60;
+  --baritem-bd-type-height: 28;
+}
+
+// 暗黑主题的适配
+[data-darkreader-scheme="dark"] {
+  #kd-theme {
+    .kd-table {
+      .kd-table-header {
+        border-bottom-color: #D9D9D9;
+      }
+      .kd-table-cell {
+        border-bottom-color:#D9D9D9
+      }
+      tr:not(.no-highlight).highlight > td {
+        background-color: var(--theme-color-level1);
+      }
+      // & > .kd-table-body td {
+      //   border-right: none;
+      //   border-left: none;
+      // }
+      .kd-cq-input, .kd-table-cell textarea {
+        color: #333;
+      }
+    }
+    .kd-table-wrapper {
+      &.use-outer-border {
+        border-top-color: #e5e5e5;
+      }
+    }
+    .kd-radio-button {
+      border-color: var(--kd-c-radio-color-border, var(--kd-g-color-border-strong, var(--strong-border-color)))
+    }
+    .kd-cq-control {
+      &.kd-cq-querypanel {
+        .kd-cq-querypanel-content {
+          .kd-cq-input {
+            background-color: #fff;
+            color: #333;
+          }
+          .kd-cq-date-range {
+            background-color: #fff;
+          }
+        }
+      }
+      &.kd-cq-search-box {
+        .kd-cq-search-box-input {
+          background-color: #fff;
+        }
+      }
+      &.kd-cq-commonfilter {
+        .kd-cq-select {
+          .kd-cq-input {
+            background-color: #fff;
+          }
+        }
+      }
+      &.kd-cq-tree {
+        .kd-cq-tree-treenode {
+          .kd-cq-tree-treenode-text {
+            color: rgb(0, 0, 0);
+          }
+          &.kd-cq-tree-treenode-selected {
+            .kd-cq-tree-treenode-text {
+              color: var(--theme-color);
+            }
+          }
+        }
+      }
+    }
+    .kd-cq-dropdown {
+      .kd-cq-input {
+        background-color: #fff;
+      }
+      &.kd-cq-dropdown-select-type {
+        &.kd-cq-table-header-filter-dropdown {
+          .kd-cq-select {
+            background-color: transparent;
+          }
+        }
+      }
+      &.kd-cq-dropdown-date-type {
+        .kd-cq-date-picker-header {
+          a {
+            color: #212121;
+            &:hover {
+              color: var(--theme-color);
+            }
+          }
+        }
+      }
+    }
+    .kd-cq-field {
+      &.kd-cq-combo:not([data-border-all-disabled]) {
+        .kd-cq-select {
+          .kd-cq-input {
+            background-color: #fff;
+          }
+        }
+      }
+      &.kd-cq-city  {
+        .kd-cq-input {
+          background-color: #fff
+        }
+      }
+      &.kd-cq-checkboxgroup {
+        .kd-cq-checkboxgroup-square-item {
+          .kd-cq-checkboxgroup-squarechecked {
+            color: var(--theme-color);
+          }
+        }
+      }
+    }
+    // 工具栏按钮组
+    // [data-baritem-show-type="1"] {
+    //   .kd-cq-toolbar-group:not(.kd-cq-toolbar-group-lock) {
+    //     .kd-cq-toolbar-group-item {
+    //       border-color: var(--baritem-bd-type-bd-color);
+    //     }
+    //   }
+    // }
+    // 选择器
+    .kd-cq-select {
+      input {
+        z-index: auto
+      }
+      .kd-cq-select-arrow-icon {
+        z-index: 1;
+      }
+      .kd-cq-select-close-icon {
+        z-index: 2;
+      }
+    }
+  }
+  input {
+    color: rgb(0, 0, 0);
+  }
+  .kd-cq-root {
+    .kd-popup {
+      box-shadow: none;
+    }
+    .kd-cq-dropdown {
+      &.kd-cq-basedata-dropdown {
+        &.kd-cq-basedata-enum-type-dropdown {
+          height: 82px;
+        }
+      }
+    }
+  }
+}
+
+// 侧导航深色风格
+[data-tree-menu-show-type="0"], [data-theme-preview-treemenu-type="0"] #preview_sidenav_container {
+	--treemenu-star-color: #FFF;
+	--treemenu-star-select-color: #ffc859;
+	--treemenu-first-level-bg-color: #343848;
+	--treemenu-first-level-color: #c1cadc;
+	--treemenu-first-level-hover-color: #FFF;
+	--treemenu-first-level-hover-bg-color: #21242d;
+	--treemenu-third-level-title-color:rgba(255, 255, 255, 0.5);
+  --treemenu-lower-level-color: rgba(255, 255, 255, 0.8);
+	--treemenu-lower-level-hover-color: @theme-color;
+	--treemenu-lower-level-bg-color: #21242d;
+}
+
+// 侧导航跟随主题风格
+[data-tree-menu-show-type="2"], [data-theme-preview-treemenu-type="2"] #preview_sidenav_container {
+  --treemenu-star-color: #FFF;
+  --treemenu-star-select-color: #FBC95A;
+  --treemenu-first-level-color: rgba(255, 255, 255, .65);
+  --treemenu-lower-level-color: rgba(255, 255, 255, .65);
+  --treemenu-third-level-title-color:rgba(255, 255, 255, 0.5);
+  --treemenu-first-level-hover-color: #FFF;
+  --treemenu-lower-level-hover-color: #FFF;
+}
+
+// 侧导航浅色风格
+[data-tree-menu-show-type="1"], [data-theme-preview-treemenu-type="1"] #preview_sidenav_container {
+  --treemenu-star-color: #666;
+  --treemenu-star-select-color: #FFB44A;
+  --treemenu-first-level-color: #212121;
+  --treemenu-first-level-icon-color: #666;
+  --treemenu-lower-level-color: #212121;
+  --treemenu-third-level-title-color:#666;
+  --treemenu-first-level-hover-color: #212121;
+  --treemenu-lower-level-hover-color: @theme-color;
+  --treemenu-first-level-bg-color: #FFF;
+  --treemenu-first-level-hover-bg-color: @hover-color;
+  --treemenu-lower-level-bg-color: #FFF;
+}
+
+@theme-color: var(--theme-color); // 主题色
+@theme-color-level1: var(--theme-color-level1); // 浅色已选色
+@theme-color-level2: var(--theme-color-level2);
+@theme-color-level3: var(--theme-color-level3);
+@theme-color-level4: var(--theme-color-level4);
+@theme-color-level5: var(--theme-color-level5);
+@theme-color-level6: @theme-color; //6号色就是主题色
+@theme-color-level7: var(--theme-color-level7); // 点击色
+@theme-color-level8: var(--theme-color-level8);
+@theme-color-level9: var(--theme-color-level9);
+
+@theme-color-disabled: var(--theme-color-disabled); // 禁用色
+@theme-color-hover: @theme-color-level5; // 悬浮色
+@theme-color-click: @theme-color-level7; // 点击色
+@theme-color-active-light: @theme-color-level1; // 浅色选中
+@theme-color-active-dark: @theme-color; // 深色选中
+@hover-color: var(--hover-color); // 中性的悬停色
+@disabled-contain-bg: var(--disabled-contain-bg); // 容器失效背景色
+@success-color: var(--success-color); // 成功色(深)
+@success-bg-color: var(--success-bg-color); // 成功反馈浮层的底色
+@success-border-color: var(--success-border-color); // 成功反馈浮层的容器边框色
+@warning-color: var(--warning-color); // 警示色(深)
+@warning-bg-color: var(--warning-bg-color); // 警示反馈浮层的底色
+@warning-border-color: var(--warning-border-color); // 警示反馈浮层的容器边框色
+@error-color: var(--error-color); // 失败色(深)
+@error-bg-color: var(--error-bg-color); // 失败反馈浮层的底色
+@error-border-color: var(--error-border-color); // 失败反馈浮层的容器边框色
+@ongoing-color: var(--ongoing-color); // 进行中(深)
+@ongoing-bg-color: var(--ongoing-bg-color); // 进行中反馈浮层的底色
+@ongoing-border-color: var(--ongoing-border-color); // 进行中反馈浮层的容器边框色
+@disabled-color: var(--disabled-color); // 失效色
+@disabled-border-color: var(--disabled-border-color); // 失效边框色
+@link-color: var(--link-color); // 链接色
+@link-color-hover: var(--link-color-hover); // 链接色或辅助色(悬浮)
+@link-color-active: var(--link-color-active); // 链接色或辅助色(点击)
+@primary-text-color: var(--primary-text-color); // 一级文本
+
+@primary-text-color2: var(--primary-text-color2); // 一级文本
+@secondary-text-color: var(--secondary-text-color); // 二级文本
+@secondary-text-color2: var(--secondary-text-color2); // 二级文本
+@third-text-color: var(--third-text-color); // 三级文本
+@third-text-color2: var(--third-text-color2); // 三级文本
+@placeholder-text-color: var(--placeholder-text-color); // 占位符文本  ue 要求修改
+@placeholder-text-color2: var(--placeholder-text-color2); // 占位符文本
+@bg: var(--bg); // 底色白背景
+@bg2: var(--bg2); // 底色灰背景
+@contain-bg: var(--contain-bg); // 容器内的灰背景
+@radius-size: var(--radius-size); // 圆角值
+@input-color: var(--input-color); // 线型录入的默认态
+@strong-border-color: var(--strong-border-color); // 强线条 --带操作
+@strong-border-color-1: var(--strong-border-color-1); // 强线条 --分割内容/容器包裹线
+@weak-border-color: var(--weak-border-color); // 弱线条 -- 需要多层级时
+// @shadow-on-hover: ; // 悬停时阴影
+@white: #FFF;
+@dirList: left, top, bottom, right;
+@zebra-stripe-deep-bg-color:var(--zebra-stripe-deep-bg-color); //交替显示（斑马条纹）时深色的背景色
+
+// Button
+@btn-default-ghost-color: var(--btn-default-ghost-color);
+@btn-default-ghost-active-bg: var(--btn-default-ghost-active-bg);
+
+@btn-default-ghost-theme-color: var(--theme-color-level6);
+@btn-default-ghost-theme-hover-color: var(--theme-color-level5);
+@btn-default-ghost-theme-active-color: var(--theme-color-level7);
+
+@grid-hyper-link-text-decoration:var(--grid-hyper-link-text-decoration); //表格超链接文本修饰
+
+@bill-list-grid-row-selected-bg-color: var(--bill-list-grid-row-selected-bg-color);
+@entry-entity-grid-row-selected-bg-color: var(--entry-entity-grid-row-selected-bg-color);
+@report-list-grid-row-selected-bg-color: var(--report-list-grid-row-selected-bg-color);
+
+
+@__bill-list-grid-row-selected-dark-bg-color: var(--bill-list-grid-row-selected-dark-bg-color);  // +2%
+@__entry-entity-grid-row-selected-dark-bg-color: var(--entry-entity-grid-row-selected-dark-bg-color);  // +2%
+@__report-list-grid-row-selected-dark-bg-color: var(--report-list-grid-row-selected-dark-bg-color);  // +2%
+
+
+.primary-text-in-light {
+	color: @primary-text-color
+}
+
+.primary-text-in-dark {
+	color: @primary-text-color2
+}
+
+.secondary-text-in-light {
+	color: @secondary-text-color
+}
+
+
+.secondary-text-in-dark {
+	color: @secondary-text-color2
+}
+
+.third-text-in-light {
+	color: @third-text-color
+}
+
+.third-text-in-dark {
+	color: @third-text-color2
+}
+
+.placeholder-text-in-light {
+	color: @placeholder-text-color
+}
+
+.placeholder-text-in-dark {
+	color: @placeholder-text-color2
+}
+
+// 设置了 !important 的class 放在#kd-theme 之外，因为需要支持二开修改样式
+.theme.hover-follow-theme-bg-fc1:hover {
+	background-color: @theme-color-hover  !important;
+	color: @white  !important; // 这个后面UE会提供规范
+}
+
+.theme.active-follow-theme-bg-fc1:active {
+	background-color: @theme-color-click  !important;
+	color: @white  !important; // 这个后面UE会提供规范
+}
+.active-theme-bg-fc1:active {
+	background-color: @theme-color  !important;
+	color: @white  !important; // 这个后面UE会提供规范
+}
+
+.active-theme-active-fc1:active {
+	color: @theme-color-click  !important;
+}
+
+.theme-border-color1,
+.hover-theme-border-color1:hover,
+.active-theme-border-color1:active {
+	border-color: @theme-color  !important;
+}
+
+.theme-bdcolor1,
+.hover-theme-bdcolor1:hover,
+.active-theme-bdcolor1:active {
+	border: 1px solid @theme-color  !important;
+}
+
+.hover-theme-hover-bdcolor1:hover {
+	border-color: @theme-color-hover  !important;
+}
+
+.active-theme-active-bdcolor1:active {
+	border-color: @theme-color-click  !important;
+}
+
+.theme-fc1,
+.hover-theme-fc1:hover,
+.active-theme-fc1:active {
+	color: @theme-color  !important;
+}
+
+.hover-theme-hover-fc1:hover {
+	color: @theme-color-hover !important
+}
+
+.active-theme-active-fc1:active {
+	color: @theme-color-click  !important;
+}
+.hover-theme-active-fc1:hover {
+	color: @theme-color-click  !important;
+}
+// 跟随主题相应背景、前景色
+.follow-theme-bg-fc1 {
+	background-color: @theme-color !important;
+	color: @white !important; // 这个后面UE会提供规范
+}
+
+// 主题背景色, 悬停、active态背景色、跟随主题色
+.theme-bg1 {
+  background-color: @theme-color !important
+}
+
+.theme-border-radius {
+	border-radius: @radius-size;
+}
+
+.theme-light-bg1,
+.hover-theme-light-bg1:hover,
+.active-theme-light-bg1:active {
+   background-color: @theme-color-active-light !important;
+}
+
+.theme-active-bdcolor1{
+	border-color: @theme-color-click !important
+}
+
+.theme-active-fc1{
+	color: @theme-color-click !important;
+}
+
+.error-color-border1 {
+	border-color: @error-color !important;
+}
+
+#kd-theme {
+	/* -----------  定义公共样式  ——————---- start */
+	input,textarea{
+		&::placeholder {
+			color: @placeholder-text-color
+		}
+	}
+
+  .kd-cq-control {
+	  &.kd-cq-tree {
+      .kd-cq-tree-treenode {
+        &.kd-cq-tree-treenode-selected {
+          background-color: var(--theme-color-level3) !important;
+          color: var(--theme-color);
+          .kd-cq-tree-treenode-text {
+            color: var(--theme-color);
+          }
+        }
+      }
+    }
+  }
+
+	.theme-bg {
+		background-color: @theme-color
+	  }
+	// 主题前景色, 悬停、active态主题前景色
+	.theme-fc,
+	.hover-theme-fc:hover,
+	.active-theme-fc:active {
+		color: @theme-color;
+	}
+	.hover-theme-fc:hover{
+		.theme.hover-theme-fc-icon{
+			color: @theme-color
+		}
+	}
+	.theme-active-fc{
+		color: @theme-color-click;
+	}
+	.white-fc,
+	.hover-white-fc:hover,
+	.active-white-fc:active {
+		color: @white;
+	}
+
+	// 父元素悬停、点击时子元素需跟随主题色变化
+	.theme-parent:hover .theme-son-bg {
+		background-color: @theme-color;
+	}
+
+	.theme-parent:active .theme-son-bg {
+	  background-color: @theme-color-click;
+	}
+
+	// 跟随主题相应背景、前景色
+	.follow-theme-bg-fc {
+		.theme-bg1;
+		color: @white; // 这个后面UE会提供规范
+	}
+
+	.hover-theme-bg:hover {
+		background-color: @theme-color-hover
+	}
+
+	.hover-theme-bg1:hover {
+		background-color: @theme-color-hover !important
+	}
+
+	.theme-light-bg,
+	.hover-theme-light-bg:hover,
+	.active-theme-light-bg:active {
+	   background-color: @theme-color-active-light;
+	}
+
+	.theme-active-bdcolor{
+		border-color: @theme-color-click
+	}
+
+	// 跟随主题相应背景、前景色
+	.hover-follow-theme-bg-fc:hover {
+		background-color: @theme-color; //!important
+		color: @white; // 这个后面UE会提供规范 !important
+	}
+
+		// 跟随主题相应背景、前景色
+	.hover-follow-theme-hover-bg-fc:hover {
+		background-color: @theme-color-hover ; //!important
+		color: @white; // 这个后面UE会提供规范 !important
+	}
+
+	// 跟随主题相应背景、前景色
+	.active-follow-theme-active-bg-fc:active {
+		background-color: @theme-color-click ; //!important
+		color: @white; // 这个后面UE会提供规范 !important
+	}
+
+	.active-theme-bg:active {
+		background-color: @theme-color-click
+	}
+
+	.active-theme-bg1:active {
+		background-color: @theme-color-click !important // !important
+	}
+
+	.active-follow-theme-bg-fc:active {
+		background-color: @theme-color-click;
+		color: @white; // 这个后面UE会提供规范
+	}
+	.after-theme-bg:after{
+		background-color: @theme-color
+	}
+
+	// 跟随背景禁用色
+	.theme-bg-disabled {
+		background-color: @theme-color-disabled
+	}
+
+	.theme-fc-disabled {
+		color: @theme-color-disabled  !important;
+	}
+
+	.follow-theme-disabled-bg-fc {
+		.theme-bg-disabled !important;
+		color: rgba(255, 255, 255, 0.8)  !important;
+		cursor: not-allowed;
+	}
+
+	.hover-theme-hover-fc:hover {
+		color: @theme-color-hover
+	}
+
+	.active-theme-active-fc:active {
+		color: @theme-color-click;
+	}
+
+	// 悬停背景色、不跟随主题色
+	.hover-bg,
+	.hover-hover-bg:hover {
+		background-color: @hover-color
+	}
+
+	.disabled-contain-bg {
+		background-color: @disabled-contain-bg
+	}
+
+	/* 定义主题边框样式 start */
+	.theme-1px-border {
+		// 1px边框主题色
+		border: 1px solid @theme-color;
+	}
+
+	.setThemeBorder(@dir, @i) {
+		.theme-1px-border-@{dir} {
+			// 1px边框主题色
+			border-@{dir}: 1px solid @theme-color;
+		}
+	}
+
+	.loop(@i) when (@i < length(@dirList)+1) {
+		.setThemeBorder(extract(@dirList, @i), extract(@dirList, @i));
+		.loop(@i+1);
+	}
+
+	.loop(1);
+
+	.theme-2px-border-bottom {
+		border-bottom: 2px solid @theme-color;
+	}
+
+	.theme-bdcolor,
+	.hover-theme-bdcolor:hover,
+	.active-theme-bdcolor:active {
+		border-color: @theme-color;
+	}
+
+	.hover-theme-hover-bdcolor:hover {
+		border: 1px solid @theme-color-hover;
+	}
+
+
+	.active-theme-active-bdcolor:active {
+		border: 1px solid @theme-color-click;
+	}
+
+	.focus-theme-bdcolor:focus {
+		border-color: @theme-color;
+		box-shadow: 0px 0px 2px @theme-color;
+	}
+
+	.active-ongoing-bg-color:active {
+		background-color: @ongoing-bg-color;
+	 }
+
+	/* 定义主题边框样式 end */
+
+	.success-color {
+		color: @success-color
+	}
+
+	.success-bg-color {
+		background-color: @success-bg-color;
+	}
+
+	.is-success {
+		.success-color;
+		background-color: @success-bg-color;
+		border-color: @success-border-color;
+	}
+
+	.warning-color {
+		color: @warning-color
+	}
+
+	.warning-bg-warning-color {
+		background-color: @warning-color
+	}
+
+	.warning-bg-color {
+		background-color: @warning-bg-color
+	}
+
+	.is-warning {
+		.warning-color;
+		background-color: @warning-bg-color;
+		border-color: @warning-border-color;
+	}
+
+	.error-color {
+		color: @error-color
+	}
+	.hover-error-fc-color:hover{
+		color: @error-color
+	}
+	.error-bg-color {
+		background-color: @error-bg-color;
+	}
+
+	.error-bg-color1 {
+		background-color: @error-color;
+	}
+
+	.error-color-border {
+		border-color: @error-color;
+	}
+
+	.is-error {
+		.error-color;
+		background-color: @error-bg-color;
+		border-color: @error-border-color;
+	}
+
+	.is-error-border {
+		border: 1px solid @error-border-color;
+	}
+
+	.ongoing-color {
+		color: @ongoing-color
+	}
+
+	.ongoing-bg-ongoing-color {
+		background-color: @ongoing-color
+	}
+
+	.ongoing-bg-color {
+		background-color: @ongoing-bg-color
+	}
+
+	.is-ongoing {
+		.ongoing-color;
+		background-color: @ongoing-bg-color;
+		border-color: @ongoing-border-color;
+	}
+
+	// 禁用色
+	.disabled-fc {
+		color: @disabled-color;
+	}
+
+	// 禁用背景色
+	.disabled-bg {
+		background-color: @disabled-contain-bg
+	}
+
+	// 禁用边框
+	.disabled-border-1px {
+		border: 1px solid @disabled-border-color
+	}
+
+	// 禁用边框色
+	.disabled-border {
+		border-color: @disabled-border-color
+	}
+
+	// 链接色
+	.link-color {
+		color: @link-color;
+	}
+
+	.link-color:hover {
+		color: @link-color-hover;
+	}
+
+	.link-color:active {
+		color: @link-color-active;
+	}
+
+	.link-color-default {
+		color: @link-color;
+	}
+
+	.link-color-hover:hover {
+		color: @link-color-hover;
+	}
+
+	.link-color-active:active {
+		color: @link-color-active;
+	}
+
+	.bg {
+		background-color: @bg
+	}
+
+	.bg2 {
+		background-color: @bg2
+	}
+
+	.contain-bg {
+		background-color: @contain-bg
+	}
+
+	.radius-2px {
+		border-radius: 2px
+	}
+
+	.input-color {
+		color: @input-color
+	}
+
+	input,textarea{
+		&::placeholder{
+			color: @disabled-color;
+		}
+	}
+
+	.strong-1px-border {
+		border: 1px solid @strong-border-color
+	}
+
+	.strong-border {
+		border-color: @strong-border-color
+	}
+
+	.strong-fc {
+		color: @strong-border-color
+	}
+
+	.strong-1px-border2 {
+		border: 1px solid @strong-border-color-1
+	}
+
+	.strong-border2 {
+		border-color: @strong-border-color-1
+	}
+
+	.weak-1px-border {
+		border: 1px solid @weak-border-color
+	}
+
+	.weak-border {
+		border-color: @weak-border-color
+	}
+
+	.disabled-contain {
+		// 锁定背景色、前景色、边框
+		.disabled-contain-bg !important;
+		.disabled-fc !important;
+		.disabled-border-1px !important;
+		cursor: not-allowed;
+	}
+
+	/* -----------  定义公共样式  ——————---- start */
+
+	/* 按钮 start */
+	.theme.button-text-type {
+		.theme-fc;
+	}
+
+	/* 按钮 end */
+
+	.weak-1px-border-dashed {
+		border: 1px dashed @weak-border-color
+	}
+
+
+	/* 定义公共字体颜色样式 end */
+
+	.kd-grid-btn {
+		background: linear-gradient(45deg, @theme-color-click 4%, @theme-color-hover 100%);
+		color: @white;
+	}
+
+	.kd-grid-btn:hover {
+		background: linear-gradient(45deg, @theme-color-hover 0%, @theme-color-click 100%);
+		color: @white;
+	}
+
+	/* Grid Container'toolbar button */
+
+	.kd-active {
+		background: linear-gradient(135deg, @theme-color-hover 0%, @theme-color-click 100%);
+		color: @white;
+	}
+
+	/* HomePageTab start */
+
+	.kd-hover:not(.kd-active):hover {
+		background: @hover-color;
+	}
+
+	/* HomePageTab end--> */
+
+	.kd-hover-color:hover {
+		.theme-fc
+	}
+
+	.kd-hover-bgcolor:hover {
+		background-color: @hover-color;
+	}
+
+	.kd-active-bgcolor:active {
+		.theme-bg1
+	}
+
+	//hover态边框的颜色（表格工具栏会用到）
+	.kd-hover-bdcolor:hover {
+		border-color: @theme-color;
+	}
+
+	//focus态边框的颜色（表格工具栏会用到）
+	.kd-hover-bdcolor:focus {
+		border-color: @theme-color;
+		box-shadow: 0px 0px 2px @theme-color;
+	}
+
+	//字体图标的hover态样式（表格工具栏会用到）
+	.kd-hover-fontIcon:hover {
+		color: @theme-color;
+	}
+
+	.kd-active-fontIcon{
+		color: @theme-color;
+	}
+
+	.theme.btn{
+		&-ghost{   // 幽灵按钮 -> 从设计稿看这个是次要按钮，幽灵按钮的字体颜色和边框应该要跟随主题色
+			color: @btn-default-ghost-color;
+			.strong-border;
+			&:hover{
+				.theme-fc1;
+				.theme-border-color1;
+			}
+			&:active{
+				color: @theme-color-click  !important;
+				border-color: @theme-color-click  !important;
+				background-color: @btn-default-ghost-active-bg;
+			}
+		}
+    &-ghost-theme{   // 幽灵按钮，边框和字体颜色根据主题色
+			color: @btn-default-ghost-theme-color;
+			border: 1px solid currentColor;
+      background-color: transparent;
+			&:hover{
+				color: @btn-default-ghost-theme-hover-color;
+				border-color: currentColor !important;
+			}
+			&:active{
+				color: @btn-default-ghost-theme-active-color !important;
+				border-color: currentColor !important;
+			}
+		}
+		&-follow-theme{  // 跟随主题
+			.follow-theme-bg-fc1;
+			&:hover{
+				background-color: @theme-color-hover !important
+			}
+			&:active{
+				background-color: @theme-color-click !important
+			}
+		}
+	}
+
+	/* toolbar start */
+	.kd-btn-bg {
+		background-color: @theme-color;
+	}
+
+	.kd-toolbar-drop-bg {
+		background-color: @theme-color;
+	}
+
+	.kd-btn-disabled {
+		background-color: @theme-color;
+	}
+
+	/* Tab start */
+	// 处理after伪类
+	.theme.tab-item-content:after {
+		background-color: @theme-color;
+	}
+
+	.tab-home-active {
+		color: @theme-color;
+	}
+
+	.theme.tab-active {
+		color: @theme-color;
+		&:after{
+			opacity: 1;
+			transform: scale3d(1, 1, 1)
+		}
+	}
+
+	.tab-item-hover:hover {
+		color: @theme-color;
+	}
+
+	.theme.tab-item {
+		border-right: 1px solid @strong-border-color;
+		border-top: 1px solid @strong-border-color;
+		border-bottom: 1px solid @strong-border-color;
+		color: @secondary-text-color;
+
+		&:first-child {
+			border-left: 1px solid @strong-border-color;
+			border-radius: @radius-size 0 0 @radius-size;
+		}
+		&:last-child {
+			border-radius: 0 @radius-size @radius-size 0;
+		}
+	}
+	.theme.tab-item-hover:hover {
+		color: @theme-color;
+	}
+
+	.theme.tab-item-active {
+		border-color: @theme-color !important;
+	}
+
+	/* Tab end */
+
+	/* ListBox start */
+	.theme.list-box-item-v {
+		border-right: 1px solid @strong-border-color;
+		border-left: 1px solid @strong-border-color;
+		border-bottom: 1px solid @strong-border-color;
+		color: @secondary-text-color;
+
+		&:first-child {
+			border-top: 1px solid @strong-border-color;
+		}
+	}
+
+	.theme.list-box-item-h {
+		border-right: 1px solid @strong-border-color;
+		border-top: 1px solid @strong-border-color;
+		border-bottom: 1px solid @strong-border-color;
+
+		&:first-child {
+			border-left: 1px solid @strong-border-color;
+			border-radius: @radius-size 0 0 @radius-size;
+		}
+		&:last-child {
+			border-radius: 0 @radius-size @radius-size 0;
+		}
+	}
+
+	.theme.list-box-item-active {
+		color: #FFF;
+		border-color: @theme-color !important;
+		background-color: @theme-color;
+	}
+	.theme.list-box-item-hover:hover {
+		color: @theme-color;
+	}
+
+	/* LisyBos end */
+
+	/* toolBarItem start */
+	.theme.toolBarItem-whiteBg{
+		.ghost-btn{
+			.strong-border;
+			&:hover{
+				.theme-fc1;
+				border-color: @theme-color !important;
+				&~.ghost-btn-mid-bd{
+					background-color: @theme-color !important;
+				}
+			}
+			 &:active{
+				.theme-light-bg1;
+				color: @theme-color-click  !important;
+				.theme-active-bdcolor1;
+				&~.ghost-btn-mid-bd{
+					background-color: @theme-color-click !important;
+				}
+			 }
+		}
+	}
+	/* toolBarItem end */
+
+	/* 字段处理 start */
+
+	.theme.field-in-lock{
+		&.allBorder{
+			.strong-border;
+			.disabled-contain-bg;
+			input, textarea {
+				color: #212121;
+				background-color: @disabled-contain-bg;  // input框与textarea默认为白色，所以锁定色需要设置相应锁定色
+			}
+			[data-base-ctrl]{
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+		&.underLine{
+			.weak-border;
+		}
+		input[readonly],textarea[readonly],input[disabled],textarea[disabled], .disabled-fc{
+			// cursor: not-allowed; 一改：UE要求加上 二改：UE 确认去掉
+			// -webkit-text-fill-color: @disabled-color; // 兼容safari 下有disabled 属性&背景色为透明情况下color 不生效 移除，因为会导致color 不生效
+			color: @disabled-color;
+      cursor: text; // UE 确认字段不可编辑时使用text
+		}
+
+		&.allBorder {
+			input[readonly],textarea[readonly],input[disabled],textarea[disabled], .disabled-fc{
+				color: #212121;
+			}
+		}
+	}
+
+	.theme.field-in-view{
+		.primary-text-in-light;
+		&.allBorder{
+			background-color:@white;
+			[data-base-ctrl]{
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+		input[readonly],textarea[readonly],input[disabled],textarea[disabled], .disabled-fc{
+		 cursor: text;
+		 color: @primary-text-color;
+		}
+	}
+
+	.theme.field-in-edit{
+		input,textarea{
+			color: @primary-text-color
+		}
+		input[readonly],textarea[readonly]{  // 解决编辑态下输入框不可编辑但不应该展示为锁定色的情况
+			color: @primary-text-color;
+		}
+		&.allBorder{
+			[data-base-ctrl]{
+				padding-left: 8px;
+				padding-right: 8px;
+			}
+		}
+	}
+
+    /* 字段处理 end */
+
+
+	/* progressbar start */
+	.progress-bar {
+		background-color: @theme-color;
+	}
+
+	/* progressbar end  */
+
+	/* KDtree start */
+	.theme.tree-selected {
+		color: #FFF !important;
+		background: @theme-color-level1 !important;
+	}
+	.theme.tree-selected-icon {
+		color: #FFF !important;
+		color: @theme-color-level6 !important;
+	}
+	.theme.tree-selected-text {
+		color: #FFF !important;
+		color: @theme-color-level6 !important;
+	}
+
+	.theme.tree-hover:hover {
+		background: @hover-color;
+	}
+
+	.theme.tree-hover:active {
+		// background: @theme-color;
+		// color: #fff !important;
+	}
+
+	/* KDtree end */
+
+	.theme.hover-subicon-theme-fc:hover {
+		.theme.theme-subicon {
+			color: @theme-color !important;
+		}
+	}
+
+  .error-color-field {
+    .kd-cq-checkboxgroup-square-item .kd-cq-checkboxgroup-square-block {
+      border-color: @error-color !important;
+    }
+    .strong-fc {
+      color: @error-color !important;
+    }
+    .hover-theme-fc1:hover, .active-theme-fc1:active {
+      color: var(--primary-text-color) !important;
+    }
+    .theme.hover-subicon-theme-fc:hover {
+      .theme.theme-subicon {
+        color: @error-color !important;
+      }
+    }
+  }
+	/* 表格样式 start */
+	.grid-zebra-stripe .ag-row-odd {
+		background-color: @zebra-stripe-deep-bg-color;
+	}
+
+	.grid-merge-zebra-stripe {
+		.oddMergeCell{
+			background-color: @zebra-stripe-deep-bg-color;
+		}
+		.odd-row-with-merge{
+			background-color: @zebra-stripe-deep-bg-color;
+		}
+	}
+
+	.billView-theme {
+		.ag-row-selected {
+			background-color: @bill-list-grid-row-selected-bg-color;
+
+			.mergeCell {
+				background-color: @bill-list-grid-row-selected-bg-color;
+			}
+			.oddMergeCell {
+				background-color: @bill-list-grid-row-selected-bg-color;
+			}
+			&.odd-row-with-merge{
+				background-color: @bill-list-grid-row-selected-bg-color;
+			}
+      .virtual-merge-cell{
+        background-color: @bill-list-grid-row-selected-bg-color;
+      }
+		}
+
+		.ag-body-viewport {
+			// 选中 + 悬停时加深一个色号
+			.ag-row-selected.ag-row-hover{
+				background-color: @__bill-list-grid-row-selected-dark-bg-color;
+				.mergeCell {
+					background-color:@__bill-list-grid-row-selected-dark-bg-color;
+				}
+				.oddMergeCell {
+					background-color: @__bill-list-grid-row-selected-dark-bg-color;
+				}
+        .virtual-merge-cell{
+          background-color:@__bill-list-grid-row-selected-dark-bg-color;
+        }
+			}
+
+			.ag-row-hover {
+				background-color: @hover-color ;
+
+				.mergeCell {
+					background-color:@hover-color;
+				}
+				.oddMergeCell {
+					background-color: @hover-color;
+				}
+        .virtual-merge-cell{
+          background-color: @hover-color;
+        }
+			}
+		}
+
+		// 列表子表行悬浮颜色
+		.light-grid .ag-body-viewport .ag-row-hover{
+			background-color:rgba(0, 0, 0, 0.1) !important
+		}
+
+		.quick-search-model {
+			.ag-cell-focus {
+				border-color: @theme-color;
+			}
+		}
+	}
+
+	//可选择分录情况下的行融合
+	.kd-grid-partial-merge{
+		// 融合的单元格颜色固定，选中和悬浮不会改变
+		.mergeCell {
+			background-color: #FFFFFF;
+		}
+		&.grid-merge-zebra-stripe .oddMergeCell.mergeCell{
+			background-color: @zebra-stripe-deep-bg-color;
+		}
+	}
+
+
+	.billEdit-theme {
+		.ag-row-selected {
+			background-color: @entry-entity-grid-row-selected-bg-color;
+
+			.editHover {//选中可编辑，单元格级别的样式
+				&:not(.checkbox-col-cell){
+					.ag-react-container {
+						background-color: #FFFFFF
+					}
+					.ag-react-container:hover {
+						border-color: @theme-color
+					}
+				}
+				.ag-react-container.error-color-border {
+					border-color: @error-color !important;
+				}
+			}
+		}
+
+		.ag-cell-focus:not(.checkbox-col-cell) {//焦点，单元格级别的样式
+			.ag-react-container {
+				border-color: @theme-color;
+			}
+		}
+
+		.ag-body-viewport {
+			.ag-row-selected.ag-row-hover{
+				background-color: @__entry-entity-grid-row-selected-dark-bg-color;
+			}
+			.ag-row-hover {
+				background-color: @hover-color;
+
+				.editHover {//悬浮可编辑，单元格级别的样式
+					&:not(.checkbox-col-cell) {
+						.ag-react-container {
+							background-color: #FFFFFF
+						}
+
+						.ag-react-container:hover {
+							border-color: @theme-color
+						}
+					}
+
+					.ag-react-container.error-color-border {
+						border-color: @error-color !important;
+					}
+				}
+			}
+		}
+
+		.outlineItemSelect {
+			::before{
+				border-color:@theme-color;
+				transform: scaleY(1);
+			}
+		}
+		.ag-react-container.error-color-border .cell-picture-upload{
+			border:1px solid @error-color;
+			background-color: #FFF2F4;
+			&:hover{
+				border:1px solid @error-color!important;
+			}
+		}
+	}
+
+	.report-view-theme{
+		.ag-row-selected {
+			background-color: @report-list-grid-row-selected-bg-color;
+		}
+
+		.ag-body-viewport {
+			.ag-row-selected.ag-row-hover{
+				background-color: @__report-list-grid-row-selected-dark-bg-color;
+			}
+			.ag-row-hover {
+				background-color: @hover-color;
+			}
+		}
+	}
+
+	.ag-theme-material-kd{
+		.grid-hyper-link{
+			text-decoration: @grid-hyper-link-text-decoration;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		&.kd-grid-post-range-selection {
+			//焦点，单元格级别的样式
+			.ag-cell-focus.ag-cell-range-single-cell:not(.editHover):not(.selection-cell):not(.seq-col-cell) {
+				border-color: @theme-color;
+			}
+		}
+	}
+
+
+	// .grid-row-odd-bg-color(@bg-color) {
+	// 	.ag-row-selected.ag-row-odd{
+	// 		background-color:@bg-color;
+	// 	}
+	// 	.ag-body-viewport {
+	// 		.ag-row-hover.ag-row-odd{
+	// 			background-color:@bg-color !important;//上面的important限制了...
+	// 		}
+	// 	}
+	// }
+
+	// .grid-zebra-stripe {
+	// 	&.billView-theme{
+	// 		.grid-row-odd-bg-color(@__bill-list-grid-row-selected-dark-bg-color);
+	// 	}
+	// 	&.billEdit-theme{
+	// 		.grid-row-odd-bg-color(@__entry-entity-grid-row-selected-dark-bg-color);
+	// 	}
+	// 	&.report-view-theme{
+	// 		.grid-row-odd-bg-color(@__report-list-grid-row-selected-dark-bg-color);
+	// 	}
+	// }
+
+	// .grid-merge-zebra-stripe {
+	// 	.ag-row-selected {
+	// 		.oddMergeCell {
+	// 			background-color: @__bill-list-grid-row-selected-dark-bg-color;//目前只有列表有融合
+	// 		}
+	// 		&.odd-row-with-merge{
+	// 			background-color: @__bill-list-grid-row-selected-dark-bg-color;
+	// 		}
+	// 	}
+	// 	.ag-body-viewport {
+	// 		.ag-row-hover {
+	// 			.oddMergeCell{
+	// 				background-color: @bill-list-grid-row-hover-bg-color;//目前只有列表有融合
+	// 			}
+	// 			&.odd-row-with-merge{
+	// 				background-color: @bill-list-grid-row-hover-bg-color;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+
+	.ag-theme-material-kd .ag-filter-select {
+		font-size: 13px;
+		color: #666;
+		height: 25px;
+		margin: 4px 4px 0px 4px;
+		border: 1px solid #e5e5e5;
+		border-radius: 2px;
+		width: 120px;
+		outline: none;
+	}
+
+	.ag-theme-material-kd .ag-filter-select:hover {
+		border: 1px solid @theme-color;
+		outline: none;
+	}
+
+	.ag-theme-material-kd .ag-filter-filter {
+		font-size: 13px;
+		color: #666;
+		height: 25px;
+		border-radius: 4px;
+		border: 1px solid #e5e5ee;
+		outline: none;
+	}
+
+	.ag-theme-material-kd .ag-filter-filter:hover {
+		border: 1px solid @theme-color;
+	}
+
+	.ag-theme-material-kd .ag-menu-option-active {
+		background-color: @hover-color;
+	}
+
+	/* 表格样式 end */
+
+	/* web端 基础字段 下划线 hover 样式 start*/
+	.borderBottom {
+		border-bottom: 1px solid @strong-border-color;
+
+		&:focus {
+			.theme-1px-border-bottom;
+		}
+
+		&:hover {
+			.theme-1px-border-bottom;
+		}
+	}
+
+	/* web端 基础字段 下划线 hover 样式 end*/
+
+		/* web端 搜索关键字label 样式label start*/
+		.theme.search-label {
+			border-color: @secondary-text-color;
+			[class*='qc-l-title'] {
+				background-color: @secondary-text-color;
+			}
+			[class*='qc-l-con'] {
+				color: @primary-text-color;
+			}
+		}
+		/* web端 搜索关键字label 样式label end*/
+
+	/* web端 基础字段 字段风格 边框 hover 样式 start */
+	.kd-field-border-all {
+		&:focus {
+			.theme-1px-border;
+		}
+
+		&:hover {
+			.theme-1px-border;
+		}
+	}
+
+	/* web端 基础字段 字段风格 边框 hover 样式 end */
+
+	/* 基础字段 获取焦点或者hover后 右边小图标颜色设置成主题色 start*/
+	.kdfont-f:hover {
+		color: @theme-color;
+	}
+
+	.borderBottom:hover .kdfont-xiala,
+	.borderBottom:hover .kdfont-zidingyi,
+	.borderBottom:hover .kdfont-riqixuanze,
+	.borderBottom:hover .toggle-flat,
+	.borderBottom:hover .toggle-default,
+	.borderBottom:hover .kdfont-f {
+		color: @theme-color;
+	}
+
+	.borderBottom:focus .kdfont-xiala,
+	.borderBottom:focus .kdfont-zidingyi,
+	.borderBottom:focus .kdfont-riqixuanze,
+	.borderBottom:focus .toggle-flat,
+	.borderBottom:focus .toggle-default,
+	.borderBottom:focus .kdfont-f {
+		color: @theme-color;
+	}
+
+	/* 基础字段 获取焦点或者hover后 右边小图标颜色设置成主题色 end*/
+
+	// 检验信息底色块
+	.valid-tip-bg:after {
+		.error-bg-color;
+		.error-color-border;
+		content: '';
+		position: absolute;
+		height: 24px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+		/* 日期、长日期、日期范围 控件 start */
+	// .rdtYear:hover, .rdtMonth:hover,
+	// .rdtTdDay:hover .rdtDay {
+	// 	.theme-1px-border; // 日期 年、月、日 hover边框色
+	// }
+
+	.rdtYear:active,
+	.rdtMonth:active,
+	.rdtDay:active,
+	.rdtHead-bg,
+	.rdtActive,
+	.rdtToday:after {
+		.theme-bg1; // 日期年、月、日 鼠标点击色，日期头部背景色等
+	}
+
+	.rdt-pre,
+	.rdt-next {
+		color: #979797; // 年月日 前后选择 箭头字体图标颜色
+	}
+
+	.rdt-pre:hover,
+	.rdt-next:hover,
+  .rdt-now:hover {
+		color: @theme-color;
+	}
+
+  .rdt-pre.btn-disabled {
+    color: var(--disabled-color);
+    cursor: not-allowed;
+  }
+
+	.rdtBut:active,
+	.rdtBut:hover {
+		border-color: @theme-color;
+		background-color: @theme-color;
+		color: #FFF;
+	}
+
+	.rdtActiveBtn {
+		color: #fff;
+		background-color: @theme-color;
+	}
+
+	.rdtPart:hover,
+	.rdtPart:focus {
+		border-color: @theme-color;
+	}
+
+	.calendar-header-hover a {
+		&:hover {
+			color: @theme-color;
+		}
+	}
+
+	.date-picker-input-focused {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			background-color: @theme-color;
+		}
+	}
+
+	.calendar-date-cell-today {
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 4px;
+			left: 50%;
+			margin-left: -3px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: @theme-color;
+		}
+	}
+
+	.calendar-date-cell-in-range {
+		&::before,
+		&.calendar-date-cell-range-hover-start:not(.calendar-date-cell-selected) div {
+			background: @theme-color-level1;
+		}
+
+    &.calendar-date-cell-hover.calendar-date-cell-range-start.calendar-date-cell-selected::before,
+    &.calendar-date-cell-hover.calendar-date-cell-range-end.calendar-date-cell-selected::before,
+		&.calendar-date-cell-range-hover.calendar-date-cell-range-hover-end div,
+		&.calendar-date-cell-range-hover.calendar-date-cell-range-hover-start div {
+			background: @theme-color-level3;
+		}
+
+		&.calendar-date-cell-selected:not(.calendar-date-cell-range-end) div  {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	.calendar-date-cell-range-start:not(.calendar-date-cell-disabled) {
+		&.calendar-date-cell-range-hover-start::before {
+			left: 0;
+		}
+
+		&::before,
+		&.calendar-date-cell-selected::before,
+		&.calendar-date-cell-selected.calendar-date-cell-range-hover-start::before {
+			left: 50%;
+		}
+
+		&>div {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
+	// .calendar-date-cell-range-start-only::before {
+	// 	right: 50%;
+	// }
+
+	// .calendar-date-cell-range-end-only::before {
+	// 	left: 50%;
+	// }
+
+	.calendar-date-cell-range-end:not(.calendar-date-cell-disabled) {
+		& div {
+			background: @theme-color-level1;
+		}
+
+		&.calendar-date-cell-range-hover-end::before {
+			right: 0;
+		}
+
+		&::before,
+		&.calendar-date-cell-selected::before,
+		&.calendar-date-cell-selected.calendar-date-cell-range-hover-end::before {
+			right: 50%;
+		}
+
+		&>div {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	.datetime-year-panel-item-selected div,
+	.datetime-month-panel-item-selected div,
+	.calendar-date-cell-selected div {
+		border-radius: 2px;
+		color: #fff;
+		background-color: @theme-color !important;
+		&:hover {
+			background-color: @theme-color;
+		}
+
+		&.disabled {
+			color: #b2b2b2;
+			&:hover {
+				background-color: unset;
+			}
+		}
+	}
+
+  .datetime-range-picker-item-range-start div,
+  .datetime-range-picker-item-range-end div {
+    border-radius: 2px;
+    color: #fff;
+    background-color: @theme-color !important;
+
+    &:hover {
+      background-color: @theme-color;
+    }
+  }
+
+  .datetime-range-picker-item-range-start div,
+  .datetime-range-picker-item-range-end div,
+  .datetime-range-picker-item-range div {
+    background-color: @theme-color-level1;
+  }
+
+  .datetime-range-picker-item-hover:not(.datetime-range-picker-item-hover-range):hover {
+    & div {
+      background-color: @theme-color-level1;
+    }
+  }
+
+  .datetime-range-picker-item-hover-range div {
+    background-color: @theme-color-level3;
+  }
+
+  .datetime-range-picker-item-range-start div {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .datetime-range-picker-item-range-end div {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .datetime-range-picker-item-range-start::after {
+    content: '';
+    background-color: @theme-color-level1;
+    position: absolute;
+    right: 0px;
+    width: 14px;
+    top: 4px;
+    bottom: 4px;
+  }
+
+  .datetime-range-picker-item-range-end::before {
+    content: '';
+    background-color: @theme-color-level1;
+    position: absolute;
+    left: 0px;
+    width: 14px;
+    top: 4px;
+    bottom: 4px;
+  }
+
+  .datetime-range-picker-item-hover-range-start::after,
+  .datetime-range-picker-item-hover-range-end::before {
+    background-color: @theme-color-level3;
+  }
+
+  .datetime-range-picker-item-range-end {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    &::before {
+      content: '';
+      background-color: @theme-color-level1;
+      position: absolute;
+      left: 0px;
+      width: 14px;
+      top: 4px;
+      bottom: 4px;
+    }
+  }
+
+  .datetime-range-picker-item-range:not(.datetime-range-picker-item-range-end),
+  .datetime-range-picker-item-range:not(.datetime-range-picker-item-range-start),
+  .datetime-range-picker-item-hover:hover {
+    // position: relative;
+    &::before {
+      content: '';
+      background-color: @theme-color-level1;
+      position: absolute;
+      left: 0px;
+      width: 15px;
+      height: 75%;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // bottom: 4px;
+    }
+
+    &::after {
+      content: '';
+      background-color: @theme-color-level1;
+      position: absolute;
+      right: 0;
+      width: 15px;
+      height: 75%;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // bottom: 4px;
+    }
+  }
+
+  .datetime-range-picker-item-hover-range {
+    &::before {
+      background-color: @theme-color-level3 !important;
+    }
+
+    &::after {
+      background-color: @theme-color-level3 !important;
+    }
+  }
+
+
+	.calendar-date-cell-range-hover::before {
+		background-color: @theme-color-level3;
+	}
+
+	.calendar-date-cell-disabled {
+		cursor: default;
+		& div {
+			color: #B2B2B2;
+			cursor: default;
+		}
+		&:hover {
+			background: unset;
+		}
+		&:before {
+			background: #F5F5F5;
+		}
+	}
+
+	.rdtMonthHover:hover,
+	.rdtYearHover:hover,
+	.rdtTimeHover:hover {
+		background-color: @hover-color;
+		color: @theme-color;
+	}
+
+	.rdtBeginDay {
+		background: linear-gradient(90deg, #FFF, @hover-color 50%);
+	}
+
+	.rdtEndDay {
+		background: linear-gradient(270deg, #FFF, @hover-color 50%);
+	}
+
+	.theme-bg-level1 {
+		background-color: @theme-color-level1;
+	}
+
+	.daterange-input-bottom-border {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			height: 2px;
+    	bottom: -3px;
+			left: 0;
+			right: 0;
+			background-color: @theme-color;
+		}
+	}
+
+	/* 日期、长日期、日期范围 控件 end */
+
+	/* 下拉列表 start */
+	.theme.select-selected {
+		background: @theme-color-active-light;
+		color: @theme-color;
+		.select-inner-text{
+			color: @theme-color;
+		}
+	}
+
+	/* 下拉列表 end */
+
+	/* 单选按钮标签样式 start*/
+	.radio-tag-style-checked {
+		.theme-1px-border;
+		color: @theme-color;
+	}
+
+	/* 单选按钮标签样式 end*/
+
+	/* 字体图标选择控件 start */
+	.kdfont-active {
+		background: @hover-color;
+		.theme-1px-border;
+	}
+
+	/* 字体图标选择控件 end */
+
+	/* 复选框控件 start */
+	.theme.switch-disabled {
+		background-color: @disabled-color;
+		border-color: @disabled-color;
+	}
+
+	.theme.switch-open {
+		background-color: @theme-color !important;
+		border-color: @theme-color !important;
+	}
+
+	.theme.switch-open.switch-hover:hover {
+		background-color: @theme-color-hover !important;
+		border-color: @theme-color-hover !important;
+	}
+
+	.theme.switch-open.switch-disabled {
+		background-color: @theme-color !important;
+		border-color: @theme-color !important;
+	}
+
+	.checkbox_1:hover {
+		color: @theme-color;
+		border-color: @theme-color;
+	}
+
+	.checkbox1_checked {
+		color: @theme-color;
+		border-color: @theme-color;
+	}
+
+	.checkbox1_checked:before {
+		border-right: 12px solid @theme-color;
+		border-bottom: 10px solid @theme-color;
+	}
+
+	.checkbox1_foucs {
+		box-shadow: 0px 0px 2px @theme-color;
+	}
+
+	/* 复选框控件 end */
+
+	/* 按钮控件 start */
+	.kd-button {
+		background: @theme-color  !important;
+		color: #FFFFFF !important;
+	}
+
+
+	/* 按钮控件 end */
+
+	/* 卡片视图 start */
+	.cardrowpanel_hover:hover {
+		border: 1px solid @theme-color  !important;
+	}
+
+	.cardrowpanel_selectstyel {
+		background-color: @hover-color  !important;
+		border: 1px solid @theme-color-click  !important;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 5px;
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			background-color: @theme-color;
+			z-index: 999;
+		}
+	}
+
+	.cardrowpanel_selectstyel1 {
+		border: 1px solid @theme-color-click  !important;
+		&::before {
+			position: absolute;
+			content: '';
+			right: 0;
+			bottom: 0;
+			border-right: 13px solid @theme-color;
+			border-left: 13px solid transparent;
+			border-top: 11px solid transparent;
+			border-bottom: 11px solid @theme-color;
+		}
+	}
+
+	.cardrowpanel_selectstyel2 {
+		border: 1px solid @theme-color-click  !important;
+	}
+
+	.cardrowpanel_selectstyel3 {
+		background-color: @hover-color  !important;
+		border: 1px solid @theme-color-click  !important;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 4px;
+			height: 100%;
+			background-color: @theme-color;
+			z-index: 999;
+		}
+	}
+
+	/* 卡片视图 end */
+
+	/* 开发平台 start */
+	.devportal_selectedAppTab {
+		border-bottom: 2px solid @theme-color;
+	}
+
+	.devportal_cardSelected {
+		border: 1px solid @theme-color;
+	}
+
+	.devportal_card:hover {
+		border: 1px solid @theme-color;
+	}
+
+	.devportal_selectedUnit {
+		border-left: 3px solid @theme-color;
+	}
+
+	/* 开发平台 end */
+
+	/* web端基础字段下划线增加hover随主题色 start*/
+	.kd-field-item-border:hover {
+		.kd-field-no-tip {
+			width: 100%;
+			.theme-border-color1
+		}
+	}
+
+	// 下拉选择框icon颜色
+	.kd-field-item-border:hover {
+		.kdfont-xiala:not(.not-theme) {
+			color: @theme-color;
+		}
+	}
+
+	/* web端基础字段下划线增加hover随主题色 end*/
+
+	/* 附件拖拽背景色 start*/
+	.attachment-drop {
+		color: @theme-color;
+		font-size: 16px;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 1px dashed @theme-color;
+			background-color: @hover-color;
+		}
+	}
+
+	/* 附件拖拽背景色 end*/
+
+	/* 标签控件块状样式 start*/
+	.label-hover:hover {
+		border: 1px dashed @theme-color;
+		background-color: @theme-color;
+		color: #fff;
+	}
+
+	/* 标签控件块状样式 end*/
+
+	/* 卡片字段超链接悬停样式 start*/
+	.fileLink-hover-color:hover {
+		color: @theme-color  !important;
+	}
+
+	/* 卡片字段超链接悬停样式 end*/
+
+	/* 多选F7拖拽排序样式 start*/
+	.f7-sort-line::before, .f7-sort-line::after {
+		border-color: @theme-color;
+	}
+
+	/* 多选F7拖拽排序样式 start*/
+	.theme-border-color {
+		border-color: @theme-color;
+	}
+
+	.theme-color-active-light {
+		background-color: @theme-color-level1;
+	}
+
+	.theme-color-active-light-hover:hover {
+		background-color: @theme-color-level3;
+	}
+
+  // 上传图片时的悬停样式
+  .img-hover-color:hover {
+    background-color: @theme-color-level1;
+    border: 1px dashed @theme-color-hover;
+  }
+
+  // 手写签名字段的悬停样式
+  .signature-hover-color:hover {
+    background-color: @theme-color-level1;
+  }
+
+  // 必录符号
+  .require-icon {
+    font-family: 'SimSun', sans-serif;
+  }
+
+  .kd-cq-checkboxgroup-checkbox-item {
+    .hover-theme-fc:hover, .theme-fc{
+      color: unset;
+    }
+    .hover-theme-fc {
+      .kdfont-fuxuankuangxuanzhong_fang {
+        color: var(--theme-color);
+      }
+    }
+    .kd-cq-checkbox-disabled {
+      color: var(--disabled-color) !important;
+    }
+  }
+  .kd-cq-checkbox-bg {
+    position: relative;
+    &::before {
+      position: relative;
+      z-index: 1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      height: calc(100% - 2px);
+      width: calc(100% - 2px);
+      border-radius: 2px;
+      background-color: @bg;
+      z-index: 0;
+    }
+  }
+  .kd-cq-select-dropdown {
+    .kd-cq-checkbox-bg {
+      &::after {
+        top: 10px;
+        height: 11px;
+      }
+    }
+  }
+}
+
+@triggetIconStyle: {
+	color: #666666;
+	font-size: 16px;
+}
+
+.kd-cq-table {
+	.kdicon-arrow-down,//kdesign 城市下拉
+	.kd-cq-trigger-icon{
+		@triggetIconStyle();
+	}
+}

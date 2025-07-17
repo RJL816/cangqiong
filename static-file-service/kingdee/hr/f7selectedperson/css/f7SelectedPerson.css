@@ -1,0 +1,92 @@
+.f7SelectedPersonList{
+  width: 200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  align-items: stretch;
+  padding: 0 10px;
+  font-family: inherit;
+}
+.f7SelectedPersonList-action{
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.f7SelectedPersonList-selected{
+  color: #999;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: center;
+}
+.f7SelectedPersonList-removeAll{
+  color: #5e80eb;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: center;
+}
+.f7SelectedPersonList-removeAll:hover{
+  color: #2b87f3;
+  cursor: pointer;
+}
+.f7SelectedPersonlist-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.f7SelectedPerson{
+  width: 40px;
+  font-family: inherit;
+  font-size: 12px;
+  display: flex;
+  flex-grow: 0;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px 20px 10px;
+}
+.f7SelectedPerson-name{
+  max-width: 47px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hr-avatar{
+  font-size: 0px;
+  position: relative;
+  flex-grow: 0;
+  margin-bottom: 4px;
+}
+.hr-head{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.head-delete{
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 26px; 
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+}
+.delete-jian{
+  width: 6px;
+  height: 1px;
+  margin: 0 1px 1px;
+  background-color: white; 
+}

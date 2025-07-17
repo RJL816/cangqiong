@@ -1,0 +1,80 @@
+{
+	"task": [{
+		"sum": 3315,
+		"text": "本日完成任务数"
+	},{
+		"sum": 62915,
+		"text": "本月完成任务数"
+	},{
+		"sum": 85315,
+		"text": "本年完成任务数"
+	}],
+	"progress": {
+		"xAxisData": ["刘嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪","陈嘉豪"],
+		"data":{
+			"achieved": [280,280,280,280,280,280,280,280,280,280,280,280],
+			"processing": [20,20,20,20,20,20,20,20,20,20,20,20],
+			"expired": [10,10,10,10,10,10,10,10,10,10,10,10]
+		}
+	},
+	"rank": [
+		{
+			"name": "陈嘉豪",
+			"num": 368,
+			"speed": 0.53,
+			"bg": "url(./images/first.png)"
+		},
+		{
+			"name": "李思敏",
+			"num": 287,
+			"speed": 0.24,
+			"bg": "url(./images/second.png)"
+		},
+		{
+			"name": "郑颖超",
+			"num": 266,
+			"speed": 0.19,
+			"bg": "url(./images/third.png)"
+		},{
+			"name": "刘静雯",
+			"num": 224,
+			"speed": 0.11,
+			"bg": "url(./images/background.png)"
+		},{
+			"name": "黄佳仁",
+			"num": 206,
+			"speed": 0.09,
+			"bg": "url(./images/background.png)"
+		},{
+			"name": "李玉奇",
+			"num": 188,
+			"speed": 0.08,
+			"bg": "url(./images/background.png)"
+		},{
+			"name": "李紫杰",
+			"num": 148,
+			"speed": 0.07,
+			"bg": "url(./images/background.png)"
+		},{
+			"name": "崔明秋",
+			"num": 99,
+			"speed": 0.06,
+			"bg": "url(./images/background.png)"
+		},{
+			"name": "郑颖超",
+			"num": 266,
+			"speed": 0.19,
+			"bg": "url(./images/third.png)"
+		},{
+			"name": "刘静雯",
+			"num": 224,
+			"speed": 0.11,
+			"bg": "url(./images/background.png)"
+		},{
+			"name": "黄佳仁",
+			"num": 206,
+			"speed": 0.09,
+			"bg": "url(./images/background.png)"
+		}
+	]
+}

@@ -1,0 +1,102 @@
+[
+	{
+		"top": [
+			{
+				"name": "待处理",
+				"value": "96"
+			},
+			{
+				"name": "待扫描",
+				"value": "0"
+			},
+			{
+				"name": "已超期",
+				"value": "81"
+			}
+		]
+	},
+	{
+		"bottom": [
+			{
+				"task": [
+					{
+						"sum": 0,
+						"text": "Number of tasks completed this day"
+					},
+					{
+						"sum": 1,
+						"text": "Number of tasks completed this month"
+					},
+					{
+						"sum": 754,
+						"text": "Number of tasks completed this year"
+					}
+				]
+			},
+			{
+				"progress": [
+					{
+						"xAxisData": [
+							"甄钰桢",
+							"任佳乐",
+							"林旭",
+							"曾凡波",
+							"林明杰"
+						]
+					},
+					{
+						"data": [
+							{
+								"achieved": [
+									0,
+									0,
+									0,
+									1,
+									0
+								]
+							},
+							{
+								"processing": [
+									1,
+									0,
+									0,
+									3,
+									0
+								]
+							},
+							{
+								"expired": [
+									41,
+									31,
+									8,
+									0,
+									1
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"avgrank": [
+					{
+						"avgtaskefficiency": 0.01,
+						"avgtaskcount": 1
+					}
+				],
+				"rank": [
+					{
+						"bg": "url(.//images//first.png)",
+						"num": 1,
+						"name": "曾凡波",
+						"speed": 0.01
+					}
+				],
+				"account": [
+					"169829",
+					100000
+				]
+			}
+		]
+	}
+]

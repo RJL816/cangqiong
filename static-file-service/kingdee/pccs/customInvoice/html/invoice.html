@@ -1,0 +1,227 @@
+
+    <div id="cusInvoiceContaniner" class="container cusInvoiceBox" data-page-id="">
+      <div class="title">
+        <div class="panel code">
+          <div class="invoicecode">
+            <label class="invoicecode-label">
+              <span class="inner-label require">发票代码:</span>
+            </label>
+            <span class="userinput omit">
+              <input type="text" name="invoiceCode_el" id="cus_invoicecode" value="<%= invoicecode %>" maxlength="20">
+            </span>
+          </div>
+        </div>
+        <div class="panel name">
+          <div class="invoiceType">
+            <span class="userinput omit">
+              <div class="btn-invoiceType">
+                <span class="select-triangle"><i class="iconfont icon-xialasanjiao"></i></span>
+                <span class="multiselect-label"></span>
+              </div>
+              <input name="invoicetype" type="hidden" id="cus_invoicetype" value="1vatInvoice">
+            </span>
+            <div class="menuinvoiceType" id="cus_menuinvoiceType" style="top: 38px; left: 0; width: auto; min-width: 240px; display: none;">
+              <ul class="" style="max-height: 175px;">
+                <% for(var i=0;i < invoicetype.length;i++){ %>
+                <li><div title="<%= invoicetype[i].alias %>" class="" id="<%= invoicetype[i].value %>"><%= invoicetype[i].alias %></div></li>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel date">
+          <div class="invoicenumber">
+            <label class="invoicenumber-label">
+              <span class="inner-label require">NO.</span>
+            </label>
+            <span class="userinput omit">
+              <input type="text" name="invoiceNumber_el" id="cus_invoiceno" value="<%= invoiceno %>" maxlength="20">
+            </span>
+          </div>
+          <div class="invoicedate">
+            <label class="invoicedate-label">
+              <span class="inner-label require">开票日期:</span>
+            </label>
+            <span class="userinput omit">
+              <div class="invoicedate-box ui-datepicker-frame">
+                <input id="cus_bizdate" name="invoiceDate_el" type="text" validate="required:false" value="" readonly>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="panel">
+          <label class="pur-label">购买方</label>
+          <div class="purchase">
+            <div class="purchaseName">
+              <label class="purchase-label fillBlank"><span>名称</span></label>
+              <span class="purname">
+                <div class="purnamef7">
+                  <div class="purnamef7input">
+                    <input id="cus_purorg" value="<%= purorg %>" type="text" readonly placeholder="购买方名称">
+                  </div>
+                  <div class="purnamef7icon"><i class="iconfont icon-fangdajing"></i></div>
+                </div>
+              </span>
+            </div>
+            <div class="purTaxpayer">
+              <label class="purchase-label requireRED"><span>纳税人识别号</span></label>
+              <span id="labelpurTaxpayer_ctrl" class="purtaxpayer">
+                <input type="text" id="cus_purtaxpayer" value="<%= purtaxpayer %>" maxlength="20" placeholder="纳税人识别号">
+              </span>
+            </div>
+            <div class="puraddress cuscol2">
+              <label class="purchase-label requireRED"><span>地址、电话</span></label>
+              <span id="labelpurAddress_ctrl" class="puraddress cuscol2span">
+                <input type="text" name="purAddress_el" id="cus_puraddress" value="<%= puraddress %>" maxlength="200" placeholder="地址">
+              </span>
+            </div>
+            <div class="purTelNumber cuscol2 showHide">
+              <span id="labelpurTelNumber_ctrl" class="purtelnumber">
+                <input type="text" name="purTelNumber_el" id="cus_purtelnumber" value="<%= purtelnumber %>" maxlength="200" placeholder="电话">
+              </span>
+              <div class="showHideImgDiv">
+                <img class="showImg" alt="hr-achor" src="<%= openPic %>" id="cus_purtelnumberShow"/>
+                <img class="hideImg" alt="hr-achor" src="<%= hidePic %>" id="cus_purtelnumberHide"/>
+              </div>
+             
+            </div>
+            <div class="purDepositBank cuscol2">
+              <label class="purchase-label requireRED"><span>开户行及账号</span></label>
+              <span id="labelpurDepositBank_ctrl" class="purdepositbank cuscol2span">
+                <input type="text" name="purDepositBank_el" id="cus_purdepositbank" value="<%= purdepositbank %>" maxlength="200" placeholder="开户行">
+              </span>
+            </div>
+            <div class="purBankAccount cuscol2 showHide">
+              <span id="labelpurBankAccount_ctrl" class="purbankaccount">
+                <input type="text" name="purBankAccount_el" id="cus_purbankaccount" value="<%= purbankaccount %>" maxlength="200" placeholder="账号">
+              </span>
+              <div class="showHideImgDiv">
+                <img class="showImg" alt="hr-achor" src="<%= openPic %>" id="cus_purbankaccountShow"/>
+                <img class="hideImg" alt="hr-achor" src="<%= hidePic %>" id="cus_purbankaccountHide"/>
+              </div>
+
+            </div>
+            <div class="purToolbar" >
+              <div class="purToolbar-label " id="cus_addInvoiceTable"><span>增行</span></div>
+              <div class="purToolbar-label "  id="cus_deleteInvoiceTable"><span>删行</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="cus_invoicegrid" class="cusgrid">
+          <div class="cusgrid-view">
+            <div class="jqgrid-head">
+              <table>
+                <thead>
+                  <tr class="jqgrid-head-label">
+                    <th class="redInput cusaligncenter">货物或应税劳务、服务名称</th>
+                    <th class="cusaligncenter">规格型号</th>
+                    <th class="cusaligncenter">单位</th>
+                    <th class="cusalignright">数量</th>
+                    <th class="cusalignright">单价</th>
+                    <th class="redInput cusalignright">金额（元）</th>
+                    <th class="redInput cusalignright">税率</th>
+                    <th class="redInput cusalignright">税额（元）</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="jqgrid-body">
+              <table id="cus_invoiceTable" ctrlrole="editGrid"></table>
+            </div>
+            <div class="jqgrid-total" style="display: none;">
+              <table>
+                <thead>
+                  <tr class="jqgrid-total-label">
+                    <th>合计</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th id="cus_notaxamt" class="notaxamt"><%= notaxamt %></th>
+                    <th></th>
+                    <th id="cus_tax" class="tax"><%= tax %></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-total">
+          <table>
+            <thead>
+              <tr class="totalamt-label">
+                <th id="cus_amountAndTax" style="text-align: center;">价税合计</th>
+                <th id="cus_capitalAmount" colspan="5"></th>
+                <th id="cus_amount" colspan="2">小写：<%= amount %></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="panel">
+          <label class="sale-label">销售方</label>
+          <div class="sale">
+            <div class="saleleft">
+              <div class="salesName">
+                <label class="sales-label fillBlank"><span>名称</span></label>
+                <span class="salename">
+                  <div class="salenamef7">
+                    <div class="salenamef7input">
+                      <input id="cus_saleorg" value="<%= saleorg %>" name="saleOrgNameF7_el" type="text" readonly placeholder="销售方名称">
+                    </div>
+                    <div class="salenamef7icon"><i class="iconfont icon-fangdajing"></i></div>
+                  </div>
+                </span>
+              </div>
+              <div class="saleTaxpayer">
+                <label class="sales-label requireRED"><span>纳税人识别号</span></label>
+                <span id="labelsaleTaxpayer_ctrl" class="saletaxpayer">
+                  <input type="text" name="saleTaxpayer_el" id="cus_saletaxpayer" value="<%= saletaxpayer %>" maxlength="20" placeholder="纳税人识别号">
+                </span>
+              </div>
+              <div class="saleAddress cuscol2">
+                <label class="sales-label requireRED"><span>地址、电话</span></label>
+                <span id="labelsaleAddress_ctrl" class="saleaddress cuscol2span">
+                  <input type="text" name="saleAddress_el" id="cus_saleaddress" value="<%= saleaddress %>" maxlength="200" placeholder="地址">
+                </span>
+              </div>
+              <div class="saleTelNumber cuscol2 showHide">
+                <span id="labelsaleTelNumber_ctrl" class="saletelnumber">
+                  <input type="text" name="saleTelNumber_el" id="cus_saletelnumber" value="<%= saletelnumber %>" maxlength="200" placeholder="电话">
+                </span>
+                <div class="showHideImgDiv">
+                  <img class="showImg" alt="hr-achor" src="<%= openPic %>" id="cus_saletelnumberShow"/>
+                  <img class="hideImg" alt="hr-achor" src="<%= hidePic %>"  id="cus_saletelnumberHide"/>
+                </div>
+
+              </div>
+              <div class="saleDepositBank cuscol2">
+                <label class="sales-label requireRED"><span>开户行及账号</span></label>
+                <span id="labelsaleDepositBank_ctrl" class="saledepositbank cuscol2span">
+                  <input type="text" name="saleDepositBank_el" id="cus_saledepositbank" value="<%= saledepositbank %>" maxlength="200" placeholder="开户行">
+                </span>
+              </div>
+              <div class="saleBankAccount cuscol2 showHide">
+                <span id="labelsaleBankAccount_ctrl" class="salebankaccount">
+                  <input type="text" name="saleBankAccount_el" id="cus_salebankaccount" value="<%= salebankaccount %>" maxlength="200" placeholder="账号">
+                </span>
+                <div class="showHideImgDiv">
+                  <img class="showImg" alt="hr-achor" src="<%= openPic %>" id="cus_salebankaccountShow"/>
+                  <img class="hideImg" alt="hr-achor" src="<%= hidePic %>" id="cus_salebankaccountHide"/>
+                </div>
+
+              </div>
+            </div>
+            <div class="saleright">
+              <label class="description-label">备注</label>
+              <span class="desspan">
+                <textarea name="description_el" id="cus_description" maxlength="2000" validate="required:false"><%= description %></textarea>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+

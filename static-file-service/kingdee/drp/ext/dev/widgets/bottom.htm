@@ -1,0 +1,9 @@
+<ul>
+	<li id="${control.id}"  viewid="${control.viewid}" {{if control.active=='active' }} class="active" {{/if}} style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+		<a href="${control.href}">
+			<i class="iconfont icon-${control.icon} default-icon"></i>
+			<i class="iconfont icon-${control.icon}_actived active-icon"></i>
+			<span>${control.name}</span>
+		</a>
+	</li>
+</ul>

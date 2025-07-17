@@ -1,0 +1,16 @@
+{
+  "intersectIntvTime_beforeDay": "前一天",
+  "intersectIntvTime_afterDay": "後一天",
+  "intersectIntvTime_key001": "北京时間",
+  "intersectIntvTime_key002": "面試官時域交集",
+  "intersectIntvTime_key003": "無時間交集，請切換日期試試看",
+  "intersectIntvTime_key004": "請選擇面試官查看日曆",
+  "intersectIntvTime_key005": "yyyy年MM月dd日",
+  "intersectIntvTime_mon": "星期一",
+  "intersectIntvTime_tues": "星期二",
+  "intersectIntvTime_wednes": "星期三",
+  "intersectIntvTime_thurs": "星期四",
+  "intersectIntvTime_fri": "星期五",
+  "intersectIntvTime_satur": "星期六",
+  "intersectIntvTime_week": "星期日"
+}

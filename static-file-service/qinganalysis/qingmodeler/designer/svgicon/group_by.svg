@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>节点2/分组汇总</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-199.000000, -195.000000)">
+            <g id="节点2/分组汇总" transform="translate(198.000000, 192.000000)">
+                <rect id="矩形" x="0" y="0" width="20" height="20"></rect>
+                <g id="编组-154" transform="translate(1.513525, 3.125000)">
+                    <rect id="矩形" stroke="#2B87F3" stroke-width="1.25" x="0.625" y="0.625" width="7.5" height="2.5"></rect>
+                    <rect id="矩形备份-43" stroke="#2B87F3" stroke-width="1.25" x="0.625" y="5.625" width="7.5" height="2.5"></rect>
+                    <rect id="矩形备份-44" stroke="#2B87F3" stroke-width="1.25" x="0.625" y="10.625" width="7.5" height="2.5"></rect>
+                    <g id="∑" transform="translate(10.551700, 4.447617)" fill="#2B87F3" fill-rule="nonzero">
+                        <path d="M2.6125,3.685 L0,0.26125 L0,0 L6.42125,0 L6.42125,1.80125 L6.14625,1.80125 L5.0875,0.8525 C4.90875,0.715 4.675,0.64625 4.38625,0.64625 L1.98,0.64625 L4.2625,3.685 L1.85625,8.34625 L4.38625,8.34625 C4.675,8.34625 4.90875,8.26375 5.0875,8.12625 L6.14625,7.19125 L6.42125,7.19125 L6.42125,8.9925 L0,8.9925 L0,8.7175 L2.6125,3.685 Z" id="路径"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

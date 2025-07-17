@@ -1,0 +1,17 @@
+{
+  "setIntvTime_key001": "如未设置，保存后默认您最近两周都有空",
+  "setIntvTime_key002": "可面试时间",
+  "setIntvTime_key003": "不可选时间",
+  "setIntvTime_today": "今",
+  "setIntvTime_key004": "北京时间",
+  "setIntvTime_key005": "7天内不再提示",
+  "setIntvTime_key006": "第{text}周",
+  "setIntvTime_key007": "yyyy年MM月",
+  "setIntvTime_mon": "星期一",
+  "setIntvTime_tues": "星期二",
+  "setIntvTime_wednes": "星期三",
+  "setIntvTime_thurs": "星期四",
+  "setIntvTime_fri": "星期五",
+  "setIntvTime_satur": "星期六",
+  "setIntvTime_week": "星期日"
+}

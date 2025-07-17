@@ -1,0 +1,20 @@
+<div class="formulaItemsFloatingPanel extend">
+  <div class="headSign">
+    <div class="floatingPanel-search">
+      <input class="floatingPanel-searchInput" />
+      <i class="kdfont kdfont-f floatingPanel-searchIcon"></i>
+    </div>
+    <div class="floatingPanel-toolFont">
+      <div class="floatingPanel-extend">
+        <div class="floatingPanel-positionFont kdfont kdfont-yibiaoji"></div>
+      </div>
+    </div>
+  </div>
+  <div class="floatingPanel-list-content">
+    <div class="floatingPanel-list">
+      <% for(var i=0;i < listItem.length;i++){ %>
+        <div class="floatingPanel-list-item" data-value="<%= listItem[i].showKey %>" title="<%= listItem[i].showValue %>"><%= listItem[i].showValue %></div>
+      <% } %>
+    </div>
+  </div>
+</div>

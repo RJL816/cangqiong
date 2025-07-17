@@ -1,0 +1,219 @@
+@seco: 8px;
+@secocolor: #eaf1f9;
+
+.quikeg {
+  // position: absolute;
+  // text-align: right;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: var(--kd-cq-theme-color);
+}
+
+.card {
+  // margin: 20px;
+  // padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  // box-shadow: 0px 2px 6px 0px rgba(0, 88, 188, 0.12);
+  // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+
+  :global {
+    .money {
+      color: #ff6621;
+    }
+  }
+}
+
+.content {
+  max-height: 0px;
+  border-radius: 4px;
+  background: #ffffff;
+  overflow: auto;
+  // box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.05);
+  // animation: zk 2s;
+  transition: max-height 0.8s ease-in;
+  // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+}
+
+.content::-webkit-scrollbar {
+  width: 6px;
+  display: none;
+}
+
+.content:hover::-webkit-scrollbar {
+  display: inline-block;
+}
+
+.cardbody {
+  box-sizing: border-box;
+  padding: 12px;
+  position: relative;
+  // border-bottom: 0.96px dashed rgba(191,196,219,0.7);
+  // background-image: linear-gradient(
+  //   to right,
+  //   rgba(191, 196, 219, 0.7) 0%,
+  //   rgba(191, 196, 219, 0.7) 50%,
+  //   transparent 50%
+  // );
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+}
+
+// .cardbody::before,
+// .title::before
+// {
+//   content: '';
+//   position: absolute;
+//   width: @seco;
+//   height: calc(@seco * 2);
+//   background: @secocolor;
+//   left: 0;
+//   bottom: -@seco;
+//   border-radius: 0 @seco @seco 0;
+//   z-index: 2;
+//   /* 左上、右上、右下、左下 */
+// }
+
+// .cardbody::after,
+// .title::after
+// {
+//   content: '';
+//   position: absolute;
+//   width: @seco;
+//   height: calc(@seco * 2);
+//   background: @secocolor;
+//   right: 0;
+//   bottom: -@seco;
+//   border-radius: @seco 0 0 @seco;
+//   z-index: 2;
+//   /* 左上、右上、右下、左下 */
+// }
+
+.body {
+  padding: 4px 12px 12px;
+  background: #f8faff;
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.cardbody:last-child::before,
+.cardbody:last-child::after {
+  display: none;
+}
+
+.cardbody:last-child {
+  border: 0;
+  border-radius: 4px;
+  background-image: unset;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  // padding: 8.61px 9px 9.65px 12px;
+  // background: url('../images/titleback.png') no-repeat;
+  // background-size: cover;
+  // background-image: linear-gradient(180deg, #BCDAFF 0%, #FFFFFF 100%, rgba(0,0,0,0.00) 100%);
+  // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.05);
+  font-family: MicrosoftYaHeiSemibold;
+  font-size: 16px;
+  color: #16181b;
+  letter-spacing: 0;
+  line-height: 23.04px;
+  font-weight: 600;
+  border-radius: 4px;
+  min-height: 44px;
+  cursor: pointer;
+  // width: 100%;
+  padding: 0 0 0 10px;
+  background-image: linear-gradient(0deg, #ffffff 0%, #e0eeff 100%);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 88, 188, 0.12);
+
+  div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #212121;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+.titlef {
+  cursor: pointer;
+  .title;
+
+  div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #212121;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+.title div:hover,
+.titlef div:hover {
+  text-decoration: underline;
+}
+
+.jiaobiao {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  // transform: rotate(90deg);
+  transition: transform 0.5s ease-in-out;
+  margin-right: 4px;
+  //
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftYaHeiSemibold;
+  font-size: 14px;
+  color: #212121;
+  letter-spacing: 0;
+  font-weight: 600;
+  padding: 0px 12px 4px 0px;
+}
+
+.tipline {
+  width: 3.84px;
+  height: 16.33px;
+  background-color: #658bea;
+  margin-right: 5.78px;
+}
+
+@keyframes zk {
+  0% {
+  }
+
+  100% {
+  }
+}
+
+@keyframes gb {
+  0% {
+  }
+
+  100% {
+  }
+}

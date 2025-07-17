@@ -1,0 +1,14 @@
+﻿{
+    "scope_of_application": "适用范围",
+    "add_dimension": "增加维度",
+    "status": "状态",
+    "leaf_feature": "适用成员类型",
+    "please_input_comments": "请输入注释内容",
+    "all": "都适用",
+    "leaf": "仅明细",
+    "notleaf": "仅非明细",
+    "number": "编码",
+    "name": "名称",
+    "close": "关闭",
+    "formula.analysetip": "点击下方数值列和计算符或函数进行公式编辑"
+}

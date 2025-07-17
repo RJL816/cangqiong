@@ -1,0 +1,14 @@
+<div>
+	<div class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}" name="">
+	{{if control.cols}}
+	    {{each(i,group) control._customData.grouparr}}
+	        <div class="group">
+			    {{each(j,item) control._customData.colsarr}}
+				    <div class="group-item"></div>
+				{{/each}}
+			</div>
+	    {{/each}}
+	{{else}}
+	{{/if}}
+	</div>
+</div>

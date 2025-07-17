@@ -1,0 +1,12 @@
+<div>
+    {{if control._customData.plat=='pc'}}
+    <div class="${control.class} ${control.direction} filter-list" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}">
+        {{if control._customData.filterType === 'simple' || !control._customData.filterType}}
+            <div class="filter-left"></div>
+            <div class="filter-right flex-j-end"></div>
+        {{/if}}
+    </div>
+	{{else}}
+	<div class="${control.class} ${control.direction}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}"></div>
+    {{/if}}
+</div>

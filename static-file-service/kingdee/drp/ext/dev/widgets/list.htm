@@ -1,0 +1,7 @@
+<div>
+	{{if control._customData.plat=='pc'}}
+    <div class="${control.class||''} list-wrapper-panel" style="${(control.style||'') + control._customData.style}" id="${control.id}"  viewid="${control.viewid}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}"></div>
+	{{else}}
+	<div class="${control.class} ${control.showstyle ? ('showstyle'+control.showstyle) : ''}" style="${(control.style||'') + control._customData.style}" id="${control.id}"  viewid="${control.viewid}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}"></div>
+	{{/if}}
+</div>

@@ -1,0 +1,3666 @@
+.modeler-designer
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    z-index: 1;
+    min-width: 960px;
+    min-height: 480px;
+}
+
+.modeler-designer-main
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 54px;
+    bottom: 30px;
+    overflow: hidden;
+}
+
+.modeler-designer-toolbar
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.modeler-designer-lock-statusbar
+{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    height: 20px;
+    z-index: 999;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.modeler-designer-lock-icon
+{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-right: 5px;
+}
+
+.modeler-designer-lock-text
+{
+    position: relative;
+    height: 16px;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.modeler-designer-statusbar
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 23px;
+    border-top: 1px solid #ccc;
+    cursor: default;
+    background-color: #f7f7f7;
+}
+
+.modeler-designer-statusbar-name
+{
+    display: inline;
+    position: relative;
+    padding-left: 6px;
+    top: 2px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.modeler-designer-statusbar-dirtystate
+{
+    display: inline;
+    position: relative;
+    padding-left: 2px;
+    padding-right: 20px;
+    top: 0px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #c33;
+    border-right: 1px solid #eee;
+}
+
+.modeler-designer-statusbar-prompt
+{
+    display: inline;
+    position: relative;
+    padding-left: 6px;
+    top: 2px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.modeler-designer-workarea-title
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 24px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modeler-designer-workarea-title-text
+{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    line-height: 24px;
+    color: #666;
+    font-weight: bold;
+}
+
+.modeler-designer-tablearea-title-text
+{
+    position: relative;
+    float: left;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    line-height: 24px;
+    color: #666;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.modeler-designer-tablearea-title-exception-icon
+{
+    position: relative;
+    width: 16px;
+    top: 4px;
+    height: 16px;
+    float: left;
+}
+
+.modeler-designer-workarea-title-btn
+{
+    z-index: 3;
+    position: absolute;
+    top: 4px;
+    height: 16px;
+    right: 3px;
+    width: 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.modeler-designer-workarea-container
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.modeler-designer-property-show-btn
+{
+    position: absolute;
+    right: 0;
+    width: 25px;
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    z-index: 100;
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+}
+.modeler-designer-property-show-btn:hover
+{
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+}
+
+.modeler-designer-preview-show-btn
+{
+    position: absolute;
+    bottom: 0;
+    height: 26px;
+    width: 100%;
+    cursor: pointer;
+    z-index: 100;
+    color: #666;
+    font-weight: bold;
+    line-height: 20px;
+    background: #f4f4f4;
+    border: 1px solid #e5e5e5;
+}
+.modeler-designer-preview-show-btn:hover
+{
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+}
+
+.modeler-designer-property-main
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.15);
+}
+
+.modeler-designer-main-body
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.modeler-designer-no-node-prompt
+{
+    color: #666;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.modeler-designer-common-border
+{
+    border: 1px solid #e5e5e5;
+    cursor: default;
+}
+
+.modeler-designer-alternative-source-text
+{
+    position: relative;
+    width: auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #666;
+    float: left;
+}
+
+.modeler-designer-alternative-source-combobox
+{
+    position: relative;
+    width: 200px;
+    height: 23px;
+    float: left;
+    margin-left: 10px;
+}
+
+.modeler-designer-prepared-source-item
+{
+    position: relative;
+    height: 26px;
+    cursor: default;
+    color: #666;
+}
+
+.modeler-designer-sourcearea-nosource
+{
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    margin-top: -55px;
+    margin-left: -50px;
+}
+
+.modeler-designer-sourcearea-text-add
+{
+    position: absolute;
+    width: 70px;
+    height: 16px;
+    line-height: 16px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0E5FD8;
+    text-align: center;
+}
+
+.modeler-designer-sourcearea-icon
+{
+    float: left;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+
+.modeler-designer-sourcearea-exception-icon
+{
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    top: 7px;
+    height: 16px;
+}
+
+.modeler-designer-sourcearea-name
+{
+    float: left;
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-dragdrop-mask
+{
+    z-index: 128;
+    box-shadow: 0 0 0 1px #cde inset;
+    background-color: #def;
+    color: #39f;
+    text-align: center;
+    line-height: 23px;
+    cursor: copy;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+.modeler-propertyarea-lineitem
+{
+    position: relative;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 8px;
+}
+.modeler-propertyarea-lineitem-title
+{
+    position: relative;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.modeler-propertyarea-lineitem-caption
+{
+    position: absolute;
+    left: 8px;
+    width: 75px;
+    height: 100%;
+}
+.modeler-propertyarea-lineitem-ctrl
+{
+    position: absolute;
+    left: 78px;
+    right: 8px;
+    height: 100%;
+}
+
+.modeler-propertyarea-adaptive-lineitem
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.modeler-propertyarea-join-radioitem
+{
+    float: left;
+    position: relative;
+    width: 120px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.modeler-propertyarea-join-combobox-left
+{
+    position: absolute;
+    height: 100%;
+    width: 38%;
+    left: 20px;
+}
+
+.modeler-propertyarea-join-combobox-right
+{
+    position: absolute;
+    height: 100%;
+    width: 38%;
+    right: 20px;
+}
+
+.modeler-propertyarea-join-relation-node-icon
+{
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -7px;
+    width: 16px;
+    height: 16px;
+}
+
+.modeler-propertyarea-join-relation-node-text
+{
+    position: absolute;
+    left: 24px;
+    right: 4px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.modeler-propertyarea-join-equal
+{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666;
+}
+
+.modeler-propertyarea-join-delete
+{
+    border: 1px solid rgba(255,255,255,0);
+    color: #888888;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.modeler-propertyarea-join-delete:hover
+{
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+    border-radius: 2px;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+}
+
+.modeler-propertyarea-join-container
+{
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.modeler-designer-tablecell-editable
+{
+    cursor: pointer;
+}
+
+.modeler-designer-tablecell-editable:hover
+{
+    box-shadow: 0 1px 0 0 #5582f3;
+    box-shadow: 0 1px 0 0 var(--color-main, #5582f3);
+}
+
+.modeler-designer-select-field-dataType-icon
+{
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+}
+
+.modeler-designer-select-text
+{
+    position: absolute;
+    left: 24px;
+    right: 4px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.modeler-designer-add-btn
+{
+    position: relative;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+
+.modeler-designer-node-operate-icon
+{
+    cursor: pointer;
+}
+
+.modeler-designer-addsource-noresult-view-container
+{
+    position: absolute;
+    width: 240px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    margin-left: -120px;
+    margin-top: -55px;
+    z-index: 1;
+}
+
+.modeler-designer-addsource-noresult-view-icon
+{
+    position: absolute;
+    width: 138px;
+    height: 84px;
+    margin-left: -69px;
+    left: 50%;
+}
+
+.modeler-designer-addsource-noresult-view-tip
+{
+    position: absolute;
+    width: 240px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -120px;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+}
+
+.modeler-designer-addsource-nodata-view-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -300px;
+}
+
+.modeler-designer-addsource-nodata-view-icon
+{
+    width: 138px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    margin-left: -69px;
+}
+
+.modeler-designer-addsource-nodata-view-tip
+{
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    text-align: center;
+    width: 500px;
+}
+
+.modeler-designer-addsource-nodata-view-text
+{
+    color: #0E5FD8;
+    cursor: pointer;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
+    text-align: center;
+}
+
+.modeler-designer-addsource-modelset-source-link
+{
+    position: relative;
+    cursor: pointer;
+    color: #0E5FD8;
+    width: auto;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.modeler-designer-addsource-btn-refresh
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0px;
+    z-index: 1;
+}
+
+.modeler-designer-addsource-search-box
+{
+    width: 230px;
+    height: 30px;
+    float: right;
+    right: 15px;
+    top: -6px;
+    position: absolute;
+}
+
+.modeler-designer-addsource-list-table
+{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    right: 15px;
+    bottom: 6px;
+}
+
+.modeler-designer-addsource-cell-item
+{
+    line-height: 28px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modeler-designer-addsource-cell-item-name
+{
+    line-height: 20px;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 5px;
+}
+
+.modeler-designer-addsource-name-info
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modeler-designer-preview-no-data-background
+{
+    z-index: 2;
+    position: absolute;
+    top: 28px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #fff;
+}
+
+.modeler-designer-preview-no-data-text
+{
+    position: absolute;
+    top: 45%;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+}
+
+.modeler-designer-preview-mask
+{
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.modeler-designer-preview-mask-button
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -160px;
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+
+.modeler-designer-create-sort-item
+{
+    position: relative;
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 5px;
+}
+
+.modeler-designer-sort-item-list
+{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modeler-designer-sort-item-panel
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.modeler-designer-sort-item-row-panel
+{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 12px;
+}
+
+.modeler-designer-sort-item-delete
+{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 30%;
+    right: 1px;
+}
+
+.modeler-designer-filter-item-rule-text
+{
+    line-height: 28px;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-designer-field-popup
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    background: rgb(255,255,255);
+    box-shadow: 0 0 2px 0 #ccc;
+    z-index: 9999999;
+}
+
+.modeler-designer-field-popup-search
+{
+    position: absolute;
+    height: 25px;
+    top: 2px;
+    left: 2px;
+    right: 0px;
+}
+
+.modeler-designer-field-popup-no-data
+{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 12px;
+    text-align: center;
+}
+
+.modeler-designer-field-popup-list-item
+{
+    position: relative;
+    color: #828282;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.modeler-designer-field-popup-list-item-text
+{
+    position: absolute;
+    max-width: 88%;
+    left: 24px;
+    right: 4px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.modeler-designer-field-popup-list-item-icon
+{
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+}
+
+.modeler-designer-field-popup-list-item-text-alias
+{
+    max-width: 88%;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.modeler-designer-field-popup-list-item-text-name
+{
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    display: none;
+}
+
+.modeler-designer-field-popup-show-field-name-label
+{
+    height: 23px;
+    margin-top:1px;
+    margin-left:4px;
+    line-height: 23px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modeler-designer-field-popup-show-field-name-button
+{
+    width: 38%;
+    height: 23px;
+    margin-right:9px;
+    float:right;
+}
+
+.modeler-designer-field-popup-show-field-name
+{
+    position: absolute;
+    bottom: 2px;
+    height: 25px;
+    width: 100%;
+    border-top: 1px solid #CBCBCB;
+}
+
+.modeler-designer-field-popup-use-raw-type
+{
+    position: absolute;
+    bottom: 30px;
+    border-top: 1px solid #CBCBCB;
+    height: 25px;
+    width: 100%;
+}
+
+.modeler-designer-field-popup-list-item-title
+{
+    position: relative;
+    color: #828282;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-designer-field-popup-list-item:hover
+{
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+
+.modeler-designer-field-popup-list-owner
+{
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 1px;
+    right: -1px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+
+.modeler-designer-enum-popup-list-owner
+{
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    right: -1px;
+    overflow: auto;
+    cursor: pointer;
+    padding-bottom:3px;
+}
+
+.modeler-designer-field-selection-checkbox-icon
+{
+    position: absolute;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.modeler-designer-field-selection-checkbox-text
+{
+    position: relative;
+    top: 0px;
+    width: auto;
+    float: left;
+    margin-left: 22px;
+    line-height: 23px;
+    white-space: nowrap;
+}
+
+.modeler-designer-node-selection-item
+{
+    position: relative;
+    left: 17px;
+    top: 8px;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 6px;
+}
+
+.modeler-designer-node-selection-item-table-icon
+{
+    position: absolute;
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+.modeler-designer-node-selection-item-error
+{
+    position: absolute;
+    top: 20%
+}
+
+.modeler-designer-node-selection-checkbox
+{
+    position: absolute;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.modeler-designer-node-selection-preview-icon
+{
+    position: absolute;
+    right: 40px;
+    width: 18px;
+    height: 18px;
+}
+
+.modeler-designer-node-selection-item-text
+{
+    position: relative;
+    top: 0px;
+    width: auto;
+    float: left;
+    margin-left: 40px;
+    line-height: 23px;
+    white-space: nowrap;
+}
+
+.modeler-designer-node-selection-right
+{
+    border-left: 1px solid #CBCBCB;
+}
+
+.modeler-designer-node-selection-left
+{
+    border-right: 1px solid #CBCBCB;
+}
+
+.modeler-designer-node-selection-left-node-area
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 33px;
+    bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modeler-designer-node-selection-icon
+{
+    position: absolute;
+    width: 168px;
+    height: 84px;
+    top: 50%;
+    left: 50%;
+    margin-top: -62px;
+    margin-left: -75px;
+}
+
+.modeler-designer-node-selection-tip
+{
+    position: absolute;
+    width: 168px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -79px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.modeler-designer-node-selection-selectedtablelabel
+{
+    position: absolute;
+    left: 15px;
+    width: 110px;
+    height: 23px;
+}
+
+.modeler-designer-node-selection-clearalllabel
+{
+    position: absolute;
+    right: 0px;
+    width: 60px;
+    height: 23px;
+    cursor: pointer;
+    color: #0097f0;
+    right: 0px;
+}
+
+.modeler-designer-table-selected-table-area
+{
+    position: absolute;
+    height: calc(100% - 23px);
+    left: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-right: 10px;
+    margin-top: 23px;
+}
+
+.modeler-designer-table-selected-list-item
+{
+    position: relative;
+    top: 6px;
+    height: 24px;
+    cursor: default;
+    color: #666;
+    margin-left: 20px;
+}
+.modeler-designer-table-selected-list-item:hover
+{
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+.modeler-designer-table-selected-list-item-icon
+{
+    z-index: 2;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.modeler-designer-table-selected-list-item-alias
+{
+    z-index: 1;
+    position: relative;
+    min-width: 20px;
+    max-width: 150px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 2px;
+    max-width: 80%;
+}
+
+.modeler-designer-field-table
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+
+.modeler-designer-field-table-checkbox
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 33%;
+    top: 50%;
+    /*margin-left: -10px;*/
+    margin-top: -10px;
+}
+
+.modeler-designer-field-notmatch-prompt
+{
+	position: absolute;
+	top: 50%;
+	margin-top: -6px;
+	left: 2px;
+	width: 10px;
+	height: 10px;
+	background-color: yellow;
+	color: #bc1118;
+	border: solid 1px #bc1118;
+	border-radius: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 10px;
+	cursor: default;
+}
+
+.modeler-designer-node-item-error
+{
+    position: absolute;
+    left: 4px;
+    top: 25%
+}
+
+.modeler-designer-table-item-icon
+{
+    position: relative;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.modeler-designer-table-item-name
+{
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
+    top: 1px;
+}
+
+.metric-designer-public-dimension-table-error
+{
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    margin-right: 4px;
+}
+
+.modeler-designer-field-delete
+{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -7px
+}
+
+.modeler-designer-union-node-edit-table
+{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.modeler-designer-union-node-table-list-title
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 24px;
+    background-color: #f4f4f4;
+}
+
+.modeler-designer-union-node-table-list-text-link
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+.modeler-designer-union-node-item-empty
+{
+    position: absolute;
+    top: 45%;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+}
+
+.modeler-designer-list-item_selected_enabled
+{
+    color: #fff;
+    background-color: #88a7f6;
+    background-color: var(--color-lightish, #88a7f6);
+}
+
+.modeler-designer-list-item_selected_enabled:hover
+{
+    color: #fff;
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+
+.modeler-designer-common-table-cell-not-editable
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    line-height: 26px;
+    padding-left: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-designer-common-table-cell-editable
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    line-height: 26px;
+    padding-left: 4px;
+}
+.modeler-designer-common-table-cell-editable:hover
+{
+    box-shadow: 0 1px 0 0 #5582f3;
+    box-shadow: 0 1px 0 0 var(--color-main, #5582f3);
+}
+
+.modeler-designer-filter-table-op
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 36px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.modeler-designer-filter-table-prompt
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 2px;
+    cursor: default;
+}
+
+.modeler-designer-group-agg-container
+{
+    width: 100%;
+    bottom: 0px;
+    top: 28px;
+    position: absolute;
+}
+
+.modeler-designer-group-agg-area
+{
+    border: 1px solid #e5e5e5;
+    height: calc(50% - 15px);
+    margin: 10px 10px 5px 10px;
+    position: relative;
+}
+
+.modeler-designer-group-agg-title
+{
+    border-bottom: 1px solid #276ff5;
+    font-size: 12px;
+    padding-left: 10px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modeler-designer-group-add-btn
+{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    margin-top: 8px;
+    height: 15px;
+    width: 15px;
+}
+
+.modeler-designer-select-field-search-box
+{
+    position: relative;
+    width: 190px;
+    top: 2px;
+    height: 23px;
+    left: 15px;
+}
+.modeler-designer-select-field-search-text
+{
+    left: 15px;
+    float: left;
+    top: 7px;
+    width: 50px;
+    position: relative;
+}
+
+.modeler-designer-select-field-list
+{
+    margin-top: 15px;
+    /* height: 90%; */
+    bottom: 0;
+    top: 25px;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.modeler-designer-group-agg-field-area
+{
+    width: 100%;
+    overflow: auto;
+    height: calc(100% - 31px);
+    position: relative;
+}
+
+.model-designer-selected-group-by-field-item
+{
+    height: 25px;
+    margin: 5px;
+    cursor: default;
+    background-color: #F3F9FF;
+    color: #626262;
+    border-radius: 2px;
+    line-height: 25px;
+}
+
+.model-designer-selected-group-by-field-name
+{
+    position: relative;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 70px;
+    color: #3E7CD1;
+}
+
+.model-designer-selected-group-by-field-name:active
+{
+    color: #ccc;
+}
+
+.modeler-designer-selected-field-rename {
+    margin: 5px;
+    cursor: default;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.model-designer-selected-group-by-field-sort-arrow
+{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-top: -20px;
+    right: 40px;
+}
+
+.model-designer-selected-group-by-field-sort-arrow:hover
+{
+    color: #39f;
+}
+
+.model-designer-selected-group-by-field-menubtn
+{
+    position: relative;
+    float: right;
+    right: 10px;
+    width: 25px;
+    margin-top: -25px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.model-designer-selected-group-by-field-menubtn-text
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -ms-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -moz-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -webkit-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -o-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+}
+
+.model-designer-selected-group-by-field-menubtn-text:hover
+{
+    color: #39f;
+}
+
+.modeler-designer-field-item-checkbox-text
+{
+    position: relative;
+    left: 18px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.modeler-designer-field-item-allcheckbox-text
+{
+    position: relative;
+    left: 18px;
+    font-size: 12px;
+    line-height: 20px;
+    min-width: 80px;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.modeler-designer-field-item-checkbox
+{
+    width: 20px;
+    position: relative;
+    left: 15px;
+    right: 15px;
+    float: left;
+}
+
+.modeler-designer-field-item-icon
+{
+    position: relative;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    top: 25%;
+    transform: translateY(-25%);
+}
+
+.modeler-designer-field-item-relation-icon
+{
+    position: relative;
+    left: 20px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.modeler-designer-auxiliary-line
+{
+    z-index: 259;
+    border-left: 1px dashed #f93;
+    border-top: 1px dashed #f93;
+}
+
+.modeler-designer-page
+{
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.modeler-designer-page-toolbar
+{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    height: 25px;
+    width: 147px;
+    z-index: 666;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15);
+}
+
+.modeler-designer-ratio-text
+{
+    line-height: 25px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.modeler-designer-overall-view
+{
+    z-index: 666;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.modeler-designer-overall-view-capture
+{
+    box-shadow: 0px 0px 0px 1px #ccc inset;
+}
+
+.modeler-designer-sourcearea-delete-btn
+{
+    position: absolute;
+    float: right;
+    width: 16px;
+    height: 16px;
+    right: 2px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.modeler-designer-tablearea-noresult-tip
+{
+    position: absolute;
+    color: #999999;
+    width: 160px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.modeler-designer-tablearea-search-box
+{
+    height: 30px;
+    width: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+
+#modeler-designer-tablearea-table-selected
+{
+    background-color: #eff3fd;
+    color: black;
+}
+.modeler-designer-tablearea-table-selected
+{
+    background-color: #eff3fd;
+    color: black;
+}
+.modeler-designer-tablearea-dbCenter-table-hover
+{
+    background-color: #eff3fd;
+    color: black;
+}
+
+.modeler-designer-tablearea-table-icon
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 9px;
+    margin-left: -20px;
+}
+
+.modeler-designer-tablearea-dbCenter
+{
+    background-color: white;
+    overflow: hidden auto;
+}
+.modeler-designer-tablearea-dbCenter-table-icon
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 9px;
+}
+
+.modeler-designer-tablearea-table-name
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    right: 30px;
+    left: 4px;
+    position: absolute;
+}
+.modeler-designer-tablearea-dbCenter-table-name
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    right: 30px;
+    left: 24px;
+    height: 30px;
+    line-height: 30px;
+    color: #000000;
+    position: absolute;
+}
+
+.modeler-designer-tablearea-table-name-edit
+{
+    height: 16px;
+    width: 16px;
+    bottom: 0px;
+    top: 8px;
+    right: 50px;
+    float: right;
+    position: relative;
+}
+
+.modeler-designer-tablearea-table-name-delete
+{
+    height: 16px;
+    width: 16px;
+    bottom: 0px;
+    top: 8px;
+    right: 14px;
+    float: right;
+    position: relative;
+}
+
+.modeler-designer-tablearea-table-exception-icon
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    margin-left: -40px;
+}
+.modeler-designer-tablearea-dbCenter-table-exception-icon
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 8px;
+    margin-left: -20px;
+}
+
+.modeler-designer-selected-field-entry-panel
+{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid rgba(138, 153, 170, 0.4);
+}
+
+.modeler-designer-selected-field-panel
+{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+.modeler-designer-selected-field-item
+{
+}
+
+.modeler-designer-selected-field-item-text
+{
+}
+
+.modeler-designer-selected-entity-item-ui
+{
+    cursor: pointer;
+    min-width: 100px;
+    color: #666;
+}
+
+.modeler-designer-selected-entity-item-ui:hover
+{
+    background-color: #a4befa;
+    background-color: var(--color-pale, #a4befa);
+}
+
+.modeler-designer-selected-entity-item-ui_selected
+{
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+    color: #fff;
+}
+
+.modeler-designer-selected-entity-item-ui_selected:hover
+{
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+
+.modeler-propertyarea-allcheckbox
+{
+    position: relative;
+    right: 0;
+    height: 23px;
+    margin-top: 10px;
+}
+
+.modeler-designer-selected-field-list-panel
+{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+}
+
+.modeler-designer-select-field-no-data-text
+{
+    position: absolute;
+    color: rgb(153, 153, 153);
+    width: 160px;
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.modeler-designer-no-data
+{
+    position: absolute;
+    left: 0;
+    top: calc(50% - 75px);
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    height: 150px;
+}
+.modeler-designer-no-data-icon
+{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 90px;
+    width: 60px;
+}
+.modeler-designer-no-data-text
+{
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.modeler-designer-no-data-only-text
+{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -15px;
+    text-align: center;
+    color: #999999;
+}
+
+.modeler-designer-no-data-cloud-icon
+{
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 80px;
+    width: 140px;
+}
+
+.modeler-propertyarea-tablenode-property-icon
+{
+    cursor: pointer;
+}
+.modeler-propertyarea-tablenode-property-text
+{
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.modeler-designer-addsource-source-icon
+{
+    line-height: 28px;
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 4px;
+}
+
+.modeler-designer-field-item-selected-prompt
+{
+    position: relative;
+    top:2px;
+    overflow: hidden;
+    float: left;
+}
+
+.modeler-designer-tablearea-nopermission-view
+{
+    position: absolute;
+    height: 85px;
+    width: 170px;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -42.5px;
+}
+
+.modeler-designer-tablearea-nopermission-text
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: #999999;
+}
+
+.modeler-designer-tablearea-nopermission-icon
+{
+    width: 80px;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.modeler-designer-tablearea-notable-view
+{
+    position: absolute;
+    width: 170px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: -55px;
+}
+
+.modeler-designer-tablearea-notable-text
+{
+    position: absolute;
+    left: 50%;
+    color: #999999;
+    bottom: 0;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+}
+
+.modeler-designer-tablearea-notable-icon
+{
+    position: absolute;
+    width: 138px;
+    height: 78px;
+    left: 50%;
+    margin-left: -69px;
+}
+
+.modeler-designer-tablearea-button
+{
+    z-index: 3;
+    position: absolute;
+    top: 2px;
+    height: 17px;
+    right: 3px;
+    width: 20px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: #808080;
+    cursor: pointer;
+}
+.modeler-designer-tablearea-button:hover
+{
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+    border-radius: 2px;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+}
+.modeler-designer-tablearea-button-text
+{
+    color: #7F93BC;
+    transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -webkit-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -ms-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -moz-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+    -o-transform: scaleX(0.8) scaleY(0.6) rotate(180deg);
+}
+.modeler-desinger-select-field-lineitem
+{
+    position: relative;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.modeler-designer-selected-entity-item-text
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 90%;
+}
+
+.modeler-designer-model-preview-invalid-image
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -100px;
+}
+
+.modeler-designer-model-preview-invalid-content
+{
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    font-size: 14px;
+}
+
+.modeler-designer-model-preview-invalid-text
+{
+    position: absolute;
+    height: 60px;
+    top: 1px;
+    left: 26px;
+    right: 26px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+}
+
+.modeler-designer-model-preview-rowcount-container
+{
+    display: inline-block;
+    height: 32px;
+    color: #404040;
+    font-size: 12px;
+    user-select: text;
+    white-space: nowrap;
+    line-height: 32px;
+}
+
+.modeler-designer-model-preview-rowcount-btn
+{
+    display: inline-block;
+    height: 32px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: var(--color-main, #5582F3);
+    line-height: 32px;
+    margin-left: 15px;
+}
+
+.modeler-designer-model-preview-rowcount-btn:hover
+{
+    color: var(--color-lightish, #87adff);
+}
+
+.modeler-designer-model-preview-export-btn
+{
+    display: inline-block;
+    white-space: nowrap;
+    width: 100px;
+    height: 23px;
+    margin-left: 15px;
+    position: absolute;
+    top: 4px;
+}
+
+.relation-modeler-designer-add-btn
+{
+    position: relative;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 20px;
+}
+
+.modeler-designer-create-calculated-field-btn
+{
+    position: relative;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 5px;
+}
+
+.modeler-designer-calculated-field-panel
+{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modeler-designer-calculated-field-item
+{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.modeler-designer-calculated-field-item-icon
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.modeler-designer-calculated-field-item-alias
+{
+    margin-left: 25px;
+    margin-right: 60px;
+    line-height: 35px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.modeler-designer-calculated-field-item-delete-btn
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-top: -25px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modeler-designer-calculated-field-item-edit-btn
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-top: -25px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.modeler-designer-calculated-field-list-item-icon
+{
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+}
+
+.modeler-designer-calculated-field-list-item-text
+{
+    position: absolute;
+    left: 24px;
+    right: 2px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modeler-designer-calculated-field-list-item-search-result
+{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 12px;
+    text-align: center;
+}
+
+.modeler-designer-calculated-field-list-item-search
+{
+    position: absolute;
+    height: 25px;
+    top: -3px;
+    left: 0px;
+    right: 0px;
+    z-index: 99999;
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+}
+
+.modeler-designer-calculated-field-list-item-list
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 23px;
+    bottom: 0px;
+}
+
+.modeler-designer-custom-group-owner input
+{
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-designer-custom-group-line-item {
+    position: relative;
+    padding: 0 8px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.modeler-designer-custom-group-line-item-right {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.modeler-designer-custom-group-ctrl-container
+{
+    position: relative;
+    padding: 0 8px;
+    margin-bottom: 8px;
+}
+
+.modeler-designer-custom-group-ctrl-setting-new-btn
+{
+    position: relative;
+    width: 60px;
+    height: 20px;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.modeler-designer-custom-group-ctrl-setting-add-btn
+{
+    position: relative;
+    margin-left: 15px;
+    width: 70px;
+    height: 20px;
+}
+
+.modeler-designer-custom-group-panel
+{
+    padding: 0 8px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.modeler-designer-custom-group-panel-title
+{
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.modeler-designer-custom-group-panel-inner-title {
+    position: relative;
+    height: 100%;
+}
+
+.modeler-designer-custom-group-panel-inner-title:hover
+{
+    background-color: var(--color-pale, #eff3fd);
+}
+
+.modeler-designer-custom-group-number-inline-row
+{
+    position: relative;
+    width: 100%;
+    height: 23px;
+    margin-bottom: 5px;
+}
+
+.modeler-designer-custom-group-popup .sa-ctrl-list-item
+{
+    height: 25px;
+    line-height: 25px;
+}
+
+.modeler-designer-custom-group-panel-inner-title:hover .modeler-designer-custom-group-title-text {
+    right: 53px !important;
+}
+
+/**分组成员 列表控件 */
+.modeler-designer-custom-group-list-owner
+{
+    position: relative;
+    overflow: auto;
+    cursor: default;
+}
+
+.modeler-designer-custom-group-list-item
+{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 9px;
+    margin: 0 4px;
+    border: 1px solid #c3bdbd;
+    height: 22px;
+    line-height: 20px;
+    box-sizing: border-box;
+    max-width: calc(100% - 8px);
+    color: #828282;
+}
+
+.modeler-designer-custom-group-list-item:hover
+{
+    color: var(--color-main, #5582f3);
+    background-color: var(--color-pale, #eff3fd);
+}
+
+.modeler-designer-custom-group-list-item_highlight
+{
+    color: #f00;
+}
+
+.modeler-designer-custom-group-list-item-mark-container {
+    background: linear-gradient(
+            135deg, transparent 50%, var(--color-lightish, #88a7f6) 50%);
+}
+
+.modeler-designer-custom-group-list-item-mark-container,
+.modeler-designer-custom-group-list-item-mark-icon
+{
+    display: none;
+}
+
+.modeler-designer-custom-group-list-item_selected_enabled .modeler-designer-custom-group-list-item-mark-container,
+.modeler-designer-custom-group-list-item_selected_enabled .modeler-designer-custom-group-list-item-mark-icon
+{
+    display: block;
+}
+
+.modeler-designer-filter-item-format-icon
+{
+    position: absolute;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    top: 55%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+/*以下为“列转行”节点引用到的样式*/
+.modeler-designer-column-to-row-add-column-desc
+{
+    float: left;
+    line-height: 35px;
+    color: rgb(102, 102, 102);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 400px;
+}
+
+.modeler-designer-column-to-row-tablecell-editable
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    line-height: 26px;
+    padding-left: 4px;
+}
+
+.modeler-designer-column-to-row-tablecell-editable:hover
+{
+    box-shadow: 0 1px 0 0 #5582f3;
+    box-shadow: 0 1px 0 0 var(--color-main, #5582f3);
+}
+
+.modeler-designer-column-to-row-format-icon
+{
+    position: absolute;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    top: 55%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.modeler-designer-column-to-row-add-column
+{
+    width: 100%;
+    height: 35px;
+    float:left;
+}
+
+.modeler-designer-column-to-row-advanced-setting
+{
+    cursor: pointer;
+}
+
+.modeler-designer-column-to-row-advanced-setting-desc
+{
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    color: #5582F3;
+    color: var(--color-main, #5582F3);
+}
+
+.modeler-designer-column-to-row-advanced-setting-desc-icon
+{
+    border: 1px solid #5582F3;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border-left-width: 0px;
+    border-top-width: 0px;
+    position: absolute;
+}
+
+.modeler-designer-column-to-row-prompt
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    cursor: default;
+}
+
+.modeler-designer-column-to-row-table
+{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    overflow: hidden;
+}
+
+.modeler-designer-column-to-row-delete
+{
+    width: 100%;
+    height: 35px;
+}
+
+.modeler-designer-column-to-row-delete-button
+{
+    position: absolute;
+    right: 0px;
+    max-width: 170px;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    color: #5582F3;
+    color: var(--color-main, #5582F3);
+    text-align: center;
+}
+
+.modeler-designer-column-to-row-add-column-button
+{
+    line-height: 28px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px 0 #ccc;
+    background: #fff;
+    color: #828282;
+    cursor: pointer;
+}
+
+.modeler-designer-column-to-row-add-column-button:hover
+{
+    color: #5582F3;
+    color: var(--color-main, #5582F3);
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+}
+
+.modeler-designer-column-to-row-item-rule-text
+{
+    line-height: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modeler-designer-column-to-row-tips-row-text
+{
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    padding-left: 4px;
+    color: #c0c0c0;
+}
+
+.metric-designer-field-mapping-select-text
+{
+    position: absolute;
+    left: 0px;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    line-height: 20px;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 24px;
+}
+
+.metric-designer-public-dimension-box
+{
+    position: absolute;
+    top: 140px;
+    width: 150px;
+    transform: translate(-50%, 0);
+}
+
+.metric-designer-public-dimension-text
+{
+    position: absolute;
+    left: 90px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+    color: #999999;
+}
+
+.metric-designer-public-dimension-text-link
+{
+    position: absolute;
+    left: 290px;
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-size: 14px;
+}
+
+.metric-designer-table-field-text
+{
+    position: absolute;
+    left: 30px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 12px;
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.metric-designer-select-table-search-box
+{
+    position: relative;
+    left: 0px;
+    height: 23px;
+}
+
+.metric-designer-table-item-container
+{
+    position: relative !important;
+    top: 0 !important;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 23px;
+    cursor: default;
+    color: #666;
+}
+
+.metric-designer-table-item-container:hover
+{
+    background-color: #eff3fd;
+    background-color: var(--color-pale, #eff3fd);
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+
+.metric-designer-table-item
+{
+    position: absolute;
+    left: 25px;
+    top: 0px;
+    width: 300px;
+    height: 23px;
+}
+
+.metric-designer-table-item-text
+{
+    position: absolute;
+    left: 20px;
+    line-height: 23px;
+}
+
+.metric-designer-table-item-icon
+{
+    position: absolute;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    top: 55%;
+    margin-top: -8px;
+}
+
+.metric-designer-table-item-checkbox
+{
+    position: absolute;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+}
+
+.metric-designer-table-item-container_selected
+{
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+    color: #fff;
+}
+
+.metric-designer-select-table-button-area
+{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    border-top: 1px solid #CBCBCB;
+}
+
+.metric-designer-select-table-preview-label
+{
+    position: absolute;
+    left: 20px;
+    width: 45px;
+    height: 23px;
+}
+
+.metric-designer-select-table-preview-checkbox
+{
+    position: absolute;
+    right: 0px;
+    width: 107px;
+    height: 23px;
+}
+
+.metric-designer-select-table-preview-table
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 18px;
+    height: 390px;
+    margin: 10px;
+}
+
+.metric-designer-select-field-label
+{
+    position: absolute;
+    height: 23px;
+    width: 100%;
+}
+
+.metric-designer-select-field-table-area
+{
+    position: absolute;
+    height: 380px;
+    width: 100%;
+    top: 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.metric-designer-select-field-table-item-container
+{
+    position: absolute;
+    height: 26px;
+}
+
+.metric-designer-select-field-table-check-box
+{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+}
+
+.metric-designer-select-field-table-item
+{
+    position: absolute;
+    height: 26px;
+    cursor: default;
+    color: #666;
+    width: 300px;
+}
+
+.metric-designer-select-field-table-item:hover
+{
+    background-color: #a4befa;
+    background-color: var(--color-pale, #a4befa);
+}
+
+.metric-designer-select-field-table-item_selected
+{
+    background-color: var(--color-main, #5582f3);
+    color: #fff;
+}
+
+.metric-designer-select-field-table-item_selected:hover
+{
+    background-color: var(--color-main, #5582f3);
+    color: #fff;
+}
+
+.metric-designer-select-field-table-icon
+{
+    position: absolute;
+    left: 1px;
+    width: 16px;
+    height: 16px;
+    top: 56%;
+    margin-top: -8px;
+}
+
+.metric-designer-select-field-table-name
+{
+    position: absolute;
+    height: 26px;
+    margin-left: 23px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
+
+.metric-designer-table-area-tips-name-container
+{
+    position: relative;
+    width: 210px;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    top: 5px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.metric-designer-table-area-tips-source-container
+{
+    position: relative;
+    width: 210px;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    top: 5px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.metric-designer-table-area-relation-dialog-left-container
+{
+    position: absolute;
+}
+
+.metric-designer-table-area-relation-dialog-right-container
+{
+    border-left: 1px solid #CBCBCB;
+}
+
+.metric-designer-relation-title
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 24px;
+    background-color: #f4f4f4;
+}
+
+.metric-designer-table-area-edit-relation-btn
+{
+    z-index: 3;
+    position: absolute;
+    top: 4px;
+    height: 16px;
+    right: 20px;
+    width: 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.metric-designer-table-area-tips-source-name
+{
+    letter-spacing: 0;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 5px;
+}
+
+.metric-designer-table-area-tips-exception-icon
+{
+    line-height: 28px;
+    text-align: center;
+    padding-right: 16px;
+}
+
+.metric-designer-field-area-icon
+{
+    height: 16px;
+    width: 16px;
+    top: 5px;
+    position: absolute;
+}
+
+.metric-designer-field-area-text
+{
+    position: absolute;
+    left: 25px;
+    top: 2px;
+}
+
+.metric-designer-field-area-no-permission-view
+{
+    position: absolute;
+    height: 85px;
+    width: 120px;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -42.5px;
+}
+
+.metric-designer-field-area-no-permission-text
+{
+    position: absolute;
+    width: 120px;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 0;
+    text-align: center;
+    color: rgb(153, 153, 153);
+}
+
+.metric-designer-field-area-no-data-view
+{
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -55px;
+}
+
+.metric-designer-field-area-no-data-text
+{
+    position: absolute;
+    left: 50%;
+    color: #999999;
+    bottom: 0;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.metric-designer-field-area-title-text
+{
+    position: relative;
+    left: 10px;
+    width: auto;
+    float: left;
+    height: 24px;
+    margin-right: 5px;
+    line-height: 24px;
+    color: #666;
+    font-weight: bold;
+}
+
+.metric-designer-field-area-title-exception-icon
+{
+    position: relative;
+    left: 8px;
+    float: left;
+    width: 16px;
+    top: 4px;
+    height: 16px;
+}
+
+.metric-designer-dimension-table-field
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 2px;
+    margin-bottom: 100%;
+    line-height: 26px;
+    font-size: 12px;
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.metric-designer-dimension-reset
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.metric-designer-dimension-tablecell-editable
+{
+    line-height: 28px;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.metric-designer-dimension-tablecell-editable:hover
+{
+    box-shadow: 0 1px 0 0 #5582f3;
+    box-shadow: 0 1px 0 0 var(--color-main, #5582f3);
+}
+
+.modeler-metric-dimension-error-prompt
+{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    float: left;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    background-color: yellow;
+    color: #BC1118;
+    border: 1px solid #BC1118;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.modeler-metric-dimension-table-operation
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 8px;
+    cursor: pointer;
+}
+
+.metric-card-create-metric
+{
+    position: absolute;
+    height: 23px;
+    top: 32px;
+    margin: 12px 30px;
+}
+
+.metric-card-no-data-text
+{
+    color: #999999;
+    line-height: 20px;
+    text-align: center;
+}
+
+.metric-card-area-container
+{
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.metric-card-container
+{
+    position: relative;
+    height: 160px;
+    width: 300px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    margin: 0px 8px 22px 8px;
+}
+
+.metric-card-detail-container
+{
+    position: absolute;
+    height: 130px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px 0px 20px;
+}
+
+.metric-card-title-container
+{
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+}
+
+.metric-card-icon
+{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.metric-card-name-container
+{
+    display: flex;
+    margin-left: 15px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: 32px;
+    right: 0px;
+    vertical-align: middle;
+}
+
+.metric-card-name {
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.metric-card-number-container
+{
+    margin-left: 10px;
+    color: #C0C0C0;
+}
+
+.metric-card-desc-container
+{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.metric-card-desc
+{
+    margin-left: 17px;
+}
+
+.metric-card-expr
+{
+    margin-left: 5px;
+}
+
+.metric-card-expr-container
+{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.metric-card-operation-container
+{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    border-top: 2px solid #de9611;
+    padding: 6px 13px;
+}
+
+.metric-card-button
+{
+    display: inline-block;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.metric-card-button-calc
+{
+    position: relative;
+}
+
+.metric-card-button-filter
+{
+    float: left;
+    margin-left: 0px;
+}
+
+.metric-card-invalid-ui
+{
+    border: 1px solid #FB2323;
+}
+
+.metric-designer-dimension-table-field
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 2px;
+    margin-bottom: 100%;
+    line-height: 26px;
+    font-size: 12px;
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.modeler-designer-dimension-dialog-item
+{
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 34px;
+    right: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.modeler-designer-dimension-dialog-item-icon
+{
+    float: left;
+    width: 16px;
+    height: 16px;
+    left: 12px;
+    top: 8px;
+    position: absolute;
+}
+.modeler-designer-dimension-item-noselect
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/****************************指标计算弹窗*************************************/
+.metric-designer-trial-calculate-property-title
+{
+    position: absolute;
+    width: 100%;
+    height: 24px;
+}
+.metric-designer-trial-calculate-metric-icon
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+}
+.metric-designer-trial-calculate-metric-info
+{
+    position: absolute;
+    top: 0px;
+    left: 47px;
+    right: 15px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #666666;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.metric-designer-trial-calculate-dimension-filter-container
+{
+    height: auto;
+    max-height: 180px;
+}
+
+.metric-designer-trial-calculate-dimension-list
+{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+    max-height: 136px;
+}
+
+.metric-designer-trial-calculate-no-dimension-tips
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    line-height: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #c0c0c0;
+    bottom: 22px;
+}
+
+.metric-designer-trial-calculate-entry-designer
+{
+    color: rgb(43, 135, 243);
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    text-align: center;
+}
+
+.metric-designer-trial-calculate-view-exception-reason
+{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 5px;
+    color: rgb(192, 192, 192);
+}
+
+.metric-designer-trial-calculate-no-result
+{
+    position: absolute;
+    left: 0px;
+    right: 5px;
+    top: 35px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #666666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.metric-designer-preview-no-result
+{
+    position: absolute;
+    left: 0px;
+    right: 5px;
+    top: 23px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #666666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.metric-designer-trial-calculate-button
+{
+    width: 70px;
+    height: 23px;
+    left: 0px;
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+
+.metric-designer-trial-calculate-button:hover
+{
+    background-color: #88a7f6;
+    background-color: var(--color-lightish, #88a7f6);
+}
+
+.metric-designer-trial-calculate-result-preview-setting
+{
+    position: absolute;
+    left: 0px;
+    top: 92px;
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.metric-designer-trial-calculate-result-preview-setting-text
+{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    height: 100%;
+    width: auto;
+}
+
+.metric-designer-trial-calculate-result-preview-setting-btn
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.metric-designer-trial-calculate-result-table
+{
+    position: absolute;
+    top: 112px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.metric-designer-trial-calculate-table-cell
+{
+    line-height: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.metric-designer-trial-calculate-dimension-item
+{
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 45px;
+    top: 0px;
+    margin: 0px 50px 23px 0px;
+}
+
+.metric-designer-trial-calculate-dimension-item-name
+{
+    position: absolute;
+    width: 230px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #666666;
+    top: 0px;
+    left: 0px;
+    font-size: 12px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.metric-designer-trial-calculate-dimension-value-container
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.metric-designer-trial-calculate-dimension-value-text
+{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    left: 0px;
+    right: 16px;
+    color: #666666;
+    height: 23px;
+    line-height: 23px;
+}
+
+.metric-designer-trial-calculate-dimension-value-btn
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.metric-designer-trial-calculate-filter-collapsible
+{
+    cursor: pointer;
+    color: rgb(85, 130, 243);
+    font-size: 12px;
+}
+
+.metric-data-calculate-preview-mask
+{
+    z-index: 3;
+    position: absolute;
+    top: 112px;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.metric-data-calculate-mask-text
+{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--color-main, #5582f3);
+    cursor: pointer;
+}
+/*******************************************************************************/
+
+.metric-data-filter-preview
+{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.metric-data-filter-condition
+{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.metric-data-filter-preview-title
+{
+    position: absolute;
+    width: 100%;
+    height: 15px;
+}
+
+.metric-data-filter-preview-table
+{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    top: 25px;
+}
+
+.metric-data-filter-condition-title
+{
+    position: absolute;
+    width: 100%;
+    height: 15px;
+}
+
+.metric-data-filter-condition-table
+{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    top: 25px;
+}
+
+.metric-data-filter-preview-mask
+{
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.metric-data-filter-mask-text
+{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin-left: -160px;
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+
+.metric-data-filter-preview-waiting
+{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding-left: 20px;
+    line-height: 30px;
+    white-space: pre-wrap;
+    color: #666;
+}
+
+.metric-filter-condition
+{
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 0px;
+    height: 95%;
+    width: 95%;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+}
+
+.metric-filter-condition-table
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.metric-filter-field-list-item-selected
+{
+    color: #fff;
+    background-color: #88a7f6;
+    background-color: var(--color-lightish, #88a7f6);
+}
+
+.metric-filter-field-list-item-selected:hover
+{
+    color: #fff;
+    background-color: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+
+/****************************物化存储设置弹窗*************************************/
+.modeler-designer-materialized-method-label
+{
+    display: inline-block;
+    font-weight: bold;
+    color: #666666;
+}
+
+.modeler-designer-materialized-method-label-tips
+{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.modeler-designer-materialized-based-field
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+    height: 23px;
+}
+
+.modeler-designer-materialized-delete-field
+{
+    display: inline-block;
+    line-height: 18px;
+    font-size: 16px;
+    color: var(--color-main, #00a0d1);
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.modeler-designer-materialized-add-field
+{
+    display: inline-block;
+    line-height: 18px;
+    font-size: 12px;
+    color: var(--color-main, #5582F3);
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.modeler-designer-materialized-table-field-text
+{
+    position: absolute;
+    left: 30px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 12px;
+    letter-spacing: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/****************************物化存储设置弹窗*************************************/
+
+.metric-designer-trial-calculate-text
+{
+    line-height: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

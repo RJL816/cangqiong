@@ -1,0 +1,39 @@
+<div>
+    <div>
+    <div class="ops-full">
+        <label>操作类型</label>
+		<input type="text" value="${value}" placeholder="${placeholder}"/>
+		<i class="iconfont icon-search" type="${type}"></i>
+    </div>
+	<div class="ops-half">
+        <label>操作编码</label>
+		<input type="text"/>
+    </div>
+	<div class="ops-half">
+        <label>操作名称</label>
+		<input type="text"/>
+    </div>
+	<div class="cus-tab-wrapper">
+	    <div class="cus-tab">
+		    <div tab="base" class="active">参数设置</div>
+			<div tab="additonal">其他控制</div>
+		</div>
+		<div link-tab="base"></div>
+		<div link-tab="additional" class="hide">
+		    <div link-attr="${id}" name="${name}" class="ops-full">
+                <label>权限项</label>
+		        <input type="text"/>
+		        <i class="iconfont icon-search"></i>
+            </div>
+			<div link-attr="${id}" name="${name}" class="ops-full">
+                <label>操作前确认提示</label>
+		        <input type="text"/>
+            </div>
+			<div link-attr="${id}" name="${name}">
+                <label>写操作日志</label>
+		        <div class="cus-switch1"><span></span></div>
+            </div>
+		</div>
+	</div>
+	</div>
+</div>

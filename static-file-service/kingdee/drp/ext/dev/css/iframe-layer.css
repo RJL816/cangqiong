@@ -1,0 +1,17 @@
+/**layer ifrmae弹出框样式**/
+.iframe-layer .layui-layer-btn{
+    text-align:center;
+}
+.iframe-layer .layui-layer-btn .layui-layer-btn0{
+	background: #4084F2 !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    width: 60px !important;
+}
+.iframe-layer .layui-layer-btn .layui-layer-btn1{
+	color:#ffffff !important;
+	background: #CCCCCC !important;
+    font-size: 14px !important;
+    width: 60px !important;
+    margin-left: 44px !important;
+}

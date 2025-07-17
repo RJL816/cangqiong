@@ -1,0 +1,9 @@
+<div>
+	<div class="${control.class} ${control.showstyle==='2'?'showstyle2':''}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}" class="fm-control" hidden="${control.hidden}" style="width:${control.colwidth};${control.colstyle}">
+		<label style="${control.labelstyle + ';width:'+ control.labelwidth}" class="${control.required ? 'required' : ''}">${control.name}</label>
+		<ul class="${control.showstyle==='2' ? control.class:''}" id="${control.id}"  viewid="${control.viewid}"></ul>
+		{{if control._customData.plat === 'mobile'}}
+		<i class="iconfont iconmore_icon"></i>
+		{{/if}}
+	</div>
+</div>

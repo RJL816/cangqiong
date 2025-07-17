@@ -1,0 +1,9 @@
+.kd-cascader-menu {
+    display: inline-block !important;
+    height: 208px !important;
+}
+
+#customcontrolap .kd-cascader-picker-input{
+    border: none;
+    border-bottom: 1px solid #999;
+}

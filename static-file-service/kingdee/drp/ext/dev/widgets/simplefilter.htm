@@ -1,0 +1,32 @@
+<div>
+	<div class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}" xml="${control.xml}" data="${controlStr}">
+		<div class="input-group search-input">
+			<div class="search-dropdown ordertimeSelect">
+				<select class="dropdown-menu" role="menu" viewid="${control.viewid}">
+				</select>
+				<input type="text" class="form-control" name="${control.id}" placeholder="${control.placeholder}" disabled class="${control.disabled ? 'disabled':''}"/>
+			</div>
+			<form>
+				<div class="timeChoose">
+					<div class="timeChoose-header">
+						<span>请选择指定日期</span>
+					</div>
+					<div class="timeChoose-body">
+						<div class="time-group">
+							<label>开始日期</label>
+							<input type="text" class="input-sm form-control datetime" id="start" name="start" disabled>
+							<span class="glyphicon glyphicon-calendar"></span>
+						</div>
+						<div class="time-group">
+							<label>结束日期</label>
+							<input type="text" class="input-sm form-control datetime" id="end" name="end" disabled>
+							<span class="glyphicon glyphicon-calendar"></span>
+						</div>
+						<button id="timeOk" class="simple-submit-btn btn btn-primary">确定</button>
+					</div>
+				</div>
+				<button type="submit" class="simple-submit-btn" id="search_btn">查询</button>
+			</form>
+		</div>
+	</div>
+</div>

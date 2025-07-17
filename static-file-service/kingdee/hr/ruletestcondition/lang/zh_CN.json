@@ -1,0 +1,20 @@
+{	
+	"yes":"是",
+	"no":"否",
+	"inputconditionparam":"输入条件参数",
+	"addrow":"增行",
+	"deleterow":"删行",
+	"paramname":"参数名称",
+	"paramvalue":"参数值",
+	"nodata":"暂无数据",
+	"first":"第一个",
+	"page":"页",
+	"last":"最后一个",
+	"loading": "加载中...",
+    "loadMore": "加载更多...",
+    "noResults": "无可用的参数",
+    "noResultsForTerm": "没有包含<b>%s</b>的参数",
+	"allselect":"全选",
+	"selected":"已选",
+	"term":"项"
+}

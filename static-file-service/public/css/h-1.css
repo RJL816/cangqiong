@@ -1,0 +1,393 @@
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/base/SearchDropDownPanel.less ***!
+  \*****************************************************************************************************************************************************************************************************************/
+.SearchDropDownPanel_root-panel_3i6v {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  min-width: 300px;
+  z-index: 1050;
+  overflow: hidden;
+  background: white;
+  -webkit-transition: height 0.2s linear;
+  transition: height 0.2s linear;
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_header_2pT- {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666666;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #D8D8D8;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_header_2pT- .SearchDropDownPanel_header-child_3do7 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_header_2pT- .SearchDropDownPanel_header-child_3do7:hover {
+  cursor: pointer;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_header_2pT- .SearchDropDownPanel_header-child-left-select_3Rkf {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_recent-header_3SEf {
+  height: 36px;
+  line-height: 36px;
+  font-size: 12px;
+  padding-left: 14px;
+  color: #999999;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_v-hidden_1Lz3 {
+  visibility: hidden;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_v-show_3XVi {
+  visibility: visible;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr {
+  width: 200%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: auto;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-child_2kXt {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 50%;
+  position: relative;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-child_2kXt .SearchDropDownPanel_default-panel_3vfQ {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-child_2kXt .SearchDropDownPanel_default-panel_3vfQ img {
+  width: 168px;
+  height: 96px;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-child_2kXt .SearchDropDownPanel_default-panel_3vfQ p {
+  margin-top: 22px;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-child_2kXt .SearchDropDownPanel_default-panel_3vfQ span {
+  margin-top: 12px;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_display-layout_1vpZ {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 28px;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_display-layout_1vpZ span {
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_display-layout_1vpZ span:first-child {
+  max-width: 276px;
+  margin-right: 12px;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_display-layout_1vpZ span + span {
+  font-weight: 400;
+  opacity: 0.8;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_display-layout-help_1zbA {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_display-layout-help_1zbA span {
+  font-weight: 400;
+  margin: 6px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-li-title_26sM {
+  font-size: 16px;
+  color: #333333;
+  margin-top: 25px;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-li_2_5J {
+  font-size: 12px;
+  color: #333333;
+  cursor: pointer;
+}
+.SearchDropDownPanel_root-panel_3i6v .SearchDropDownPanel_content_2glr .SearchDropDownPanel_content-li_2_5J:hover {
+  background: rgba(85, 130, 243, 0.1);
+}
+.SearchDropDownPanel_content-select_DUGy {
+  background: rgba(85, 130, 243, 0.1);
+}
+.SearchDropDownPanel_border-left_78db {
+  border-left: 1px solid #666666;
+}
+.SearchDropDownPanel_pad-left_9O7G {
+  padding: 0px 16px 0px 14px;
+}
+.SearchDropDownPanel_marign-bottom_kM0w {
+  margin-bottom: 40px;
+}
+.SearchDropDownPanel_leftMoveAni_ij8S {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.SearchDropDownPanel_leftMoveAniBack_2EEO {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.SearchDropDownPanel_loading_2CIP {
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/base/MessageCarouselContainer.less ***!
+  \**********************************************************************************************************************************************************************************************************************/
+.MessageCarouselContainer_carouselDisplay_3ZMC {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_carouselPanel_YHwB {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_carouselPanel_YHwB .MessageCarouselContainer_listContainer_2Nmm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR {
+  width: 100%;
+  height: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: auto;
+  bottom: 0px;
+  position: absolute;
+  z-index: 15;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR .MessageCarouselContainer_dot_2Y_W {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background: #d8d8d8;
+  cursor: pointer;
+  margin-left: 6px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR .MessageCarouselContainer_dot_2Y_W:first-of-type {
+  margin-left: 0;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR .MessageCarouselContainer_dot_2Y_W.MessageCarouselContainer_active_3O3P {
+  background: #666666;
+  border-radius: 3px;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInTop_3IQo {
+  top: 0px;
+  bottom: auto;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInLeft_2pS4,
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInRight_1Feo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 28px;
+  height: 100%;
+  bottom: auto;
+  left: auto;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInLeft_2pS4 .MessageCarouselContainer_dot_2Y_W,
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInRight_1Feo .MessageCarouselContainer_dot_2Y_W {
+  margin-left: 0;
+  margin-top: 6px;
+  width: 4px;
+  height: 12px;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInLeft_2pS4 .MessageCarouselContainer_dot_2Y_W:first-of-type,
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInRight_1Feo .MessageCarouselContainer_dot_2Y_W:first-of-type {
+  margin-top: 0;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInLeft_2pS4 {
+  left: 0px;
+}
+.MessageCarouselContainer_carouselDisplay_3ZMC .MessageCarouselContainer_dotsContainer_3eaR.MessageCarouselContainer_dotsInRight_1Feo {
+  right: 0px;
+}
+.MessageCarouselContainer_absoluteContainer_MW1s {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch !important;
+  -webkit-align-items: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+  -webkit-box-pack: start !important;
+  -webkit-justify-content: flex-start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  overflow: hidden;
+}
+.MessageCarouselContainer_slideToBottom_2-dR {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end !important;
+  -webkit-justify-content: flex-end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+.MessageCarouselContainer_slideToLeft_BZ4R {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start !important;
+  -webkit-justify-content: flex-start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+.MessageCarouselContainer_slideToLeft_BZ4R .MessageCarouselContainer_carouselPanel_YHwB {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.MessageCarouselContainer_slideToRight_2ExR {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end !important;
+  -webkit-justify-content: flex-end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+.MessageCarouselContainer_slideToRight_2ExR .MessageCarouselContainer_carouselPanel_YHwB {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.MessageCarouselContainer_noData_RFeB {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+

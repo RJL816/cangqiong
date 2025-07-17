@@ -1,0 +1,73 @@
+<div class='resultControl'>
+	<div class='resultTop'>
+		<div class='ruleTitle' style="display:none;"><span><%= returnresult %></span></div>
+		<!-- <div class='ruleTips' style="display:none;"><span>当业务输入参数没有匹配到任意规则时，规则引擎返回结果：</span></div> -->
+	</div>
+	<div class='resultContent'>
+		<div><table class='ruleResult'></table></div>
+		<div class="addResultDiv"><a class='addResult baseComponent_hyperlink_1yll theme-fc' title="+<%= addresult %>">+<%= addresult %></a></div>
+	</div>
+	<div class='resultFloor'></div>
+	
+	<div id='multiDropDownControl' class='multiDropDownControl' tabindex="-1" style="position: fixed; transform: translateZ(0px); visibility: visible; z-index: 1050;"></div>
+</div>
+
+<table>
+	<tr id='templeteTrResult' class='templeteTrResult'>
+		<td class='resultParamTd'>
+			<div class='resultParamDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit'>
+				<div class='resultParam'></div>
+			</div>
+		</td>
+		<td class='resultComparisonOptTd'>		
+			<div style="min-width:24px;"><span class='resultOpt'><%= equal %></span></div>
+		</td>
+		<td class='resultValueTypeTd'>
+			<div class='resultValueTypeDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit'>
+				<div class='resultValueType'></div>
+			</div>
+		</td>
+		<td class='resultValueTd'>
+			<div class='resultValueParamSelectDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit' style='display:none;'>			
+				<div class='resultValueParam'></div>
+			</div>		
+			<div class='resultValueBooleanSelectDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit' style='display:none;'>
+				<div class='resultValueBoolean'></div>
+			</div>
+			<div class='resultValueEnumSelectDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit' style='display:none;'>
+				<div data-base-ctrl="true" style="display:flex;">
+					<input class='resultValueEnum' type="text" readonly="readonly"/>
+					<div class="Select_iconBox_1WJ3"><div class="xialajiantou kdfont kdfont-xiala Select_select-icon-default_3JG_" style="float: right;padding: 5px 0;"></div></div>
+				</div>
+			</div>
+			<div class="resultValueDateDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit" style='display:none;position: relative;'>
+				<div class="" data-base-ctrl="true" title="">
+					<div class="DatePicker_icon_Vdy- kdfont kdfont-riqixuanze undefined"></div>
+					<input placeholder="" tabindex="0" enableddates="" disableddates="" calendarlocale="zh_CN" today="2021-11-08 09:33:14" firstdayofweek="NaN" class="resultValueDate baseComponent_input_2ULV baseComponent_input-default_49SY DatePicker_input-default_1kxb DatePicker_pr-18_1a--" value="" readonly="readonly">
+				</div>
+			</div>			
+			<div class="resultValueNumberDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit" style='display:none;'>
+				<div class="baseComponent_input-number-div_2cds" data-base-ctrl="true">
+					<input type="text" code="" tabindex="0" class="resultValueNumber baseComponent_input_2ULV baseComponent_input-default_49SY primary-text-in-light" title="" value="">
+				</div>
+			</div>
+			<div class="resultValueTextDiv FieldItem_value-wrap_3cGJ FieldItem_borderAll_3yzr kd-field-border-all kd-hover-color allBorder theme field-in-edit" style='position: relative;'>
+				<div data-base-ctrl="true" class="BaseData_base-data_16rF BaseData_v-content_2bzr common_grow-1_6Rq1" style='height: 26px;'>
+					<div class="BaseData_base-data-contentArea_1Fc8 BaseData_no-wrap_2Tn-">
+						<input class="resultValueText BaseData_text-input-margin-right_26jS baseComponent_input_2ULV primary-text-in-light baseComponent_input-default_49SY common_grow-1_6Rq1" type="text" tabindex="0" title="" value="">
+					</div>
+					<div class="BaseData_base-data-iconArea_h_gc">
+						<span class="BaseData_icon_2ri7 kdfont kdfont-f kdfont-f resultValueSearch" style='display:none;'></span>
+					</div>
+				</div>
+			</div>
+			<input class='resultDisplayValue' type='text' style='display:none;'>
+			<input class='resultValue' type='text' style='display:none;'>
+		</td>
+		<td class='resultDeleteTd'>
+			<div title="<%= deleterow %>">
+				<img class="deleteResult" src="./kingdee/hr/rule/img/delete.png"></img>
+			</div>
+		</td>				
+	</tr>
+</table>	

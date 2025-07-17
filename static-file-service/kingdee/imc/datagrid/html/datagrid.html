@@ -1,0 +1,38 @@
+<table id="{{tableId}}" {{if tableStyle==null }}  style="width:100%;"{{else}}  style="{{tableStyle}}" {{/if}} class="pwyTable">
+	<thead>
+		<tr>
+			<th width="50px" style="min-width: 50px;position: sticky;z-index: 2;left: 0">
+				<input type="checkbox" id="check_all"/>
+				<div class="resizer"></div>
+			</th>
+			{{each clomuns as colItem i}} 
+				<th id="{{tableId}}_{{colItem.field}}"{{if colItem.style!=null}} style="{{colItem.style}}"{{/if}}">
+					{{#colItem.title}}
+					<div class="resizer"></div>
+				</th>
+			{{/each}}
+		</tr>
+	</thead>
+	<tbody id="tb">
+	 {{each data as rowItem row}}
+		<tr row="{{row}}"
+			{{each rowItem as colItem colId}}
+				{{if colItem.field=='rowkey'}}  
+					rowkey="{{colItem.text}}">  
+					<td  style="min-width: 50px;position: sticky;z-index: 2;left: 0"><input type="checkbox" name="checkRow"/></td>  
+				{{else}}  
+					<td {{if colItem.style!=null}}   style="{{colItem.style}}"{{/if}}>
+					{{if colItem.div=='1'}}
+					<div style="{{colItem.style}}" title="{{if colItem.text!=null}}{{#colItem.text}}{{/if}}">{{if colItem.text!=null}}{{#colItem.text}}{{/if}}</div>
+					</td>
+					{{else}} 
+					{{if colItem.text!=null}}{{#colItem.text}}{{/if}}</td>
+					{{/if}}
+					
+					
+				{{/if}}
+			{{/each}} 
+		</tr>
+     {{/each}}   
+	</tbody>
+</table>

@@ -1,0 +1,173 @@
+.decisionTableParam .selectivity-single-select-input{
+	display:none;
+	opacity: 0; 
+}
+.decisionTableParam .selectivity-single-result-container{
+	top: 0;
+	font-size: 12px;
+	position: absolute;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+.decisionTableParam .selectivity-single-select {
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  min-height: 26px;
+  min-width: 150px;
+  width:100%;
+  height: 26px;
+  line-height: 26px;
+  position: relative;
+  box-sizing: content-box; 
+}  
+.decisionTableParam .selectivity-caret {
+    border-top: 6.4px solid transparent;
+    border-color: #333;
+    top: 10px;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+	position: absolute;
+	right: 6.5px;
+}
+.decisionTableParam tr.headTr {
+    width: 100%;
+    display: flex;
+}
+.decisionTableParam tr.bodyTr {
+    width: 100%;
+    display: flex;
+    /* border-right: 1px solid #d9d9d9; */
+    border-left: 1px solid #d9d9d9;
+}
+.decisionTableParam td.radioTd {
+    width:32px;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+}
+.decisionTableParam td.seqTd {
+    width:32px;
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.decisionTableParam tbody {
+    max-height: 220px;
+    overflow-y: overlay;
+    /* padding-bottom: 2px; */
+    border-right: 1px solid #d9d9d9;
+}
+
+.decisionTableParam .active{
+	display:block!important;
+}
+.decisionTableParam .xialajiantou{
+	display: none;
+}
+.decisionTableParam .Select_iconBox_1WJ3{
+	min-width: 16px;
+}
+.decisionTableParamAp .AdvConAp_advCon_1WJb{
+	padding: 8px 10px 8px 0;
+}
+
+.decisionTableParamDiv{
+    height: 260px;
+	/* max-height: 280px;
+	overflow-y:overlay; */
+}
+.decisionTableParamDiv .FieldItem_value-wrap_3cGJ{
+    height: 100%;
+	border: 1px solid #ffffff;
+}
+.decisionTableParam{
+    border-top:1px solid #d9d9d9;
+    border-right: none;
+	border-collapse:collapse;
+    display:flex;
+    flex-direction:column;
+	width:100%;
+} 
+.decisionTableParam tr{
+	background-color: #FFFFFF;
+}
+.decisionTableParam th{
+    display: flex;
+	background-color: #f4f4f4;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: default;
+    direction: ltr;
+    font-family: Roboto, "San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragina Sans GB", "WenQuanYi Micro Hei", "microsoft yahei ui", "microsoft yahei", sans-serif;
+    font-size: 12px;
+	font-weight: normal;
+    height: 33.9931px;
+    flex-grow: 1;
+	width : 160px;
+    left: 0px;
+    list-style-type: none;
+    text-align: left;
+	padding-left: 8px;
+    user-select: none;
+    visibility: visible;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+}
+.decisionTableParam .radioTh{
+    /* min-width: 32px; */
+    justify-content: center;
+	width: 32px;
+    flex-grow: 0;
+}
+.decisionTableParam .seqTh{
+	min-width: 32px;
+	width: 32px;
+	text-align: center;
+    flex-grow: 0;
+    padding-left: 0px;
+    justify-content: center;
+}
+.decisionTableParam td{
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    font-family: Roboto, "San Francisco", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragina Sans GB", "WenQuanYi Micro Hei", "microsoft yahei ui", "microsoft yahei", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: 33.9931px;
+    width: 160px;
+    user-select: none;
+    visibility: visible;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.decisionTableParam .paramName,.decisionTableParam .paramDisplayName,.decisionTableParam .paramNumber,.decisionTableParam .paramType,.decisionTableParam .paramOpt{
+	width:100%;
+	min-width: 150px;
+	height: 100%;
+	border-radius: 2px;
+	border: 0;	
+	padding-left: 8px;
+    padding-right: 8px;
+}
+.decisionTableParam .paramName, .decisionTableParam .paramOpt{
+	color:#000000!important;
+    display: flex;
+    background: #FFFFFF;	
+	/* height: 2; */
+}
+.decisionTableParam .selected,.decisionTableParam .focus,.decisionTableParam div.hover{
+	background-color: var(--bill-list-grid-row-selected-bg-color);
+}

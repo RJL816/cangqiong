@@ -1,0 +1,8 @@
+<div>
+	<li class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  synchro="menubutton" id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}">
+		{{if control._customData.iconClass}}
+		<i class="iconfont ${control._customData.iconClass}"></i>
+		{{/if}}
+		${control.name}
+	</li>
+</div>

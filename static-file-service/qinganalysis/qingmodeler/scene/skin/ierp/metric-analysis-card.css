@@ -1,0 +1,272 @@
+.metric-card-fontfamily
+{
+	font-family: "Microsoft YaHei",PingFangSC-Regular,"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+}
+
+.metric-card-title
+{
+	position: relative;
+	font-size: 14px;
+	height: 20px;
+	width: 60%;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: default;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.metric-card-icon
+{
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+}
+
+.metric-card-error-errorprompt
+{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+.metric-card-error-errorprompt-size-listener
+{
+	opacity: 0;
+	z-index: -1111;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 50%;
+	width: 50%;
+}
+
+.metric-card-error-errorprompt-img
+{
+	position: relative;
+	height: 60%;
+	width: 100%;
+	max-height: 200px;
+	background-size: contain;
+	background-position: center center !important;
+}
+
+.metric-card-error-errorprompt-errorinfo
+{
+    position: relative;
+	width: 100%;
+	min-height: 36px;
+	max-height: 150px;
+    text-align: center;
+}
+
+.metric-card-error-errorprompt-text
+{
+	color: #666;
+	display: block;
+	padding-bottom: 10px;
+	word-break: break-all;
+}
+
+
+.metric-card-error-errorprompt-support-qing
+{
+	position: relative;
+    overflow: auto;
+    height: 95%;
+    top: 22px;
+}
+.metric-card-error-errorprompt-support-qing-text
+{
+	margin-top: 4px;
+	margin-bottom: 2px;
+}
+
+.metric-card-error-errorprompt-error-btn
+{
+	border: 1px solid #BBBBBB;
+	border-radius: 2px;
+	cursor: pointer;
+	padding: 4px 23px;
+	margin-top: 10px;
+	color: #ccc;
+	font-size: 12px;
+	width: 72px;
+	margin: auto;
+}
+
+.metric-card-error-errorprompt-logdetail-container
+{
+	position: fixed;
+	width: 800px;
+	height: 550px;
+	z-index: 999999;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
+	background-color: #fff;
+	margin:0 auto;
+	left:50%;
+	top:50%;
+	margin-left:-400px;
+	margin-top:-275px
+}
+
+.metric-card-error-errorprompt-logdetail-container-title
+{
+	position: absolute;
+	padding-top: 17px;
+	padding-left: 26px;
+	height: 36px;
+	width: 774px;
+}
+
+.metric-card-error-errorprompt-logdetail-titiletag
+{
+	background-color: #fdbf2c;
+	border-radius: 50% 50%;
+	margin-top: 6px;
+	width: 6px;
+	height: 6px;
+	float: left;
+}
+
+.metric-card-error-errorprompt-logdetail-title-lable
+{
+	position: absolute;
+	padding-left: 14px;
+	font-size: 18px;
+	color: #333;
+}
+
+.metric-card-error-errorprompt-logdetail-close
+{
+	float: right;
+	width: 18px;
+	height: 18px;
+	margin-right: 24px;
+	cursor: pointer;
+}
+
+.metric-card-error-errorprompt-logdetail-content-copybutton
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    visibility: hidden;
+    cursor:pointer;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: #9bc0e3;
+}
+
+.metric-card-error-errorprompt-logdetail-content-copybutton-end
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    visibility: visible;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: #94d1e6;
+}
+
+.metric-card-error-errorprompt-logdetail-content-container-text
+{
+    padding-left: 10px;
+    overflow: auto;
+    height: 442px;
+    margin-bottom: 0px;
+}
+
+.metric-card-error-errorprompt-logdetail-content-container
+{
+	position: absolute;
+	overflow: auto;
+	top: 36px;
+	width: 784px;
+	font-size: 12px;
+	color: #363636;
+	height: 490px;
+	margin: 12px 8px;
+	background-color: #f1f1f1;
+	text-align: left;
+}
+
+.metric-card-error-errorprompt-logdetail-title-container
+{
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 17px;
+	height: 24px;
+	border-bottom: solid #d7e2e2 1.5px;
+}
+
+.metric-card-error-errorprompt-logdetail-title-lable
+{
+	display: inline;
+	padding-left: 14px;
+	font-size: 16px;
+	color: black;
+}
+
+.metric-card-error-errorprompt-logdetail-close
+{
+	display: inline;
+	float: right;
+	width: 18px;
+	height: 18px;
+	margin-right: 24px;
+	cursor: pointer;
+}
+
+.metric-card-error-errorprompt-logdetail-content
+{
+	font-size: 12px;
+	color: #888888;
+	overflow-y: auto;
+}
+
+.metric-card-error-errorprompt-logdetail-contenxt-texttitle
+{
+	color: #666;
+	margin-top: 0px;
+	margin-bottom: 7px;
+}
+
+.metric-card-error-errorprompt-logdetail-contenxt-text
+{
+	padding-left: 24px;
+	line-height: 18px;
+	margin-top: 0px;
+	color: #666;
+}
+
+.metric-card-error-errorprompt-logdetail-iknow-btn
+{
+	display: inline-block;
+	margin-top: 16px;
+	height: 33px;
+	font-size: 16px;
+	width: 135px;
+	border: 1px solid #BBBBBB;
+	border-radius: 2px;
+	cursor: pointer;
+	line-height: 32px;
+}
+
+.metric-card-error-errorprompt-logdetail-title-lable
+{
+	display: inline;
+	padding-left: 14px;
+	font-size: 16px;
+	color: black;
+}

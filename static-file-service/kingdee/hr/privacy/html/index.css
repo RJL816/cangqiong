@@ -1,0 +1,15 @@
+#privacy .privacyLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#privacy .privacyLink{
+    color: #0E5FD8
+}
+.privacyWrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;   
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+ }

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "KINGDEEKB-Bold";
+    src: url('./KINGDEEKB-Bold.otf');
+}
+
+@font-face {
+    font-family: "KINGDEEKB-Light";
+    src: url('./KINGDEEKB-Light.otf');
+}
+
+@font-face {
+    font-family: "KINGDEEKB-Regular";
+    src: url('./KINGDEEKB-Regular.otf');
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>div css下拉导航菜单分类代码</title>
+
+<LINK rel=stylesheet type=text/css href="../css/main.css">
+</head>
+
+<body>
+
+<div class="hc_lnav jslist">
+	<div class="allbtn">
+		<h2 class="categoryClick"><a href="javascript:void(0)"><strong>&nbsp;</strong>{{rootName}}<i>&nbsp;</i></a></h2>
+		
+		<ul style="width:190px" class="jspop box">					
+			 <% for(var i=0;i < categoryItem.length;i++){ %>
+			<li class = "a4" ">
+				<div class="tx"><a href="javascript:void(0)" class="category" title="<%= categoryItem[i].name %>" number="<%= categoryItem[i].number %>" longnumber="<%= categoryItem[i].longNumber %>" label ="<%= categoryItem[i].name %>"><%= categoryItem[i].name %></a> </div>
+				{{if isShowSecondInMain == "1"}}
+				<dl>
+					<dd>
+						<% for(var j=0;j < categoryItem[i].children.length;j++){ %>
+							<% if(j<3){ %>
+								<a href="javascript:void(0)" class="category" title="<%= categoryItem[i].children[j].name %>" number="<%= categoryItem[i].children[j].number %>" longnumber="<%= categoryItem[i].children[j].longNumber %>" label ="<%= categoryItem[i].children[j].name %>"><%= categoryItem[i].children[j].name %></a>
+							<%}%>
+						<% } %>
+					</dd>
+				</dl>
+				{{/if}}
+				<div class=pop>
+						<% for(var j=0;j < categoryItem[i].children.length;j++){ %>
+							<dl>
+								<dt><a href="javascript:void(0)" class="category" title="<%= categoryItem[i].children[j].name %>" number="<%= categoryItem[i].children[j].number %>" longnumber="<%= categoryItem[i].children[j].longNumber %>" label ="<%= categoryItem[i].children[j].name %>"><%= categoryItem[i].children[j].name %></a>&nbsp&gt; </dt>
+								<dd>
+									<% for(var k=0;k < categoryItem[i].children[j].children.length;k++){ %>
+										<a href="javascript:void(0)" class="category" title="<%= categoryItem[i].children[j].children[k].name %>" number="<%= categoryItem[i].children[j].children[k].number %>" longnumber="<%= categoryItem[i].children[j].children[k].longNumber %>" label ="<%= categoryItem[i].children[j].children[k].name %>"><%= categoryItem[i].children[j].children[k].name %></a>
+									<% } %>
+								</dd>
+							</dl>
+						<% } %>
+					<div class=clr></div>
+				</div>
+			</li>
+		 <% } %>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

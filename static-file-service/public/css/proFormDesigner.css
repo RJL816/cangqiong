@@ -1,0 +1,207 @@
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/KDProFormDesigner/KDProFormDesigner.less ***!
+  \****************************************************************************************************************************************************************************************************************************/
+.KDProFormDesigner_proFormDesigner_3HLn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1280px;
+  min-height: 0px;
+}
+.KDProFormDesigner_designerShell_2RJb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: calc(100% - 40px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.KDProFormDesigner_script-viewer_cmPe {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1050;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(55, 55, 55, 0.5);
+  padding: 20px;
+}
+
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/KDProFormDesigner/OcrAnimate.less ***!
+  \*********************************************************************************************************************************************************************************************************************/
+@-webkit-keyframes OcrAnimate_ani-scanning_2XX4 {
+  0% {
+    top: 0%;
+  }
+  25% {
+    top: 50%;
+  }
+  49% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    top: calc(100% - 64px);
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  75% {
+    top: 50%;
+  }
+  99% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    top: 0%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes OcrAnimate_ani-scanning_2XX4 {
+  0% {
+    top: 0%;
+  }
+  25% {
+    top: 50%;
+  }
+  49% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    top: calc(100% - 64px);
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  75% {
+    top: 50%;
+  }
+  99% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  100% {
+    top: 0%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+.OcrAnimate_root_264m {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.OcrAnimate_root_264m .OcrAnimate_border_2Sz3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.OcrAnimate_root_264m .OcrAnimate_border_2Sz3 .OcrAnimate_border-item_CudX {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+}
+.OcrAnimate_root_264m .OcrAnimate_border_2Sz3 .OcrAnimate_border-item_CudX:nth-child(1) {
+  border-top: 2px solid #276FF5;
+  border-right: 2px solid #276FF5;
+  top: 0;
+  right: 0;
+}
+.OcrAnimate_root_264m .OcrAnimate_border_2Sz3 .OcrAnimate_border-item_CudX:nth-child(2) {
+  border-right: 2px solid #276FF5;
+  border-bottom: 2px solid #276FF5;
+  right: 0;
+  bottom: 0;
+}
+.OcrAnimate_root_264m .OcrAnimate_border_2Sz3 .OcrAnimate_border-item_CudX:nth-child(3) {
+  border-bottom: 2px solid #276FF5;
+  border-left: 2px solid #276FF5;
+  bottom: 0;
+  left: 0;
+}
+.OcrAnimate_root_264m .OcrAnimate_border_2Sz3 .OcrAnimate_border-item_CudX:nth-child(4) {
+  border-left: 2px solid #276FF5;
+  border-top: 2px solid #276FF5;
+  left: 0;
+  top: 0;
+}
+.OcrAnimate_root_264m .OcrAnimate_scanning-line_3pkn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: url(img/4983fca9.scanning-line.png) no-repeat;
+  background-size: 100% 100%;
+  height: 64px;
+  -webkit-animation: OcrAnimate_ani-scanning_2XX4 4s linear infinite;
+          animation: OcrAnimate_ani-scanning_2XX4 4s linear infinite;
+  z-index: 1;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/KDProFormDesigner/SkeletonScreen.less ***!
+  \*************************************************************************************************************************************************************************************************************************/
+@-webkit-keyframes SkeletonScreen_loading_3aPs {
+  to {
+    background-position-x: -20%;
+  }
+}
+@keyframes SkeletonScreen_loading_3aPs {
+  to {
+    background-position-x: -20%;
+  }
+}
+.SkeletonScreen_root_1IZq {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(img/ec7b9485.skeletonScreen.png) no-repeat;
+  background-size: cover;
+}
+.SkeletonScreen_root_1IZq .SkeletonScreen_animation_6yCD {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 60%);
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  -webkit-animation: SkeletonScreen_loading_3aPs 2s ease-in-out infinite;
+          animation: SkeletonScreen_loading_3aPs 2s ease-in-out infinite;
+}
+

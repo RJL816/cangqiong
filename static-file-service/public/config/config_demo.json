@@ -1,0 +1,9 @@
+{
+  "mainUrl": "http://127.0.0.1/ierp/",
+  "loadYunZhiJia": false,
+  "loadCert": false,
+  "loadXiaoK": false,
+  "openTrayMenu": false,
+  "replaceUrls": [],
+  "isMultiTenant": false
+}

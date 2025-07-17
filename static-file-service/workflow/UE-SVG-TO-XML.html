@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>UE SVG图标生成XML</title>
+		<style>
+			#main{
+				margin: auto;
+				width: 70%;
+			}
+			#fileDragContainer{
+				position: relative;
+				width: 100%;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 1px dashed #BCBCBC;
+				color: rgb(153, 153, 153);
+			}
+			#fileTotalNum{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				font-size: 12px;
+			}
+			#fileInfos{
+				width: 100%;
+				height: 800px;
+				border: 1px solid lightgrey;
+				overflow: auto;
+			    padding-top: 10px;
+			}
+			#globalConfig{
+				width: 100%;
+				height: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				border: 1px solid lightgrey;
+			}
+			#fileInfos > fieldset{
+				border: 1px dotted grey;	
+				margin-bottom: 10px;
+			}
+			#fileInfos > fieldset > div.config{
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding: 0 20px;
+			}
+			#fileInfos > fieldset > div.config > span{
+				margin: 10px;
+			}
+			#fileInfos > fieldset > div.config > span.annotation{
+				display: flex;
+				width: 100%;
+			}
+			#fileInfos > fieldset > div.config > span.annotation > input.note{
+				flex-grow: 1;
+			    margin-left: 8px;
+			}
+			.hide{
+				display: none;
+			}
+			#tip{
+				padding: 5px;
+				margin: 0;
+				background-color: #FFF;
+			    border: 1px solid lightgrey;
+				display: none;
+				position: absolute;
+				top: -4px;
+				left: 308px;
+			}
+			#tip:before{
+			    position: absolute;
+				top: 18px;
+				left: -3px;
+				width: 10px;
+				height: 10px;
+				background: #fff;
+				box-shadow: -2px -2px 0 -1px #c4c4c4;
+				content: "";
+				transform: rotate(-45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div id="fileDragContainer">拖拽SVG文件到这里
+				<strong id="fileTotalNum"></strong>
+			</div>
+			<div id="globalConfig">
+				<span>是否生成根标签(Shapes)：<input type="checkbox" id="genShapes" checked="checked"/></span>
+				<span>BaseType:<input type="text" id="baseType" value="bpmn"/></span>
+				<button id="generate">生成XML</button>
+			</div>
+			<div id="fileInfos">
+			</div>
+			<p id="tip">
+				命名规范：正常状态后缀：_USE; 跳过状态后缀：_SKIP; 处理中状态后缀：_PROCESSING; 流转过状态后缀：_TRAVERSED 。<br/>
+				例：AuditTask -- AuditTask_USE -- AuditTask_SKIP -- AuditTask_PROCESSING -- AuditTask_TRAVERSED
+			</p>
+		</div>
+	</body>
+	<script>
+		/*
+			未解决问题：
+				fieldset加了拖动之后没法选择文本了，给span或input也添加drag相关事件return false也不管用。
+		*/
+
+		//全局变量
+		var fileInfos = document.querySelector('#fileInfos'),
+			parser = new DOMParser(),
+			xmlSer = new XMLSerializer();
+			shapes = document.createElement('shapes'),
+			idSuffix = 1,
+			fileIndex = 0,
+			idMap = new Map(),
+			filesMap = new Map(),//记录field与files的对应关系，确保在拖动之后生成的shape顺序正确
+			defRefsMap = new Map(),//linearGradient Map，记录线性渐变unique string与linearGradient id的对应关系，使在渲染时相同的linearGradient只在defs中添加一个
+			nameKeyMap = new Map(),//节点名与节点Key的映射关系，拖动之后直接根据此map生成节点名
+			count = 0,
+			length = 0;
+
+		init();
+
+		function init(){
+			nameKeyMap.set('画线', 'SequenceFlow');
+			nameKeyMap.set('开始', 'StartSignalEvent');
+			nameKeyMap.set('结束', 'EndNoneEvent');
+			nameKeyMap.set('终止', 'EndTerminateEvent');
+			nameKeyMap.set('人工', 'UserTask');
+			nameKeyMap.set('审批', 'AuditTask');
+			nameKeyMap.set('云之家会审', 'YunzhijiaTask');
+			nameKeyMap.set('自动', 'AutoTask');
+			nameKeyMap.set('单据子流程', 'EventSubProcess');
+			nameKeyMap.set('消息通知', 'NotifyTask');
+			nameKeyMap.set('共享审批', 'SSCApprove');
+			nameKeyMap.set('影像上传', 'SSCImageUpload');
+			nameKeyMap.set('共享单据子流程', 'SSCBillSubProcess');
+		}
+
+		function replaceNodeIds(node){
+			var id = null,
+				len = null,
+				key = null,
+				newId = null,
+				child = null,
+				children = null,
+				g = node.querySelector('g'),
+				defs = node.querySelector('defs'),
+				defsStr = null,
+				gStr = xmlSer.serializeToString(g);
+
+			if(defs){
+				defsStr = xmlSer.serializeToString(defs);
+				children = defs.children;
+				len = children.length;
+				for(var i = 0; i < len; i++){
+					child = children.item(i);
+					id = child.getAttribute('id');
+					child.removeAttribute('id');
+					key = child.outerHTML.replace(/\n\s+/g, '');
+					newId = defRefsMap.get(key);
+					//相同的defs中的元素使用相同的id，这样再渲染时不会在defs中添加重复功能的def
+					if(!newId){
+						newId = 'def_' + (new Date()).getTime() + '_' + idSuffix++;
+						defRefsMap.set(key, newId);
+					}
+					idMap.set(id, newId);
+				}
+				//更新引用的id
+				idMap.forEach(function(value, key){
+					gStr = gStr.replace(new RegExp(key, 'g'), value);
+					//defs中也有可能有引用
+					defsStr = defsStr.replace(new RegExp(key, 'g'), value);
+				});
+				node.replaceChild(parser.parseFromString(defsStr, 'text/xml').firstElementChild, defs);
+			}
+
+			g.remove();
+
+			//去掉其他节点的id
+			gStr = gStr.replace(/<\w+( [\w-]+=".+?")*\/?>/g, function(elm){
+				if(elm.indexOf('id="') > -1){
+					return elm.replace(/ id=".+?"/, '');
+				}
+				return elm;
+			});
+
+			node.appendChild(parser.parseFromString(gStr, 'text/xml').firstElementChild);
+			return node;
+		}
+
+		function readCallback(shape, comment){
+			if(comment && comment.replace(/^\s+|\s+$/g, '').length){
+				shapes.appendChild(document.createComment(comment));	
+			}
+			shapes.appendChild(replaceNodeIds(shape));
+			if(count === length){
+				var includeRoot = document.querySelector('#genShapes').checked,
+					baseType = document.querySelector('#baseType').value,
+					result = null,
+					doc = window.document,
+					html = '<!DOCTYPE html>';
+				shapes.setAttribute('name', 'ierp.' + baseType);
+				result = getPrettyXml(shapes, null, null);
+				if(includeRoot === false){
+					result = result.replace(/(<shapes.*?>)|(<\/shapes>)/g,'');
+				}
+				html += '<html><head><title>' + baseType + '.xml</title><meta charset="UTF-8"></head>';
+				html += '<body><pre>' + htmlEntities(result,false).replace(/\n/g,'<br>').replace(/ /g, '&nbsp;') + '</pre></body>';
+				html += '</html>';
+				doc.writeln(html);
+				doc.close();
+			}
+		}
+
+		function htmlEntities(s, newline){
+			s = s || '';
+			s = s.replace(/&/g,'&amp;'); // 38 26
+			s = s.replace(/"/g,'&quot;'); // 34 22
+			s = s.replace(/\'/g,'&#39;'); // 39 27
+			s = s.replace(/</g,'&lt;'); // 60 3C
+			s = s.replace(/>/g,'&gt;'); // 62 3E
+
+			if (newline == null || newline){
+				s = s.replace(/\n/g, '&#xa;');
+			}
+			return s;
+		}
+
+		function getPrettyXml(node, tab, indent){
+			var result = [],
+				name = node.nodeName;
+			if(node != null){
+				tab = tab || '  ';
+				indent = indent || '';
+				if(/(SHAPES)|(SHAPE)|(CONNECTIONS)|(CONSTRAINT)/.test(name)){
+					name = name.toLowerCase();
+				}
+				if(node.nodeType == 3){
+					result.push(node.value);
+				}else if(node.nodeType == 8){
+					result.push(indent + '<!-- ' + node.textContent + ' -->\n');
+				}else{
+					result.push(indent + '<' + name);
+					var attrs = node.attributes;
+					if(attrs != null){
+						for(var i = 0; i < attrs.length; i++){
+							result.push(' ' + attrs[i].nodeName + '="' + attrs[i].value + '"');
+						}
+					}					
+					var tmp = node.firstChild;
+					if(tmp != null){
+						result.push('>\n');
+						while(tmp != null){
+							result.push(getPrettyXml(tmp, tab, indent + tab));
+							tmp = tmp.nextSibling;
+						}
+						result.push(indent + '</'+ name + '>\n');
+					}else{
+						result.push('/>\n');
+					}
+				}
+			}
+			return result.join('');
+		}
+		function getFileInfoNode(file){
+			var tpl = [],
+				name = file.name.replace('.svg', ''),
+				val = nameKeyMap.get(name.replace(/_.+/, '')) || '',
+				isIcon = name.lastIndexOf('_运用') < 0 && name.lastIndexOf('_处理中') < 0 && name.lastIndexOf('_跳过') < 0 && name.lastIndexOf('_走过') < 0,
+				isSpec = name.indexOf('开始_') > -1 || name.indexOf('结束_') > -1 || name.indexOf('终止_') > -1,
+				defWidth = isSpec ? 115 : isIcon ? 40 : 150,
+				defHeight = isSpec ? 45 : isIcon ? 40 : 50,
+				id = 'info_' + fileIndex++,
+				fieldset = document.createElement('fieldset'),
+				tipSrc = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxNiAxMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYgMTAiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMyw0YzAtMi4yMDktMS43OTEtNC00LTRDNy41MDIsMCw2LjE5NSwwLjgyNCw1LjUxMSwyLjA0MyAgQzUuMzQ1LDIuMDE1LDUuMTc0LDIsNSwyQzMuNjQ2LDIsMi41LDIuODk3LDIuMTI4LDQuMTMxQzAuODk2LDQuNTA4LDAsNS42NTEsMCw3YzAsMS42NTcsMS4zMzcsMywzLjAxLDNoOS45OCAgQzE0LjY1MiwxMCwxNiw4LjY1MywxNiw3UzE0LjY2OCw0LjAwNSwxMyw0eiBNOSw5SDdWN2gyVjl6IE05LDZIN1YyaDJWNnoiLz4KPC9zdmc+';
+			if(val && name.indexOf('_') > -1){
+				val = name.replace(/.+_/, val + '_').replace('_运用', '_USE').replace('_处理中', '_PROCESSING').replace('_跳过', '_SKIP').replace('_走过', '_TRAVERSED');
+			}
+			filesMap.set(id, file);
+			fieldset.setAttribute('id', id);
+			fieldset.setAttribute('draggable', 'true');
+			tpl.push('<legend>' + file.name + '</legend>');
+			tpl.push('<div class="config">');
+			tpl.push('	<span>节点名： <input type="text" class="name" value="' + val + '"> <img class="tipImg" src="' + tipSrc + '"/></span>');
+			tpl.push('	<span class="hide">');
+			tpl.push('		尺寸： <input type="number" class="width" min="1" max="1000" value="' + defWidth + '"> * <input type="number" class="height" min="1" max="1000" value="' + defHeight + '">');
+			tpl.push('	</span>');
+			tpl.push('	<span class="annotation">注释&nbsp;： <input type="text" class="note" value="' + name + '"/></span>');
+			tpl.push('</div>');
+			fieldset.innerHTML = tpl.join('');
+			return fieldset;
+		}
+		function disposeFile(files){
+			if(!files || files.length < 1){
+				return;
+			}
+			var invalid = false,
+				file = null,
+				node = null,
+				shape = null,
+				len = files.length;
+			for(var i = 0; i < len; i++){
+				length++;
+				file = files.item(i);
+				if(file.type !== "image/svg+xml"){
+					invalid = true;
+					continue;
+				}
+				fileInfos.appendChild(addDragListener(getFileInfoNode(file)));
+			}
+			if(invalid){
+				alert("您拖拽的文件中有非svg文件，这些文件已被忽略!");
+			}
+		}
+		function addNamespace(xmlStr){
+			//给根元素添加namespace
+			var replaceFun = function(elm, label){/* /(<\w+)( [\w-]+=".+?")*\/?>/ */
+				if(elm.indexOf('xmlns="') < 0){
+					return elm.replace(label, label + ' xmlns="http://www.w3.org/2000/svg"');
+				}
+				return elm;
+			};
+			return xmlStr.replace(/(<defs)( .*?)?\/?>/, replaceFun).replace(/(<g)( .*?)?\/?>/, replaceFun);
+		}
+		function getConnectionsNode(){
+			var connections = document.createElement('connections');
+			var n = document.createElement('constraint');
+			n.setAttribute('name', 'N');
+			n.setAttribute('perimeter', '0');
+			n.setAttribute('x', '0.5');
+			n.setAttribute('y', '0');
+			connections.appendChild(n);
+			var s = document.createElement('constraint');
+			s.setAttribute('name', 'S');
+			s.setAttribute('perimeter', '0');
+			s.setAttribute('x', '0.5');
+			s.setAttribute('y', '1');
+			connections.appendChild(s);
+			var w = document.createElement('constraint');
+			w.setAttribute('name', 'W');
+			w.setAttribute('perimeter', '0');
+			w.setAttribute('x', '0');
+			w.setAttribute('y', '0.5');
+			connections.appendChild(w);
+			var e = document.createElement('constraint');
+			e.setAttribute('name', 'E');
+			e.setAttribute('perimeter', '0');
+			e.setAttribute('x', '1');
+			e.setAttribute('y', '0.5');
+			connections.appendChild(e);
+			return connections;
+		}
+		function addDragListener(elm){
+			//拖动事件
+			elm.addEventListener("drop", function(e){
+				e.preventDefault();
+				e.stopPropagation();
+				var data = e.dataTransfer.getData('text'),
+					target = e.target.closest('fieldset'),
+					parentNode = target.parentNode,
+					source = document.querySelector("#" + data),
+					ret = target.compareDocumentPosition(source);
+				if(ret == Node.DOCUMENT_POSITION_FOLLOWING){//up
+					parentNode.insertBefore(source, target);
+				}else if(ret == Node.DOCUMENT_POSITION_PRECEDING){//down
+					parentNode.insertBefore(target, source);
+				}
+				e.dataTransfer.clearData();
+			}, false);
+			elm.addEventListener("dragstart", function(e){
+				e.currentTarget.style.backgroundColor = 'lightblue';
+				e.dataTransfer.setData("text/plain", e.target.id);
+				e.stopPropagation();
+			}, false);
+			elm.addEventListener("dragend", function(e){
+				e.currentTarget.style.backgroundColor = 'white';
+				e.dataTransfer.setData("text/plain", e.target.id);
+				e.stopPropagation();
+			}, false);
+			//tip监听事件 mouseover、mouseout
+			var tipImg = elm.querySelector("img.tipImg"),
+				tip = document.querySelector('#tip');
+			tipImg.addEventListener('mouseover', function(e){
+				tip.style.display = "block";
+				elm.querySelector('div.config').appendChild(tip);
+			}, false);
+			tipImg.addEventListener('mouseout', function(e){
+				tip.style.display = "none";
+			}, false);
+			return elm;
+		}
+		function readFile(file, config){
+			var reader = new FileReader();
+			reader.readAsText(file);
+			reader.onload = function(e){
+				count++;
+				var data = parser.parseFromString(addNamespace(this.result), 'text/xml'),
+					svg = data.querySelector('svg'),
+					usingWidth = config.querySelector('input.width').value,
+					usingHeight = config.querySelector('input.height').value,
+					name = config.querySelector('input.name').value,
+					comment = config.querySelector('input.note').value,
+					shape = document.createElement('shape'),
+					defs = svg.querySelector('defs');
+				shape.setAttribute('type', 'svg');
+				shape.setAttribute('name', name);
+				//实际宽高
+				shape.setAttribute('width', (svg.getAttribute('width') || '').replace(/[^\d]/g,''));
+				shape.setAttribute('height', (svg.getAttribute('height') || '').replace(/[^\d]/g,''));
+				//使用宽高
+				shape.setAttribute('w', usingWidth);
+				shape.setAttribute('h', usingHeight);
+				//添加连接点
+				if(name.lastIndexOf("_USE") > - 1){
+					//运用节点才需要连接点
+					shape.appendChild(getConnectionsNode());
+				}
+				//添加defs
+				if(defs && defs.children.length){
+					shape.appendChild(defs);
+				}
+				//添加图形
+				shape.appendChild(svg.querySelector('g'));
+				readCallback(shape, comment);
+			};
+		}
+		document.addEventListener("dragover", function(e){
+			e.stopPropagation();
+			e.preventDefault();
+		}, false);
+		document.querySelector('#fileDragContainer').addEventListener("drop", function(e){
+			e.stopPropagation();
+			e.preventDefault();
+			disposeFile(e.dataTransfer.files);
+			document.querySelector('#fileTotalNum').innerText = '已拖拽' + document.querySelectorAll('#fileInfos fieldset').length + '个文件';
+		}, false);
+		document.querySelector('#generate').addEventListener("click", function(e){
+			var fields = document.querySelectorAll('#fileInfos>fieldset');
+			Array.prototype.forEach.call(fields, function(field){
+				var id = field.getAttribute('id'),
+					file = filesMap.get(id),
+					config = field.querySelector('div.config');
+				readFile(file, config);
+			});
+		}, false);
+	</script>
+</html>

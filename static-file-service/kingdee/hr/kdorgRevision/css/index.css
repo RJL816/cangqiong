@@ -1,0 +1,110 @@
+.his_container_9uiEV {
+  width: 350px;
+  padding: 0 20px 10px;
+  background-color: #fff;
+}
+.his_container_9uiEV .his_title_zhBt1 {
+  font-size: 16px;
+  color: #212121;
+  letter-spacing: 0;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.his_container_9uiEV .his_title_zhBt1 .kdfont-bangzhu_cokFu {
+  color: #999;
+  font-weight: 100;
+}
+.his_container_9uiEV .his_list_EIbNx .his_item_bQO_Y {
+  cursor: pointer;
+}
+.his_container_9uiEV .his_list_EIbNx .his_item_bQO_Y.active_vS4Qb .info-right_sMk6n {
+  background: #f2f9ff;
+  border: 1px solid #5582f3;
+}
+.his_container_9uiEV .his_list_EIbNx .his_item_bQO_Y:last-child .line_naWRo {
+  display: none;
+}
+.his_container_9uiEV .his_list_EIbNx .show-more-list_SC4NK {
+  font-size: 14px;
+  color: var(--theme-color);
+  cursor: pointer;
+  margin-top: 16px;
+}
+.his_container_9uiEV .his_item_bQO_Y {
+  display: flex;
+}
+.his_container_9uiEV .his_item_bQO_Y .icon-left_XVkcN {
+  padding-right: 6px;
+  width: 20px;
+}
+.his_container_9uiEV .his_item_bQO_Y .info-right_sMk6n {
+  border: 1px solid transparent;
+  flex: 1;
+  transition: all 0.3s;
+}
+.his_container_9uiEV .icon-left_XVkcN {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 1px;
+}
+.his_container_9uiEV .icon-left_XVkcN .circle_LcmQC {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #276ff5;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 2px;
+}
+.his_container_9uiEV .icon-left_XVkcN .line_naWRo {
+  position: absolute;
+  height: 100%;
+  border: none;
+  border-right: 1px solid #e5e5e5;
+  top: 14px;
+}
+.his_container_9uiEV .info-right_sMk6n {
+  overflow: hidden;
+  padding: 10px 8px;
+}
+.his_container_9uiEV .info-right_sMk6n .head-line_I7XDc {
+  margin-bottom: 8px;
+}
+.his_container_9uiEV .info-right_sMk6n .head-line_I7XDc .date_VrZoC {
+  font-size: 14px;
+  color: #999999;
+  margin-right: 8px;
+}
+.his_container_9uiEV .info-right_sMk6n .head-line_I7XDc .iscurrItem_Il7HF {
+  font-size: 12px;
+  padding: 0 6px;
+  background: #1ba854;
+  border-radius: 9px;
+  color: #fff;
+}
+.his_container_9uiEV .info-right_sMk6n .his-form-group_wqv2A {
+  display: flex;
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 6px;
+}
+.his_container_9uiEV .info-right_sMk6n .his-form-group_wqv2A:last-child {
+  margin: 0;
+}
+.his_container_9uiEV .info-right_sMk6n .his-form-group_wqv2A .title_uYhaW {
+  font-size: 12px;
+  color: #666666;
+}
+.his_container_9uiEV .info-right_sMk6n .his-form-group_wqv2A .info_AIgxZ {
+  flex: 1;
+  font-size: 12px;
+  color: #212121;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+

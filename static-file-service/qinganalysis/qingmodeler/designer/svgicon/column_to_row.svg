@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>13@1.5x</title>
+    <g id="13" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3">
+            <g id="编组-2" transform="translate(2.500000, 3.750000)" stroke="#2B87F3" stroke-width="1.25">
+                <g id="编组">
+                    <rect id="矩形" x="0.625" y="0.625" width="3.75" height="11.25"></rect>
+                    <rect id="矩形备份" x="6.875" y="8.125" width="7.5" height="3.75"></rect>
+                    <path d="M6.25,0.650107861 L8.60425679,0.650107861 C10.8365219,0.650107861 12.6461303,2.26736667 12.6461303,4.26235651 L12.6461303,6.25 L12.6461303,5.80002648" id="路径"></path>
+                    <polyline id="路径" points="14.4357149 4.19507068 12.5303574 6.1004281 10.625 4.19507068"></polyline>
+                </g>
+            </g>
+            <rect id="矩形" x="0" y="0" width="20" height="20"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<div class="opmc_stepConfig_wrap">
+    <div class="opmc_stepConfig_modify-info"><%= flowTitle %></div>
+    <!--<div class="opmc_stepConfig_open-btns">
+        <span class="opmc_stepConfig_btn-open"><%= openAll %></span>
+        <span class="opmc_stepConfig_btn-fold"><%= foldAll %></span>
+    </div>-->
+    <div class="opmc_stepConfig_config-container">
+        <div class="row row0">
+            <div class="item item0" draggable="true">
+                <div class="item-span-left"></div>
+                <div class="item-main">
+                    <div class="item-main-top-dot"></div>
+                    <div class="item-main-bottom-dot"></div>
+                    <input class="opmc_stepConfig_item-main-text" value="<%= start %>" disabled>
+                </div>
+                <div class="item-span-right"></div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="opmc_stepConfig_senior-dialog"></div>  stroke="<%= themeNum %>"-->
+    <svg class="opmc_stepConfig_svg-defs" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <g id="opmc_stepConfig_g1">
+                <!--<rect rx="100" ry="100" x="-8" y="-8" width="16" height="16" stroke="white" stroke-width="1" fill="#666666" style=""/>-->
+                <circle r="7" stroke="#979797" stroke-width="0.5" fill="#ffffff"/>
+                <line x1="-3.5" y1="0" x2="3.5" y2="0" stroke="#666666" stroke-width="1.2"></line>
+                <line x1="0" y1="-3.5" x2="0" y2="3.5" stroke="#666666" stroke-width="1.2"></line>
+            </g>
+        </defs>
+    </svg>
+</div>

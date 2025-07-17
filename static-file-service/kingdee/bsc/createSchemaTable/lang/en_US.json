@@ -1,0 +1,23 @@
+{
+  "nodes.key0001": "Node Overview",
+  "nodes.key0002": "Switch Service network",
+  "nodes.key0003": "ChainName",
+  "nodes.key0004": "Number of service nodes",
+  "nodes.key0005": "Block height",
+  "nodes.key0006": "Total number of transactions",
+  "nodes.key0007": "Operating days",
+  "nodes.key0008": "unit",
+  "nodes.key0009": "sum",
+  "nodes.key0010": "day",
+
+  "nodes.key0011": "Network Node",
+  "nodes.key0012": "Node attributes",
+  "nodes.key0014": "Service center name",
+  "nodes.key0015": "Ownership",
+  "nodes.key0016": "Digital identity address",
+  "nodes.key0017": "Service center status",
+  "nodes.key0018": "Authorized",
+  "nodes.key0019": "Deactivate",
+  "nodes.key0020": "Permanently disabled",
+  "nodes.key0021": "Applying"
+}

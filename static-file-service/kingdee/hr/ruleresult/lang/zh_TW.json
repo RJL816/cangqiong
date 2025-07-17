@@ -1,0 +1,18 @@
+{	
+	"param":"參數",
+	"value":"值",
+	"operationtarget":"運算指標",
+	"allselect":"全選",
+	"selected":"已選",
+	"term":"項",
+	"yes":"是",
+	"no":"否",
+	"returnresult":"返回結果",
+	"addresult":"添加結果",
+	"equal":"等於",	
+	"deleterow":"刪除",
+	"loading": "加載中...",
+    "loadMore": "加載更多...",
+    "noResults": "無可用的參數",
+    "noResultsForTerm": "沒有包含<b>%s</b>的參數"
+}

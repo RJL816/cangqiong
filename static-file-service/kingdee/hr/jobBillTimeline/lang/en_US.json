@@ -1,0 +1,13 @@
+{
+  "positionName": "Job Name：",
+  "stationName": "Position Name：",
+  "changeReason": "Reason for Change: ",
+  "changeType": "Reason of Change: ",
+  "changeOperator": "Name of changer：",
+  "changetypeType": "Type of changer：",
+  "viewDetails": "view details",
+  "expandMore": "expand more",
+  "foldUp": "fold up",
+  "assessScore": "Assess Score：",
+  "assessGrade": "Assess Grade："
+}

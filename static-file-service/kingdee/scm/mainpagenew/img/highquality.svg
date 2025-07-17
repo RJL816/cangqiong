@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="150px" viewBox="0 0 100 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>编组 6备份@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="99.6674409%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FC8D67" offset="0%"></stop>
+            <stop stop-color="#FC6B5E" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="-1.23651089e-13 0 100 0 100 150 -1.23651089e-13 150"></polygon>
+    </defs>
+    <g id="新提案" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="采购商城-首页" transform="translate(-360.000000, -1568.000000)">
+            <g id="编组-6备份" transform="translate(360.000000, 1568.000000)">
+                <g id="JL22O2N5WPEG4">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                </g>
+                <g id="编组" transform="translate(18.000000, 92.000000)" fill="#FFFFFF" line-spacing="12.8">
+                    <g id="编组-7">
+                        <text id="优质店铺" font-family="PingFangSC-Medium, PingFang SC" font-size="16" font-weight="400">
+                            <tspan x="0" y="17">优质店铺</tspan>
+                        </text>
+                        <text id="store" opacity="0.600000024" font-family="PingFangSC-Regular, PingFang SC" font-size="11.2" font-weight="normal">
+                            <tspan x="13" y="33">STORE</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

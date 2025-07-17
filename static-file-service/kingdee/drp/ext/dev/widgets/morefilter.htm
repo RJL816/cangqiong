@@ -1,0 +1,15 @@
+<div>
+    {{if control._customData.plat=='pc'}}
+    <div id="${control.id}" viewid="${control.viewid}" style="${control.style}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+        <button>
+            <span>更多过滤条件</span>
+            <i class="iconfont icongengduo1"></i>
+        </button>
+        <div class="morefilter-content">
+            <h1 class="morefilter-head">更多过滤条件</h1>
+        </div>
+    </div>
+	{{else}}
+	<div class="${control.class} ${control.direction}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}"></div>
+    {{/if}}
+</div>

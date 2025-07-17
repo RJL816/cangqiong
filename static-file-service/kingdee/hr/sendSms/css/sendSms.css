@@ -1,0 +1,19 @@
+﻿#resend{
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    float: left;
+}
+#resend_time{
+    color: #55A0F5;
+}
+#send_sms{
+    width: 60px;
+    height: 21px;
+    border-radius: 13px;
+    border: 1px solid #4598F0;
+    background-color: white;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    color: #55A0F5;
+    cursor: pointer;
+}

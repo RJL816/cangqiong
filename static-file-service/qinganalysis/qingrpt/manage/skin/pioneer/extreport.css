@@ -1,0 +1,434 @@
+@CHARSET "UTF-8";
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: #E2E7EF;
+}
+
+.extreport-manage
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-left: 1px solid #3790F9;
+	border-right: 1px solid #3790F9;
+}
+
+.extreport-manage-container
+{
+	overflow: hidden;
+}
+
+.extreport-group-container
+{
+	float: left;
+	width: 220px;
+	border-right: 1px solid rgba(0, 0, 0, .15);
+	background-color: #fff;
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
+}
+
+.extreport-group-container .extreport-group-op
+{
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	height: 47px;
+	position: relative;
+	width: 220px;
+}
+
+.extreport-group-container .extreport-group-op .extreport-group-title
+{
+	font-size: 14px;
+	color: #4e5667;
+	margin-left: 36px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: inline-block;
+	line-height: 17px;
+}
+
+.extreport-group-container .extreport-group-op .add-extreport-group
+{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: right;
+	margin: 16px 8px;
+	cursor: pointer;
+}
+
+.extreport-group-container .extreport-group-op .export-extreport
+{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: right;
+	margin: 16px 8px;
+	cursor: pointer;
+}
+
+.extreport-group-container .extreport-group-op .import-extreport-file
+{
+	width: 0;
+	height: 0;
+	position:absolute;
+	left:-100px;
+}
+
+.extreport-group-container .extreport-group-op .import-extreport
+{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	float: right;
+	margin: 16px 8px;
+	cursor: pointer;
+}
+
+.extreport-group-list
+{
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	padding-left: 36px;
+	width: 184px;
+	height: 47px;
+}
+
+.extreport-group-list:last-child
+{
+	margin-bottom: 50px;
+}
+
+.extreport-group-list:hover
+{
+	background-color: #F6F7F9;
+}
+
+.extreport-group-container .extreport-group-selected:hover
+{
+	background-color: #E2E7EF;
+}
+
+.extreport-group-selected
+{
+	background-color: #E2E7EF;
+	border-left: 3px solid #3790F9;
+	width: 182px;
+	border-right: 0px;
+	box-sizing: content-box;
+}
+
+.extreport-group-list .extreport-group-title-text
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 15px;
+	width: 100px;
+	float: left;
+	font-size: 14px;
+	color: #333;
+	outline: none;
+}
+
+.extreport-group-list .extreport-group-title-span
+{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 18px;
+	cursor: pointer;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 122px;
+	float: left;
+	font-size: 14px;
+	color: #333;
+	height: 18px;
+}
+
+.extreport-group-list .delete-button
+{
+	width: 16px;
+	height: 16px;
+	float: right;
+	cursor: pointer;
+	margin: 13px 10px 14px 0px;
+	display: none;
+}
+
+.extreport-group-list:hover .delete-button
+{
+	display: inline-block;
+}
+
+.extreport-group-list .edit-button
+{
+	width: 16px;
+	height: 16px;
+	float: left;
+	cursor: pointer;
+	margin: 13px 10px 14px 0px;
+	display: none;
+}
+
+.extreport-group-list:hover .edit-button
+{
+	display: inline-block;
+}
+
+.extreport-container
+{
+	margin-left: 223px;
+	padding: 20px 0 0 20px;
+}
+
+.extreport-container .extreport-add-card
+{
+	height: 150px;
+	width: 300px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+	border-radius: 2px;
+	display: inline-block;
+	margin: 20px 0 20px 20px;;
+	cursor: pointer;
+	border: 1px solid #fff;
+	float: left;
+	position: relative;
+}
+
+.extreport-container .extreport-add-card:hover
+{
+	border: 1px solid #3790F9;
+}
+
+.extreport-container .extreport-add-card .add-icon
+{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 36px auto 0 auto;
+}
+
+.extreport-container .extreport-add-card .add-title
+{
+	font-size: 18px;
+	color: #999999;
+	display: block;
+	margin: 10px auto 29px auto;
+	display: block;
+	width: 200px;
+	text-align: center;
+	line-height: 18px;
+	height: 18px;
+}
+
+.extreport-card
+{
+	height: 150px;
+	width: 300px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+	border-radius: 2px;
+	display: inline-block;
+	margin: 20px 0 20px 20px;
+	border: 1px solid #fff;
+	float: left;
+	position: relative;
+	box-sizing: content-box;
+}
+
+.extreport-card:hover
+{
+	border: 1px solid #3790F9;
+}
+
+.extreport-detail-container
+{
+	margin: 12px 20px 0px 20px;
+	width: 260px;
+	height: 105px;
+	cursor: pointer;
+}
+
+.extreport-card .extreport-detail-container .extreport-icon
+{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin-right: 15px;
+	vertical-align: middle;
+	border-radius: 4px;
+}
+
+.extreport-card .extreport-detail-container .extreport-name
+{
+	font-size: 16px;
+	color: #333333;
+	display: inline-block;
+	width: 209px;
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.extreport-card .extreport-detail-container .manage-icon-container
+{
+    position: absolute;
+	width: 47px;
+    height: 20px;
+    top: 21px;
+    right: 20px;
+    cursor: default;
+}
+
+.extreport-card .extreport-detail-container .manage-icon-container .icon
+{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.extreport-card .extreport-detail-container .manage-icon-container .edit-icon
+{
+	left: 0px;
+	display: none;
+}
+
+.extreport-card:hover .extreport-detail-container .manage-icon-container .edit-icon
+{
+	display: block;
+}
+
+.extreport-card .extreport-detail-container .manage-icon-container .delete-icon
+{
+	right: 0px;
+	display: none;
+}
+
+.extreport-card:hover .extreport-detail-container .manage-icon-container .delete-icon
+{
+	display: block;
+}
+
+.extreport-card .extreport-detail-container .extreport-description
+{
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: 0;
+	line-height: 24px;
+	display: block;
+	width: 260px;
+	height: 48px;
+	margin-top: 15px;
+	word-wrap: break-word;
+}
+
+.extreport-card	.icon-container
+{
+	width: 260px;
+	height: 20px;
+	padding: 6px 20px;
+	background-color: #F9FBFD;
+	box-sizing: content-box;
+}
+
+.extreport-card .icon-container .icon
+{
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.extreport-card .icon-container .dsb-icon
+{
+	float: left;
+	margin-right: 15px;
+}
+
+.extreport-card .icon-container .analysis-icon
+{
+	float: left;
+	margin-right: 15px;
+	background-position: 0 2px;
+}
+
+.extreport-card .icon-container .extreport-icon
+{
+	float: left;
+	margin-right: 15px;
+	background-position: 0 2px;
+}
+
+.extreport-card .icon-container .data-icon
+{
+	float: left;
+	background-position: 0 2px;
+}
+
+.extreport-card .icon-container .move-icon
+{
+	float: right;
+	margin-right: 15px;
+	background-position: 0 2px;
+}
+
+.extreport-card .icon-container .copy-icon
+{
+	float: right;
+	background-position: 0 2px;
+}
+
+.extreport-confirm-box
+{
+	width: 368px;
+	height: 185px;
+}
+
+.extreport-export-theme-name-label
+{
+	left: 66px;
+}
+
+.extreport-manage-deldialog-confirm-msg
+{
+	width: 370px;
+	height: 23px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 5px;
+	line-height: 23px;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.extreport-group-name-edit
+{
+	position: absolute;
+	margin-top: 14px;
+	height: 20px;
+	width: 115px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

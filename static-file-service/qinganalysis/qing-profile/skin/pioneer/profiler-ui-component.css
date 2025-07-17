@@ -1,0 +1,217 @@
+.profiler-toolbar
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    overflow: visible;
+    padding-left: 14px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
+    background-color: #fff;
+}
+
+.profiler-toolbar-sub
+{
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+.profiler-main
+{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right:0;
+    bottom: 0;
+    user-select: none;
+    background-color: whitesmoke;
+}
+.profiler-toolbar-seperator
+{
+    float: left;
+    position: relative;
+    width: 0;
+    height: 16px;
+    top: 50%;
+    margin-top: -8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-left: 1px solid #ccc;
+}
+
+.profile-login-type
+{
+    position: relative;
+    height: 25px;
+    margin-bottom:20px;
+}
+
+
+
+.profile-command-paras-type
+{
+    position: absolute;
+    top: 0px;
+    right:0;
+    left: 0;
+    bottom: 0;
+}
+
+.profile-cmd-btn
+{
+    position: absolute;
+    left: 705px;
+    top: 0px;
+    height: 50px;
+    width: 200px;
+}
+
+.profile-cmd-btn1
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 200px;
+}
+
+.profile-cmd-btn2
+{
+    position: absolute;
+    left: 430px;
+    top: 0px;
+    height: 50px;
+    width: 200px;
+}
+.profiler-tree
+{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 50px;
+    background-color: white;
+    line-height: 20px;
+    position:absolute;
+}
+
+.profiler-samplecpu-tree
+{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-color: white;
+    line-height: 20px;
+    position:absolute;
+}
+.cmd-result-displayer
+{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 60px;
+    position:absolute;
+}
+.text-area-displayer
+{
+    left: 0px;
+    right: 0px;
+    top:5px;
+    background-color: white;
+}
+
+.dashboard-gc
+{
+    left: 555px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    position:absolute;
+}
+
+.dashboard-runtime
+{
+    left: 1010px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    position:absolute;
+}
+
+.profiler-btn-in-tablecell
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.profiler-cmd-btn-cancel
+{
+    left: 4px;
+}
+
+.profiler-sa-ctrl-tbbtn
+{
+    float: left;
+    position: relative;
+    min-width: 40px;
+    height: 65%;
+    top: 15%;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-left: -1px;
+    line-height: 31px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #0097F0;
+    cursor: pointer;
+}
+
+.profiler-sa-ctrl-tbbtn:hover
+{
+    color: #fff;
+    background-color: #23c8fb;
+}
+
+.profiler-sa-ctrl-tbbtn_disabled
+{
+    color: #ccc;
+    cursor: default;
+}
+.profiler-sa-ctrl-tbbtn_enabled
+{
+    color: #626262;
+    cursor: pointer;
+}
+
+.profiler-help-content {
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    top: 5px;
+    position: absolute;
+    overFlow-x: scroll;
+    overFlow-y: scroll;
+}
+
+
+.profiler-key-value-table
+{
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    margin-left: 8px;
+    overflow: hidden;
+}

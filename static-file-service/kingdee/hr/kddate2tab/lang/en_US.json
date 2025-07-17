@@ -1,0 +1,12 @@
+{
+    "title": "Select Date",
+    "slectY": "Select Year",
+    "slectC": "Custom",
+    "select": "Save",
+    "date.y": "year",
+    "date.m": "mon",
+    "date.d": "day",
+    "date.h": "hour",
+    "date.min": "min",
+    "date.s": "s"
+}

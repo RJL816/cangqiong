@@ -1,0 +1,238 @@
+.box{
+
+    text-align: center;
+    display:inline-block;
+    border-right: 1px solid gainsboro;
+}
+
+.title{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    cursor:default;
+}
+.item{
+    width: 30px;
+    display: inline-block;
+    cursor:pointer; 
+    margin: 2px 2px 2px 2px;
+    color: #504c4c;
+    font-size: 16px;
+	font-style: italic;
+    color: #007fff;
+}
+.ROUND{
+    width: 60px;
+}
+.AND{
+    width: 40px;
+}
+.account{
+    width: 75px;
+}
+
+.itemtitle{
+	margin: 0px 0px 0px 5px;
+    cursor:default;
+	color:#ababab;
+	font-size: 14px;
+}
+
+.item:hover{
+    background-color:gainsboro;
+}
+.inputarea{
+	padding: 10px;
+    border-top: 1px solid gainsboro;
+	height: 100%;
+    overflow: scroll;
+}
+#toolbar{
+    background: rgba(231, 229, 229, 0.493);
+    box-shadow: 0px 1px 5px gainsboro;
+	height: 15%;
+}
+#formulaeditor{
+    border: 1px solid gainsboro;
+	width: 100%;
+    height: 100%;
+}
+
+.membinput{
+    background-position-x:right;
+    cursor: pointer;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    border-width:1px;
+    font-size:12px;
+    width:288px;
+    height:18px;
+    color:#276ff5
+}
+
+.rangDimInput{
+    background-position-x:right;
+    cursor: pointer;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;;
+    border-width:1px;
+    font-size:12px;
+    width:288px;
+    text-align: center;
+    height:18px;
+    color:#276ff5;
+}
+
+.rangDimMembInput{
+    background-position-x:right;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    border-color:black;
+    border-width:1px;
+    font-size:12px;
+    width:288px;
+    text-align: center;
+    height:18px;
+}
+
+
+
+.memberPanel{
+    display:none;
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(39, 35, 32, 0.14);
+}
+
+.memberPanel li:hover{
+    background-color:gainsboro;
+    cursor:pointer;
+}
+.rangeDiv{
+    height: 300px;
+    width: 150px;
+    display: inline-block;
+    float: left;
+    background-color:white;
+    border: 1px solid gainsboro;
+}
+.memberDiv{
+    height: 300px;
+    width: 150px;
+    display: inline-block;
+    float: left;
+    background-color:white;
+    border: 1px solid gainsboro;
+}
+.memberPanel p{
+    color: #007fff;
+    margin: 10px;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+}
+.memberPanel li{
+    padding: 5px;
+    text-align: left;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inline-block-Div {
+    display: inline-block;
+}
+.float-Div {
+    float: left;
+}
+.rangeEditor{
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: calc(100% - 120px);
+}
+.formulaEdit{
+    width: 100%;
+    min-height: 150px;
+    margin-top: 7px;
+    border-top: 1px solid gray;
+    padding: 5px;
+}
+.ruleRow{
+    overflow: auto;
+    border:1px solid gray;
+}
+.seq{
+    height: 100%;
+}
+.rangeFlex{
+    height: 30px;
+    line-height: 30px;
+}
+.ruleRowLeft{
+    width: 22px;
+    text-align: center;
+    line-height: 150px;
+}
+.ruleRowRight{
+    width: calc(100% - 122px);
+    height: 100%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-left: 3px;
+}
+.addDimBtn{
+    float: right;
+    width: 60px;
+    height: 30px;
+    color: #0E5FD8;
+    text-align: center;
+}
+.addDimBtn:hover{
+    cursor:pointer;
+}
+.ruleRowEnd{
+    width: 100px;
+}
+.ruleRowEnd > div:first-child {
+    line-height: 75px;
+}
+.need_label {
+    color: red;
+}
+.switchBox span{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    background-color:white;
+    transition:margin-left 0.1s;
+    display:inline-block;
+    -webkit-transition:margin-left 0.1s; /* Safari */
+}
+.switchBox{
+    border-radius:10px;
+    width:35px;
+    height:22px;
+    background-color:#c6c6c6;
+    cursor:pointer;
+    display: inline-flex;
+    padding-top:1px;
+    padding-right:1px;
+    padding-left: 1px;
+}
+.rangeLabel{
+    float: left;
+    margin-right: 5px;
+}
+.memblist{
+    overflow-y: auto;
+    height: 85%;
+}
+
+

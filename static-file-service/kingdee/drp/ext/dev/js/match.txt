@@ -1,0 +1,3 @@
+pageview type name plugin extend bo view toolbar id icon iservice tabgroup tab latticerowpanel labelwidth selectdata superselect orm linkdatamap
+addedfilter code rule placeholder required mltext disabled selected value select radiogroup radio checkbox cols option hidden href editable text
+right blank linkorm onlyselectone datagrid toolbar fields showrownumber class checkbox checked onlyselectone rule extendedpropertiespanel

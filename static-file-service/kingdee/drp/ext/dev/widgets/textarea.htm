@@ -1,0 +1,11 @@
+<div>
+	<div id="${control.id}"  viewid="${control.viewid}" class="${control.class}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+	    <label style="${control.labelstyle + ';width:'+ control.labelwidth}"  class="${control.required ? 'required' : ''}">${control.name} </label>
+		<textarea class="${control.disabled ? 'disabled':''}" maxlength="${control.maxlength || 1000}" type="text" rows="${control.rows}" placeholder="${control.placeholder} " disabled="${control.disabled}" ></textarea>
+		{{if control._customData.plat=='mobile'}}
+		<div class="counter">
+			0/${control.maxlength || 1000}
+		</div>
+		{{/if}}
+	</div>
+</div>

@@ -1,0 +1,1040 @@
+/*轻建模首页*/
+.modelset-manage
+{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.modelset-manage-toolbar
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: visible;
+    padding-left: 14px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+}
+.modelset-search-close
+{
+    background: #5582f3;
+    background-color: var(--color-main, #5582f3);
+}
+.modelset-manage-toolbar-searchBox
+{
+    position: absolute;
+    width: 204px;
+    right: 80px;
+    height: 25px;
+    float: right;
+    top: 10px;
+}
+.modelset-manage-container
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    bottom: 2px;
+}
+.modelset-create-card
+{
+    height: 185px;
+    width: 310px;
+    background: #fff;
+    display: inline-block;
+    margin: 20px 0px 10px 15px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+.new-modelset-detail-container
+{
+    position: absolute;
+    width: 310px;
+    height: 185px;
+}
+.modelset-info-tips 
+{
+    position: relative;
+    width: 210px;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    top: 5px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.modelset-card-card-pic
+{
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+}
+.title-icon
+{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.modelset-title
+{
+    background: white;
+    padding: 10px 10px 10px 10px; /*上右下左*/
+}
+.title-name
+{
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    user-select: none;
+}
+.modelset-card
+{
+    height: 185px;
+    width: 310px;
+    background: #fff;
+    display: inline-block;
+    margin: 20px 0 10px 15px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    box-sizing: content-box;
+}
+.modelset-text
+{
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.modelset-card-delete_dialog 
+{
+    width: 370px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+.new-modelset-icon
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 125px;
+    margin-top: 45px;
+}
+.new-modelset-text
+{
+    position: absolute;
+    width: 100%;
+    top: 112px;
+    text-align: center;
+    font-size: 17px;
+    color: #999999;
+    letter-spacing: 1px;
+}
+.new-manage-icon-container
+{
+    width: 280px;
+    height: 20px;
+    padding: 6px 10px;
+    box-sizing: content-box;
+}
+.import-modelset
+{
+    float: right;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+.modelset-detail-container
+{
+    position: absolute;
+    margin: 12px 20px 0px 20px;
+    width: 342px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+}
+.modelset-icon
+{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.modelset-name
+{
+    font-size: 16px;
+    color: #333333;
+    display: inline-block;
+    width: 230px;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.modelset-name:hover
+{
+    color: #2B87F3 !important;
+}
+.manage-icon-container
+{
+    position: absolute;
+    width: 47px;
+    height: 20px;
+    top: 10px;
+    right: 70px;
+    cursor: default;
+}
+.manage-icon-container .icon
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.edit-icon
+{
+    left: 0;
+    display: none;
+}
+.delete-icon
+{
+    right: 0;
+    display: none;
+}
+.modelset-card-preset-text
+{
+    position: absolute;
+    width: 48px;
+    top: 0;
+    right: 49px;
+    color: #b2b2b2;
+    text-align: center;
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+.preset-modelset-card-container
+{
+    position: relative;
+}
+.modelset-card-preset-icon
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -12px;
+    right: 50px;
+    cursor: default;
+}
+.dataModel-detail-container
+{
+    position: absolute;
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: block;
+    word-wrap: break-word;
+    overflow: hidden;
+    left: 0px;
+    bottom: 52px;
+    width: 100%;
+    height: 60px;
+}
+.dataModel-Info-container
+{
+    width: 100px;
+    height: 60px;
+    box-sizing: content-box;
+    display: inline-block;
+    text-align: center;
+}
+.dataModel-number
+{
+    position: absolute;
+    height: 24px;
+    width: 100px;
+    bottom: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+.icon-container
+{
+    width: 310px;
+    height: 32px;
+    background-color: #F9FBFD;
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 0px;
+}
+.create-modelset-card-container
+{
+    position: relative;
+}
+.cooperation-modelset-card-container
+{
+    position: relative;
+}
+.icon-tablemodel-dataModel-mark
+{
+    position: absolute;
+    width: 103px;
+    bottom: 0px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.icon-relationmodel-dataModel-mark
+{
+    position: absolute;
+    width: 103px;
+    bottom: 0px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.icon-metricmodel-dataModel-mark
+{
+    position: absolute;
+    width: 103px;
+    bottom: 0px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dataModel-icon
+{
+    position: relative;
+    float: left;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+.dataModel-name
+{
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 80px;
+    text-align: left;
+    font-size: 12px;
+    left: 16px;
+    position: relative;
+}
+.export-icon
+{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+    margin-top: 2PX;
+}
+.modelset-cooperation
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.modelset-preset
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.modelset-twinkle-high-light
+{
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+    box-shadow: 0 0 0 1px #5582f3;
+    box-shadow: 0 0 0 1px var(--color-main, #5582f3);
+}
+.modelset-card-selected
+{
+    border: 1px solid #5582f3;
+    border: 1px solid var(--color-main, #5582f3);
+}
+.modelset-disabled-tip
+{
+    font-size: 8px;
+    border: 1px solid #FD6C6A;
+    margin-left: 4px;
+    padding: 0 5px 0 5px;
+    color: #FD6C6A;
+    border-radius: 10px;
+}
+.enable-text
+{
+    float: left;
+    margin-left: 3px;
+    color: #999999;
+}
+.no-modelset-display-container
+{
+    width: 100%;
+    height: 192px;
+    position: relative;
+}
+.no-modelset-display-icon
+{
+    width: 168px;
+    height: 96px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -30px;
+}
+.no-modelset-display-text
+{
+    position: absolute;
+    top: 136px;
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center
+}
+.cooper-container
+{
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white;
+}
+.cooper-container-card
+{
+    position: relative;
+    float: left;
+    margin: 10px 5px 3px 10px;
+    border-radius: 4px;
+    width: 153px;
+    height: 167px;
+    border: 1px solid #cccccc;
+}
+.cooper-container-card-content-headImg
+{
+    position: absolute;
+    border-radius: 48px;
+    top: 16px;
+    left: 54px;
+    height: 48px;
+    width: 48px;
+}
+.cooper-container-card-content-item
+{
+    position: absolute;
+    top: 72px;
+    left: 10px;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cooper-container-card-content-item-exception-prompt
+{
+    position: relative;
+    top: 4px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    float: left;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    background-color: yellow;
+    color: #BC1118;
+    border: 1px solid #BC1118;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: default;
+}
+.cooper-container-card-content-item-exception
+{
+    position: absolute;
+    top: 72px;
+    text-align: center;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cooper-container-card-content-item-subtitle
+{
+    position: absolute;
+    top: 96px;
+    left: 10px;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 18px;
+}
+.cooper-container-card-line
+{
+    position: absolute;
+    color: #d9d9d9;
+    top: 137px;
+    right: 60px;
+    user-select: none;
+}
+.cooper-container-card-status
+{
+    position: absolute;
+    top: 130px;
+    border-radius: 5px;
+    color: #212121;
+    left: 48px;
+    width: 60px;
+    font-size: 12px;
+    font-weight: 400;
+    top: 137px;
+    text-align: center;
+}
+.cooper-container-card-creator
+{
+    position: relative;
+    float: left;
+    margin: 10px 5px 3px 10px;
+    border-radius: 4px;
+    width: 153px;
+    height: 167px;
+    cursor: pointer;
+    text-align: center;
+    /*todo: */
+    color: #5582F3;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+}
+.cooper-container-card-creator-icon
+{
+    width: 56px;
+    height: 56px;
+    margin: 50px 50px 15px 50px;
+}
+.cooper-container-card-delete-icon
+{
+    position: absolute;
+    float: right;
+    right: 26px;
+    bottom: 14px;
+    top: 138px;
+    font-size: 12px;
+    color: #212121;
+    cursor: pointer;
+}
+.cooper-container-card-delete-icon:hover
+{
+    color: #5582f3;
+    color: var(--color-main, #5582f3);
+}
+
+/*模型集导入导出*/
+.modelset-imexport-search-box
+{
+    position: relative;
+    width: 190px;
+    top: 0px;
+    height: 23px;
+}
+
+.modelset-export-tree-selection-area
+{
+    font-size: 12px;
+    position: relative;
+    top: 0px;
+    height: 365px;
+    overflow: auto;
+}
+
+.modelset-export-sourceStrategy-label
+{
+    position: relative;
+    left: 0;
+    height: 23px;
+    top: 0;
+    width: auto;
+    display: inline-block;
+}
+
+.modelset-export-help-icon
+{
+    position: relative;
+    margin-left: 5px;
+    width: 16px;
+    display: inline-block;
+    height: 16px;
+
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);    /* for Chrome || Safari */
+    -moz-transform: scale(0.85);       /* for Firefox */
+    -ms-transform: scale(0.85) ;       /* for IE */
+    -o-transform: scale(0.85);         /* for Opera */
+}
+
+.modelset-export-sourceStrategy-comboBox
+{
+    position: relative;
+    margin-left: 10px;
+    top: 0;
+    height: 20px;
+    width: 88px;
+    display: inline-block;
+}
+
+.modelset-export-area
+{
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    height: 82%;
+    overflow: auto;
+    box-sizing: content-box;
+}
+
+.modelset-export-with-publish-switchbutton
+{
+    position: absolute;
+    width: 31px;
+    height: 19px;
+    top: 340px;
+    left: 0px;
+}
+
+.modelset-export-with-publish-text
+{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 42px;
+    top: 341px;
+}
+
+.modelset-export-area-list-item
+{
+    position: absolute;
+    height: 23px;
+    width: 300px;
+    cursor: default;
+    color: #666;
+    margin-left: -16px;
+}
+
+.modelset-export-area-list-item-icon
+{
+    position: absolute;
+    left: 25px;
+    width: 16px;
+    height: 16px;
+    top: 48%;
+    margin-top: -8px;
+}
+
+.modelset-export-area-list-item-checkbox
+{
+    position: absolute;
+    left: 20px;
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+}
+
+.modelset-export-area-list-item-text
+{
+    position: absolute;
+    left: 45px;
+    line-height: 23px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modelset-export-area-list-item-text-preset
+{
+    color: red;
+}
+
+.modelset-importing-exporting-main
+{
+    position: absolute;
+    width: 740px;
+    height: 410px;
+    top: 50%;
+    left: 50%;
+    margin-left: -370px;
+    margin-top: -205px;
+    z-index: 3;
+}
+
+.modelset-importing-upload-progress
+{
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 740px;
+    height: 3px;
+    border-radius: 10px;
+}
+
+.modelset-importing-exporting-text
+{
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    width: 180px;
+    height: 23px;
+    margin-left: -80px;
+}
+
+.modelset-import-selection-table
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 64px;
+    bottom: 0px;
+}
+
+.modelset-import-selection-prompt
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 10px;
+    width: 600px;
+}
+
+.modelset-import-selection-ignore-btn
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 30px;
+    width: 80px;
+    height: 23px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.modelset-import-selection-overwrite-btn
+{
+    position: absolute;
+    left: 100px;
+    right: 0px;
+    top: 30px;
+    width: 80px;
+    height: 23px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.modelset-import-selection-rename-btn
+{
+    position: absolute;
+    left: 200px;
+    right: 0px;
+    top: 30px;
+    width: 80px;
+    height: 23px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.modelset-export-model-icon
+{
+    position: absolute;
+    left: 45px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.modelset-export-model-name-label
+{
+    left: 66px;
+}
+
+.modelset-export-conflict-model-icon
+{
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    width: 16px;
+    height: 16px;
+}
+
+.modelset-export-conflict-model-name-label
+{
+    left: 23px;
+}
+
+.modelset-export-conflict-item-text
+{
+    position: absolute;
+    left: 25px;
+    line-height: 30px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modelset-import-model-number-table
+{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    bottom: 0px;
+}
+/*模型集导入导出*/
+
+/*资源限额*/
+.modelset-resourceinfo-used-label
+{
+    display: inline-block;
+    position: absolute;
+    right: 350px;
+    left: 100px;
+    top: 8px;
+    color: #666;
+    font-color: #666;
+}
+
+.modelset-resourceinfo-sort-box
+{
+    z-index: 65535;
+    position: absolute;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.modelset-resourceinfo-sort-box_clickable
+{
+    border: 1px solid #3cf;
+    background-color: #fff;
+}
+
+.modelset-resourceinfo-open-link
+{
+    cursor: pointer;
+    color: #49A5F7;
+    color: var(--color-main, #49A5F7);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -8px;
+    height: 16px;
+    width: 50px;
+}
+
+.modelset-resourceinfo-error-detail
+{
+    cursor: pointer;
+    color: #49A5F7;
+    color: var(--color-main, #49A5F7);
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 45px;
+    margin: auto;
+    width: 75px;
+    height: 16px;
+}
+
+.modelset-resourceinfo-no-search-result
+{
+    position: absolute;
+    width: 240px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    margin-left: -120px;
+    margin-top: -30px;
+    z-index: 1;
+}
+
+.modelset-resourceinfo-no-search-result-icon
+{
+    position: absolute;
+    width: 138px;
+    height: 84px;
+    margin-left: -69px;
+    left: 50%;
+}
+
+.modelset-resourceinfo-no-search-result-tips
+{
+    position: absolute;
+    width: 240px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -120px;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.schedule-toolbox-container {
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    padding: 0 7px 0 8px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-date-range-box-footer
+{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+}
+
+.schedule-date-range-box-footer_ok
+{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 60px;
+    height: 22px;
+    background-color: #fff;
+}
+
+.schedule-date-range-box-footer_ok:hover
+{
+    background-color: var(--color-main, #5582f3);
+}
+
+.schedule-date-range-box-footer_cancel
+{
+    position: absolute;
+    right: 100px;
+    top: 0;
+    width: 60px;
+    height: 22px;
+    background-color: #fff;
+}
+
+.schedule-date-range-box-footer_cancel:hover
+{
+    background-color: var(--color-main, #5582f3);
+}
+
+.schedule-date-range-box-input
+{
+    width: 200px;
+    border: none;
+    outline: none;
+    letter-spacing: 0.5px;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    cursor: pointer;
+    box-shadow: 0 1px 0 0 #dbdbdb;
+    height: 23px;
+}
+
+.schedule-date-range-box-input:hover
+{
+    box-shadow: 0 1px 0 0 var(--color-main, #5582f3);
+}
+
+.schedule-date-range-box-container
+{
+    position: absolute;
+    top: 2px;
+    width: 200px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.schedule-date-range-box_icon
+{
+    position: absolute;
+    right: 2px;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+}
+.schedule-date-range-container
+{
+    display: none;
+    margin-top: 10px;
+    background-color: #fff;
+    position: absolute;
+    width: 550px;
+    z-index: 9;
+    box-shadow: 0 0 2px 1px #ccc;
+    padding: 5px 20px 30px;
+    box-sizing: border-box;
+}
+
+.schedule-date-range-inner-container {
+    position: relative;
+    height: 245px;
+}
+
+.schedule-search-type-panel {
+    position: relative;
+    left: 240px;
+    height: 27px;
+    width: 77px;
+    margin-left: 25px;
+}
+/*资源限额*/

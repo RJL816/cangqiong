@@ -1,0 +1,16 @@
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/index.js??ruleSet[1].rules[2].use[1]!../../node_modules/postcss-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/component/web/base/LivePreview.less ***!
+  \*********************************************************************************************************************************************************************************************************/
+.LivePreview_preview_-6q5 {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EAE8EE;
+}
+.LivePreview_previewImg_1qdi {
+  z-index: 1050;
+  background-size: 440px 120px !important;
+}
+

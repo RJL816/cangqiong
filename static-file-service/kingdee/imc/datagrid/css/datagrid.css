@@ -1,0 +1,152 @@
+.pwyTable{ 
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: fixed;
+}
+ 
+.pwyTable th,td{
+	border-bottom: 1px  solid #ccc;
+	padding: 8px 10px;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: top;
+	word-break: keep-all;
+    white-space: nowrap;
+	font-size: 12px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.pwyTable th{
+	background-color: #eee;
+	height: 35px;
+	vertical-align: middle;
+	font-size: 12px;
+    position: relative;
+}
+
+.pwyTable th .resizer {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    /* width: 5px; */
+    height: 60%;
+    cursor: col-resize;
+    user-select: none;
+    border: 1px solid #e1dede;
+}
+
+.pwyTable .hidden{
+	display: none;
+}
+  a.outTipsText {
+	display: inline-block;
+	height: 30px;
+	position: relative;
+	margin: 0;
+	text-align:center; 
+  }
+  
+  .outTipsText .tipsText {
+	text-align: left;
+	position: absolute;
+	bottom: 28px;
+	visibility: hidden;		
+	left: 18px;
+	display: block;
+	word-break: break-all;
+    text-align: justify;
+  }  
+  .outTipsText .tipsText p {
+	word-break: break-all;
+    white-space: pre-wrap;
+  }
+  
+  table [type="checkbox"] {
+	width: 17px;
+	height: 17px;
+  }
+  
+  .outTipsText .tipIcon {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+  
+          
+		.tipsText {
+			z-index: 99999 !important;
+			left: 0px;
+            position: absolute;
+            display: block;
+            box-shadow: 0 0 3px #aaa;
+            min-width: 362px !important;
+            max-width: 400px !important;
+			font-size: 14px;
+			background: #fff;
+			color: #535353;
+        }
+		
+		
+	.tipsText img {
+		vertical-align: -3px;
+	}
+        .tipsText .ant-tooltip-inner {
+            background: #fff;
+            color: #666;
+            font-size: 12px;
+            padding: 0;
+        }
+
+        .tipsText .title {
+            height: 34px;
+            line-height: 34px;
+            vertical-align: middle;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            padding-left: 15px;
+        }
+		
+		.tipsText .subTitle {
+			font-weight: bold;
+			margin-bottom: 3px;
+			margin-top: 7px;
+		}
+
+        .tipsText .content {
+            padding: 15px;
+        }
+
+        .tipsText .content .tipBox {
+            margin-bottom: 10px;
+        }
+
+        .tipsText .content .tipBox:last-child {
+            margin-bottom: 0;
+        }
+
+        .tipsText .content .tipBox .subTitle {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .tipsText .content .tipBox .subTitle img {
+            display: inline-block;
+            vertical-align: -4px;
+        }
+
+        .tipsText .content .tipBox p {
+            margin-left: 23px;
+            margin-bottom: 3px;
+            line-height: 16px;
+        }
+
+        .tipsText .ant-tooltip-arrow::before {
+            background-color: #fff;
+        }
+
+        .tipsText .copyTxt {
+            display: none;
+        }

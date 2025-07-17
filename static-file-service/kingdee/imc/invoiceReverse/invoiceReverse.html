@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>逆向开票</title>
+</head>
+<body>
+	<div class="imc_invoiceReverse" id="imc_invoiceReverse">
+        <div class="theme-fc"></div>
+        <div class="head">
+			<div class="item invalid hidden">
+				<div class="title">
+					<div class="name">发票作废</div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="item flush hidden">
+				<div class="title">
+					<div class="name">发票红冲</div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="item reopen hidden">
+				<div class="title">
+					<div class="name">发票重开</div>
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="item result">
+				<div class="title">
+					<div class="name">开票结果</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<section class="content-item invalid">
+                <div class="main">
+                    <div class="bill-list">
+                        <div class="list">
+                            <div class="item actived">
+                                <div class="text truncateText">单据编号：<span class="primary"></span></div>
+                                <div class="text">不含税金额：<span class="warning"></span></div>
+                                <div class="text">税额：<span class="warning"></span></div>
+                                <div class="text">价税合计：<span class="warning"></span></div>
+                            </div>
+                        </div>
+					</div>
+                    <div class="invoice-box">
+                        <div class="searchForm">
+                            <div class="searchItem">
+                                <label class="searchName">作废理由</label>
+                                <select class="searchInput abolishreason" name="abolishreason" value="请选择作废理由">
+                                    <option value="请选择作废理由" disabled selected>请选择作废理由</option>
+                                    <option value="填写有误">填写有误</option>
+                                    <option value="票面损毁">票面损毁</option>
+                                    <option value="打印错误">打印错误</option>
+                                    <option value="销货退回">销货退回</option>
+                                    <option value="销售折让">销售折让</option>
+                                    <option value="服务终止">服务终止</option>
+                                    <option value="其它">其它</option>
+                                </select>
+                            </div>
+                            <div class="searchItem otherReason hidden">
+						        <input class="searchInput" type="text" name='otherReason' maxlength="20" placeholder="作废理由20个字符以内">
+                            </div>
+                            <div class="searchItem">
+                                <label for="fpy_invalidSetAll" class="searchName">应用于全部发票</label>
+                                <div class="switch">
+                                    <input id="fpy_invalidSetAll" class="invalidSetAll" name="invalidSetAll" type="checkbox" />
+                                    <div class="label"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice" data-info="发票（1/1）">
+                            <div class="invoiceCodeNo">
+                                <div>发票代码：<span class="invoiceCode"></span></div>
+                                <div>发票号码：<span class="invoiceNo"></span></div>
+                            </div>
+							<div class="invoiceType">增值税电子普通发票</div>
+							<div class="box">
+								<div class="info top">
+									<div class="text">购买方</div>
+									<div class="base">
+										<div class="base-box buyer">
+											<div class="item">
+												<div class="name">名称：</div>
+												<div class="value truncateText buyername"></div>
+											</div>
+											<div class="item">
+												<div class="name">纳税人识别号：</div>
+												<div class="value truncateText buyertaxno"></div>
+											</div>
+											<div class="item">
+												<div class="name">地址、电话：</div>
+												<div class="value truncateText buyeraddr"></div>
+											</div>
+											<div class="item">
+												<div class="name">开户行及账号：</div>
+												<div class="value truncateText buyerbank"></div>
+											</div>
+										</div>
+										<div class="base-box saler" style="display: none;">
+											<div class="item">
+												<div class="name">名称：</div>
+												<div class="value truncateText salername"></div>
+											</div>
+											<div class="item">
+												<div class="name">纳税人识别号：</div>
+												<div class="value truncateText salertaxno"></div>
+											</div>
+											<div class="item">
+												<div class="name">地址、电话：</div>
+												<div class="value truncateText saleraddr"></div>
+											</div>
+											<div class="item">
+												<div class="name">开户行及账号：</div>
+												<div class="value truncateText salerbank"></div>
+											</div>
+										</div>
+									</div>
+									<div class="other">
+										<div class="item">
+											<div class="name">购方手机号码：</div>
+											<div class="value truncateText buyerphone"></div>
+										</div>
+										<div class="item">
+											<div class="name">购方邮箱：</div>
+											<div class="value truncateText buyeremail"></div>
+										</div>
+									</div>
+								</div>
+								<div class="detailLine">
+									<div class="line label">
+										<div class="item">项目名称</div>
+										<div class="item">规格型号</div>
+										<div class="item">单位</div>
+										<div class="item">数量</div>
+										<div class="item">单价</div>
+										<div class="item">金额</div>
+										<div class="item">税率</div>
+										<div class="item">税额</div>
+									</div>
+									<div class="detail">
+										<div class="line">
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+										</div>
+									</div>
+								</div>
+								<div class="total">
+									价税合计（小写）：<span class="jshjje">￥12312</span>
+								</div>
+								<div class="info bottom">
+									<div class="text">销售方</div>
+									<div class="base">
+										<div class="base-box saler">
+											<div class="item">
+												<div class="name">名称：</div>
+												<div class="value truncateText salername"></div>
+											</div>
+											<div class="item">
+												<div class="name">纳税人识别号：</div>
+												<div class="value truncateText salertaxno"></div>
+											</div>
+											<div class="item">
+												<div class="name">地址、电话：</div>
+												<div class="value truncateText saleraddr"></div>
+											</div>
+											<div class="item">
+												<div class="name">开户行及账号：</div>
+												<div class="value truncateText salerbank"></div>
+											</div>
+										</div>
+										<div class="base-box buyer" style="display: none;">
+											<div class="item">
+												<div class="name">名称：</div>
+												<div class="value truncateText buyername"></div>
+											</div>
+											<div class="item">
+												<div class="name">纳税人识别号：</div>
+												<div class="value truncateText buyertaxno"></div>
+											</div>
+											<div class="item">
+												<div class="name">地址、电话：</div>
+												<div class="value truncateText buyeraddr"></div>
+											</div>
+											<div class="item">
+												<div class="name">开户行及账号：</div>
+												<div class="value truncateText buyerbank"></div>
+											</div>
+										</div>
+									</div>
+									<div class="text">备注</div>
+									<div class="other">
+										<textarea class="searchInput invoiceremark" name="invoiceremark" disabled></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="operator">
+								<div class="name">收款人：</div>
+								<div class="value truncateText"></div>
+								<div class="name">复核人：</div>
+								<div class="value truncateText"></div>
+								<div class="name">开票人：</div>
+								<div class="value truncateText"></div>
+							</div>
+						</div>
+                        <div class="btn prev disabled"></div>
+                        <div class="btn next disabled"></div>
+                    </div>
+                </div>
+				<div class="footer">
+					<div class="btn quit blank">退出</div>
+					<div class="btn next">下一步</div>
+				</div>
+			</section>
+			<section class="content-item flush">
+                <div class="main">
+                    <div class="bill-list">
+                        <div class="list">
+                            <div class="item actived">
+                                <div class="text truncateText">单据编号：<span class="primary"></span></div>
+                                <div class="text">不含税金额：<span class="warning"></span></div>
+                                <div class="text">税额：<span class="warning"></span></div>
+                                <div class="text">价税合计：<span class="warning"></span></div>
+                            </div>
+                        </div>
+					</div>
+					<div class="invoice-detail">
+						<div class="item">
+							<div class="info" data-all="2">
+								<div class="text">
+									<div class="name">发票类型</div>
+									<div class="value disabled">
+										<div class="invoiceType actived">电子普通发票</div>
+										<div class="invoiceType">电子专用发票</div>
+										<div class="invoiceType">纸质普通发票</div>
+										<div class="invoiceType">纸质专用发票</div>
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">购方名称</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">纳税人识别号</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">地址及电话</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">开户行及账号</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">收票邮箱</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">收票手机号</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">备注</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text set">
+									<!-- <div class="set-item">
+										<span class="set-name">录入含税金额</span>
+										<input type="checkbox" name=>
+									</div> -->
+									<div class="set-item">
+										<span class="set-name">强制清单</span>
+										<input type="checkbox" name="qdbs" value="ceshi">
+									</div>
+								</div>
+							</div>
+							<div class="table-box">
+								<div id="invoice1"></div>
+							</div>
+							<div class="total">
+								<span class="total-item">税额合计：<span class="warning">0.00</span>元</span>
+								<span class="total-item">不含税额金额合计：<span class="warning">0.00</span>元</span>
+								<span class="total-item">价税合计：<span class="warning">0.00</span>元</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="info" data-all="2">
+								<div class="text">
+									<div class="name">发票类型</div>
+									<div class="value">
+										<div class="invoiceType">电子专用发票</div>
+										<div class="invoiceType actived">纸质专用发票</div>
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">购方名称</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">纳税人识别号</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">地址及电话</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">开户行及账号</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">申请方类型</div>
+									<div class="value">
+										<input type="radio" name="sex" value="nan">
+										<span class="mgl5">销方申请</span>
+										<input type="radio" name="sex" value="nv">
+										<span class="mgl5">购方申请</span>
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">红字信息表</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">原蓝票代码</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">原蓝票号码</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name requiredFields">原蓝票开票日期</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+								<div class="text">
+									<div class="name">备注</div>
+									<div class="value">
+										<input class="searchInput" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="table-box">
+								<div id="invoice1"></div>
+							</div>
+							<div class="total">
+								<span class="total-item">税额合计：<span class="warning">0.00</span>元</span>
+								<span class="total-item">不含税额金额合计：<span class="warning">0.00</span>元</span>
+								<span class="total-item">价税合计：<span class="warning">0.00</span>元</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="btn quit blank">退出</div>
+					<div class="btn next">下一步</div>
+				</div>
+			</section>
+			<section class="content-item reopen">
+                <div class="main">
+                    <div class="bill-list">
+                        <div class="list">
+                            <div class="item actived">
+                                <div class="text truncateText">单据编号：<span class="primary"></span></div>
+                                <div class="text">不含税金额：<span class="warning"></span></div>
+                                <div class="text">税额：<span class="warning"></span></div>
+                                <div class="text">价税合计：<span class="warning"></span></div>
+                            </div>
+                        </div>
+					</div>
+                    <div class="invoice-box">
+                        <div class="searchForm">
+                            <div class="searchItem">
+                                <label id="fpy_reopenSetAll" class="searchName">基础信息应用于全部发票</label>
+                                <div class="switch">
+                                    <input id="fpy_reopenSetAll" class="reopenSetAll" name="reopenSetAll" type="checkbox" />
+                                    <div class="label"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice" data-info="发票（1/1）">
+                            <div class="invoiceCodeNo">
+                                <div>发票代码：<span class="invoiceCode"></span></div>
+                                <div>发票号码：<span class="invoiceNo"></span></div>
+                            </div>
+							<div class="invoiceType">增值税电子普通发票</div>
+							<div class="box">
+								<div class="info top">
+									<div class="text">购买方</div>
+									<div class="base">
+										<div class="base-box buyer">
+											<div class="item">
+												<div class="name requiredFields">名称：</div>
+												<div class="value input">
+													<input class="searchInput buyername" type="text" name="buyername" maxlength="100" autocomplete="off" />
+												</div>
+											</div>
+											<div class="item">
+												<div class="name buyertaxnoName">纳税人识别号：</div>
+												<div class="value input">
+													<input class="searchInput buyertaxno" type="text" name="buyertaxno" maxlength="20" autocomplete="off" />
+												</div>
+											</div>
+											<div class="item">
+												<div class="name buyeraddrName">地址、电话：</div>
+												<div class="value input">
+													<input class="searchInput buyeraddr" type="text" name="buyeraddr" maxlength="100" autocomplete="off" />
+												</div>
+											</div>
+											<div class="item">
+												<div class="name buyerbankName">开户行及账号：</div>
+												<div class="value input">
+													<input class="searchInput buyerbank" type="text" name="buyerbank" maxlength="100" autocomplete="off" />
+												</div>
+											</div>
+										</div>
+										<div class="base-box saler" style="display: none;">
+											<div class="item">
+												<div class="name">名称：</div>
+												<div class="value truncateText salername"></div>
+											</div>
+											<div class="item">
+												<div class="name">纳税人识别号：</div>
+												<div class="value truncateText salertaxno"></div>
+											</div>
+											<div class="item">
+												<div class="name">地址、电话：</div>
+												<div class="value truncateText saleraddr"></div>
+											</div>
+											<div class="item">
+												<div class="name">开户行及账号：</div>
+												<div class="value truncateText salerbank"></div>
+											</div>
+										</div>
+									</div>
+									<div class="other">
+										<div class="item">
+											<div class="name">购方手机号码：</div>
+                                            <div class="value input">
+                                                <input class="searchInput buyerphone" type="text" name="buyerphone" maxlength="11" autocomplete="off" />
+                                            </div>
+										</div>
+										<div class="item">
+											<div class="name">购方邮箱：</div>
+                                            <div class="value input">
+                                                <input class="searchInput buyeremail" type="text" name="buyeremail" maxlength="100" autocomplete="off" />
+                                            </div>
+										</div>
+									</div>
+								</div>
+								<div class="detailLine">
+									<div class="line label">
+										<div class="item">项目名称</div>
+										<div class="item">规格型号</div>
+										<div class="item">单位</div>
+										<div class="item">数量</div>
+										<div class="item">单价</div>
+										<div class="item">金额</div>
+										<div class="item">税率</div>
+										<div class="item">税额</div>
+									</div>
+									<div class="detail">
+										<div class="line">
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+											<div class="item truncateText"></div>
+										</div>
+									</div>
+								</div>
+								<div class="total">
+									价税合计（小写）：<span class="jshjje">￥12312</span>
+								</div>
+								<div class="info bottom">
+									<div class="text">销售方</div>
+									<div class="base">
+										<div class="base-box saler">
+											<div class="item">
+												<div class="name ">名称：</div>
+												<div class="value truncateText salername"></div>
+											</div>
+											<div class="item">
+												<div class="name">纳税人识别号：</div>
+												<div class="value truncateText salertaxno"></div>
+											</div>
+											<div class="item">
+												<div class="name">地址、电话：</div>
+												<div class="value truncateText saleraddr"></div>
+											</div>
+											<div class="item">
+												<div class="name">开户行及账号：</div>
+												<div class="value truncateText salerbank"></div>
+											</div>
+										</div>
+										<div class="base-box buyer" style="display: none;">
+											<div class="item">
+												<div class="name requiredFields">名称：</div>
+												<div class="value input">
+													<input class="searchInput buyername" type="text" name="buyername" maxlength="100" autocomplete="off" />
+												</div>
+											</div>
+											<div class="item">
+												<div class="name buyertaxnoName">纳税人识别号：</div>
+												<div class="value input">
+													<input class="searchInput buyertaxno" type="text" name="buyertaxno" maxlength="20" autocomplete="off" />
+												</div>
+											</div>
+											<div class="item">
+												<div class="name buyeraddrName">地址、电话：</div>
+												<div class="value input">
+													<input class="searchInput buyeraddr" type="text" name="buyeraddr" maxlength="100" autocomplete="off" />
+												</div>
+											</div>
+											<div class="item">
+												<div class="name buyerbankName">开户行及账号：</div>
+												<div class="value input">
+													<input class="searchInput buyerbank" type="text" name="buyerbank" maxlength="100" autocomplete="off" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text">备注</div>
+									<div class="other">
+										<textarea class="searchInput invoiceremark" name="invoiceremark" disabled maxlength="100"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="operator">
+								<div class="name">收款人：</div>
+								<input class="searchInput value truncateText payee" type="text" name="payee" maxlength="20" autocomplete="off">
+								<div class="name">复核人：</div>
+								<input class="searchInput value truncateText reviewer" type="text" name="reviewer" maxlength="20" autocomplete="off">
+								<div class="name">开票人：</div>
+								<input class="searchInput value truncateText drawer" type="text" name="drawer" maxlength="20" autocomplete="off">
+							</div>
+						</div>
+                        <div class="btnDetail right"></div>
+                        <div class="btn prev disabled"></div>
+                        <div class="btn next disabled"></div>
+                    </div>
+                    <div class="edit-list">
+                        <div class="btnDetail left"></div>
+                        <div class="title">修改信息</div>
+                        <div class="list">
+                            <div class="item">
+                                <div class="name"></div>
+                                <div class="old-value truncateText"></div>
+                                <div class="new-value truncateText"></div>
+                            </div>
+                        </div>
+                        <div class="sure">确认</div>
+                    </div>
+                </div>
+				<div class="footer">
+					<div class="btn quit blank">退出</div>
+					<div class="btn prev hidden">上一步</div>
+					<div class="btn next">提交</div>
+				</div>
+			</section>
+			<section class="content-item result">
+                <div class="main">
+					<div class="progress">
+						<div class="box">
+							<div class="bar">
+								<div class="percent"></div>
+							</div>
+							<div class="loading">开票中...</div>
+						</div>
+						<div class="text">共0张发票，已开具0张，失败0张，剩余0张</div>
+					</div>
+					<div class="info">
+						<div class="detail item">
+							<div id="imc_invoiceReverse_detail_table" class="detail-table"></div>
+						</div>
+						<div class="fail item">
+							<div class="title">
+								<span class="name error">失败记录</span>
+								<span class="text">（共0张，合计：0.00元）</span>
+							</div>
+							<div id="imc_invoiceReverse_fail_table" class="fail-table"></div>
+						</div>
+						<div class="success item">
+							<div class="title">
+								<span class="name">成功记录</span>
+								<span class="text">（共0张，合计：0.00元）</span>
+							</div>
+							<div id="imc_invoiceReverse_success_table" class="success-table"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="btn quit blank">退出</div>
+					<div class="btn print hidden">纸票一键打印</div>
+					<div class="btn reopen hidden">一键重开</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

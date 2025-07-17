@@ -1,0 +1,15 @@
+#tdcstalentsearchhome .kd-select-suffix {
+    margin-right: 8px;
+}
+
+#tdcstalentsearchhome .kd-select-size-middle {
+    justify-content: center;
+    padding-right: 24px;
+}
+
+/* .kd-select-item-option {
+    justify-content: center;
+} */
+.kd-tooltip {
+    z-index: 1051;
+}

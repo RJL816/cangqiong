@@ -1,0 +1,14 @@
+<div class="PreviewPic-content">
+    <%if(text){%>
+    <div class="yunzhijia">
+        <div class="yuanzhijia_message">
+           <%=text%>
+        </div>
+    </div>
+    <% } else{%>
+    <div class="noData">
+        <div class="noData-pic"></div>
+        <div class="noData-text">内容为空</div>
+    </div>
+    <% } %>
+</div>

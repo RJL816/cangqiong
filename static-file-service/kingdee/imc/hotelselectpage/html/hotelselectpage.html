@@ -1,0 +1,74 @@
+<div class='hotelSelectPage' id="hotelPage{{pageId}}">
+	<div class='hotelHeader'>
+		<div class='hotelHeaderBtns' id="hotelHeaderBtns{{pageId}}">
+			<div class='hotelBtn'>更新Opera账单</div>
+			<div class='hotelBtn'>更新Hero账单</div>
+		</div>
+		<div class='hotelSearchInput' id="searchInput{{pageId}}">
+			<div class='input_box'>
+				<div class='searchIcon' id="searchIcon{{pageId}}"></div>
+				<input class="input" id="hotelValue{{pageId}}" placeholder="请输入账单号/手机号/房间号/客户名称" style="{{inputStyle}}" maxlength="100" type="text" value='{{hotelValue}}' title='{{hotelValue}}' autocomplete="off" >	
+				<div class='closeIcon' id="closeIcon{{pageId}}" style="display: none;"></div>
+			</div>
+			<ul class='searchInputList' id="searchInputList{{pageId}}" style="display: none;"></ul>
+		</div>
+	</div>
+	<div class='hotelMid'>
+		<div class='content' id="cardList{{pageId}}" style="display: none;" tabindex="0">
+			<div class='item'>
+				<div class='itemContent'>
+					<div class=first><div class='title'>订单号:</div>11111111</div>
+					<div><div class='title'>账单金额:</div>11111111</div>
+					<div><div class='title'>可开金额:</div>11111111</div>
+					<div><div class='title'>房间号:</div>11111111</div>
+					<div><div class='title'>手机号码:</div>11111111</div>
+					<div><div class='title'>用户姓名:</div>11111111</div>
+					<div><div class='title'>结账时间:</div>11111111</div>
+				</div>
+				<div class='itemBtns' id="itemBtns{{pageId}}">
+					<div data-type='addCar'>加入待开</div>
+					<div data-type='delCar'>移除待开</div>
+					<div data-type='qrCode'>生成小票</div>
+					<div data-type='update'>更新数据</div>
+				</div>
+			</div>
+		</div>
+		<div class='contentNodata' id="nodata{{pageId}}" style="display: none;">
+			<div class='nodata'>
+				<div class='nodataImg'></div>
+				<div>暂无数据</div>
+			</div>	
+		</div>
+		<div class='contentNodata' id="updatedata{{pageId}}" style="display: none;">
+			<div class='nodata'>
+				<div class='updateImg'></div>
+				<div>账单更新中，请稍后…<span class='cancelRequest'>取消</span></div>
+			</div>	
+		</div>
+	</div>
+	<div class='hotelFooter' id='hotelFooter{{pageId}}'>
+		<div class='footerLeft'>
+			<div class='car'></div>
+			<div class='num' style='display: none;'>0</div>
+			<div class='sum' style='display: none;'></div>
+			<ul class='hotelList' id='hotelList{{pageId}}' style='display: none;'>
+				<div class='item'>
+					<div class='itemContent'>
+						<div class=first><div class='title'>订单号:</div>11111111</div>
+						<div><div class='title'>账单金额:</div>11111111</div>
+						<div><div class='title'>可开金额:</div>11111111</div>
+						<div><div class='title'>房间号:</div>11111111</div>
+						<div><div class='title'>手机号码:</div>11111111</div>
+						<div><div class='title'>用户姓名:</div>11111111</div>
+						<div><div class='title'>结账时间:</div>11111111</div>
+					</div>
+					<div class='itemDel'>移除</div>
+				</div>
+			</ul>
+		</div>
+		<div class='footerRight'>
+			<div>快捷键：开票工作台（Ctrl+Enter）</div>
+			<div class='footerBtn'>工作台开票</div>
+		</div>
+	</div>
+</div>

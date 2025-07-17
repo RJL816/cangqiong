@@ -1,0 +1,23 @@
+<div>
+    <div class="prop-table-tools">
+	    {{each(k,v) data['tools']}}
+		    <div>${v}</div>
+		{{/each}}
+	</div>
+	<div class="prop-table">
+	    <div class="prop-table-head">
+	    {{each(k,v) data['head']}}
+		    <div>${v}</div>
+		{{/each}}
+	    </div>
+	    <div class="prop-table-body">
+	    {{each(i,tr) data['body']}}
+		    <div class="prop-table-tr" row="${i}">
+			    {{each(k,v) tr}}
+				    <div>${v}</div>
+				{{/each}}
+			</div>
+		{{/each}}
+	    </div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+<div>
+    {{if control._customData.plat=='pc'}}
+	{{if control._customData.inlineGrid}}
+	    <div class="fields-table">
+            <table>
+                <tbody>
+	                <tr class="${control.class}" style="${(control.style||'') + control._customData.style}" id="${control.id}"  viewid="${control.viewid}" required="${control.required}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}"></tr>
+                </tbody>
+            </table>
+        </div>
+	{{else}}
+		<ul class="cardListWrapper">
+			<li class="${control.class}" style="${(control.style||'') + control._customData.style};width:${control._customData.cardwidth};height:${control._customData.cardheight};" id="${control.id}"  viewid="${control.viewid}" xml="${control.xml}" data="${controlStr}"></li>
+		</ul>
+	{{/if}}
+    {{else}}
+    <div class="fields-table ${control.class}" id="${control.id}"  viewid="${control.viewid}" style="${(control.style||'') + control._customData.style};width:${control._customData.cardwidth};height:${control._customData.cardheight};" required="${control.required}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+        {{if control._customData.showCheckbox}}
+        <span class="cus-check v middle iconfont iconradio_select_icon"></span>
+        {{/if}}
+        {{if control._customData.allowLeftMove}}
+        <div class="allow-left-move">
+            <div class="fields-content ${control._customData.allowLeftMove ? 'swiper-wrapper':''}">
+            </div>
+        </div>
+        {{else}}
+        <div class="fields-content">
+        </div>
+        {{/if}}
+    </div>
+    {{/if}}
+</div>

@@ -1,0 +1,31 @@
+<div>    
+	<div id="${control.id}"  viewid="${control.viewid}" class="${control.class} ${control._customData.hideLable ? 'no-label':''} input-ctrl" type="${control.type}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols="${control.cols}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+		{{if !control._customData.hideLable }}
+		<label style="${control.labelstyle + ';width:'+ control.labelwidth}"  class="${control.required ? 'required' : ''}">${control.name} </label>
+		{{/if}}
+		{{if control._customData.inlineList }}
+			{{if control.editable === 'true' || control.editable === true}}
+			<input class="${control.disabled ? 'disabled':''}" type="${control.type}" value="${control.value}" encryptType="${control.encryptType}" valuetype="${control.valuetype}" name="${control.id}" placeholder="${control.placeholder}" title="${control.title}" style="${control.width ? ('width:' + control.width) : ''} ${control.inputstyle}" disabled="${control.disabled}" readonly="${control.readonly}">
+			{{else}}
+				{{if control._customData.hasIcon === true}}
+				{{else}}
+				<span class="no-edit" style="${control.inputstyle}">${control.value || '字段值'}</span>
+				{{/if}}
+			{{/if}}
+		{{else}}
+			{{if control.editable === 'false' || control.editable === false}}
+				{{if control._customData.hasIcon === true}}
+				{{else}}
+				<span class="no-edit" style="${control.inputstyle}">${control.value || '字段值'}</span>
+				{{/if}}
+			{{else}}
+			<input class="${control.disabled ? 'disabled':''}" type="${control.type}" value="${control.value}" encryptType="${control.encryptType}" valuetype="${control.valuetype}" name="${control.id}" placeholder="${control.placeholder}" title="${control.title}" style="${control.width ? ('width:' + control.width) : ''} ${control.inputstyle}" disabled="${control.disabled}" readonly="${control.readonly}">
+			{{/if}}
+		{{/if}}
+		{{if control._customData.plat === 'mobile'}}
+			{{if control.rightarrow}}
+			<i class="iconfont iconmore_icon"></i>
+			{{/if}}
+		{{/if}}
+	</div>
+</div>

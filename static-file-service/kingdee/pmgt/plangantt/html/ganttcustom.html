@@ -1,0 +1,32 @@
+
+<div class="cus_container" class="container">
+    <div id="cus_ganttcontrol" class="gantt_control">
+        <% if (!lock) { %>
+        <input class="action" name="undo" value="撤销" type="button">
+        <input class="action" name="redo" value="恢复" type="button">
+        <input class="action" name="indent" value="降级" type="button">
+        <input class="action" name="outdent" value="升级" type="button">
+        <input class="action" name="del" value="删除" type="button">
+        <input class="action" name="moveForward" value="前进" type="button">
+        <input class="action" name="moveBackward" value="后退" type="button">
+        <input class="action" name="cancelMultiselect" value="取消多选" type="button">
+        <% } %>
+
+        <button id="cus_showCriticalPath">显示关键路径</button>
+        <button id="cus_switchBaseline">显示基准任务</button>
+		<!--<button id="cus_dynamicScaleUp">周视图</button>-->
+		<select id="cus_timeViewSel">
+		  <option value="0">日视图</option>
+		  <option value="1">周视图</option>
+		  <option value="2">月视图</option>
+		  <option value="3">季视图</option>
+		  <option value="4">年视图</option>
+		</select>
+
+        <!--
+        <button id="cus_ganttsubmit">提交</button>
+
+		-->
+    </div>
+    <div id="cus_gantthere" style='height:calc(60vh);'></div>
+</div>

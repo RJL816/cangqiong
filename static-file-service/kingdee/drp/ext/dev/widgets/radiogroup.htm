@@ -1,0 +1,8 @@
+<div>
+	<div class="${control.class} ${control.direction} ${control.showstyle=== '2' ? 'showstyle2':''}" style="${(control.style||'') + control._customData.style}" required="${control.required}" cols24="${control.cols24}" position="${control.position}" hidden="${control.hidden}"  xml="${control.xml}" data="${controlStr}">
+		{{if control.name}}
+		<label style="${control.labelstyle + ';width:'+ control.labelwidth}" class="${control.required ? 'required' : ''}">${control.name}</label>
+		{{/if}}
+		<ul id="${control.id}"  viewid="${control.viewid}"></ul>
+	</div>
+</div>

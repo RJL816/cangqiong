@@ -1,0 +1,18 @@
+{
+    "tips": "休",
+    "schedule": "工作安排",
+    "workTimeDes": "工作时间",
+    "addDes": "地址/链接",
+    "itemDes": "共{length}项",
+    "addBtn": "新增",
+    "no": "无",
+    "yaer": "年",
+    "month": "月",
+    "mon": "周一",
+    "tue": "周二",
+    "wed": "周三",
+    "thu": "周四",
+    "fri": "周五",
+    "sat": "周六",
+    "sun": "周日"
+}
